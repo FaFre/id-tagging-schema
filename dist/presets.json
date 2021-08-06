@@ -25818,5 +25818,76 @@
         "tags": {
             "waterway": "weir"
         }
+    },
+    "sport/trampoline": {
+        "icon": "fas-chevron-circle-up",
+        "fields": [
+            "name",
+            "address",
+            "building_area",
+            "opening_hours",
+            "opening_hours/covid19",
+            "phone",
+            "website"
+        ],
+        "moreFields": [
+            "brand",
+            "charge_fee",
+            "email",
+            "fax",
+            "fee",
+            "gnis/feature_id",
+            "internet_access",
+            "internet_access/fee",
+            "internet_access/ssid",
+            "operator",
+            "payment_multi"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "trampoline"
+        },
+        "matchScore": 0.1
+    },
+    "internet_access/yes": {
+        "icon": "fas-wifi",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "fields": [
+            "internet_access/ssid",
+            "internet_access/fee"
+        ],
+        "moreFields": [
+            "level"
+        ],
+        "tags": {
+            "internet_access": "yes"
+        },
+        "matchScore": 0.1
+    },
+    "sport/scuba_diving": {
+        "icon": "temaki-scuba_diving",
+        "fields": [
+            "name",
+            "address",
+            "building_area",
+            "opening_hours",
+            "opening_hours/covid19",
+            "phone",
+            "website"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "scuba_diving"
+        },
+        "matchScore": 0.1
     }
 }
