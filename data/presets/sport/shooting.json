@@ -1,0 +1,19 @@
+{
+    "icon": "fas-crosshairs",
+    "fields": [
+        "{sport/facilityTemplate}",
+        "shooting"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "shooting"
+    },
+    "matchScore": 0.9,
+    "name": "Shooting"
+}

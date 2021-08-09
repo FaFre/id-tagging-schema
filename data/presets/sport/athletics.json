@@ -1,0 +1,18 @@
+{
+    "icon": "temaki-horizontal_bar",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "athletics"
+    },
+    "matchScore": 0.8,
+    "name": "Athletics"
+}

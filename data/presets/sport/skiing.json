@@ -1,0 +1,18 @@
+{
+    "icon": "maki-skiing",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "skiing"
+    },
+    "matchScore": 0.9,
+    "name": "Skiing"
+}

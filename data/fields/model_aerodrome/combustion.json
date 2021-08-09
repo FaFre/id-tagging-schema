@@ -1,0 +1,5 @@
+{
+    "key": "model_aerodrome:combustion",
+    "type": "check",
+    "label": "Combustion"
+}

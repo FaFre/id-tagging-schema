@@ -223,6 +223,9 @@
                 "animal_shelter": {
                     "label": "For Animals"
                 },
+                "archery": {
+                    "label": "Type of archery"
+                },
                 "architect": {
                     "label": "Architect",
                     "terms": "building designer"
@@ -896,6 +899,30 @@
                 "fountain": {
                     "label": "Type"
                 },
+                "free_flying/ground_handling": {
+                    "label": "Ground-Handling"
+                },
+                "free_flying/guest-guidelines": {
+                    "label": "Guest-Guidlines"
+                },
+                "free_flying/hanggliding": {
+                    "label": "Hanggliding"
+                },
+                "free_flying/no-flight-time": {
+                    "label": "Disallowed flight time"
+                },
+                "free_flying/official": {
+                    "label": "Official"
+                },
+                "free_flying/paragliding": {
+                    "label": "Paragliding"
+                },
+                "free_flying/rigid": {
+                    "label": "Rigid"
+                },
+                "free_flying/site": {
+                    "label": "Site Type"
+                },
                 "frequency_electrified": {
                     "label": "Operating Frequency"
                 },
@@ -975,6 +1002,9 @@
                 "hashtags": {
                     "label": "Hashtags",
                     "placeholder": "#example"
+                },
+                "hazard": {
+                    "label": "Type of hazard"
                 },
                 "healthcare": {
                     "label": "Type"
@@ -1322,6 +1352,18 @@
                 "minspeed": {
                     "label": "Minimum Speed Limit",
                     "placeholder": "20, 30, 40..."
+                },
+                "model_aerodrome/combustion": {
+                    "label": "Combustion"
+                },
+                "model_aerodrome/electric": {
+                    "label": "Electric"
+                },
+                "model_aerodrome/heli": {
+                    "label": "Heli"
+                },
+                "model_aerodrome/turbine": {
+                    "label": "Turbine"
                 },
                 "monitoring_multi": {
                     "label": "Monitoring"
@@ -1995,6 +2037,9 @@
                 },
                 "shelter": {
                     "label": "Shelter"
+                },
+                "shooting": {
+                    "label": "Shooting Type"
                 },
                 "shop": {
                     "label": "Type"
@@ -3819,6 +3864,9 @@
                     "name": "Noise Barrier",
                     "terms": "acoustical barrier,noise wall,noisewall,sound barrier,sound berm,sound wall,soundberm,soundwall"
                 },
+                "bench": {
+                    "name": "Bench available"
+                },
                 "boundary/administrative": {
                     "name": "Administrative Boundary"
                 },
@@ -4018,6 +4066,9 @@
                 },
                 "building/warehouse": {
                     "name": "Warehouse"
+                },
+                "canoe": {
+                    "name": "Canoe"
                 },
                 "club": {
                     "name": "Club",
@@ -4354,6 +4405,9 @@
                 },
                 "golf/water_hazard": {
                     "name": "Water Hazard"
+                },
+                "harbour": {
+                    "name": "Harbour"
                 },
                 "healthcare": {
                     "name": "Healthcare Facility",
@@ -4734,6 +4788,9 @@
                 "historic": {
                     "name": "Historic Site"
                 },
+                "historic/amenity": {
+                    "name": "Previously"
+                },
                 "historic/archaeological_site": {
                     "name": "Archaeological Site"
                 },
@@ -4761,6 +4818,9 @@
                 "historic/city_gate": {
                     "name": "City Gate",
                     "terms": "town gate"
+                },
+                "historic/demolished": {
+                    "name": "Demolished"
                 },
                 "historic/fort": {
                     "name": "Historic Fort",
@@ -4831,6 +4891,9 @@
                 "indoor/wall": {
                     "name": "Indoor Wall",
                     "terms": "indoor barrier,room divider,room partition"
+                },
+                "internet_access": {
+                    "name": "Internet-Access available"
                 },
                 "internet_access/wlan": {
                     "name": "Wi-Fi Hotspot",
@@ -6563,6 +6626,12 @@
                 "relation": {
                     "name": "Relation"
                 },
+                "religion": {
+                    "name": "Religious"
+                },
+                "rental": {
+                    "name": "Rental available"
+                },
                 "route/ferry": {
                     "name": "Ferry Route",
                     "terms": "boat,merchant vessel,ship,water bus,water shuttle,water taxi"
@@ -6590,6 +6659,9 @@
                 "seamark/mooring": {
                     "name": "Mooring",
                     "terms": "dolphin,pile,bollard,buoy,post"
+                },
+                "shelter": {
+                    "name": "Shelter available"
                 },
                 "shop": {
                     "name": "Shop",
@@ -7235,6 +7307,87 @@
                 },
                 "shop/wine": {
                     "name": "Wine Shop"
+                },
+                "sport/10pin": {
+                    "name": "Bowling 10pin"
+                },
+                "sport/9pin": {
+                    "name": "Bowling 9pin"
+                },
+                "sport/archery": {
+                    "name": "Archery"
+                },
+                "sport/athletics": {
+                    "name": "Athletics"
+                },
+                "sport/bmx": {
+                    "name": "BMX"
+                },
+                "sport/canoe": {
+                    "name": "Canoe"
+                },
+                "sport/disc_golf": {
+                    "name": "Disc Golf"
+                },
+                "sport/facilityTemplate": {
+                    "name": "Template for Sport Facilities"
+                },
+                "sport/fishing": {
+                    "name": "Fishing"
+                },
+                "sport/fitness": {
+                    "name": "Fitness Station"
+                },
+                "sport/free_flying": {
+                    "name": "Free Flying"
+                },
+                "sport/golf": {
+                    "name": "Golf"
+                },
+                "sport/gymnastics": {
+                    "name": "Gymnastics"
+                },
+                "sport/hockey": {
+                    "name": "Hockey (ambigious)"
+                },
+                "sport/model_aerodrome": {
+                    "name": "Model Aerodrome"
+                },
+                "sport/motocross": {
+                    "name": "Motocross"
+                },
+                "sport/multi": {
+                    "name": "Multiple Sports"
+                },
+                "sport/orienteering": {
+                    "name": "Orienteering"
+                },
+                "sport/paintball": {
+                    "name": "Paintball"
+                },
+                "sport/rowing": {
+                    "name": "Rowing"
+                },
+                "sport/rugby": {
+                    "name": "Rugby (ambigious)"
+                },
+                "sport/sailing": {
+                    "name": "Sailing"
+                },
+                "sport/scuba_diving": {
+                    "name": "Scuba Diving"
+                },
+                "sport/shooting": {
+                    "name": "Shooting"
+                },
+                "sport/skating": {
+                    "name": "Skating (ambigious)"
+                },
+                "sport/skiing": {
+                    "name": "Skiing"
+                },
+                "sport/trampoline": {
+                    "name": "Trampoline"
                 },
                 "telecom/data_center": {
                     "name": "Data Center",

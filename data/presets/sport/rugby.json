@@ -1,0 +1,12 @@
+{
+    "icon": "maki-american-football",
+    "geometry": [
+        "area",
+        "point"
+    ],
+    "tags": {
+        "sport": "rugby"
+    },
+    "matchScore": 0.75,
+    "name": "Rugby (ambigious)"
+}

@@ -1,0 +1,17 @@
+{
+    "icon": "maki-drinking-water",
+    "fields": [
+        "{amenity/drinking_water}"
+    ],
+    "moreFields": [
+        "{amenity/drinking_water}"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "tags": {
+        "drinking_water": "*"
+    },
+    "matchScore": 0.1,
+    "name": "Drinking-Water available"
+}

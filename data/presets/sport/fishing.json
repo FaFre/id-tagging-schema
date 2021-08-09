@@ -1,0 +1,16 @@
+{
+    "icon": "temaki-fishing_pier",
+    "fields": [
+        "access_simple",
+        "fishing"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "fishing"
+    },
+    "matchScore": 0.9,
+    "name": "Fishing"
+}

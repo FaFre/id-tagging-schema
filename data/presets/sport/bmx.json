@@ -1,0 +1,18 @@
+{
+    "icon": "fas-biking",
+    "fields": [
+        "surface",
+        "length",
+        "lanes",
+        "surface"
+    ],
+    "geometry": [
+        "line",
+        "area"
+    ],
+    "tags": {
+        "sport": "bmx"
+    },
+    "matchScore": 0.9,
+    "name": "BMX"
+}

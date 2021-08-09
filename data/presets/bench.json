@@ -1,0 +1,19 @@
+{
+    "icon": "temaki-bench",
+    "fields": [
+        "{amenity/bench}"
+    ],
+    "moreFields": [
+        "{amenity/bench}"
+    ],
+    "geometry": [
+        "point",
+        "vertex",
+        "line"
+    ],
+    "tags": {
+        "bench": "yes"
+    },
+    "matchScore": 0.1,
+    "name": "Bench available"
+}
