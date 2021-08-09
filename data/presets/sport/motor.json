@@ -1,0 +1,18 @@
+{
+    "icon": "fas-cars",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "motor"
+    },
+    "matchScore": 0.9,
+    "name": "Motorsport"
+}

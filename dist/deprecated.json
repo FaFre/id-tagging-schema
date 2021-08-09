@@ -3647,5 +3647,13 @@
             "leaf_cycle": "mixed",
             "leaf_type": "mixed"
         }
+    },
+    {
+        "old": {
+            "amenity": "water"
+        },
+        "replace": {
+            "amenity": "drinking_water"
+        }
     }
 ]

@@ -3231,7 +3231,7 @@
         {
             "key": "bench",
             "value": "yes",
-            "description": "🄿 Bench available",
+            "description": "🄿 Bench",
             "object_types": [
                 "node",
                 "way"
@@ -4360,6 +4360,14 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-store-alt-slash.svg"
+        },
+        {
+            "key": "drinking_water",
+            "description": "🄿 Drinking water, 🄵 Drinkable",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/drinking-water-15.svg"
         },
         {
             "key": "emergency",
@@ -5765,8 +5773,7 @@
         },
         {
             "key": "internet_access",
-            "value": "yes",
-            "description": "🄿 Internet-Access available, 🄵🅅 Internet Connection: Yes",
+            "description": "🄿 Internet-Access, 🄵 Internet Connection",
             "object_types": [
                 "node",
                 "area"
@@ -9736,7 +9743,7 @@
         },
         {
             "key": "rental",
-            "description": "🄿 Rental available",
+            "description": "🄿 Rental",
             "object_types": [
                 "node",
                 "area"
@@ -9751,6 +9758,14 @@
                 "way"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/ferry.svg"
+        },
+        {
+            "key": "ruins",
+            "description": "🄿 Ruins, 🄵 Type",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/ruins.svg"
         },
         {
             "key": "seamark:type",
@@ -9807,7 +9822,7 @@
         {
             "key": "shelter",
             "value": "yes",
-            "description": "🄿 Shelter available",
+            "description": "🄿 Shelter",
             "object_types": [
                 "node",
                 "area"
@@ -11565,6 +11580,16 @@
         },
         {
             "key": "sport",
+            "value": "billards",
+            "description": "🄿 Billards",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-pool-8-ball.svg"
+        },
+        {
+            "key": "sport",
             "value": "bmx",
             "description": "🄿 BMX, 🄵🅅 Sports: BMX",
             "object_types": [
@@ -11575,6 +11600,16 @@
         },
         {
             "key": "sport",
+            "value": "boxing",
+            "description": "🄿 Boxing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-boxing-glove.svg"
+        },
+        {
+            "key": "sport",
             "value": "canoe",
             "description": "🄿 Canoe",
             "object_types": [
@@ -11582,6 +11617,16 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/canoe.svg"
+        },
+        {
+            "key": "sport",
+            "value": "climbing_adventure",
+            "description": "🄿 Adventure Park",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/abseiling.svg"
         },
         {
             "key": "sport",
@@ -11670,6 +11715,16 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/planes_bidirectional.svg"
+        },
+        {
+            "key": "sport",
+            "value": "motor",
+            "description": "🄿 Motorsport, 🄵🅅 Sports: Motorsport",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-cars.svg"
         },
         {
             "key": "sport",
@@ -13988,10 +14043,6 @@
             "description": "🄵 Drinks"
         },
         {
-            "key": "drinking_water",
-            "description": "🄵 Drinkable"
-        },
-        {
             "key": "drive_through",
             "description": "🄵 Drive-Through"
         },
@@ -14421,7 +14472,8 @@
         },
         {
             "key": "internet_access",
-            "description": "🄵 Internet Connection"
+            "value": "yes",
+            "description": "🄵🅅 Internet Connection: Yes"
         },
         {
             "key": "internet_access",
@@ -15448,10 +15500,6 @@
             "description": "🄵 Type"
         },
         {
-            "key": "ruins",
-            "description": "🄵 Type"
-        },
-        {
             "key": "rwn_ref",
             "description": "🄵 Walking Code"
         },
@@ -16005,11 +16053,6 @@
             "key": "sport",
             "value": "ice_stock",
             "description": "🄵🅅 Sports: Ice Stock"
-        },
-        {
-            "key": "sport",
-            "value": "motor",
-            "description": "🄵🅅 Sports: Motorsport"
         },
         {
             "key": "sport",
@@ -18581,6 +18624,11 @@
             "key": "wood",
             "value": "mixed",
             "description": "🄳 ➜ leaf_cycle=mixed + leaf_type=mixed"
+        },
+        {
+            "key": "amenity",
+            "value": "water",
+            "description": "🄳 ➜ amenity=drinking_water"
         }
     ]
 }

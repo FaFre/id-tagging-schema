@@ -1,0 +1,17 @@
+{
+    "icon": "temaki-ruins",
+    "fields": [
+        "{building/ruins}"
+    ],
+    "moreFields": [
+        "{building/ruins}"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "tags": {
+        "ruins": "*"
+    },
+    "matchScore": 0.1,
+    "name": "Ruins"
+}

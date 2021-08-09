@@ -3865,7 +3865,7 @@
                     "terms": "acoustical barrier,noise wall,noisewall,sound barrier,sound berm,sound wall,soundberm,soundwall"
                 },
                 "bench": {
-                    "name": "Bench available"
+                    "name": "Bench"
                 },
                 "boundary/administrative": {
                     "name": "Administrative Boundary"
@@ -4273,6 +4273,9 @@
                 },
                 "disused/shop": {
                     "name": "Disused Shop"
+                },
+                "drinking_water": {
+                    "name": "Drinking water"
                 },
                 "emergency/designated": {
                     "name": "Emergency Access Designated"
@@ -4893,7 +4896,7 @@
                     "terms": "indoor barrier,room divider,room partition"
                 },
                 "internet_access": {
-                    "name": "Internet-Access available"
+                    "name": "Internet-Access"
                 },
                 "internet_access/wlan": {
                     "name": "Wi-Fi Hotspot",
@@ -6630,11 +6633,14 @@
                     "name": "Religious"
                 },
                 "rental": {
-                    "name": "Rental available"
+                    "name": "Rental"
                 },
                 "route/ferry": {
                     "name": "Ferry Route",
                     "terms": "boat,merchant vessel,ship,water bus,water shuttle,water taxi"
+                },
+                "ruins": {
+                    "name": "Ruins"
                 },
                 "seamark/beacon_isolated_danger": {
                     "name": "Danger Beacon",
@@ -6661,7 +6667,7 @@
                     "terms": "dolphin,pile,bollard,buoy,post"
                 },
                 "shelter": {
-                    "name": "Shelter available"
+                    "name": "Shelter"
                 },
                 "shop": {
                     "name": "Shop",
@@ -7320,11 +7326,20 @@
                 "sport/athletics": {
                     "name": "Athletics"
                 },
+                "sport/billards": {
+                    "name": "Billards"
+                },
                 "sport/bmx": {
                     "name": "BMX"
                 },
+                "sport/boxing": {
+                    "name": "Boxing"
+                },
                 "sport/canoe": {
                     "name": "Canoe"
+                },
+                "sport/climbing_adventure": {
+                    "name": "Adventure Park"
                 },
                 "sport/disc_golf": {
                     "name": "Disc Golf"
@@ -7355,6 +7370,9 @@
                 },
                 "sport/motocross": {
                     "name": "Motocross"
+                },
+                "sport/motor": {
+                    "name": "Motorsport"
                 },
                 "sport/multi": {
                     "name": "Multiple Sports"

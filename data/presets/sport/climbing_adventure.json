@@ -1,0 +1,17 @@
+{
+    "icon": "temaki-abseiling",
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "tags": {
+        "sport": "climbing_adventure"
+    },
+    "name": "Adventure Park"
+}

@@ -1,0 +1,18 @@
+{
+    "icon": "fas-pool-8-ball",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "billards"
+    },
+    "matchScore": 0.9,
+    "name": "Billards"
+}
