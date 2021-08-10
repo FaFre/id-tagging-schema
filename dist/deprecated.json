@@ -3792,5 +3792,22 @@
         "replace": {
             "amenity": "drinking_water"
         }
+    },
+    {
+        "old": {
+            "public_transport": "pole"
+        },
+        "replace": {
+            "public_transport": "platform",
+            "shelter": "no"
+        }
+    },
+    {
+        "old": {
+            "public_transport": "stop"
+        },
+        "replace": {
+            "public_transport": "stop_position"
+        }
     }
 ]

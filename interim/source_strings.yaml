@@ -5666,6 +5666,10 @@ en:
         # 'golf=path\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Golf Walking Path
         terms: '<translate with synonyms or related terms for ''Golf Walking Path'', separated by commas>'
+      golf/pin:
+        # 'golf=pin\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Pin
+        terms: '<translate with synonyms or related terms for ''Pin'', separated by commas>'
       golf/rough:
         # 'golf=rough\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Rough
