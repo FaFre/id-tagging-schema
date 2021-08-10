@@ -4687,6 +4687,15 @@
         },
         {
             "key": "golf",
+            "value": "pin",
+            "description": "🄿 Pin",
+            "object_types": [
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/golf-15.svg"
+        },
+        {
+            "key": "golf",
             "value": "rough",
             "description": "🄿 Rough",
             "object_types": [
@@ -18639,6 +18648,16 @@
             "key": "amenity",
             "value": "water",
             "description": "🄳 ➜ amenity=drinking_water"
+        },
+        {
+            "key": "public_transport",
+            "value": "pole",
+            "description": "🄳 ➜ public_transport=platform + shelter=no"
+        },
+        {
+            "key": "public_transport",
+            "value": "stop",
+            "description": "🄳 ➜ public_transport=stop_position"
         }
     ]
 }

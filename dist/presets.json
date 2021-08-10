@@ -9349,6 +9349,18 @@
             "foot": "designated"
         }
     },
+    "golf/pin": {
+        "icon": "maki-golf",
+        "fields": [
+            "name"
+        ],
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "golf": "pin"
+        }
+    },
     "golf/rough": {
         "icon": "maki-golf",
         "fields": [

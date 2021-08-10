@@ -4399,6 +4399,9 @@
                 "golf/path": {
                     "name": "Golf Walking Path"
                 },
+                "golf/pin": {
+                    "name": "Pin"
+                },
                 "golf/rough": {
                     "name": "Rough"
                 },
