@@ -10,7 +10,7 @@
         "point"
     ],
     "tags": {
-        "ruins": "*"
+        "ruins": "yes"
     },
     "matchScore": 0.1,
     "name": "Ruins"

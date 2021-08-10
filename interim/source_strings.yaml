@@ -5487,7 +5487,7 @@ en:
         # 'disused:shop=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Disused Shop
       drinking_water:
-        # 'drinking_water=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        # 'drinking_water=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Drinking water
         terms: '<translate with synonyms or related terms for ''Drinking water'', separated by commas>'
       embankment:
@@ -6320,15 +6320,15 @@ en:
         name: Indoor Wall
         # 'terms: indoor barrier,room divider,room partition'
         terms: '<translate with synonyms or related terms for ''Indoor Wall'', separated by commas>'
-      internet_access:
-        # 'internet_access=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Internet-Access
-        terms: '<translate with synonyms or related terms for ''Internet-Access'', separated by commas>'
       internet_access/wlan:
         # 'internet_access=wlan\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Wi-Fi Hotspot
         # 'terms: wi-fi,wifi,hotspot'
         terms: '<translate with synonyms or related terms for ''Wi-Fi Hotspot'', separated by commas>'
+      internet_access/yes:
+        # 'internet_access=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Internet-Access
+        terms: '<translate with synonyms or related terms for ''Internet-Access'', separated by commas>'
       junction:
         # 'junction=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Junction
@@ -8595,7 +8595,7 @@ en:
         # 'terms: boat,merchant vessel,ship,water bus,water shuttle,water taxi'
         terms: '<translate with synonyms or related terms for ''Ferry Route'', separated by commas>'
       ruins:
-        # 'ruins=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        # 'ruins=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Ruins
         terms: '<translate with synonyms or related terms for ''Ruins'', separated by commas>'
       seamark:
@@ -9466,10 +9466,10 @@ en:
         # 'sport=athletics\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Athletics
         terms: '<translate with synonyms or related terms for ''Athletics'', separated by commas>'
-      sport/billards:
-        # 'sport=billards\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Billards
-        terms: '<translate with synonyms or related terms for ''Billards'', separated by commas>'
+      sport/billiards:
+        # 'sport=billiards\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Billiards
+        terms: '<translate with synonyms or related terms for ''Billiards'', separated by commas>'
       sport/bmx:
         # 'sport=bmx\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: BMX
