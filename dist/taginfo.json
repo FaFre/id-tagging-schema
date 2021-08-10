@@ -4363,7 +4363,8 @@
         },
         {
             "key": "drinking_water",
-            "description": "🄿 Drinking water, 🄵 Drinkable",
+            "value": "yes",
+            "description": "🄿 Drinking water",
             "object_types": [
                 "node"
             ],
@@ -5773,7 +5774,8 @@
         },
         {
             "key": "internet_access",
-            "description": "🄿 Internet-Access, 🄵 Internet Connection",
+            "value": "yes",
+            "description": "🄿 Internet-Access, 🄵🅅 Internet Connection: Yes",
             "object_types": [
                 "node",
                 "area"
@@ -9761,7 +9763,8 @@
         },
         {
             "key": "ruins",
-            "description": "🄿 Ruins, 🄵 Type",
+            "value": "yes",
+            "description": "🄿 Ruins",
             "object_types": [
                 "node"
             ],
@@ -11580,8 +11583,8 @@
         },
         {
             "key": "sport",
-            "value": "billards",
-            "description": "🄿 Billards",
+            "value": "billiards",
+            "description": "🄿 Billiards",
             "object_types": [
                 "node",
                 "area"
@@ -14043,6 +14046,10 @@
             "description": "🄵 Drinks"
         },
         {
+            "key": "drinking_water",
+            "description": "🄵 Drinkable"
+        },
+        {
             "key": "drive_through",
             "description": "🄵 Drive-Through"
         },
@@ -14472,8 +14479,7 @@
         },
         {
             "key": "internet_access",
-            "value": "yes",
-            "description": "🄵🅅 Internet Connection: Yes"
+            "description": "🄵 Internet Connection"
         },
         {
             "key": "internet_access",
@@ -15497,6 +15503,10 @@
         },
         {
             "key": "route",
+            "description": "🄵 Type"
+        },
+        {
+            "key": "ruins",
             "description": "🄵 Type"
         },
         {

@@ -8719,7 +8719,7 @@
             "point"
         ],
         "tags": {
-            "drinking_water": "*"
+            "drinking_water": "yes"
         },
         "matchScore": 0.1
     },
@@ -11922,7 +11922,7 @@
             "indoor": "wall"
         }
     },
-    "internet_access": {
+    "internet_access/yes": {
         "icon": "fas-wifi",
         "geometry": [
             "point",
@@ -11935,7 +11935,7 @@
             "{internet_access/wlan}"
         ],
         "tags": {
-            "internet_access": "*"
+            "internet_access": "yes"
         },
         "matchScore": 0.25
     },
@@ -20265,7 +20265,7 @@
             "point"
         ],
         "tags": {
-            "ruins": "*"
+            "ruins": "yes"
         },
         "matchScore": 0.1
     },
@@ -22432,7 +22432,7 @@
         },
         "matchScore": 0.8
     },
-    "sport/billards": {
+    "sport/billiards": {
         "icon": "fas-pool-8-ball",
         "fields": [
             "{sport/facilityTemplate}"
@@ -22445,7 +22445,7 @@
             "area"
         ],
         "tags": {
-            "sport": "billards"
+            "sport": "billiards"
         },
         "matchScore": 0.9
     },

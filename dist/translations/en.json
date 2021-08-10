@@ -4895,7 +4895,7 @@
                     "name": "Indoor Wall",
                     "terms": "indoor barrier,room divider,room partition"
                 },
-                "internet_access": {
+                "internet_access/yes": {
                     "name": "Internet-Access"
                 },
                 "internet_access/wlan": {
@@ -7326,8 +7326,8 @@
                 "sport/athletics": {
                     "name": "Athletics"
                 },
-                "sport/billards": {
-                    "name": "Billards"
+                "sport/billiards": {
+                    "name": "Billiards"
                 },
                 "sport/bmx": {
                     "name": "BMX"

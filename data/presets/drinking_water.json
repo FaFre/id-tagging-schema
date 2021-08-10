@@ -10,7 +10,7 @@
         "point"
     ],
     "tags": {
-        "drinking_water": "*"
+        "drinking_water": "yes"
     },
     "matchScore": 0.1,
     "name": "Drinking water"

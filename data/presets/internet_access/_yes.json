@@ -11,7 +11,7 @@
         "{internet_access/wlan}"
     ],
     "tags": {
-        "internet_access": "*"
+        "internet_access": "yes"
     },
     "matchScore": 0.25,
     "name": "Internet-Access"
