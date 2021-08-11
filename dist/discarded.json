@@ -45,5 +45,8 @@
     "yh:TYPE": true,
     "yh:WIDTH": true,
     "yh:WIDTH_RANK": true,
-    "source": true
+    "source": true,
+    "imagery_used": true,
+    "imagery_offset": true,
+    "bot": true
 }
