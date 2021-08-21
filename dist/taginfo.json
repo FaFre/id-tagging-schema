@@ -4529,7 +4529,7 @@
                 "node",
                 "area"
             ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/mountain_rescue.svg"
+            "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/mountain_cross.svg"
         },
         {
             "key": "emergency",
@@ -4728,7 +4728,7 @@
             "object_types": [
                 "node"
             ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/harbour-15.svg"
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/harbor-15.svg"
         },
         {
             "key": "healthcare",

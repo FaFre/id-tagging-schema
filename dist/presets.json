@@ -9124,7 +9124,7 @@
         }
     },
     "emergency/mountain_rescue": {
-        "icon": "temaki-mountain_rescue",
+        "icon": "temaki-mountain_cross",
         "fields": [
             "name",
             "address",
@@ -9568,7 +9568,7 @@
         }
     },
     "harbour": {
-        "icon": "maki-harbour",
+        "icon": "maki-harbor",
         "fields": [
             "{landuse/harbour}"
         ],
