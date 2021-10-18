@@ -77,11 +77,9 @@
         "keys": [
             "addr:block_number",
             "addr:city",
-            "addr:block_number",
             "addr:conscriptionnumber",
             "addr:county",
             "addr:country",
-            "addr:county",
             "addr:district",
             "addr:floor",
             "addr:hamlet",

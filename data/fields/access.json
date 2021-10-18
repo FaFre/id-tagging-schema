@@ -14,7 +14,7 @@
     "placeholder": "Not Specified",
     "strings": {
         "types": {
-            "access": "All",
+            "access": "All Vehicle types",
             "foot": "Foot",
             "motor_vehicle": "Motor Vehicles",
             "bicycle": "Bicycles",
