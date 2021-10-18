@@ -66,7 +66,7 @@ en:
         placeholder: Not Specified
         terms: '[translate with synonyms or related terms for ''Allowed Access'', separated by commas]'
         types:
-          access: All
+          access: All Vehicle types
           bicycle: Bicycles
           foot: Foot
           horse: Horses
@@ -105,7 +105,28 @@ en:
           # 'addr:interpolation=odd'
           odd: Odd
       address:
-        # 'addr:block_number=*, addr:city=*, addr:block_number=*, addr:conscriptionnumber=*, addr:county=*, addr:country=*, addr:county=*, addr:district=*, addr:floor=*, addr:hamlet=*, addr:housename=*, addr:housenumber=*, addr:neighbourhood=*, addr:place=*, addr:postcode=*, addr:province=*, addr:quarter=*, addr:state=*, addr:street=*, addr:subdistrict=*, addr:suburb=*, addr:unit=*'
+        keys:
+          'addr:block_number': Block Number
+          'addr:city': City
+          'addr:conscriptionnumber': Conscription Number
+          'addr:country': Country
+          'addr:county': County
+          'addr:district': District
+          'addr:floor': Floor
+          'addr:hamlet': Hamlet
+          'addr:housename': Housename
+          'addr:housenumber': Housenumber
+          'addr:neighbourhood': Neighbourhood
+          'addr:place': Place
+          'addr:postcode': Postcode
+          'addr:province': Province
+          'addr:quarter': Quarter
+          'addr:state': State
+          'addr:street': Street
+          'addr:subdistrict': Subdistrict
+          'addr:suburb': Suburb
+          'addr:unit': Unit
+        # 'addr:block_number=*, addr:city=*, addr:conscriptionnumber=*, addr:county=*, addr:country=*, addr:district=*, addr:floor=*, addr:hamlet=*, addr:housename=*, addr:housenumber=*, addr:neighbourhood=*, addr:place=*, addr:postcode=*, addr:province=*, addr:quarter=*, addr:state=*, addr:street=*, addr:subdistrict=*, addr:suburb=*, addr:unit=*'
         label: Address
         placeholders:
           block_number: Block Number
