@@ -139,7 +139,7 @@
                 "address": {
                     "label": "Address",
                     "terms": "location",
-                    "keys": {
+                    "types": {
                         "addr:block_number": "Block Number",
                         "addr:city": "City",
                         "addr:conscriptionnumber": "Conscription Number",
