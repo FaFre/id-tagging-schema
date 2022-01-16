@@ -1,0 +1,18 @@
+{
+    "icon": "fas-boxing-glove",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "boxing"
+    },
+    "matchScore": 0.9,
+    "name": "Boxing"
+}
