@@ -1,0 +1,19 @@
+{
+    "icon": "maki-shelter",
+    "fields": [
+        "{amenity/shelter}"
+    ],
+    "moreFields": [
+        "{amenity/shelter}"
+    ],
+    "geometry": [
+        "point",
+        "vertex",
+        "area"
+    ],
+    "tags": {
+        "shelter": "yes"
+    },
+    "matchScore": 0.2,
+    "name": "Shelter available"
+}

@@ -1,0 +1,5 @@
+{
+    "key": "free_flying:no-flight-time",
+    "type": "text",
+    "label": "Disallowed flight time"
+}

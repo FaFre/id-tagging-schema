@@ -1,0 +1,15 @@
+{
+    "icon": "temaki-canoe",
+    "fields": [
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "canoe": "*"
+    },
+    "matchScore": 0.2,
+    "name": "Canoe"
+}

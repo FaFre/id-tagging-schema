@@ -1,0 +1,18 @@
+{
+    "icon": "fas-wifi",
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "fields": [
+        "{internet_access/wlan}"
+    ],
+    "moreFields": [
+        "{internet_access/wlan}"
+    ],
+    "tags": {
+        "internet_access": "yes"
+    },
+    "matchScore": 0.25,
+    "name": "Internet-Access available"
+}

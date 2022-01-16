@@ -1,0 +1,23 @@
+{
+    "icon": "temaki-planes_bidirectional",
+    "fields": [
+        "{sport/facilityTemplate}",
+        "club",
+        "model_aerodrome/electric",
+        "model_aerodrome/combustion",
+        "model_aerodrome/turbine",
+        "model_aerodrome/heli"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "model_aerodrome"
+    },
+    "matchScore": 0.9,
+    "name": "Model Aerodrome"
+}

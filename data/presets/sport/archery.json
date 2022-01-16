@@ -1,0 +1,20 @@
+{
+    "icon": "temaki-archery",
+    "fields": [
+        "name",
+        "archery",
+        "surface"
+    ],
+    "moreFields": [
+        "hazard"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "archery"
+    },
+    "matchScore": 0.9,
+    "name": "Archery"
+}

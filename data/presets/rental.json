@@ -1,0 +1,18 @@
+{
+    "icon": "temaki-storage_rental",
+    "fields": [
+        "{building}"
+    ],
+    "moreFields": [
+        "{building}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "rental": "*"
+    },
+    "matchScore": 0.25,
+    "name": "Rental available"
+}

@@ -1,0 +1,12 @@
+{
+    "icon": "fas-compass",
+    "geometry": [
+        "area",
+        "point"
+    ],
+    "tags": {
+        "sport": "orienteering"
+    },
+    "matchScore": 0.9,
+    "name": "Orienteering"
+}

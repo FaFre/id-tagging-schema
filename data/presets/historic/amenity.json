@@ -1,0 +1,20 @@
+{
+    "icon": "temaki-ruins",
+    "fields": [
+        "{historic}"
+    ],
+    "moreFields": [
+        "{historic}"
+    ],
+    "geometry": [
+        "point",
+        "vertex",
+        "line",
+        "area"
+    ],
+    "tags": {
+        "historic:amenity": "*"
+    },
+    "matchScore": 0.25,
+    "name": "Previously"
+}
