@@ -181,6 +181,10 @@
         "key": "animal_shelter",
         "type": "semiCombo"
     },
+    "archery": {
+        "key": "archery",
+        "type": "text"
+    },
     "architect": {
         "key": "architect",
         "type": "text"
@@ -1209,6 +1213,38 @@
         "key": "fountain",
         "type": "combo"
     },
+    "free_flying/ground_handling": {
+        "key": "free_flying:ground_handling",
+        "type": "combo"
+    },
+    "free_flying/guest-guidelines": {
+        "key": "free_flying:guest-guidelines",
+        "type": "check"
+    },
+    "free_flying/hanggliding": {
+        "key": "free_flying:hanggliding",
+        "type": "check"
+    },
+    "free_flying/no-flight-time": {
+        "key": "free_flying:no-flight-time",
+        "type": "text"
+    },
+    "free_flying/official": {
+        "key": "free_flying:official",
+        "type": "check"
+    },
+    "free_flying/paragliding": {
+        "key": "free_flying:paragliding",
+        "type": "check"
+    },
+    "free_flying/rigid": {
+        "key": "free_flying:rigid",
+        "type": "check"
+    },
+    "free_flying/site": {
+        "key": "free_flying:site",
+        "type": "combo"
+    },
     "frequency_electrified": {
         "key": "frequency",
         "type": "combo",
@@ -1323,6 +1359,10 @@
         "key": "hashtags",
         "type": "semiCombo",
         "usage": "changeset"
+    },
+    "hazard": {
+        "key": "hazard",
+        "type": "text"
     },
     "healthcare": {
         "key": "healthcare",
@@ -1852,6 +1892,22 @@
     "minspeed": {
         "key": "minspeed",
         "type": "roadspeed"
+    },
+    "model_aerodrome/combustion": {
+        "key": "model_aerodrome:combustion",
+        "type": "check"
+    },
+    "model_aerodrome/electric": {
+        "key": "model_aerodrome:electric",
+        "type": "check"
+    },
+    "model_aerodrome/heli": {
+        "key": "model_aerodrome:heli",
+        "type": "check"
+    },
+    "model_aerodrome/turbine": {
+        "key": "model_aerodrome:turbine",
+        "type": "check"
     },
     "monitoring_multi": {
         "key": "monitoring:",
@@ -2838,6 +2894,10 @@
     "shelter": {
         "key": "shelter",
         "type": "check"
+    },
+    "shooting": {
+        "key": "shooting",
+        "type": "combo"
     },
     "shop": {
         "key": "shop",
