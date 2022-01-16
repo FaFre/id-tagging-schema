@@ -933,7 +933,15 @@
                     "placeholder": "Padrão"
                 },
                 "embassy": {
-                    "label": "Tipo"
+                    "label": "Tipo",
+                    "options": {
+                        "delegation": "Delegação",
+                        "high_commission": "Alto comissariado",
+                        "mission": "Missão diplomática",
+                        "nunciature": "Nunciatura",
+                        "residence": "Residência oficial",
+                        "yes": "Embaixada"
+                    }
                 },
                 "emergency": {
                     "label": "Emergência"
@@ -5653,6 +5661,10 @@
                 "leisure/pitch/paintball": {
                     "name": "Campo de paintball",
                     "terms": "paintball,desporto,lazer,disparo,desportivo,jogo"
+                },
+                "leisure/pitch/pickleball": {
+                    "name": "Campo de pickleball",
+                    "terms": "pickleball,ténis,pingue-pongue,ping pong,badminton,ténis de mesa,desporto,raquetes"
                 },
                 "leisure/pitch/rugby_league": {
                     "name": "Campo de râguebi de 13",

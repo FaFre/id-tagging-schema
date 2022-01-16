@@ -1557,12 +1557,7 @@
                     }
                 },
                 "parking/orientation": {
-                    "label": "Orientação",
-                    "options": {
-                        "diagonal": "Diagonal",
-                        "parallel": "Paralelo",
-                        "perpendicular": "Perpendicular"
-                    }
+                    "label": "Orientação"
                 },
                 "parking_entrance": {
                     "label": "Tipo",

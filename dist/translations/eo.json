@@ -1695,12 +1695,7 @@
                     }
                 },
                 "parking/orientation": {
-                    "label": "Orientiĝo",
-                    "options": {
-                        "diagonal": "Diagonale al strato",
-                        "parallel": "Laŭlonge de strato",
-                        "perpendicular": "Orte al strato"
-                    }
+                    "label": "Orientiĝo"
                 },
                 "parking_entrance": {
                     "label": "Speco",
