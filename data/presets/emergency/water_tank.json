@@ -1,5 +1,5 @@
 {
-    "icon": "maki-water",
+    "icon": "temaki-storage_tank",
     "fields": [
         "name",
         "ref",
@@ -8,6 +8,7 @@
         "drinking_water"
     ],
     "moreFields": [
+        "covered",
         "height",
         "material"
     ],
@@ -19,10 +20,17 @@
     "terms": [
         "water tank",
         "cistern",
-        "reservoir"
+        "extinguishing",
+        "firefighting"
     ],
     "tags": {
-        "emergency": "water_tank"
+        "emergency": "water_tank",
+        "landuse": "reservoir"
+    },
+    "addTags": {
+        "emergency": "water_tank",
+        "man_made": "storage_tank",
+        "content": "water"
     },
     "name": "Emergency Water Tank"
 }

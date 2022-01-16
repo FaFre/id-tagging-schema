@@ -11,10 +11,11 @@
     ],
     "moreFields": [
         "air_conditioning",
+        "branch_brand",
         "brand",
         "email",
         "fax",
-        "gnis/feature_id",
+        "gnis/feature_id-US",
         "level",
         "min_age",
         "phone",

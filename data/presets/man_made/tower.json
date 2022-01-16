@@ -8,10 +8,11 @@
     ],
     "moreFields": [
         "architect",
-        "gnis/feature_id"
+        "gnis/feature_id-US"
     ],
     "geometry": [
         "point",
+        "vertex",
         "area"
     ],
     "tags": {

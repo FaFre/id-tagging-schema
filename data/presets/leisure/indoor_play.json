@@ -11,13 +11,14 @@
     ],
     "moreFields": [
         "blind",
+        "branch_brand",
         "brand",
         "charge_fee",
         "dog",
         "email",
         "fax",
         "fee",
-        "gnis/feature_id",
+        "gnis/feature_id-US",
         "internet_access",
         "internet_access/fee",
         "internet_access/ssid",
@@ -36,7 +37,7 @@
     },
     "terms": [
         "ball pit",
-        "childrens play center",
+        "children's play center",
         "indoor playground"
     ],
     "name": "Indoor Play Center"

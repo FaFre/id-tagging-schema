@@ -14,13 +14,14 @@
     "moreFields": [
         "air_conditioning",
         "bar",
+        "branch_brand",
         "brand",
         "brewery",
         "capacity",
         "delivery",
         "email",
         "fax",
-        "gnis/feature_id",
+        "gnis/feature_id-US",
         "internet_access",
         "internet_access/fee",
         "internet_access/ssid",
@@ -29,12 +30,14 @@
         "min_age",
         "not/name",
         "outdoor_seating",
+        "payment_multi",
         "ref/vatin",
         "reservation",
         "smoking",
         "stars",
         "takeaway",
-        "wheelchair"
+        "wheelchair",
+        "highchair"
     ],
     "geometry": [
         "point",

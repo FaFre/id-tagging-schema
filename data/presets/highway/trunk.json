@@ -6,17 +6,19 @@
         "oneway",
         "maxspeed",
         "lanes",
+        "expressway-US",
         "surface",
         "structure",
         "access"
     ],
     "moreFields": [
         "charge_toll",
-        "covered",
+        "covered_no",
         "incline",
         "junction_line",
         "lit",
         "maxheight",
+        "maxspeed/advisory",
         "maxweight_bridge",
         "minspeed",
         "not/name",
@@ -31,6 +33,8 @@
         "highway": "trunk"
     },
     "terms": [
+        "expressway",
+        "highway",
         "road",
         "street"
     ],

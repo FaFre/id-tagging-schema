@@ -1,0 +1,33 @@
+{
+    "icon": "maki-water",
+    "fields": [
+        "name",
+        "operator",
+        "water",
+        "covered"
+    ],
+    "moreFields": [
+        "ref"
+    ],
+    "geometry": [
+        "point",
+        "vertex",
+        "area"
+    ],
+    "terms": [
+        "basin",
+        "reservoir",
+        "extinguishing",
+        "firefighting"
+    ],
+    "tags": {
+        "emergency": "water_tank",
+        "landuse": "reservoir"
+    },
+    "addTags": {
+        "emergency": "water_tank",
+        "landuse": "reservoir",
+        "natural": "water"
+    },
+    "name": "Emergency Water Reservoir"
+}

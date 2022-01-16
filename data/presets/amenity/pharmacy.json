@@ -11,10 +11,11 @@
         "drive_through"
     ],
     "moreFields": [
+        "branch_brand",
         "brand",
         "email",
         "fax",
-        "gnis/feature_id",
+        "gnis/feature_id-US",
         "level",
         "payment_multi",
         "phone",

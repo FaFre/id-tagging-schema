@@ -83,6 +83,10 @@
                             "description": "Пристапот е дозволен со одобрение од сопственикот на поединечна основа",
                             "title": "Приватен"
                         },
+                        "unknown": {
+                            "description": "Условите на пристап се непознати или нејасни",
+                            "title": "Непознато"
+                        },
                         "yes": {
                             "description": "Пристапот е дозволен по закон — важи правото на поминување",
                             "title": "Дозволен"
@@ -108,7 +112,18 @@
                         "permissive": "Се дозволува",
                         "permit": "Само со дозвола",
                         "private": "Приватен",
+                        "unknown": "Непознато",
                         "yes": "Јавен"
+                    }
+                },
+                "activity": {
+                    "label": "Активност",
+                    "options": {
+                        "Ski": "Скијање",
+                        "bicycle": "Велосипедизам",
+                        "hiking": "Планинарење",
+                        "horse": "Јавање",
+                        "mtb": "Планински велосипедизам"
                     }
                 },
                 "addr/interpolation": {
@@ -333,6 +348,9 @@
                 "boundary": {
                     "label": "Вид"
                 },
+                "branch_brand": {
+                    "label": "Огранок"
+                },
                 "brand": {
                     "label": "Марка"
                 },
@@ -381,6 +399,17 @@
                     "label": "Кабли",
                     "placeholder": "1, 2, 3..."
                 },
+                "cai_scale-IT": {
+                    "label": "Тежина на патеката (Италијански планинарски клуб)",
+                    "options": {
+                        "E": "E: За планинари",
+                        "EAI": "EAI: Планинарење по снежни услови",
+                        "EE": "EE: За искусни планинари",
+                        "EEA": "EEA: За искусни планинари со опрема",
+                        "T": "T: Туристичка"
+                    },
+                    "placeholder": "T, E, EE, …"
+                },
                 "camera/direction": {
                     "label": "Насока (степени вдесно)",
                     "placeholder": "45, 90, 180, 270"
@@ -400,9 +429,21 @@
                     "label": "Приемност",
                     "placeholder": "50, 100, 200..."
                 },
+                "capacity/caravans": {
+                    "label": "Сместивост (приколки)",
+                    "placeholder": "10, 20, 50..."
+                },
                 "capacity/disabled_parking": {
                     "label": "Инвалидски места",
                     "placeholder": "1, 2, 3..."
+                },
+                "capacity/persons": {
+                    "label": "Сместивост (лица)",
+                    "placeholder": "50, 100, 200..."
+                },
+                "capacity/tents": {
+                    "label": "Сместивост (шатори)",
+                    "placeholder": "10, 20, 50..."
                 },
                 "capacity_parking": {
                     "label": "Вкупно места",
@@ -503,6 +544,14 @@
                 "covered": {
                     "label": "На покриено"
                 },
+                "covered_no": {
+                    "label": "На покриено",
+                    "options": {
+                        "no": "Не",
+                        "undefined": "Претпоставено дека не е",
+                        "yes": "Да"
+                    }
+                },
                 "craft": {
                     "label": "Вид"
                 },
@@ -520,31 +569,69 @@
                 "crossing": {
                     "label": "Вид"
                 },
+                "crossing/barrier": {
+                    "label": "Рампа",
+                    "options": {
+                        "double_half": "Две половини",
+                        "full": "Целосна",
+                        "half": "Половична",
+                        "no": "Не",
+                        "yes": "Да"
+                    }
+                },
+                "crossing/bell": {
+                    "label": "Ѕвоно"
+                },
                 "crossing/island": {
                     "label": "Пешачки остров"
+                },
+                "crossing/light": {
+                    "label": "Светла"
                 },
                 "cuisine": {
                     "label": "Кујни",
                     "options": {
                         "american": "Американска",
                         "asian": "Азиска",
+                        "bubble_tea": "Чај со топчиња",
                         "burger": "Бургери",
+                        "cake": "Палачинки",
                         "chicken": "Пилешко",
                         "chinese": "Кинеска",
+                        "chocolate": "Чоколада",
                         "coffee_shop": "Продавница за кафе",
+                        "dessert": "Десерт",
+                        "donut": "Крофна",
+                        "fish": "риба",
                         "french": "Француска",
                         "german": "Германска",
                         "greek": "Грчка",
+                        "hot_dog": "Хотдог",
                         "ice_cream": "Сладолед",
                         "indian": "Индиска",
+                        "indonesian": "Индонезиски",
                         "italian": "Италијанска",
                         "japanese": "Јапонска",
+                        "juice": "Сок",
                         "kebab": "Гиро",
+                        "korean": "корејски",
+                        "lebanese": "либански",
+                        "malaysian": "Малезиски",
                         "mexican": "Мексиканска",
+                        "pankcake": "Палачинки",
+                        "pasta": "Тестенини",
                         "pizza": "Пицерија",
+                        "polish": "полски",
+                        "portuguese": "португалски",
                         "regional": "Регионална",
+                        "russian": "руски",
+                        "salad": "Салати",
                         "sandwich": "Сендвичарница",
+                        "seafood": "морска храна",
+                        "spanish": "шпански",
+                        "steak_house": "Стекови",
                         "sushi": "Суши",
+                        "taiwanese": "Тајванска",
                         "thai": "Тајландска",
                         "turkish": "Турска",
                         "vietnamese": "Виетнамска"
@@ -690,6 +777,15 @@
                     "placeholder": "45, 90, 180, 270",
                     "terms": "<преведете со истозначници или сродни поими на „насока (степени вдесно)“,одделени со запирки>"
                 },
+                "direction_cardinal-US-CA-NZ": {
+                    "label": "Правец",
+                    "options": {
+                        "east": "Кон исток",
+                        "north": "Кон север",
+                        "south": "Кон југ",
+                        "west": "Кон запад"
+                    }
+                },
                 "direction_clock": {
                     "label": "Правец",
                     "options": {
@@ -773,10 +869,10 @@
                     "placeholder": "00:00"
                 },
                 "ele": {
-                    "label": "Надм. висина"
+                    "label": "Надморска висина (метри)"
                 },
                 "ele_node": {
-                    "label": "Надм. висина"
+                    "label": "Надморска висина (метри)"
                 },
                 "electrified": {
                     "label": "Електрификација",
@@ -824,6 +920,9 @@
                 "expected_rwn_route_relations": {
                     "label": "Соседни пешачки јазли"
                 },
+                "expressway-US": {
+                    "label": "Експресен пат"
+                },
                 "faces": {
                     "label": "Лица"
                 },
@@ -864,8 +963,14 @@
                 "fixme": {
                     "label": "Поправи ме"
                 },
+                "flag/name": {
+                    "label": "Име на знамето"
+                },
                 "flag/type": {
                     "label": "Вид знаме"
+                },
+                "flag/wikidata": {
+                    "label": "Википодатоци за знамето"
                 },
                 "floating": {
                     "label": "Пловечки"
@@ -929,7 +1034,7 @@
                 "geyser/height": {
                     "label": "Висина на избувот"
                 },
-                "gnis/feature_id": {
+                "gnis/feature_id-US": {
                     "label": "Назнака на GNIS-елемент",
                     "terms": "<преведете со истозначници или сродни поими на „назнака на gnis-елемент“,одделени со запирки>"
                 },
@@ -976,6 +1081,9 @@
                 "height_building": {
                     "label": "Висина на градбата (метри)"
                 },
+                "highchair": {
+                    "label": "Бебешко столче"
+                },
                 "highspeed": {
                     "label": "Големобрзинска"
                 },
@@ -1017,7 +1125,7 @@
                     }
                 },
                 "horse_riding": {
-                    "label": "Коњички спорт",
+                    "label": "Јавање",
                     "options": {
                         "horse_riding": "Да",
                         "undefined": "Не"
@@ -1187,7 +1295,7 @@
                     }
                 },
                 "leaf_type_singular": {
-                    "label": "Вид лист",
+                    "label": "Вид листови",
                     "options": {
                         "broadleaved": "Широколистен",
                         "leafless": "Безлистен",
@@ -1235,6 +1343,9 @@
                 },
                 "lockable": {
                     "label": "Заклучливо"
+                },
+                "locked": {
+                    "label": "Заклучено"
                 },
                 "man_made": {
                     "label": "Вид"
@@ -1298,6 +1409,9 @@
                 "min_age": {
                     "label": "Најмала возраст",
                     "terms": "<преведете со истозначници или сродни поими на „најмала возраст“,одделени со запирки>"
+                },
+                "min_height": {
+                    "label": "Висина на дното (метри)"
                 },
                 "minspeed": {
                     "label": "Најмала дозволена брзина",
@@ -1470,8 +1584,17 @@
                         "multi-storey": "Катно",
                         "rooftop": "Покрив",
                         "sheds": "Шупи",
+                        "street_side": "Крајулично",
                         "surface": "Надземно",
                         "underground": "Подземно"
+                    }
+                },
+                "parking/orientation": {
+                    "label": "Насоченост",
+                    "options": {
+                        "diagonal": "Дијагонално на коловозот",
+                        "parallel": "Напоредно на коловозот",
+                        "perpendicular": "Под прав агол на коловозот"
                     }
                 },
                 "parking_entrance": {
@@ -1689,7 +1812,7 @@
                 "rcn_ref": {
                     "label": "Велосипедски код"
                 },
-                "real_fire": {
+                "real_fire-GB-IE": {
                     "label": "Вистински оган",
                     "terms": "<преведете со истозначници или сродни поими на „вистински оган“,одделени со запирки>"
                 },
@@ -1815,6 +1938,9 @@
                 },
                 "salt": {
                     "label": "Сол"
+                },
+                "sample_collection": {
+                    "label": "Примероци"
                 },
                 "sanitary_dump_station": {
                     "label": "Ифрлање фекалии"
@@ -2031,6 +2157,7 @@
                         "aerial imagery": "Воздушни слики",
                         "gps": "ГПС",
                         "local knowledge": "Од мештани",
+                        "osm notes": "Белешки од OpenStreetMap",
                         "streetlevel imagery": "Улични слики",
                         "survey": "Земјомер"
                     }
@@ -2056,7 +2183,8 @@
                     "options": {
                         "karting": "Картинг",
                         "motocross": "Мотокрос",
-                        "motor": "Мототрки"
+                        "motor": "Мототрки",
+                        "speedway": "Мотоциклистичко тркалиште"
                     }
                 },
                 "sport_racing_nonmotor": {
@@ -2139,6 +2267,7 @@
                     "options": {
                         "artificial_turf": "Вештачка трева",
                         "asphalt": "Асфалт",
+                        "compacted": "Набиена",
                         "concrete": "Бетон",
                         "dirt": "Земја",
                         "grass": "Трева",
@@ -2168,6 +2297,35 @@
                 },
                 "survey/date": {
                     "label": "Последен премер"
+                },
+                "survey_point/datum_aligned": {
+                    "label": "Порамнето со месниот геодетски појдовник",
+                    "terms": "<преведете со истозначници или сродни поими на „порамнето со месниот геодетски појдовник“,одделени со запирки>"
+                },
+                "survey_point/purpose": {
+                    "label": "Намена",
+                    "options": {
+                        "both": "Обете",
+                        "horizontal": "Хоризонтална порамнетост",
+                        "vertical": "Вертикална порамнетост"
+                    }
+                },
+                "survey_point/structure": {
+                    "label": "Градба",
+                    "options": {
+                        "beacon": "Фар",
+                        "block": "Блок",
+                        "bracket": "Држач",
+                        "cairn": "Земјомерна пирамида",
+                        "cut": "Засек",
+                        "indented_pin": "Вовлечен клин",
+                        "magnet": "Магнет",
+                        "medallion": "Медалјон",
+                        "pillar": "Столб",
+                        "pin": "Клин",
+                        "plaque": "Плоча",
+                        "pole": "Бандера"
+                    }
                 },
                 "swimming_pool": {
                     "label": "Вид"
@@ -2721,6 +2879,9 @@
                 "amenity/community_centre/lgbtq": {
                     "name": "Дом на ЛГБТК+"
                 },
+                "amenity/community_centre/youth_centre": {
+                    "name": "Младински дом"
+                },
                 "amenity/compressed_air": {
                     "name": "Компресор"
                 },
@@ -2744,6 +2905,9 @@
                 },
                 "amenity/doctors": {
                     "name": "Лекар"
+                },
+                "amenity/doctors/gynaecology": {
+                    "name": "Гинеколог"
                 },
                 "amenity/dojo": {
                     "name": "Училиште за боречки вештини"
@@ -2909,6 +3073,9 @@
                 },
                 "amenity/parking/park_ride": {
                     "name": "Преодно паркиралиште"
+                },
+                "amenity/parking/street-side": {
+                    "name": "Крајулично паркирање"
                 },
                 "amenity/parking/underground": {
                     "name": "Подземно паркиралиште"
@@ -3249,12 +3416,6 @@
                 "amenity/vending_machine/newspapers": {
                     "name": "Весникарски автомат"
                 },
-                "amenity/vending_machine/parcel_pickup": {
-                    "name": "Шкафче за подигање пратки"
-                },
-                "amenity/vending_machine/parcel_pickup_dropoff": {
-                    "name": "Шкафче за подигање/оставање пратки"
-                },
                 "amenity/vending_machine/parking_tickets": {
                     "name": "Паркинг-автомат"
                 },
@@ -3293,6 +3454,9 @@
                 },
                 "area": {
                     "name": "Подрачје"
+                },
+                "area/footway": {
+                    "name": "Подрачје со пешачка патека"
                 },
                 "area/highway": {
                     "name": "Патно подрачје"
@@ -3611,6 +3775,9 @@
                 },
                 "building/sty": {
                     "name": "Кочина"
+                },
+                "building/synagogue": {
+                    "name": "Синагога"
                 },
                 "building/temple": {
                     "name": "Храмовска градба"
@@ -3990,6 +4157,9 @@
                 "healthcare/rehabilitation": {
                     "name": "Рехабилитација"
                 },
+                "healthcare/sample_collection": {
+                    "name": "Место за земање примероци"
+                },
                 "healthcare/speech_therapist": {
                     "name": "Говорен терапевт"
                 },
@@ -4019,6 +4189,12 @@
                 },
                 "highway/crossing/marked-raised": {
                     "name": "Обележан пешачки премин (испакнат)"
+                },
+                "highway/crossing/signals": {
+                    "name": "Премин со пешачки сигнали"
+                },
+                "highway/crossing/signals-raised": {
+                    "name": "Премин со пешачки сигнали (издигнат)"
                 },
                 "highway/crossing/unmarked": {
                     "name": "Необележан премин"
@@ -4114,6 +4290,9 @@
                 "highway/motorway_link": {
                     "name": "Автопатен приод"
                 },
+                "highway/motorway_link-US-CA": {
+                    "name": "Автопатен приод"
+                },
                 "highway/passing_place": {
                     "name": "Место за претекнување"
                 },
@@ -4136,6 +4315,9 @@
                     "name": "Главен пат"
                 },
                 "highway/primary_link": {
+                    "name": "Главен приод"
+                },
+                "highway/primary_link-US-CA": {
                     "name": "Главен приод"
                 },
                 "highway/raceway": {
@@ -4226,6 +4408,9 @@
                     "name": "Магистрален пат"
                 },
                 "highway/trunk_link": {
+                    "name": "Приод кон магистрала"
+                },
+                "highway/trunk_link-US-CA": {
                     "name": "Приод кон магистрала"
                 },
                 "highway/turning_circle": {
@@ -4645,11 +4830,17 @@
                 "leisure/pitch/netball": {
                     "name": "Терен за нетбол"
                 },
+                "leisure/pitch/paintball": {
+                    "name": "Терен за пејнтбол"
+                },
                 "leisure/pitch/rugby_league": {
                     "name": "Игралиште за рагби-лига"
                 },
                 "leisure/pitch/rugby_union": {
                     "name": "Игралиште за рагби - сојузно"
+                },
+                "leisure/pitch/shooting": {
+                    "name": "Стрелиште"
                 },
                 "leisure/pitch/shuffleboard": {
                     "name": "Шафлбордско игралиште"
@@ -4687,14 +4878,17 @@
                 "leisure/slipway": {
                     "name": "Испуст за пловила"
                 },
-                "leisure/slipway_point": {
-                    "name": "Испуст за пловила"
+                "leisure/slipway_drivable": {
+                    "name": "Испуст (за возило)"
                 },
                 "leisure/sports_centre": {
                     "name": "Спортски центар / комплекс"
                 },
                 "leisure/sports_centre/climbing": {
                     "name": "Вежбалница за искачување"
+                },
+                "leisure/sports_centre/shooting": {
+                    "name": "Стрелиштен објект"
                 },
                 "leisure/sports_centre/swimming": {
                     "name": "Базенски објект"
@@ -4764,6 +4958,9 @@
                 },
                 "man_made/clearcut": {
                     "name": "Сосечена шума"
+                },
+                "man_made/compass_rose": {
+                    "name": "Компасна роза"
                 },
                 "man_made/courtyard": {
                     "name": "Двориште"
@@ -4926,6 +5123,9 @@
                 },
                 "man_made/utility_pole": {
                     "name": "Бандера"
+                },
+                "man_made/video_wall": {
+                    "name": "Дигитален екран"
                 },
                 "man_made/wastewater_plant": {
                     "name": "Канализациска станица"
@@ -5107,7 +5307,7 @@
                 "natural/wood": {
                     "name": "Природно дрво"
                 },
-                "network/type/node_network": {
+                "network/type/node_network-DE-NL-BE-LU": {
                     "name": "Јазол за рекреативни мрежи"
                 },
                 "noexit/yes": {
@@ -5134,7 +5334,7 @@
                 "office/association": {
                     "name": "Непрофитна организација"
                 },
-                "office/bail_bond_agent": {
+                "office/bail_bond_agent-US-PH": {
                     "name": "Кауционист"
                 },
                 "office/charity": {
@@ -5388,6 +5588,9 @@
                 },
                 "point": {
                     "name": "Точка"
+                },
+                "police/checkpoint": {
+                    "name": "Полициска контролна точка"
                 },
                 "polling_station": {
                     "name": "Привремено гласачко место"
@@ -6456,10 +6659,10 @@
                     "name": "Забрането полукружно свртување"
                 },
                 "type/restriction/only_left_turn": {
-                    "name": "Само вртење лево"
+                    "name": "Само свртување налево"
                 },
                 "type/restriction/only_right_turn": {
-                    "name": "Само вртење десно"
+                    "name": "Само свртување надесно"
                 },
                 "type/restriction/only_straight_on": {
                     "name": "Само одење право"
