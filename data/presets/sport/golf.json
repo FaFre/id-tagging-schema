@@ -1,0 +1,18 @@
+{
+    "icon": "maki-golf",
+    "fields": [
+        "{sport/facilityTemplate}"
+    ],
+    "moreFields": [
+        "{sport/facilityTemplate}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "golf"
+    },
+    "matchScore": 0.9,
+    "name": "Golf"
+}

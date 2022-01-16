@@ -1,0 +1,18 @@
+{
+    "icon": "maki-place-of-worship",
+    "fields": [
+        "{amenity/place_of_worship}"
+    ],
+    "moreFields": [
+        "{amenity/place_of_worship}"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "religion": "*"
+    },
+    "matchScore": 0.15,
+    "name": "Religious"
+}

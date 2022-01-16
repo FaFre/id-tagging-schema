@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "free_flying/site",
+        "free_flying/ground_handling",
+        "free_flying/official",
+        "free_flying/paragliding",
+        "free_flying/hanggliding",
+        "free_flying/rigid",
+        "free_flying/no-flight-time",
+        "free_flying/guest-guidelines"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "sport": "free_flying"
+    },
+    "matchScore": 0.9,
+    "name": "Free Flying"
+}
