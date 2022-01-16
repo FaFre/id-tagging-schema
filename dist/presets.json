@@ -8802,6 +8802,22 @@
         "matchScore": 0.05,
         "searchable": false
     },
+    "drinking_water": {
+        "icon": "maki-drinking-water",
+        "fields": [
+            "{amenity/drinking_water}"
+        ],
+        "moreFields": [
+            "{amenity/drinking_water}"
+        ],
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "drinking_water": "*"
+        },
+        "matchScore": 0.1
+    },
     "emergency/designated": {
         "fields": [
             "emergency_combo"
@@ -12271,7 +12287,7 @@
             "{internet_access/wlan}"
         ],
         "tags": {
-            "internet_access": "yes"
+            "internet_access": "*"
         },
         "matchScore": 0.25
     },
@@ -20939,6 +20955,22 @@
             "route": "ferry"
         }
     },
+    "ruins": {
+        "icon": "temaki-ruins",
+        "fields": [
+            "{building/ruins}"
+        ],
+        "moreFields": [
+            "{building/ruins}"
+        ],
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "ruins": "*"
+        },
+        "matchScore": 0.1
+    },
     "seamark/beacon_isolated_danger": {
         "fields": [
             "ref",
@@ -23103,6 +23135,23 @@
         },
         "matchScore": 0.8
     },
+    "sport/billards": {
+        "icon": "fas-pool-8-ball",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "billards"
+        },
+        "matchScore": 0.9
+    },
     "sport/bmx": {
         "icon": "fas-biking",
         "fields": [
@@ -23117,6 +23166,23 @@
         ],
         "tags": {
             "sport": "bmx"
+        },
+        "matchScore": 0.9
+    },
+    "sport/boxing": {
+        "icon": "fas-boxing-glove",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "boxing"
         },
         "matchScore": 0.9
     },
@@ -23138,6 +23204,22 @@
             "sport": "canoe"
         },
         "matchScore": 0.9
+    },
+    "sport/climbing_adventure": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "tags": {
+            "sport": "climbing_adventure"
+        }
     },
     "sport/disc_golf": {
         "icon": "temaki-disc_golf_basket",
@@ -23327,6 +23409,23 @@
         ],
         "tags": {
             "sport": "motocross"
+        },
+        "matchScore": 0.9
+    },
+    "sport/motor": {
+        "icon": "fas-cars",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "motor"
         },
         "matchScore": 0.9
     },

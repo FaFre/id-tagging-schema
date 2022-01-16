@@ -45,5 +45,6 @@
     "yh:TOTYUMONO": true,
     "yh:TYPE": true,
     "yh:WIDTH": true,
-    "yh:WIDTH_RANK": true
+    "yh:WIDTH_RANK": true,
+    "source": true
 }

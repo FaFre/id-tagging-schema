@@ -4955,8 +4955,8 @@ en:
         terms: '<translate with synonyms or related terms for ''Noise Barrier'', separated by commas>'
       bench:
         # 'bench=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Bench available
-        terms: '<translate with synonyms or related terms for ''Bench available'', separated by commas>'
+        name: Bench
+        terms: '<translate with synonyms or related terms for ''Bench'', separated by commas>'
       boundary:
         # 'boundary=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Boundary
@@ -5486,6 +5486,10 @@ en:
       disused/shop:
         # 'disused:shop=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Disused Shop
+      drinking_water:
+        # 'drinking_water=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Drinking water
+        terms: '<translate with synonyms or related terms for ''Drinking water'', separated by commas>'
       embankment:
         # 'embankment=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Embankment
@@ -6317,9 +6321,9 @@ en:
         # 'terms: indoor barrier,room divider,room partition'
         terms: '<translate with synonyms or related terms for ''Indoor Wall'', separated by commas>'
       internet_access:
-        # 'internet_access=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Internet-Access available
-        terms: '<translate with synonyms or related terms for ''Internet-Access available'', separated by commas>'
+        # 'internet_access=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Internet-Access
+        terms: '<translate with synonyms or related terms for ''Internet-Access'', separated by commas>'
       internet_access/wlan:
         # 'internet_access=wlan\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Wi-Fi Hotspot
@@ -8583,13 +8587,17 @@ en:
         terms: '<translate with synonyms or related terms for ''Religious'', separated by commas>'
       rental:
         # 'rental=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Rental available
-        terms: '<translate with synonyms or related terms for ''Rental available'', separated by commas>'
+        name: Rental
+        terms: '<translate with synonyms or related terms for ''Rental'', separated by commas>'
       route/ferry:
         # 'route=ferry\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Ferry Route
         # 'terms: boat,merchant vessel,ship,water bus,water shuttle,water taxi'
         terms: '<translate with synonyms or related terms for ''Ferry Route'', separated by commas>'
+      ruins:
+        # 'ruins=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Ruins
+        terms: '<translate with synonyms or related terms for ''Ruins'', separated by commas>'
       seamark:
         # 'seamark:type=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Seamark
@@ -8625,8 +8633,8 @@ en:
         terms: '<translate with synonyms or related terms for ''Mooring'', separated by commas>'
       shelter:
         # 'shelter=yes\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
-        name: Shelter available
-        terms: '<translate with synonyms or related terms for ''Shelter available'', separated by commas>'
+        name: Shelter
+        terms: '<translate with synonyms or related terms for ''Shelter'', separated by commas>'
       shop:
         # 'shop=*\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Shop
@@ -9458,14 +9466,26 @@ en:
         # 'sport=athletics\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Athletics
         terms: '<translate with synonyms or related terms for ''Athletics'', separated by commas>'
+      sport/billards:
+        # 'sport=billards\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Billards
+        terms: '<translate with synonyms or related terms for ''Billards'', separated by commas>'
       sport/bmx:
         # 'sport=bmx\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: BMX
         terms: '<translate with synonyms or related terms for ''BMX'', separated by commas>'
+      sport/boxing:
+        # 'sport=boxing\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Boxing
+        terms: '<translate with synonyms or related terms for ''Boxing'', separated by commas>'
       sport/canoe:
         # 'sport=canoe\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Canoe
         terms: '<translate with synonyms or related terms for ''Canoe'', separated by commas>'
+      sport/climbing_adventure:
+        # 'sport=climbing_adventure\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Adventure Park
+        terms: '<translate with synonyms or related terms for ''Adventure Park'', separated by commas>'
       sport/disc_golf:
         # 'sport=disc_golf\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Disc Golf
@@ -9506,6 +9526,10 @@ en:
         # 'sport=motocross\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Motocross
         terms: '<translate with synonyms or related terms for ''Motocross'', separated by commas>'
+      sport/motor:
+        # 'sport=motor\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
+        name: Motorsport
+        terms: '<translate with synonyms or related terms for ''Motorsport'', separated by commas>'
       sport/multi:
         # 'sport=multi\n\nTranslate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).'
         name: Multiple Sports
