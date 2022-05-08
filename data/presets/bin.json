@@ -1,0 +1,19 @@
+{
+    "icon": "maki-waste-basket",
+    "geometry": [
+        "point",
+        "vertex"
+    ],
+    "tags": {
+        "bin": "yes"
+    },
+    "terms": [
+        "bin",
+        "garbage",
+        "rubbish",
+        "litter",
+        "trash"
+    ],
+    "matchScore": 0.1,
+    "name": "Waste Basket"
+}

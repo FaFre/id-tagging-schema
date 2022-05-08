@@ -7487,6 +7487,17 @@
             "barrier": "wicket_gate"
         }
     },
+    "bin": {
+        "icon": "maki-waste-basket",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "bin": "yes"
+        },
+        "matchScore": 0.1
+    },
     "boundary/administrative": {
         "fields": [
             "name",

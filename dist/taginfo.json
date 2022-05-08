@@ -3409,6 +3409,15 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/gate.svg"
         },
         {
+            "key": "bin",
+            "value": "yes",
+            "description": "🄿 Waste Basket",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/waste-basket-15.svg"
+        },
+        {
             "key": "boundary",
             "value": "administrative",
             "description": "🄿 Administrative Boundary",

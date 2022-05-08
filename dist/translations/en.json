@@ -4309,6 +4309,10 @@
                 "barrier/wicket_gate": {
                     "name": "Wicket Gate"
                 },
+                "bin": {
+                    "name": "Waste Basket",
+                    "terms": "bin,garbage,rubbish,litter,trash"
+                },
                 "boundary/administrative": {
                     "name": "Administrative Boundary"
                 },
