@@ -7493,6 +7493,9 @@
             "point",
             "vertex"
         ],
+        "fields": [
+            "bin"
+        ],
         "tags": {
             "bin": "yes"
         },
