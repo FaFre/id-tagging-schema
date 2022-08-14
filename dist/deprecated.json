@@ -905,22 +905,6 @@
     },
     {
         "old": {
-            "craft": "jeweler"
-        },
-        "replace": {
-            "shop": "jewelry"
-        }
-    },
-    {
-        "old": {
-            "craft": "optician"
-        },
-        "replace": {
-            "shop": "optician"
-        }
-    },
-    {
-        "old": {
             "craft": "sculpter"
         },
         "replace": {
@@ -1469,14 +1453,6 @@
         },
         "replace": {
             "golf": "tee"
-        }
-    },
-    {
-        "old": {
-            "healthcare": "birthing_center"
-        },
-        "replace": {
-            "healthcare": "birthing_centre"
         }
     },
     {
@@ -2438,6 +2414,14 @@
         },
         "replace": {
             "parking": "lane"
+        }
+    },
+    {
+        "old": {
+            "parking:orientation": "orthogonal"
+        },
+        "replace": {
+            "parking:orientation": "perpendicular"
         }
     },
     {

@@ -123,7 +123,6 @@
                 "activity": {
                     "label": "Atividade",
                     "options": {
-                        "Ski": "Esqui",
                         "bicycle": "Ciclismo",
                         "hiking": "Caminhada",
                         "horse": "Hipismo",
@@ -2756,7 +2755,12 @@
                     "placeholder": "https://exemplo.com"
                 },
                 "wetland": {
-                    "label": "Tipo"
+                    "label": "Tipo",
+                    "options": {
+                        "marsh": "Brejo",
+                        "reedbed": "Taboa",
+                        "swamp": "Pântano"
+                    }
                 },
                 "wheelchair": {
                     "label": "Acesso a cadeirantes",
@@ -5441,7 +5445,7 @@
                     "terms": "canódromo,cachorródromo,parque canino,parque de cachorros,cães,cão,cachorros"
                 },
                 "leisure/escape_game": {
-                    "name": "Sala de fuga",
+                    "name": "Escape game",
                     "terms": "escape room,sala de fuga,sala de escape"
                 },
                 "leisure/firepit": {
@@ -5746,9 +5750,6 @@
                 "line": {
                     "name": "Linha",
                     "terms": "linha"
-                },
-                "man_made": {
-                    "name": "Elemento de construção humana"
                 },
                 "man_made/adit": {
                     "name": "Ádito de mineração",
@@ -6096,8 +6097,8 @@
                     "terms": "praia,areia,cobertura de solo,mar,solo"
                 },
                 "natural/cape": {
-                    "name": "Capa",
-                    "terms": "capa"
+                    "name": "Cabo",
+                    "terms": "cabo"
                 },
                 "natural/cave_entrance": {
                     "name": "Entrada de caverna",
@@ -6246,6 +6247,18 @@
                 "natural/wetland": {
                     "name": "Zona úmida",
                     "terms": "zona úmida,pântano,charco,paul,sapal,turfa,solo,cobertura de solo"
+                },
+                "natural/wetland/marsh": {
+                    "name": "Brejo",
+                    "terms": "área úmida,alagadiço,charco"
+                },
+                "natural/wetland/reedbed": {
+                    "name": "Taboa",
+                    "terms": "bunho,tabua,morrão-dos-fogueteiros,tabua-larga,brejo,canavial"
+                },
+                "natural/wetland/swamp": {
+                    "name": "Pântano",
+                    "terms": "brejo,charneca,tremedal,alagadiço,mangue,manguezal"
                 },
                 "natural/wood": {
                     "name": "Mata nativa",
@@ -7058,10 +7071,6 @@
                     "name": "Loja de Anime / Manga",
                     "terms": "loja de anime / manga"
                 },
-                "shop/antiques": {
-                    "name": "Loja de Antiguidades",
-                    "terms": "antiquário"
-                },
                 "shop/appliance": {
                     "name": "Loja de Eletrodomésticos"
                 },
@@ -7116,10 +7125,6 @@
                 "shop/bookmaker": {
                     "name": "Casa de Apostas",
                     "terms": "casa de apostas"
-                },
-                "shop/books": {
-                    "name": "Livraria",
-                    "terms": "livraria,livros,sebo,loja de livros"
                 },
                 "shop/boutique": {
                     "name": "Loja de Alta Costura"
@@ -7232,10 +7237,6 @@
                     "name": "Loja de Cosméticos",
                     "terms": "perfumaria,cosméticos,loja de cosméticos,beleza"
                 },
-                "shop/country_store": {
-                    "name": "Loja Country",
-                    "terms": "loja country"
-                },
                 "shop/craft": {
                     "name": "Loja de artesanato",
                     "terms": "loja de artesanato"
@@ -7247,10 +7248,6 @@
                 "shop/dairy": {
                     "name": "Loja de Laticínios",
                     "terms": "leiteria,laticínios"
-                },
-                "shop/deli": {
-                    "name": "Delicatessen",
-                    "terms": "delicatessen"
                 },
                 "shop/department_store": {
                     "name": "Loja de Departamentos",
@@ -7375,10 +7372,6 @@
                     "name": "Loja de Material de Construção",
                     "terms": "loja de ferragens,material de construção,loja de tintas,loja de parafusos,madeireira"
                 },
-                "shop/health_food": {
-                    "name": "Loja de Alimentos Saudáveis",
-                    "terms": "loja de produtos naturais,comida saudável,alimentação saudável,natureba"
-                },
                 "shop/hearing_aids": {
                     "name": "Loja de Aparelhos Auditivos",
                     "terms": "farmácia"
@@ -7490,10 +7483,6 @@
                     "name": "Loja de Instrumentos Musicais",
                     "terms": "loja de artigos musicais,instrumentos musicais,música"
                 },
-                "shop/newsagent": {
-                    "name": "Banca de Revistas",
-                    "terms": "loja de revistas,banca de jornal,jornaleiro"
-                },
                 "shop/nutrition_supplements": {
                     "name": "Loja de Suplementos Nutricionais",
                     "terms": "loja de suplementos"
@@ -7521,10 +7510,6 @@
                 "shop/pastry": {
                     "name": "Confeitaria",
                     "terms": "doceria,doces,bolos"
-                },
-                "shop/pawnbroker": {
-                    "name": "Loja de Penhoras",
-                    "terms": "casa de penhores,loja"
                 },
                 "shop/perfumery": {
                     "name": "Perfumaria",
@@ -7581,10 +7566,6 @@
                 "shop/seafood": {
                     "name": "Peixaria ou loja de frutos do mar",
                     "terms": "peixaria,pescado,petisqueira,loja de frutos do mar,camarão,lagosta,peixes,peixeiro"
-                },
-                "shop/second_hand": {
-                    "name": "Brechó",
-                    "terms": "brechó,artigos usados,roupas,loja de roupas"
                 },
                 "shop/sewing": {
                     "name": "Loja de suprimentos de costura",
@@ -7684,10 +7665,6 @@
                 "shop/vacuum_cleaner": {
                     "name": "Loja de Aspiradores de Pó",
                     "terms": "loja de aspiradores"
-                },
-                "shop/variety_store": {
-                    "name": "Loja de Variedades",
-                    "terms": "loja de variedades"
                 },
                 "shop/video": {
                     "name": "Loja/Locadora de Vídeos",

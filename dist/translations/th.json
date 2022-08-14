@@ -8,43 +8,96 @@
                 "category-building": {
                     "name": "คุณลักษณะอาคาร"
                 },
+                "category-golf": {
+                    "name": "คุณลักษณะกีฬากอล์ฟ"
+                },
                 "category-landuse": {
                     "name": "คุณลักษณะที่ดิน"
+                },
+                "category-natural": {
+                    "name": "คุณลักษณะธรรมชาติ"
+                },
+                "category-path": {
+                    "name": "ทางเดิน"
+                },
+                "category-playground": {
+                    "name": "อุปกรณ์สนามเด็กเล่น"
+                },
+                "category-rail": {
+                    "name": "ราง"
                 },
                 "category-restriction": {
                     "name": "คุณลักษณะการปิดกั้น"
                 },
+                "category-road_major": {
+                    "name": "ถนนสายหลัก"
+                },
+                "category-road_minor": {
+                    "name": "ถนนสายรอง"
+                },
+                "category-road_service": {
+                    "name": "ถนนบริการ"
+                },
                 "category-route": {
                     "name": "คุณลักษณะสายเดินรถ"
+                },
+                "category-utility": {
+                    "name": "คุณลักษณะสาธารนูประโภค"
+                },
+                "category-water": {
+                    "name": "ผืนน้ำ"
+                },
+                "category-waterway": {
+                    "name": "เส้นทางน้ำ"
                 }
             },
             "fields": {
                 "access": {
                     "label": "อนุญาตการเข้าถึง",
                     "options": {
+                        "customers": {
+                            "description": "อนุญาตให้ลูกค้าของปลายทาง",
+                            "title": "ลูกค้า"
+                        },
                         "designated": {
+                            "description": "อนุญาตให้เข้าถึงได้ตามป้ายหรือกฎหมายท้องถิ่นเฉพาะ",
                             "title": "กำหนดแล้ว"
                         },
                         "destination": {
+                            "description": "อนุญาตให้เข้าได้เฉพาะเพื่อไปถึงปลายทาง",
                             "title": "ปลายทาง"
                         },
                         "dismount": {
+                            "description": "อนุญาตให้เข้าได้แต่ต้องลงจากยานพาหนะ",
                             "title": "ต้องลงจากยานพาหนะ"
                         },
                         "no": {
+                            "description": "การเข้าถึงที่ไม่ได้รับอนุญาตให้กับบุคคลทั่วไป",
                             "title": "หวงห้าม"
                         },
                         "permissive": {
+                            "description": "อนุญาตให้เข้าถึงได้จนถึงเวลาที่เจ้าของเพิกถอนการอนุญาต",
                             "title": "ต้องได้รับอนุญาต"
                         },
+                        "permit": {
+                            "description": "อนุญาตการเข้าถึงด้วยใบอนุญาตที่ถูกต้องเท่านั้น",
+                            "title": "ใบอนุญาต"
+                        },
                         "private": {
+                            "description": "อนุญาตการเข้าถึงโดยได้รับอนุญาตจากเจ้าของเป็นรายบุคคลเท่านั้น",
                             "title": "ส่วนบุคคล"
                         },
+                        "unknown": {
+                            "description": "ไม่ทราบเงื่อนไขการเข้าถึงหรือไม่ชัดเจน",
+                            "title": "ไม่ทราบ"
+                        },
                         "yes": {
+                            "description": "การเข้าถึงได้รับอนุญาตตามกฎหมาย เป็นทางที่ชอบด้วยกฎหมาย",
                             "title": "ได้รับอนุญาต"
                         }
                     },
                     "placeholder": "ไม่ได้กำหนด",
+                    "terms": "ได้รับอนุญาต,มีสิทธิ์เข้าถึง,อนุญาตการเข้าถึง",
                     "types": {
                         "access": "ทั้งหมด",
                         "bicycle": "จักรยาน",
@@ -53,8 +106,39 @@
                         "motor_vehicle": "ยานยนต์"
                     }
                 },
+                "access_aisle": {
+                    "label": "ประเภท"
+                },
                 "access_simple": {
-                    "label": "อนุญาตการเข้าถึง"
+                    "label": "อนุญาตการเข้าถึง",
+                    "options": {
+                        "customers": "ลูกค้าเท่านั้น",
+                        "no": "ไม่มี",
+                        "permissive": "เข้าได้โดยผ่อนผัน",
+                        "permit": "โดยอนุญาตเท่านั้น",
+                        "private": "ส่วนบุคคล",
+                        "unknown": "ไม่ทราบ",
+                        "yes": "สาธารนะ"
+                    },
+                    "terms": "ได้รับอนุญาต,มีสิทธิ์เข้าถึง,อนุญาตการเข้าถึง"
+                },
+                "activity": {
+                    "label": "กิจกรรม",
+                    "options": {
+                        "bicycle": "ปั่นจักรยาน",
+                        "hiking": "เดินป่า",
+                        "horse": "ขี่ม้า",
+                        "mtb": "ปั่นจักรยานเสือภูเขา"
+                    }
+                },
+                "addr/interpolation": {
+                    "label": "ประเภท",
+                    "options": {
+                        "all": "ทุกประเภท",
+                        "alphabetic": "ตามตัวอักษร",
+                        "even": "เลขคู่",
+                        "odd": "เลขคี่"
+                    }
                 },
                 "address": {
                     "label": "ที่อยู่",
@@ -67,6 +151,7 @@
                         "hamlet": "ชุมชน",
                         "housename": "ชื่อบ้าน",
                         "housenumber": "123",
+                        "housenumber!jp": "หมายเลขอาคาร",
                         "place": "สถานที่",
                         "postcode": "รหัสไปรษณีย์",
                         "province": "จังหวัด",
@@ -98,8 +183,15 @@
                     "label": "ระยะเวลา (นาที)",
                     "placeholder": "1, 2, 3..."
                 },
+                "air_conditioning": {
+                    "terms": "ปรับอากาศ\nทำความเย็น\nติดแอร์"
+                },
                 "atm": {
                     "label": "เครื่องรับจ่ายเงินอัตโนมัติ"
+                },
+                "bench": {
+                    "label": "ม้านั่ง",
+                    "terms": "ม้านั่ง,ที่นั่ง,เก้าอี้"
                 },
                 "blood_components": {
                     "label": "องค์ประกอบของเลือด",
@@ -110,17 +202,50 @@
                         "whole": "เลือดล้วนๆ"
                     }
                 },
+                "building": {
+                    "label": "อาคาร",
+                    "terms": "สิ่งปลูกสร้าง,ตึก,อาคาร"
+                },
+                "building/levels_building": {
+                    "label": "ชั้นอาคาร"
+                },
+                "building/part": {
+                    "label": "ส่วนอาคาร"
+                },
+                "building_area": {
+                    "label": "อาคาร",
+                    "terms": "ตึก,อาคาร,สิ่งปลูกสร้าง"
+                },
                 "contact/webcam": {
                     "placeholder": "http://example.com/"
+                },
+                "cuisine": {
+                    "options": {
+                        "coffee_shop": "ร้านกาแฟ"
+                    }
                 },
                 "currency_multi": {
                     "label": "ชนิดเงินตรา"
                 },
                 "cycleway": {
-                    "label": "เลนจักรยาน"
+                    "label": "เลนจักรยาน",
+                    "options": {
+                        "share_busway": {
+                            "description": "ทางจักรยานที่ใช้ร่วมกับทางรถประจำทาง",
+                            "title": "ทางจักรยานที่ใช้ร่วมกับรถประจำทาง"
+                        }
+                    }
+                },
+                "drinking_water_available": {
+                    "label": "มีน้ำดื่ม"
                 },
                 "emergency": {
                     "label": "ฉุกเฉิน"
+                },
+                "fire_hydrant/position": {
+                    "options": {
+                        "sidewalk": "ทางเท้า"
+                    }
                 },
                 "gender": {
                     "label": "เพศ",
@@ -134,28 +259,696 @@
                 "generator/source": {
                     "label": "แหล่งที่มา"
                 },
+                "height_building": {
+                    "label": "ความสูงอาคาร (เมตร)"
+                },
+                "horse_scale": {
+                    "options": {
+                        "critical": "ก้ำกึ่ง: ผ่านได้เฉพาะผู้ขี่และม้าที่มีประสบการณ์เท่านั้น มีอุปสรรค ควรจะตรวจสอบสะพานอย่างรอบคอบ",
+                        "impossible": "ผ่านไม่ได้: ม้าไม่สามารถผ่านทางหรือสะพานได้ แคบเกินไป โครงสร้างรองรับไม่เพียงพอ สิ่งกีดขวางเหมือนบันได อันตรายถึงชีวิต"
+                    }
+                },
+                "hot_water": {
+                    "label": "น้ำร้อน"
+                },
                 "internet_access": {
                     "options": {
                         "wired": "ใช้สาย",
                         "wlan": "ไร้สาย"
                     }
+                },
+                "location_pool": {
+                    "options": {
+                        "roof": "ดาดฟ้า"
+                    }
+                },
+                "maxspeed": {
+                    "label": "จำกัดความเร็ว"
+                },
+                "natural": {
+                    "label": "ธรรมชาติ"
+                },
+                "network": {
+                    "label": "เครือข่าย"
+                },
+                "note": {
+                    "label": "หมายเหตุ"
+                },
+                "office": {
+                    "label": "ประเภท"
+                },
+                "oneway": {
+                    "label": "ทางเดียว"
+                },
+                "opening_hours": {
+                    "label": "เวลาทำการ"
+                },
+                "operator": {
+                    "label": "ผู้ให้บริการ"
+                },
+                "parking": {
+                    "options": {
+                        "rooftop": "ดาดฟ้า",
+                        "street_side": "ริมถนน"
+                    }
+                },
+                "parking/orientation": {
+                    "options": {
+                        "diagonal": "เป็นเส้นทแยงมุมกับถนน",
+                        "parallel": "ขนานกับถนน",
+                        "perpendicular": "ตั้งฉากกับถนน"
+                    }
+                },
+                "phone": {
+                    "label": "โทรศัพท์"
+                },
+                "place": {
+                    "label": "ประเภท"
+                },
+                "post": {
+                    "label": "ที่อยู่สำหรับส่งของ"
+                },
+                "railway": {
+                    "label": "ประเภท"
+                },
+                "religion": {
+                    "label": "ศาสนา"
+                },
+                "roof/colour": {
+                    "label": "สีหลังคา"
+                },
+                "seamark/beacon_lateral/category": {
+                    "options": {
+                        "waterway_left": "เส้นทางน้ำด้านซ้าย",
+                        "waterway_right": "เส้นทางน้ำด้านขวา"
+                    }
+                },
+                "seamark/buoy_lateral/category": {
+                    "options": {
+                        "waterway_left": "เส้นทางน้ำด้านซ้าย",
+                        "waterway_right": "เส้นทางน้ำด้านขวา"
+                    }
+                },
+                "source": {
+                    "label": "แหล่งที่มา"
+                },
+                "sport": {
+                    "label": "กีฬา"
+                },
+                "structure": {
+                    "options": {
+                        "bridge": "สะพาน"
+                    }
+                },
+                "surface": {
+                    "label": "พื้นผิว",
+                    "options": {
+                        "concrete": "คอนกรีต",
+                        "paved": "ปรับผิว",
+                        "unpaved": "ไม่ปรับผิว"
+                    }
+                },
+                "tourism": {
+                    "label": "ประเภท"
+                },
+                "vehicles": {
+                    "options": {
+                        "bus": "ระประจำทาง"
+                    }
+                },
+                "water_point": {
+                    "label": "จุดเติมน้ำดื่ม"
+                },
+                "water_source": {
+                    "label": "แหล่งน้ำ"
+                },
+                "water_volume": {
+                    "label": "ปริมาณน้ำสำรอง (ลูกบาศก์เมตร)"
+                },
+                "website": {
+                    "label": "เว็บไซต์"
+                },
+                "wikipedia": {
+                    "label": "วิกิพีเดีย"
                 }
             },
             "presets": {
+                "address": {
+                    "name": "ที่อยู่"
+                },
+                "aeroway/aerodrome": {
+                    "name": "สนามบิน"
+                },
+                "amenity/atm": {
+                    "name": "เครื่องรับจ่ายเงินอัตโนมัติ",
+                    "aliases": "ตู้เอทีเอ็ม"
+                },
+                "amenity/bank": {
+                    "name": "ธนาคาร"
+                },
+                "amenity/bar": {
+                    "name": "บาร์"
+                },
+                "amenity/bench": {
+                    "name": "ม้านั่ง"
+                },
+                "amenity/bicycle_parking": {
+                    "name": "ที่จอดจักรยาน"
+                },
+                "amenity/bicycle_rental": {
+                    "name": "เช่าจักรยาน"
+                },
+                "amenity/bus_station": {
+                    "name": "สถานี/อู่รถประจำทาง"
+                },
+                "amenity/cafe": {
+                    "name": "คาเฟ่"
+                },
+                "amenity/cinema": {
+                    "name": "โรงภาพยนตร์"
+                },
+                "amenity/drinking_water": {
+                    "name": "น้ำดื่ม"
+                },
+                "amenity/fast_food": {
+                    "name": "ฟาสต์ฟู้ด"
+                },
+                "amenity/fire_station": {
+                    "name": "สถานีดับเพลิง"
+                },
+                "amenity/fuel": {
+                    "name": "สถานีบริการน้ำมัน"
+                },
+                "amenity/grave_yard": {
+                    "name": "สุสาน"
+                },
+                "amenity/hospital": {
+                    "name": "พื้นที่โรงพยาบาล"
+                },
+                "amenity/ice_cream": {
+                    "name": "ร้านไอศกรีม"
+                },
+                "amenity/library": {
+                    "name": "ห้องสมุด"
+                },
+                "amenity/love_hotel": {
+                    "name": "ม่านรูด"
+                },
+                "amenity/parking": {
+                    "name": "ลานจอดรถ"
+                },
+                "amenity/parking/street-side": {
+                    "name": "ที่จอดรถริมถนน"
+                },
+                "amenity/pharmacy": {
+                    "name": "เคาน์เตอร์เภสัชกร"
+                },
+                "amenity/police": {
+                    "name": "ตำรวจ"
+                },
+                "amenity/post_box": {
+                    "name": "ตู้ไปรษณีย์"
+                },
+                "amenity/post_office": {
+                    "name": "สำนักงานไปรษณีย์"
+                },
+                "amenity/pub": {
+                    "name": "ผับ"
+                },
+                "amenity/restaurant": {
+                    "name": "ร้านอาหาร"
+                },
+                "amenity/school": {
+                    "name": "พื้นที่โรงเรียน"
+                },
+                "amenity/telephone": {
+                    "name": "โทรศัพท์"
+                },
+                "amenity/toilets": {
+                    "name": "ห้องน้ำ"
+                },
+                "amenity/townhall": {
+                    "name": "ศาลากลาง"
+                },
+                "amenity/university": {
+                    "name": "พื้นที่มหาวิทยาลัย"
+                },
+                "amenity/water_point": {
+                    "name": "น้ำดื่มสำหรับรถบ้าน"
+                },
+                "amenity/watering_place": {
+                    "name": "น้ำสำหรับสัตว์"
+                },
                 "area": {
                     "name": "พื้นที่"
+                },
+                "attraction/water_slide": {
+                    "name": "สไลด์น้ำ"
+                },
+                "bridge/support": {
+                    "name": "โครงสร้างสนับสนุนสะพาน"
+                },
+                "bridge/support/pier": {
+                    "name": "สะพานลอยน้ำ"
+                },
+                "building": {
+                    "name": "อาคาร"
+                },
+                "building/apartments": {
+                    "name": "อาคารที่อยู่อาศัย",
+                    "aliases": "คอนโดมิเนียม\nอะพาร์ตเมนท์"
+                },
+                "building/bungalow": {
+                    "name": "บังกะโล"
+                },
+                "building/cathedral": {
+                    "name": "อาคารมหาวิหาร"
+                },
+                "building/chapel": {
+                    "name": "อาคารโบสถ์เล็ก"
+                },
+                "building/church": {
+                    "name": "อาคารโบสถ์"
+                },
+                "building/civic": {
+                    "name": "อาคารราชการ"
+                },
+                "building/college": {
+                    "name": "อาคารสถานที่การศึกษา"
+                },
+                "building/commercial": {
+                    "name": "อาคารพาณิชย์"
+                },
+                "building/construction": {
+                    "name": "อาคารกำลังก่อสร้าง"
+                },
+                "building/detached": {
+                    "name": "บ้านเดี่ยว"
+                },
+                "building/greenhouse": {
+                    "name": "เรือนกระจก"
+                },
+                "building/hangar": {
+                    "name": "โรงเก็บเครื่องบิน"
+                },
+                "building/hospital": {
+                    "name": "อาคารพยาบาล",
+                    "aliases": "อาคารสาธารนสุข\nอาคารทางการแพทย์"
+                },
+                "building/hotel": {
+                    "name": "อาคารโรงแรม",
+                    "aliases": "ตึกโรงแรม"
+                },
+                "building/house": {
+                    "name": "บ้าน"
+                },
+                "building/hut": {
+                    "name": "กระท่อม"
+                },
+                "building/industrial": {
+                    "name": "อาคารอุตสาหกรรม"
+                },
+                "building/kindergarten": {
+                    "name": "อาคารโรงเรียนอนุบาล"
+                },
+                "building/manufacture": {
+                    "name": "อาคารผลิตสินค้าอุตสาหกรรม"
+                },
+                "building/mosque": {
+                    "name": "อาคารสุเหร่า",
+                    "aliases": "อาคารมัสยิด"
+                },
+                "building/office": {
+                    "name": "อาคารออฟฟิศ",
+                    "aliases": "อาคารสำนักงาน"
+                },
+                "building/outbuilding": {
+                    "name": "สิ่งปลูกสร้างด้านนอก",
+                    "aliases": "เรือนนอก\nตึกนอก"
+                },
+                "building/pavilion": {
+                    "name": "อาคารแสดงสินค้า",
+                    "aliases": "อาคารพลับพลา\nอาคารศาลา"
+                },
+                "building/public": {
+                    "name": "อาคารสาธารนะ"
+                },
+                "building/residential": {
+                    "name": "อาคารที่อยู่อาศัย"
+                },
+                "building/retail": {
+                    "name": "อาคารขายปลีก"
+                },
+                "building/roof": {
+                    "name": "หลังคา"
+                },
+                "building/ruins": {
+                    "name": "สถานที่ปรักหักพัง"
+                },
+                "building/school": {
+                    "name": "อาคารโรงเรียน"
+                },
+                "building/semidetached_house": {
+                    "name": "บ้านแฝด"
+                },
+                "building/service": {
+                    "name": "อาคารบริการ"
+                },
+                "building/stadium": {
+                    "name": "อาคารสนามกีฬา"
+                },
+                "building/synagogue": {
+                    "name": "โบสถ์ของศาสนายิว"
+                },
+                "building/temple": {
+                    "name": "อาคารวัด",
+                    "aliases": "อาคารโบสถ์"
+                },
+                "building/terrace": {
+                    "name": "บ้านแดว"
+                },
+                "building/train_station": {
+                    "name": "อาคารสถานทีรถไฟ"
+                },
+                "building/transportation": {
+                    "name": "อาคารสถานีขนส่ง"
+                },
+                "building/university": {
+                    "name": "อาคารมหาวิทยาลัย",
+                    "aliases": "อาคารอุดมศึกษา"
+                },
+                "building/warehouse": {
+                    "name": "คลังสินค้า",
+                    "aliases": "โกดัง"
+                },
+                "building_part": {
+                    "name": "ส่วนอาคาร"
+                },
+                "building_point": {
+                    "name": "อาคาร",
+                    "aliases": "ตึก"
+                },
+                "craft/electronics_repair": {
+                    "name": "ร้านซ่อมอุปกรณ์ไฟฟ้า"
+                },
+                "craft/roofer": {
+                    "name": "คนทำหลังคา"
+                },
+                "demolished/building": {
+                    "name": "อาคารเพิ่งถูกรื้อถอน"
+                },
+                "emergency/water_reservoir": {
+                    "name": "อ่างเก็บน้ำฉุกเฉิน"
+                },
+                "emergency/water_reservoir_covered": {
+                    "name": "อ่างเก็บน้ำฉุกเฉิน (ใต้ดิน)"
+                },
+                "emergency/water_tank": {
+                    "name": "แท้งค์เก็บน้ำฉุกเฉิน"
+                },
+                "entrance": {
+                    "name": "ทางเข้า / ทางออก"
+                },
+                "highway/bus_stop": {
+                    "name": "ป้ายรถประจำทาง",
+                    "aliases": "ป้ายรถเมล์"
+                },
+                "highway/footway/sidewalk": {
+                    "name": "ทางเท้า",
+                    "aliases": "ทางเดิน"
+                },
+                "highway/pedestrian_line": {
+                    "name": "ถนนคนเดิน"
+                },
+                "highway/residential": {
+                    "name": "ถนนชุมชน"
+                },
+                "highway/road/bridge": {
+                    "name": "สะพานถนนไม่ทราบประเภท"
+                },
+                "highway/street_lamp": {
+                    "name": "ไฟถนน"
+                },
+                "highway/track": {
+                    "name": "ทางเกวียน"
+                },
+                "historic/building": {
+                    "name": "อาคารทางประวัติศาสตร์"
+                },
+                "historic/manor": {
+                    "name": "คฤหาสน์"
+                },
+                "landuse/commercial": {
+                    "name": "พื้นที่เชิงพาณิชย์"
+                },
+                "landuse/greenhouse_horticulture": {
+                    "name": "พืชสวนเรือนกระจก"
+                },
+                "landuse/industrial": {
+                    "name": "พื้นที่อุตสาหกรรม"
+                },
+                "landuse/industrial/slaughterhouse": {
+                    "name": "โรงฆ่าสัตว์"
+                },
+                "landuse/residential": {
+                    "name": "พื้นที่อยู่อาศัย"
+                },
+                "leisure/water_park": {
+                    "name": "สวนน้ำ"
                 },
                 "line": {
                     "name": "เส้น"
                 },
+                "man_made/breakwater": {
+                    "name": "กำแพงกันคลื่น"
+                },
+                "man_made/bridge": {
+                    "name": "พื้นที่สะพาน"
+                },
+                "man_made/lighthouse": {
+                    "name": "ประภาคาร"
+                },
+                "man_made/manhole/water": {
+                    "name": "บ่อตรวจการประปา",
+                    "aliases": "ช่องขึ้นลงการประปา"
+                },
+                "man_made/storage_tank/water": {
+                    "name": "ถังเก็บน้ำ"
+                },
+                "man_made/wastewater_plant": {
+                    "name": "โรงบำบัดน้ำเสีย"
+                },
+                "man_made/water_tap": {
+                    "name": "ก๊อกน้ำ"
+                },
+                "man_made/water_tower": {
+                    "name": "หอแทงค์เก็บน้ำ"
+                },
+                "man_made/water_well": {
+                    "name": "บ่อบาดาล"
+                },
+                "man_made/water_works": {
+                    "name": "การประปา"
+                },
+                "man_made/watermill": {
+                    "name": "โรงสีพลังน้ำ"
+                },
+                "natural/water": {
+                    "name": "น้ำ"
+                },
+                "natural/water/wastewater": {
+                    "name": "อ่างเก็บน้ำเสีย"
+                },
+                "office/water_utility": {
+                    "name": "สำนักงานการประปา"
+                },
+                "playground/bridge": {
+                    "name": "สะพานเด็กเล่น"
+                },
+                "playground/water": {
+                    "name": "ปั๊มป์น้ำเด็กเล่น"
+                },
                 "point": {
                     "name": "จุด"
+                },
+                "power/generator/method/photovoltaic/location/roof": {
+                    "name": "แผงโซลาร์ติดหลังคา"
+                },
+                "power/generator/source/hydro": {
+                    "name": "กังหันน้ำ"
+                },
+                "power/tower": {
+                    "name": "เสาไฟฟ้าแรงสูง"
+                },
+                "public_transport/platform/bus_point": {
+                    "name": "ป้ายรถเมล์ยกพื้น",
+                    "aliases": "ป้ายรถประจำทางยกพื้น"
+                },
+                "public_transport/station_bus": {
+                    "name": "สถานี/อู่รถประจำทาง"
+                },
+                "public_transport/stop_position_bus": {
+                    "name": "ตำแหน่งจอดรถประจำทาง"
+                },
+                "shop": {
+                    "name": "ร้านค้า"
+                },
+                "shop/agrarian": {
+                    "name": "ร้านอุปกรณ์เกษตร"
+                },
+                "shop/anime": {
+                    "name": "ร้านหนังสือการ์ตูน"
+                },
+                "shop/beauty": {
+                    "name": "ร้านเสริมสวย"
+                },
+                "shop/bicycle": {
+                    "name": "ร้านจักรยาน"
+                },
+                "shop/candles": {
+                    "name": "ร้านเทียน"
+                },
+                "shop/cannabis": {
+                    "name": "ร้านกัญชา"
+                },
+                "shop/car_repair": {
+                    "name": "อู่ซ่อมรถ"
+                },
+                "shop/doors": {
+                    "name": "ร้านขายประตู"
+                },
+                "shop/fishing": {
+                    "name": "ร้านขายอุปกรณ์ตกปลา"
+                },
+                "shop/frame": {
+                    "name": "ร้านทำกรอบรูป"
+                },
+                "shop/fuel": {
+                    "name": "ร้านขายเชื้อเพลิง"
+                },
+                "shop/gift": {
+                    "name": "ร้านของฝาก"
+                },
+                "shop/houseware": {
+                    "name": "ร้านขายของใช้ในบ้าน"
+                },
+                "shop/hunting": {
+                    "name": "ร้านอุปกรณ์ล่าสัตว์"
+                },
+                "shop/lottery": {
+                    "name": "ร้านขายหวย"
+                },
+                "shop/massage": {
+                    "name": "ร้านนวด"
+                },
+                "shop/model": {
+                    "name": "ร้านโมเดล"
+                },
+                "shop/motorcycle_repair": {
+                    "name": "ร้านซ่อมจักรยานยนต์"
+                },
+                "shop/pastry": {
+                    "name": "ร้านขนมอบ"
+                },
+                "shop/rental": {
+                    "name": "ร้านเช่า"
+                },
+                "shop/repair": {
+                    "name": "ร้านซ่อม"
+                },
+                "shop/scuba_diving": {
+                    "name": "ร้านอุปกรณ์ดำน้ำ"
+                },
+                "shop/seafood": {
+                    "name": "ร้านอาหารทะเล"
+                },
+                "shop/shoe_repair": {
+                    "name": "ร้านซ่อมรองเท้า"
+                },
+                "shop/spices": {
+                    "name": "ร้านเครื่องเทศ"
+                },
+                "shop/tiles": {
+                    "name": "ร้านกระเบื้อง"
+                },
+                "shop/tobacco": {
+                    "name": "ร้านยาสูบ"
+                },
+                "shop/trophy": {
+                    "name": "ร้านถ้วยรางวัล"
+                },
+                "shop/vacant": {
+                    "name": "ร้านว่าง"
+                },
+                "shop/watches": {
+                    "name": "ร้านนาฬิกา"
+                },
+                "shop/water": {
+                    "name": "ร้านน้ำดื่ม"
+                },
+                "shop/water_sports": {
+                    "name": "ร้านกีฬาทางน้ำ/ว่ายน้ำ"
+                },
+                "shop/weapons": {
+                    "name": "ร้านอาวุธ"
+                },
+                "shop/wigs": {
+                    "name": "ร้านวิกผม",
+                    "aliases": "ร้านผมปลอม"
+                },
+                "shop/wine": {
+                    "name": "ร้านไวน์"
+                },
+                "shop/yes": {
+                    "name": "ร้าน (ไม่ระบุประเภท)"
+                },
+                "tourism/artwork/bust": {
+                    "name": "รูปสลักครึ่งตัว"
+                },
+                "tourism/attraction": {
+                    "name": "สถานที่ท่องเที่ยว"
+                },
+                "tourism/guest_house": {
+                    "name": "เกสต์เฮาส์"
+                },
+                "tourism/hotel": {
+                    "name": "โรงแรม"
+                },
+                "tourism/museum": {
+                    "name": "พิพิธพัณฑ์"
+                },
+                "tourism/wilderness_hut": {
+                    "name": "กระท่อมกลางป่า"
+                },
+                "type/route/bus": {
+                    "name": "เส้นทางรถประจำทาง"
+                },
+                "type/route/foot": {
+                    "name": "เส้นทางเดิน"
+                },
+                "type/waterway": {
+                    "name": "ทางน้ำ"
+                },
+                "waterway": {
+                    "name": "คุณสมบัติของทางน้ำ"
+                },
+                "waterway/canal": {
+                    "name": "คลอง"
+                },
+                "waterway/dam": {
+                    "name": "เขื่อน"
                 },
                 "waterway/drain": {
                     "name": "ลำราง/ทางระบายน้ำ"
                 },
+                "waterway/milestone": {
+                    "name": "หลักหินบอกระยะทางน้ำ"
+                },
                 "waterway/river": {
                     "name": "แม่น้ำ"
+                },
+                "waterway/water_point": {
+                    "name": "น้ำดื่มสำหรับเรือ"
                 },
                 "waterway/waterfall": {
                     "name": "น้ำตก"

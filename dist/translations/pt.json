@@ -125,7 +125,6 @@
                 "activity": {
                     "label": "Atividade",
                     "options": {
-                        "Ski": "Esqui",
                         "bicycle": "Ciclismo",
                         "hiking": "Caminhada",
                         "horse": "Equitação",
@@ -420,6 +419,9 @@
                     "label": "Material",
                     "terms": "material,matéria-prima"
                 },
+                "building/part": {
+                    "label": "Parte de edifício"
+                },
                 "building_area": {
                     "label": "Edifício",
                     "terms": "edifício,edificação,prédio,casa,residência,construção,construções,imóvel,imóveis"
@@ -504,7 +506,7 @@
                         "manor": "Solar",
                         "palace": "Palácio",
                         "shiro": "Shiro",
-                        "stately": "Château"
+                        "stately": "Palacete"
                     }
                 },
                 "changing_table": {
@@ -2328,10 +2330,6 @@
                     },
                     "placeholder": "Sim, não, apenas",
                     "terms": "segunda mão"
-                },
-                "sector/name": {
-                    "label": "Nome",
-                    "placeholder": "Nome dedicado (se tiver)"
                 },
                 "segregated": {
                     "label": "Separação ciclistas/pedestres"
@@ -5437,7 +5435,7 @@
                 },
                 "historic/manor": {
                     "name": "Solar",
-                    "terms": "manor house,palacete,mansão,mansões"
+                    "terms": "manor house,mansão,mansões"
                 },
                 "historic/memorial": {
                     "name": "Memorial",
@@ -6097,9 +6095,6 @@
                 "line": {
                     "name": "Linha",
                     "terms": "linha,multilinha,multi-linha,polilinha,poli-linha,múltipla"
-                },
-                "man_made": {
-                    "name": "Estrutura artificial"
                 },
                 "man_made/adit": {
                     "name": "Galeria de acesso a mina",
@@ -7456,10 +7451,6 @@
                     "name": "Loja de animé",
                     "terms": "manga,anime,mangá,bd,japão"
                 },
-                "shop/antiques": {
-                    "name": "Loja de antiguidades",
-                    "terms": "antiques shop,antiguidade,antiguidades,antigo,relíquia,relíquias"
-                },
                 "shop/appliance": {
                     "name": "Loja de eletrodomésticos \"brancos\"",
                     "terms": "eletrodoméstico,electrodoméstico,frigorífico,máquinas,fogão,fogões,ar condicionado,aparelhos"
@@ -7515,10 +7506,6 @@
                 "shop/bookmaker": {
                     "name": "Casa de apostas",
                     "terms": "bookmaker,bolsa de apostas,lotaria,totoloto,totobola,euromilhões,sorte,apostas desportivas"
-                },
-                "shop/books": {
-                    "name": "Livraria",
-                    "terms": "book store,loja de livros,livro,livros,livreiro"
                 },
                 "shop/boutique": {
                     "name": "Boutique"
@@ -7639,10 +7626,6 @@
                     "name": "Loja de cosmética",
                     "terms": "cosmetics,cosmética,cosméticos,produtos de beleza,beleza,belesa"
                 },
-                "shop/country_store": {
-                    "name": "Loja para proprietários rurais",
-                    "terms": "campo,caça,pesca,cavalo,cavalos,jardinagem,hipismo,equestre,horta,maquinaria"
-                },
                 "shop/craft": {
                     "name": "Loja de acessórios para artes manuais",
                     "terms": "artesanato,artezanato,artigos locais,pintura,desenho,carpintaria,olaria"
@@ -7654,10 +7637,6 @@
                 "shop/dairy": {
                     "name": "Loja de laticínios",
                     "terms": "dairy,produtos lácteos,leite,queijo,manteiga,requeijão"
-                },
-                "shop/deli": {
-                    "name": "Loja gourmet",
-                    "terms": "deli,gourmet,comida,mercearia,dop,produtos de qualidade,origem protegida"
                 },
                 "shop/department_store": {
                     "name": "Grande armazém",
@@ -7782,10 +7761,6 @@
                     "name": "Loja de ferragens",
                     "terms": "hardware,ferragens,pregos,martelos,chaves,parafusos,anilhas,berbequins"
                 },
-                "shop/health_food": {
-                    "name": "Loja de comida saudável",
-                    "terms": "alimentos naturais,comida saudável,vitaminas,suplementos alimentares,vegetariano,vegetariana,vegan,celeiro,orgânicos,orgânica,biológica,biológico,vegano"
-                },
                 "shop/hearing_aids": {
                     "name": "Loja de aparelhos auditivos",
                     "terms": "hearing,auditivos,audição,ouvidos"
@@ -7898,10 +7873,6 @@
                     "name": "Loja de instrumentos musicais",
                     "terms": "guitarra,piano,violino,bateria,som,música,instrumento,baixo"
                 },
-                "shop/newsagent": {
-                    "name": "Loja de jornais / revistas",
-                    "terms": "newspaper,magazine,jornal,revista"
-                },
                 "shop/nutrition_supplements": {
                     "name": "Loja de suplementos alimentares",
                     "terms": "nutrição,vitaminas,proteínas,minerais,fitness,musculação,peso,saúde"
@@ -7929,10 +7900,6 @@
                 "shop/pastry": {
                     "name": "Pastelaria",
                     "terms": "pastelaria,bolos,pastel,pastéis"
-                },
-                "shop/pawnbroker": {
-                    "name": "Casa de penhoras",
-                    "terms": "pawn shop,penhores,penhoras,penhorar"
                 },
                 "shop/perfumery": {
                     "name": "Perfumaria",
@@ -7989,10 +7956,6 @@
                 "shop/seafood": {
                     "name": "Peixaria",
                     "terms": "peixe,seafood,camarão,lagosta,caranguejo,ameijoas,mexilhões,peixes,polvo,lulas,peixe fresco,congelados,sardinhas,carapau"
-                },
-                "shop/second_hand": {
-                    "name": "Loja de produtos em segunda mão",
-                    "terms": "consignment,thrift store,loja de consignação,2ª mão,usados,usado,segunda mão,consignação,roupa usada,2.ª mão"
                 },
                 "shop/sewing": {
                     "name": "Retrosaria",
@@ -8092,10 +8055,6 @@
                 "shop/vacuum_cleaner": {
                     "name": "Loja de aspiradores",
                     "terms": "vacuum cleaner,aspirador,aspiradores,aspirar"
-                },
-                "shop/variety_store": {
-                    "name": "Loja de variedades",
-                    "terms": "loja dos 300,loja dos trezentos,bijuterias,adereços,quinquilharia"
                 },
                 "shop/video": {
                     "name": "Videoclube",

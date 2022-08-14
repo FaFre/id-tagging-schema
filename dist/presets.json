@@ -224,7 +224,7 @@
         "tags": {
             "man_made": "*"
         },
-        "matchScore": 0.95,
+        "matchScore": 0.4,
         "searchable": false
     },
     "natural": {
@@ -4791,6 +4791,21 @@
             "value": "asian"
         }
     },
+    "amenity/restaurant/barbeque": {
+        "icon": "maki-restaurant-bbq",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "amenity": "restaurant",
+            "cuisine": "barbeque"
+        },
+        "reference": {
+            "key": "cuisine",
+            "value": "barbeque"
+        }
+    },
     "amenity/restaurant/chinese": {
         "icon": "maki-restaurant-noodle",
         "geometry": [
@@ -6872,6 +6887,23 @@
         },
         "searchable": false
     },
+    "barrier/yes": {
+        "icon": "maki-roadblock",
+        "geometry": [
+            "point",
+            "vertex",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "barrier": "yes"
+        },
+        "fields": [
+            "barrier"
+        ],
+        "searchable": false,
+        "matchScore": 0.5
+    },
     "barrier/block": {
         "icon": "fas-cube",
         "fields": [
@@ -7408,7 +7440,7 @@
         }
     },
     "barrier/toll_booth": {
-        "icon": "maki-roadblock",
+        "icon": "maki-toll",
         "fields": [
             "access",
             "building_area",
@@ -7487,6 +7519,24 @@
             "barrier": "wicket_gate"
         }
     },
+    "bench": {
+        "icon": "temaki-bench",
+        "fields": [
+            "{amenity/bench}"
+        ],
+        "moreFields": [
+            "{amenity/bench}"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "line"
+        ],
+        "tags": {
+            "bench": "yes"
+        },
+        "matchScore": 0.1
+    },
     "bin": {
         "icon": "maki-waste-basket",
         "geometry": [
@@ -7553,6 +7603,7 @@
     "building_part": {
         "icon": "maki-building",
         "fields": [
+            "building/part",
             "building/levels",
             "height",
             "building/material",
@@ -7633,6 +7684,17 @@
         "matchScore": 0.5,
         "searchable": false
     },
+    "building/outbuilding": {
+        "icon": "maki-building",
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "building": "outbuilding"
+        },
+        "matchScore": 0.5,
+        "searchable": false
+    },
     "building/train_station": {
         "icon": "maki-building",
         "geometry": [
@@ -7645,6 +7707,16 @@
         },
         "matchScore": 0.5,
         "searchable": false
+    },
+    "building/allotment_house": {
+        "icon": "maki-building",
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "building": "allotment_house"
+        },
+        "matchScore": 0.5
     },
     "building/apartments": {
         "icon": "maki-building",
@@ -8293,6 +8365,20 @@
         },
         "matchScore": 0.5
     },
+    "canoe": {
+        "icon": "temaki-canoe",
+        "fields": [
+            "access"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "canoe": "*"
+        },
+        "matchScore": 0.2
+    },
     "cemetery/grave": {
         "icon": "maki-cemetery",
         "fields": [
@@ -8313,7 +8399,7 @@
     "cemetery/sector": {
         "icon": "maki-cemetery",
         "fields": [
-            "sector/name",
+            "name",
             "ref_sector"
         ],
         "geometry": [
@@ -9082,6 +9168,22 @@
         "matchScore": 0.05,
         "searchable": false
     },
+    "drinking_water": {
+        "icon": "maki-drinking-water",
+        "fields": [
+            "{amenity/drinking_water}"
+        ],
+        "moreFields": [
+            "{amenity/drinking_water}"
+        ],
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "drinking_water": "yes"
+        },
+        "matchScore": 0.1
+    },
     "emergency/designated": {
         "fields": [
             "emergency_combo"
@@ -9371,6 +9473,7 @@
             "emergency": "lifeboat_station"
         },
         "addTags": {
+            "emergency": "lifeboat_station",
             "seamark:type": "rescue_station"
         }
     },
@@ -9613,9 +9716,6 @@
     "golf/bunker": {
         "icon": "maki-golf",
         "fields": [
-            "name"
-        ],
-        "moreFields": [
             "surface"
         ],
         "geometry": [
@@ -9623,10 +9723,6 @@
         ],
         "tags": {
             "golf": "bunker"
-        },
-        "addTags": {
-            "golf": "bunker",
-            "natural": "sand"
         }
     },
     "golf/cartpath": {
@@ -9700,7 +9796,6 @@
     "golf/fairway": {
         "icon": "maki-golf",
         "fields": [
-            "name",
             "surface"
         ],
         "geometry": [
@@ -9713,7 +9808,6 @@
     "golf/green": {
         "icon": "temaki-golf_green",
         "fields": [
-            "name",
             "surface"
         ],
         "geometry": [
@@ -9726,7 +9820,6 @@
     "golf/hole": {
         "icon": "temaki-golf_green",
         "fields": [
-            "name",
             "ref_golf_hole",
             "par",
             "handicap"
@@ -9740,9 +9833,7 @@
     },
     "golf/lateral_water_hazard": {
         "icon": "maki-golf",
-        "fields": [
-            "name"
-        ],
+        "fields": [],
         "geometry": [
             "area"
         ],
@@ -9790,7 +9881,6 @@
     "golf/rough": {
         "icon": "maki-golf",
         "fields": [
-            "name",
             "surface"
         ],
         "geometry": [
@@ -9803,7 +9893,7 @@
     "golf/tee": {
         "icon": "maki-golf",
         "fields": [
-            "name",
+            "tee",
             "surface"
         ],
         "geometry": [
@@ -9816,9 +9906,7 @@
     },
     "golf/water_hazard": {
         "icon": "maki-golf",
-        "fields": [
-            "name"
-        ],
+        "fields": [],
         "geometry": [
             "area"
         ],
@@ -9829,6 +9917,22 @@
             "golf": "water_hazard",
             "natural": "water"
         }
+    },
+    "harbour": {
+        "icon": "maki-harbor",
+        "fields": [
+            "{landuse/harbour}"
+        ],
+        "moreFields": [
+            "{landuse/harbour}"
+        ],
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "harbour": "*"
+        },
+        "matchScore": 0.5
     },
     "healthcare": {
         "icon": "maki-hospital",
@@ -9862,7 +9966,25 @@
         ],
         "tags": {
             "healthcare": "*"
-        }
+        },
+        "matchScore": 0.4
+    },
+    "healthcare/yes": {
+        "icon": "maki-hospital",
+        "fields": [
+            "name",
+            "healthcare",
+            "{healthcare}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "healthcare": "yes"
+        },
+        "searchable": false,
+        "matchScore": 0.5
     },
     "healthcare/alternative": {
         "icon": "maki-hospital",
@@ -11060,6 +11182,7 @@
             "lit",
             "maxheight",
             "maxspeed/advisory",
+            "maxspeed/hgv",
             "maxweight_bridge",
             "maxwidth",
             "minspeed",
@@ -11332,6 +11455,7 @@
             "lit",
             "maxheight",
             "maxspeed/advisory",
+            "maxspeed/hgv",
             "maxweight_bridge",
             "maxwidth",
             "not/name",
@@ -11439,7 +11563,7 @@
         }
     },
     "highway/rest_area": {
-        "icon": "maki-car",
+        "icon": "maki-highway-rest-area",
         "fields": [
             "name",
             "operator",
@@ -11974,6 +12098,7 @@
             "lit",
             "maxheight",
             "maxspeed/advisory",
+            "maxspeed/hgv",
             "maxweight_bridge",
             "maxwidth",
             "minspeed",
@@ -11993,6 +12118,9 @@
         "icon": "maki-circle-stroked",
         "geometry": [
             "vertex"
+        ],
+        "fields": [
+            "turning_circle"
         ],
         "tags": {
             "highway": "turning_circle"
@@ -12041,6 +12169,25 @@
             "historic": "*"
         },
         "matchScore": 0.5
+    },
+    "historic/amenity": {
+        "icon": "temaki-ruins",
+        "fields": [
+            "{historic}"
+        ],
+        "moreFields": [
+            "{historic}"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "historic:amenity": "*"
+        },
+        "matchScore": 0.25
     },
     "historic/archaeological_site": {
         "icon": "temaki-ruins",
@@ -12201,6 +12348,22 @@
             "historic": "city_gate"
         }
     },
+    "historic/demolished": {
+        "icon": "fas-house-damage",
+        "fields": [
+            "{amenity}"
+        ],
+        "moreFields": [
+            "{amenity}"
+        ],
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "demolished:amenity": "*"
+        },
+        "matchScore": 0.25
+    },
     "historic/fort": {
         "icon": "maki-castle",
         "fields": [
@@ -12242,7 +12405,8 @@
             "material"
         ],
         "moreFields": [
-            "{historic}"
+            "{historic}",
+            "subject/wikidata"
         ],
         "geometry": [
             "point",
@@ -12543,6 +12707,23 @@
         "tags": {
             "indoor": "wall"
         }
+    },
+    "internet_access/yes": {
+        "icon": "fas-wifi",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "fields": [
+            "{internet_access/wlan}"
+        ],
+        "moreFields": [
+            "{internet_access/wlan}"
+        ],
+        "tags": {
+            "internet_access": "yes"
+        },
+        "matchScore": 0.25
     },
     "internet_access/wlan": {
         "icon": "fas-wifi",
@@ -14709,7 +14890,7 @@
         }
     },
     "leisure/pitch/four_square": {
-        "icon": "maki-pitch",
+        "icon": "fas-border-all",
         "geometry": [
             "area",
             "point"
@@ -14721,6 +14902,21 @@
         "reference": {
             "key": "sport",
             "value": "four_square"
+        }
+    },
+    "leisure/pitch/funnel_ball": {
+        "icon": "maki-pitch",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "leisure": "pitch",
+            "sport": "funnel_ball"
+        },
+        "reference": {
+            "key": "sport",
+            "value": "funnel_ball"
         }
     },
     "leisure/pitch/futsal": {
@@ -14736,6 +14932,21 @@
         "reference": {
             "key": "sport",
             "value": "futsal"
+        }
+    },
+    "leisure/pitch/gaga": {
+        "icon": "maki-pitch",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "leisure": "pitch",
+            "sport": "gaga"
+        },
+        "reference": {
+            "key": "sport",
+            "value": "gaga"
         }
     },
     "leisure/pitch/horseshoes": {
@@ -15192,6 +15403,21 @@
             "value": "climbing"
         }
     },
+    "leisure/sports_centre/horse_racing": {
+        "icon": "maki-racetrack-horse",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "leisure": "sports_centre",
+            "sport": "horse_racing"
+        },
+        "reference": {
+            "key": "sport",
+            "value": "horse_racing"
+        }
+    },
     "leisure/sports_centre/shooting": {
         "icon": "fas-crosshairs",
         "geometry": [
@@ -15347,7 +15573,7 @@
         }
     },
     "leisure/track/cycling": {
-        "icon": "fas-biking",
+        "icon": "maki-racetrack-cycling",
         "fields": [
             "name",
             "surface",
@@ -15371,7 +15597,7 @@
         }
     },
     "leisure/track/horse_racing": {
-        "icon": "maki-horse-riding",
+        "icon": "maki-racetrack-horse",
         "fields": [
             "name",
             "surface",
@@ -15395,7 +15621,7 @@
         }
     },
     "leisure/track/running": {
-        "icon": "maki-pitch",
+        "icon": "fas-running",
         "fields": [
             "name",
             "surface",
@@ -15490,6 +15716,25 @@
         "tags": {
             "man_made": "courtyard"
         },
+        "searchable": false
+    },
+    "man_made/yes": {
+        "icon": "temaki-storage_tank",
+        "fields": [
+            "name",
+            "man_made",
+            "{man_made}"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "man_made": "yes"
+        },
+        "matchScore": 0.5,
         "searchable": false
     },
     "man_made/adit": {
@@ -16633,7 +16878,7 @@
         }
     },
     "man_made/tower/observation": {
-        "icon": "temaki-tower",
+        "icon": "maki-observation-tower",
         "moreFields": [
             "{man_made/tower}",
             "opening_hours",
@@ -17200,7 +17445,7 @@
         }
     },
     "natural/hot_spring": {
-        "icon": "maki-water",
+        "icon": "maki-hot-spring",
         "fields": [
             "name",
             "intermittent"
@@ -17273,6 +17518,7 @@
     "natural/saddle": {
         "icon": "temaki-saddle",
         "fields": [
+            "name",
             "ele_node"
         ],
         "geometry": [
@@ -17884,7 +18130,8 @@
         ],
         "tags": {
             "office": "*"
-        }
+        },
+        "matchScore": 0.4
     },
     "office/administrative": {
         "icon": "maki-suitcase",
@@ -18860,6 +19107,26 @@
             "place": "village"
         }
     },
+    "playground/activitypanel": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "playground": "activitypanel"
+        }
+    },
+    "playground/aerialrotator": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "playground": "aerialrotator"
+        }
+    },
     "playground/balancebeam": {
         "icon": "temaki-balance_beam",
         "geometry": [
@@ -18890,6 +19157,22 @@
             "playground": "basketswing"
         }
     },
+    "playground/bridge": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point",
+            "line",
+            "area"
+        ],
+        "moreFields": [
+            "{playground}",
+            "length",
+            "width"
+        ],
+        "tags": {
+            "playground": "bridge"
+        }
+    },
     "playground/climbingframe": {
         "icon": "maki-playground",
         "geometry": [
@@ -18900,6 +19183,17 @@
             "playground": "climbingframe"
         }
     },
+    "playground/climbingwall": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "playground": "climbingwall"
+        }
+    },
     "playground/cushion": {
         "icon": "maki-playground",
         "geometry": [
@@ -18908,6 +19202,15 @@
         ],
         "tags": {
             "playground": "cushion"
+        }
+    },
+    "playground/funnel_ball": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "playground": "funnel_ball"
         }
     },
     "playground/hopscotch": {
@@ -18930,6 +19233,24 @@
         ],
         "tags": {
             "playground": "horizontal_bar"
+        }
+    },
+    "playground/map": {
+        "icon": "temaki-compass",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "fields": [
+            "subject/wikidata",
+            "surface"
+        ],
+        "moreFields": [
+            "colour",
+            "subject"
+        ],
+        "tags": {
+            "playground": "map"
         }
     },
     "playground/playhouse": {
@@ -18977,6 +19298,15 @@
             "playground": "seesaw"
         }
     },
+    "playground/sledding": {
+        "icon": "temaki-sledding",
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "playground": "sledding"
+        }
+    },
     "playground/slide": {
         "icon": "temaki-slide",
         "geometry": [
@@ -18986,6 +19316,16 @@
         ],
         "tags": {
             "playground": "slide"
+        }
+    },
+    "playground/splash_pad": {
+        "icon": "temaki-fountain",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "playground": "splash_pad"
         }
     },
     "playground/springy": {
@@ -19023,6 +19363,57 @@
         ],
         "tags": {
             "playground": "swing"
+        }
+    },
+    "playground/teenshelter": {
+        "icon": "maki-shelter",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "playground": "teenshelter"
+        }
+    },
+    "playground/tetherball": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "playground": "tetherball"
+        }
+    },
+    "playground/trampoline": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "playground": "trampoline"
+        }
+    },
+    "playground/tunnel_tube": {
+        "icon": "maki-playground",
+        "geometry": [
+            "point",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "playground": "tunnel_tube"
+        }
+    },
+    "playground/water": {
+        "icon": "temaki-water",
+        "geometry": [
+            "point",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "playground": "water"
         }
     },
     "playground/zipwire": {
@@ -19466,7 +19857,6 @@
         },
         "addTags": {
             "power": "plant",
-            "landuse": "industrial",
             "plant:source": "hydro",
             "plant:output:electricity": "*"
         },
@@ -21267,6 +21657,40 @@
         ],
         "tags": {}
     },
+    "religion": {
+        "icon": "maki-place-of-worship",
+        "fields": [
+            "{amenity/place_of_worship}"
+        ],
+        "moreFields": [
+            "{amenity/place_of_worship}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "religion": "*"
+        },
+        "matchScore": 0.15
+    },
+    "rental": {
+        "icon": "temaki-storage_rental",
+        "fields": [
+            "{building}"
+        ],
+        "moreFields": [
+            "{building}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "rental": "*"
+        },
+        "matchScore": 0.25
+    },
     "route/ferry": {
         "icon": "temaki-ferry",
         "geometry": [
@@ -21304,6 +21728,22 @@
         "tags": {
             "route": "ferry"
         }
+    },
+    "ruins": {
+        "icon": "temaki-ruins",
+        "fields": [
+            "{building/ruins}"
+        ],
+        "moreFields": [
+            "{building/ruins}"
+        ],
+        "geometry": [
+            "point"
+        ],
+        "tags": {
+            "ruins": "yes"
+        },
+        "matchScore": 0.1
     },
     "seamark/beacon_isolated_danger": {
         "fields": [
@@ -21394,6 +21834,24 @@
             "seamark:type": "mooring"
         }
     },
+    "shelter": {
+        "icon": "maki-shelter",
+        "fields": [
+            "{amenity/shelter}"
+        ],
+        "moreFields": [
+            "{amenity/shelter}"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {
+            "shelter": "yes"
+        },
+        "matchScore": 0.2
+    },
     "shop": {
         "icon": "maki-shop",
         "fields": [
@@ -21434,7 +21892,8 @@
         ],
         "tags": {
             "shop": "*"
-        }
+        },
+        "matchScore": 0.4
     },
     "shop/boutique": {
         "icon": "maki-shop",
@@ -22119,7 +22578,7 @@
         }
     },
     "shop/deli": {
-        "icon": "temaki-meat",
+        "icon": "fas-jar",
         "geometry": [
             "point",
             "area"
@@ -23427,6 +23886,549 @@
             "shop": "wine"
         }
     },
+    "sport/10pin": {
+        "icon": "temaki-bowling",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "10pin"
+        },
+        "matchScore": 0.9
+    },
+    "sport/9pin": {
+        "icon": "temaki-bowling",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "9pin"
+        },
+        "matchScore": 0.9
+    },
+    "sport/archery": {
+        "icon": "temaki-archery",
+        "fields": [
+            "name",
+            "archery",
+            "surface"
+        ],
+        "moreFields": [
+            "hazard"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "archery"
+        },
+        "matchScore": 0.9
+    },
+    "sport/athletics": {
+        "icon": "temaki-horizontal_bar",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "athletics"
+        },
+        "matchScore": 0.8
+    },
+    "sport/billiards": {
+        "icon": "fas-pool-8-ball",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "billiards"
+        },
+        "matchScore": 0.9
+    },
+    "sport/bmx": {
+        "icon": "fas-biking",
+        "fields": [
+            "surface",
+            "length",
+            "lanes",
+            "surface"
+        ],
+        "geometry": [
+            "line",
+            "area"
+        ],
+        "tags": {
+            "sport": "bmx"
+        },
+        "matchScore": 0.9
+    },
+    "sport/boxing": {
+        "icon": "fas-boxing-glove",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "boxing"
+        },
+        "matchScore": 0.9
+    },
+    "sport/canoe": {
+        "icon": "temaki-canoe",
+        "fields": [
+            "{sport/facilityTemplate}",
+            "club"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}",
+            "shop"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "canoe"
+        },
+        "matchScore": 0.9
+    },
+    "sport/climbing_adventure": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "tags": {
+            "sport": "climbing_adventure"
+        }
+    },
+    "sport/disc_golf": {
+        "icon": "temaki-disc_golf_basket",
+        "fields": [
+            "{leisure/disc_golf_course}"
+        ],
+        "moreFields": [
+            "{leisure/disc_golf_course}"
+        ],
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "sport": "disc_golf"
+        },
+        "matchScore": 0.9
+    },
+    "sport/facilityTemplate": {
+        "fields": [
+            "name",
+            "address",
+            "building_area",
+            "opening_hours",
+            "opening_hours/covid19",
+            "phone",
+            "website"
+        ],
+        "moreFields": [
+            "brand",
+            "charge_fee",
+            "email",
+            "fax",
+            "fee",
+            "internet_access",
+            "internet_access/fee",
+            "internet_access/ssid",
+            "operator",
+            "payment_multi"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "facilityTemplate"
+        },
+        "matchScore": 0.01
+    },
+    "sport/fishing": {
+        "icon": "temaki-fishing_pier",
+        "fields": [
+            "access_simple",
+            "fishing"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "fishing"
+        },
+        "matchScore": 0.9
+    },
+    "sport/fitness": {
+        "icon": "temaki-horizontal_bar",
+        "fields": [
+            "{leisure/fitness_station}"
+        ],
+        "moreFields": [
+            "{leisure/fitness_station}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "fitness"
+        },
+        "matchScore": 0.8
+    },
+    "sport/free_flying": {
+        "fields": [
+            "free_flying/site",
+            "free_flying/ground_handling",
+            "free_flying/official",
+            "free_flying/paragliding",
+            "free_flying/hanggliding",
+            "free_flying/rigid",
+            "free_flying/no-flight-time",
+            "free_flying/guest-guidelines"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "free_flying"
+        },
+        "matchScore": 0.9
+    },
+    "sport/golf": {
+        "icon": "maki-golf",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "golf"
+        },
+        "matchScore": 0.9
+    },
+    "sport/gymnastics": {
+        "icon": "temaki-balance_beam",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "gymnastics"
+        },
+        "matchScore": 0.8
+    },
+    "sport/hockey": {
+        "icon": "temaki-field_hockey",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "hockey"
+        },
+        "matchScore": 0.5
+    },
+    "sport/model_aerodrome": {
+        "icon": "temaki-planes_bidirectional",
+        "fields": [
+            "{sport/facilityTemplate}",
+            "club",
+            "model_aerodrome/electric",
+            "model_aerodrome/combustion",
+            "model_aerodrome/turbine",
+            "model_aerodrome/heli"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "model_aerodrome"
+        },
+        "matchScore": 0.9
+    },
+    "sport/motocross": {
+        "icon": "fas-motorcycle",
+        "fields": [
+            "surface",
+            "length",
+            "lanes",
+            "surface"
+        ],
+        "geometry": [
+            "line",
+            "area"
+        ],
+        "tags": {
+            "sport": "motocross"
+        },
+        "matchScore": 0.9
+    },
+    "sport/motor": {
+        "icon": "fas-cars",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "motor"
+        },
+        "matchScore": 0.9
+    },
+    "sport/multi": {
+        "icon": "fas-whistle",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "multi"
+        },
+        "matchScore": 0.8
+    },
+    "sport/orienteering": {
+        "icon": "fas-compass",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "sport": "orienteering"
+        },
+        "matchScore": 0.9
+    },
+    "sport/paintball": {
+        "icon": "fas-gun",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "paintball"
+        },
+        "matchScore": 0.9
+    },
+    "sport/rowing": {
+        "icon": "temaki-kayaking",
+        "fields": [
+            "{sport/facilityTemplate}",
+            "club"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}",
+            "shop"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "rowing"
+        },
+        "matchScore": 0.9
+    },
+    "sport/rugby": {
+        "icon": "maki-american-football",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "sport": "rugby"
+        },
+        "matchScore": 0.75
+    },
+    "sport/sailing": {
+        "icon": "temaki-sailing",
+        "fields": [
+            "{sport/facilityTemplate}",
+            "club"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}",
+            "shop"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "sailing"
+        },
+        "matchScore": 0.9
+    },
+    "sport/scuba_diving": {
+        "icon": "temaki-scuba_diving",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "scuba_diving"
+        },
+        "matchScore": 0.8
+    },
+    "sport/shooting": {
+        "icon": "fas-crosshairs",
+        "fields": [
+            "{sport/facilityTemplate}",
+            "shooting"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "shooting"
+        },
+        "matchScore": 0.9
+    },
+    "sport/skating": {
+        "icon": "temaki-inline_skating",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "skating"
+        },
+        "matchScore": 0.5
+    },
+    "sport/skiing": {
+        "icon": "maki-skiing",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "skiing"
+        },
+        "matchScore": 0.9
+    },
+    "sport/trampoline": {
+        "icon": "fas-chevron-circle-up",
+        "fields": [
+            "{sport/facilityTemplate}"
+        ],
+        "moreFields": [
+            "{sport/facilityTemplate}"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "sport": "trampoline"
+        },
+        "matchScore": 0.9
+    },
     "telecom/data_center": {
         "icon": "fas-server",
         "fields": [
@@ -23570,7 +24572,8 @@
         ],
         "moreFields": [
             "level",
-            "material"
+            "material",
+            "subject/wikidata"
         ],
         "geometry": [
             "point",
@@ -23762,7 +24765,7 @@
         "moreFields": [
             "backcountry",
             "dog",
-            "drinking_water",
+            "drinking_water_available",
             "email",
             "fax",
             "gnis/feature_id-US",
@@ -24015,7 +25018,8 @@
             "name",
             "operator",
             "board_type",
-            "direction"
+            "direction",
+            "subject/wikidata"
         ],
         "geometry": [
             "point",
@@ -24367,18 +25371,23 @@
         "fields": [
             "name",
             "operator",
-            "address",
             "building_area",
+            "access_simple",
             "fee",
             "payment_multi_fee",
             "charge_fee",
             "fireplace"
         ],
         "moreFields": [
+            "address",
+            "capacity",
+            "drinking_water_available",
             "gnis/feature_id-US",
             "internet_access",
             "internet_access/fee",
             "internet_access/ssid",
+            "kitchen",
+            "mattress",
             "reservation",
             "wheelchair"
         ],
@@ -24480,7 +25489,25 @@
         ],
         "tags": {
             "traffic_calming": "*"
-        }
+        },
+        "matchScore": 0.4
+    },
+    "traffic_calming/yes": {
+        "icon": "temaki-diamond",
+        "fields": [
+            "traffic_calming",
+            "{traffic_calming}"
+        ],
+        "geometry": [
+            "vertex",
+            "line",
+            "area"
+        ],
+        "tags": {
+            "traffic_calming": "yes"
+        },
+        "searchable": false,
+        "matchScore": 0.5
     },
     "traffic_calming/bump": {
         "icon": "temaki-speed_bump",
@@ -24581,6 +25608,20 @@
         "tags": {
             "traffic_calming": "island"
         }
+    },
+    "traffic_calming/mini_bumps": {
+        "icon": "temaki-speed_bump",
+        "tags": {
+            "traffic_calming": "mini_bumps"
+        },
+        "geometry": [
+            "vertex",
+            "line"
+        ],
+        "fields": [
+            "surface",
+            "direction_vertex"
+        ]
     },
     "traffic_calming/rumble_strip": {
         "icon": "temaki-rumble_strip",
@@ -25832,651 +26873,5 @@
         "tags": {
             "waterway": "weir"
         }
-    },
-    "sportTemplate": {
-        "fields": [
-            "name",
-            "address",
-            "building_area",
-            "opening_hours",
-            "opening_hours/covid19",
-            "phone",
-            "website"
-        ],
-        "moreFields": [
-            "brand",
-            "charge_fee",
-            "email",
-            "fax",
-            "fee",
-            "gnis/feature_id",
-            "internet_access",
-            "internet_access/fee",
-            "internet_access/ssid",
-            "operator",
-            "payment_multi"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "template"
-        },
-        "matchScore": 0.01
-    },
-    "sport/trampoline": {
-        "icon": "fas-chevron-circle-up",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "trampoline"
-        },
-        "matchScore": 0.9
-    },
-    "internet_access/yes": {
-        "icon": "fas-wifi",
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "fields": [
-            "{internet_access/wlan}"
-        ],
-        "moreFields": [
-            "{internet_access/wlan}"
-        ],
-        "tags": {
-            "internet_access": "yes"
-        },
-        "matchScore": 0.25
-    },
-    "sport/scuba_diving": {
-        "icon": "temaki-scuba_diving",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "scuba_diving"
-        },
-        "matchScore": 0.8
-    },
-    "sport/10pin": {
-        "icon": "temaki-bowling",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "10pin"
-        },
-        "matchScore": 0.9
-    },
-    "sport/9pin": {
-        "icon": "temaki-bowling",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "9pin"
-        },
-        "matchScore": 0.9
-    },
-    "sport/skiing": {
-        "icon": "maki-skiing",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "skiing"
-        },
-        "matchScore": 0.9
-    },
-    "sport/free_flying": {
-        "icon": "maki-skiing",
-        "fields": [
-            "free_flying:site",
-            "free_flying:ground_handling",
-            "free_flying:official",
-            "free_flying:paragliding",
-            "free_flying:hanggliding",
-            "free_flying:rigid",
-            "free_flying:no-flight-time",
-            "free_flying:guest-guidelines"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "free_flying"
-        },
-        "matchScore": 0.9
-    },
-    "sport/golf": {
-        "icon": "maki-golf",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "golf"
-        },
-        "matchScore": 0.9
-    },
-    "sport/fishing": {
-        "icon": "temaki-fishing_pier",
-        "fields": [
-            "access_simple",
-            "fishing"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "fishing"
-        },
-        "matchScore": 0.9
-    },
-    "sport/archery": {
-        "icon": "temaki-archery",
-        "fields": [
-            "name",
-            "archery",
-            "surface"
-        ],
-        "moreFields": [
-            "hazard"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "archery"
-        },
-        "matchScore": 0.9
-    },
-    "sport/shooting": {
-        "icon": "fas-crosshairs",
-        "fields": [
-            "{sportTemplate}",
-            "shooting"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "shooting"
-        },
-        "matchScore": 0.9
-    },
-    "sport/canoe": {
-        "icon": "temaki-canoe",
-        "fields": [
-            "{sportTemplate}",
-            "club"
-        ],
-        "moreFields": [
-            "{sportTemplate}",
-            "shop"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "canoe"
-        },
-        "matchScore": 0.9
-    },
-    "canoe": {
-        "icon": "temaki-canoe",
-        "fields": [
-            "access"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "canoe": "*"
-        },
-        "matchScore": 0.2
-    },
-    "sport/rowing": {
-        "icon": "temaki-kayaking",
-        "fields": [
-            "{sportTemplate}",
-            "club"
-        ],
-        "moreFields": [
-            "{sportTemplate}",
-            "shop"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "rowing"
-        },
-        "matchScore": 0.9
-    },
-    "sport/sailing": {
-        "icon": "temaki-sailing",
-        "fields": [
-            "{sportTemplate}",
-            "club"
-        ],
-        "moreFields": [
-            "{sportTemplate}",
-            "shop"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "sailing"
-        },
-        "matchScore": 0.9
-    },
-    "sport/paintball": {
-        "icon": "fas-gun",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "paintball"
-        },
-        "matchScore": 0.9
-    },
-    "sport/multi": {
-        "icon": "fas-futbol",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "multi"
-        },
-        "matchScore": 0.8
-    },
-    "sport/gymnastics": {
-        "icon": "temaki-balance_beam",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "gymnastics"
-        },
-        "matchScore": 0.8
-    },
-    "sport/athletics": {
-        "icon": "temaki-horizontal_bar",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "athletics"
-        },
-        "matchScore": 0.8
-    },
-    "sport/skating": {
-        "icon": "temaki-inline_skating",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "skating"
-        },
-        "matchScore": 0.5
-    },
-    "sport/hockey": {
-        "icon": "temaki-field_hockey",
-        "fields": [
-            "{sportTemplate}"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "hockey"
-        },
-        "matchScore": 0.5
-    },
-    "sport/model_aerodrome": {
-        "icon": "temaki-planes_bidirectional",
-        "fields": [
-            "{sportTemplate}",
-            "club",
-            "model_aerodrome:electric",
-            "model_aerodrome:combustion",
-            "model_aerodrome:turbine",
-            "model_aerodrome:heli"
-        ],
-        "moreFields": [
-            "{sportTemplate}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "model_aerodrome"
-        },
-        "matchScore": 0.9
-    },
-    "sport/disc_golf": {
-        "icon": "temaki-disc_golf_basket",
-        "fields": [
-            "{leisure/disc_golf_course}"
-        ],
-        "moreFields": [
-            "{leisure/disc_golf_course}"
-        ],
-        "geometry": [
-            "area",
-            "point"
-        ],
-        "tags": {
-            "sport": "disc_golf"
-        },
-        "matchScore": 0.9
-    },
-    "sport/fitness": {
-        "icon": "temaki-horizontal_bar",
-        "fields": [
-            "{leisure/fitness_station}"
-        ],
-        "moreFields": [
-            "{leisure/fitness_station}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "sport": "fitness"
-        },
-        "matchScore": 0.8
-    },
-    "sport/rugby": {
-        "icon": "maki-american-football",
-        "geometry": [
-            "area",
-            "point"
-        ],
-        "tags": {
-            "sport": "rugby"
-        },
-        "matchScore": 0.75
-    },
-    "sport/orienteering": {
-        "icon": "fas-compass",
-        "geometry": [
-            "area",
-            "point"
-        ],
-        "tags": {
-            "sport": "orienteering"
-        },
-        "matchScore": 0.9
-    },
-    "sport/motocross": {
-        "icon": "fas-motorcycle",
-        "fields": [
-            "surface",
-            "length",
-            "lanes",
-            "surface"
-        ],
-        "geometry": [
-            "line",
-            "area"
-        ],
-        "tags": {
-            "sport": "motocross"
-        },
-        "matchScore": 0.9
-    },
-    "sport/bmx": {
-        "icon": "fas-biking",
-        "fields": [
-            "surface",
-            "length",
-            "lanes",
-            "surface"
-        ],
-        "geometry": [
-            "line",
-            "area"
-        ],
-        "tags": {
-            "sport": "bmx"
-        },
-        "matchScore": 0.9
-    },
-    "shelter/yes": {
-        "icon": "maki-shelter",
-        "fields": [
-            "{amenity/shelter}"
-        ],
-        "moreFields": [
-            "{amenity/shelter}"
-        ],
-        "geometry": [
-            "point",
-            "vertex",
-            "area"
-        ],
-        "tags": {
-            "shelter": "yes"
-        },
-        "matchScore": 0.2
-    },
-    "bench/yes": {
-        "icon": "temaki-bench",
-        "fields": [
-            "{amenity/bench}"
-        ],
-        "moreFields": [
-            "{amenity/bench}"
-        ],
-        "geometry": [
-            "point",
-            "vertex",
-            "line"
-        ],
-        "tags": {
-            "bench": "yes"
-        },
-        "matchScore": 0.1
-    },
-    "historic/amenity": {
-        "icon": "temaki-ruins",
-        "fields": [
-            "{historic}"
-        ],
-        "moreFields": [
-            "{historic}"
-        ],
-        "geometry": [
-            "point",
-            "vertex",
-            "line",
-            "area"
-        ],
-        "tags": {
-            "historic:amenity": "*"
-        },
-        "matchScore": 0.25
-    },
-    "demolished/amenity": {
-        "icon": "fas-house-damage",
-        "fields": [
-            "{amenity}"
-        ],
-        "moreFields": [
-            "{amenity}"
-        ],
-        "geometry": [
-            "area"
-        ],
-        "tags": {
-            "demolished:amenity": "*"
-        },
-        "matchScore": 0.25
-    },
-    "religion": {
-        "icon": "maki-place-of-worship",
-        "fields": [
-            "{amenity/place_of_worship}"
-        ],
-        "moreFields": [
-            "{amenity/place_of_worship}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "religion": "*"
-        },
-        "matchScore": 0.15
-    },
-    "drinking_water": {
-        "icon": "maki-drinking-water",
-        "fields": [
-            "{amenity/drinking_water}"
-        ],
-        "moreFields": [
-            "{amenity/drinking_water}"
-        ],
-        "geometry": [
-            "point"
-        ],
-        "tags": {
-            "drinking_water": "*"
-        },
-        "matchScore": 0.1
-    },
-    "harbour": {
-        "icon": "maki-harbour",
-        "fields": [
-            "{landuse/harbour}"
-        ],
-        "moreFields": [
-            "{landuse/harbour}"
-        ],
-        "geometry": [
-            "point"
-        ],
-        "tags": {
-            "harbour": "*"
-        },
-        "matchScore": 0.5
-    },
-    "rental": {
-        "icon": "temaki-storage_rental",
-        "fields": [
-            "{building}"
-        ],
-        "moreFields": [
-            "{building}"
-        ],
-        "geometry": [
-            "point",
-            "area"
-        ],
-        "tags": {
-            "rental": "*"
-        },
-        "matchScore": 0.25
     }
 }

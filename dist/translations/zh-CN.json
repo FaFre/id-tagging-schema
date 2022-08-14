@@ -56,6 +56,7 @@
                     "label": "允许通行",
                     "options": {
                         "customers": {
+                            "description": "仅限于目的地的顾客",
                             "title": "顾客"
                         },
                         "designated": {
@@ -124,7 +125,6 @@
                 "activity": {
                     "label": "活动",
                     "options": {
-                        "Ski": "滑雪",
                         "bicycle": "骑行",
                         "hiking": "登山",
                         "horse": "骑马",
@@ -295,6 +295,9 @@
                 "barrier": {
                     "label": "类型"
                 },
+                "barrier_planter": {
+                    "label": "屏障"
+                },
                 "basin": {
                     "label": "类型"
                 },
@@ -314,7 +317,9 @@
                         "hair_removal": "除毛",
                         "nails": "美甲／修腳",
                         "skin_care": "皮肤护理",
-                        "tanning": "日光浴"
+                        "spa": "日间水疗",
+                        "tanning": "日光浴",
+                        "waxing": "上蜡"
                     }
                 },
                 "bench": {
@@ -413,12 +418,18 @@
                     "label": "材质",
                     "terms": "材质,材料,原料"
                 },
+                "building/part": {
+                    "label": "建筑物部分"
+                },
                 "building_area": {
                     "label": "建筑物",
                     "terms": "建筑物,建筑,结构,房子"
                 },
                 "bunker_type": {
                     "label": "类型"
+                },
+                "button_operated": {
+                    "label": "呼叫按钮"
                 },
                 "cables": {
                     "label": "电缆数量",
@@ -484,7 +495,14 @@
                     "label": "货币兑换"
                 },
                 "castle_type": {
-                    "label": "类型"
+                    "label": "类型",
+                    "options": {
+                        "castrum": "古罗马兵营要塞",
+                        "defensive": "防御性城堡",
+                        "fortress": "要塞",
+                        "hillfort": "山顶堡垒",
+                        "kremlin": "克里姆林宫"
+                    }
                 },
                 "changing_table": {
                     "label": "尿布台"
@@ -1684,7 +1702,11 @@
                     "label": "标准杆",
                     "placeholder": "3, 4, 5..."
                 },
+                "parcel_dropoff": {
+                    "label": "可投递"
+                },
                 "parcel_pickup": {
+                    "label": "可取件",
                     "options": {
                         "no": "否",
                         "undefined": "假定为是",
@@ -1934,6 +1956,7 @@
                 "recycling_accepts": {
                     "label": "接受",
                     "options": {
+                        "batteries": "电池",
                         "scrap_metal": "废金属"
                     }
                 },
@@ -2180,7 +2203,7 @@
                     "options": {
                         "alley": "巷",
                         "drive-through": "免下车",
-                        "driveway": "私家车道",
+                        "driveway": "车道",
                         "emergency_access": "消防通道",
                         "parking_aisle": "停车场通道"
                     }
@@ -2193,8 +2216,8 @@
                     "options": {
                         "crossover": "渡线",
                         "siding": "侧线",
-                        "spur": "短途支线",
-                        "yard": "站场线路"
+                        "spur": "岔线",
+                        "yard": "站线"
                     },
                     "terms": "服务类型"
                 },
@@ -2477,6 +2500,9 @@
                 },
                 "target": {
                     "label": "目标国"
+                },
+                "tee": {
+                    "label": "发球区颜色/类型"
                 },
                 "telecom": {
                     "label": "类型"
@@ -3309,6 +3335,10 @@
                 },
                 "amenity/nursing_home": {
                     "name": "疗养院"
+                },
+                "amenity/parcel_locker": {
+                    "name": "快递柜",
+                    "terms": "快递柜,包裹,柜"
                 },
                 "amenity/parking": {
                     "name": "停车场",
@@ -4873,7 +4903,7 @@
                     "terms": "免下车,免下车餐馆,免下车银行"
                 },
                 "highway/service/driveway": {
-                    "name": "私家车道",
+                    "name": "车道",
                     "terms": "车道;私家;私人;车库"
                 },
                 "highway/service/emergency_access": {
@@ -5118,8 +5148,8 @@
                     "terms": "人工林,森林,树林,林业,木材,树木,施业林,经营林,砍伐"
                 },
                 "landuse/garages": {
-                    "name": "车库土地利用",
-                    "terms": "车库土地利用"
+                    "name": "车库用地",
+                    "terms": "车库土地利用,车库区"
                 },
                 "landuse/grass": {
                     "name": "草坪",
@@ -5169,6 +5199,12 @@
                     "name": "军营",
                     "terms": "军营,虎帐,兵营,军队,部队,步兵,驻扎,营房"
                 },
+                "landuse/military/base": {
+                    "name": "军事基地"
+                },
+                "landuse/military/base/navy": {
+                    "name": "军港"
+                },
                 "landuse/military/danger_area": {
                     "name": "军事危险区域",
                     "terms": "危险区"
@@ -5184,8 +5220,8 @@
                     "name": "军事训练场"
                 },
                 "landuse/orchard": {
-                    "name": "果园",
-                    "terms": "果园"
+                    "name": "园地",
+                    "terms": "园地,茶,果园"
                 },
                 "landuse/plant_nursery": {
                     "name": "苗圃",
@@ -5224,6 +5260,9 @@
                 "landuse/retail": {
                     "name": "零售区",
                     "terms": "零售场所,购物区,商业区,商业用地"
+                },
+                "landuse/salt_pond": {
+                    "name": "盐蒸发池"
                 },
                 "landuse/vineyard": {
                     "name": "葡萄园",
@@ -5433,6 +5472,10 @@
                 "leisure/pitch/field_hockey": {
                     "name": "曲棍球场地"
                 },
+                "leisure/pitch/futsal": {
+                    "name": "五人制足球场",
+                    "terms": "足球"
+                },
                 "leisure/pitch/horseshoes": {
                     "name": "掷马蹄铁场地"
                 },
@@ -5560,9 +5603,6 @@
                 "line": {
                     "name": "线",
                     "terms": "线"
-                },
-                "man_made": {
-                    "name": "人造要素"
                 },
                 "man_made/adit": {
                     "name": "坑道入口",
@@ -6029,6 +6069,42 @@
                 "natural/wetland": {
                     "name": "湿地",
                     "terms": "湿地"
+                },
+                "natural/wetland/bog": {
+                    "name": "酸性泥炭沼泽",
+                    "terms": "沼泽,酸,泥炭"
+                },
+                "natural/wetland/fen": {
+                    "name": "碱性泥炭沼泽",
+                    "terms": "沼泽,碱,泥炭"
+                },
+                "natural/wetland/mangrove": {
+                    "name": "红树林",
+                    "terms": "红树林"
+                },
+                "natural/wetland/marsh": {
+                    "name": "草本沼泽",
+                    "terms": "沼泽,草本,草沼"
+                },
+                "natural/wetland/reedbed": {
+                    "name": "芦苇荡",
+                    "terms": "芦苇,沼泽"
+                },
+                "natural/wetland/saltmarsh": {
+                    "name": "海岸盐沼",
+                    "terms": "沼泽,海岸,盐,咸"
+                },
+                "natural/wetland/string_bog": {
+                    "name": "线状酸沼",
+                    "terms": "沼泽,线状,酸性,泥炭"
+                },
+                "natural/wetland/swamp": {
+                    "name": "木本沼泽",
+                    "terms": "沼泽,木本,树沼"
+                },
+                "natural/wetland/tidalflat": {
+                    "name": "潮滩",
+                    "terms": "滩,潮汐,埔"
                 },
                 "natural/wood": {
                     "name": "自然树林",
@@ -6652,7 +6728,7 @@
                     "terms": "废弃的铁路"
                 },
                 "railway/buffer_stop": {
-                    "name": "铁路挡车器",
+                    "name": "止冲器",
                     "terms": "止冲器,末端,缓冲器,缓冲,停车,减速,挡车,停止,轨道,股道,铁轨,铁路,路轨,火车,列车,站台"
                 },
                 "railway/construction": {
@@ -6812,10 +6888,6 @@
                     "name": "动漫/漫画店",
                     "terms": "漫画,动漫,日漫,日本,cosplay,cos"
                 },
-                "shop/antiques": {
-                    "name": "古董店",
-                    "terms": "古董店"
-                },
                 "shop/appliance": {
                     "name": "家用电器店",
                     "terms": "家电,电器,电器店,家用"
@@ -6870,10 +6942,6 @@
                 "shop/bookmaker": {
                     "name": "书商",
                     "terms": "书商"
-                },
-                "shop/books": {
-                    "name": "书店",
-                    "terms": "书店,书城"
                 },
                 "shop/boutique": {
                     "name": "精品店"
@@ -6977,9 +7045,6 @@
                     "name": "化妆品店",
                     "terms": "日化店"
                 },
-                "shop/country_store": {
-                    "name": "Country Store"
-                },
                 "shop/craft": {
                     "name": "工艺美术用品店"
                 },
@@ -6990,10 +7055,6 @@
                 "shop/dairy": {
                     "name": "牛奶店",
                     "terms": "牛奶店"
-                },
-                "shop/deli": {
-                    "name": "熟食店",
-                    "terms": "熟食店"
                 },
                 "shop/department_store": {
                     "name": "百货商场",
@@ -7108,9 +7169,6 @@
                     "name": "五金店",
                     "terms": "五金店"
                 },
-                "shop/health_food": {
-                    "name": "保健食品店"
-                },
                 "shop/hearing_aids": {
                     "name": "听觉恢复用品店",
                     "terms": "听觉恢复用品店"
@@ -7217,10 +7275,6 @@
                     "name": "乐器店",
                     "terms": "乐器店,音乐用品店"
                 },
-                "shop/newsagent": {
-                    "name": "报摊",
-                    "terms": "报摊"
-                },
                 "shop/nutrition_supplements": {
                     "name": "保健品店",
                     "terms": "保健品店"
@@ -7248,10 +7302,6 @@
                 "shop/pastry": {
                     "name": "糕饼店",
                     "terms": "油酥点心店,糕点店,糕饼店,面包点心店"
-                },
-                "shop/pawnbroker": {
-                    "name": "典当商铺",
-                    "terms": "典当商铺,当铺"
                 },
                 "shop/perfumery": {
                     "name": "香水店",
@@ -7303,10 +7353,6 @@
                 "shop/seafood": {
                     "name": "海鲜店",
                     "terms": "海鲜店,水产品店"
-                },
-                "shop/second_hand": {
-                    "name": "二手市场",
-                    "terms": "二手市场"
                 },
                 "shop/sewing": {
                     "name": "缝纫用品商店"
@@ -7400,10 +7446,6 @@
                 "shop/vacuum_cleaner": {
                     "name": "吸尘器店",
                     "terms": "吸尘器店"
-                },
-                "shop/variety_store": {
-                    "name": "杂货店",
-                    "terms": "杂货店"
                 },
                 "shop/video": {
                     "name": "影像店",
@@ -7756,6 +7798,9 @@
                     "name": "徒步线路",
                     "terms": "远足线路,路线,线路,徒步,远足,远足路线,徒步路线"
                 },
+                "type/route/horse": {
+                    "name": "骑马路线"
+                },
                 "type/route/light_rail": {
                     "name": "轻轨线路",
                     "terms": "轻轨,地铁,捷运,地下铁,火车,电车,列车,铁路,线路,路线"
@@ -7779,6 +7824,10 @@
                 "type/route/power": {
                     "name": "电力线路",
                     "terms": "输电线路,供电路线,电力路线,供电线路,路线,线路"
+                },
+                "type/route/railway": {
+                    "name": "铁路线路",
+                    "terms": "铁路,高铁,线"
                 },
                 "type/route/road": {
                     "name": "驾驶线路",

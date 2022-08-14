@@ -3,7 +3,7 @@
         "presets": {
             "categories": {
                 "category-barrier": {
-                    "name": "Obstacles"
+                    "name": "Types de barrière"
                 },
                 "category-building": {
                     "name": "Types de bâtiments"
@@ -125,7 +125,6 @@
                 "activity": {
                     "label": "Activité",
                     "options": {
-                        "Ski": "Ski",
                         "bicycle": "Cyclisme",
                         "hiking": "Randonnée",
                         "horse": "Equitation",
@@ -295,6 +294,13 @@
                 },
                 "barrier": {
                     "label": "Type"
+                },
+                "barrier_planter": {
+                    "label": "Barrière",
+                    "options": {
+                        "planter": "Oui",
+                        "undefined": "Non"
+                    }
                 },
                 "basin": {
                     "label": "Type"
@@ -938,6 +944,9 @@
                     "label": "Potable",
                     "terms": "potable,buvable,eau potable"
                 },
+                "drinking_water_available": {
+                    "label": "Eau Potable Disponible"
+                },
                 "drive_through": {
                     "label": "Service Drive",
                     "terms": "service au comptoir,service au volant,point retrait"
@@ -1404,6 +1413,9 @@
                 "kerb/height": {
                     "label": "Hauteur"
                 },
+                "kitchen": {
+                    "label": "Cuisine"
+                },
                 "kneipp_water_cure_multi": {
                     "label": "Types de bassin"
                 },
@@ -1418,6 +1430,10 @@
                 },
                 "landuse": {
                     "label": "Type"
+                },
+                "lane_markings": {
+                    "label": "Marquage au sol",
+                    "terms": "marquage,peinture,signalisation horizontale,horizontal"
                 },
                 "lanes": {
                     "label": "Voies",
@@ -1550,6 +1566,9 @@
                     "label": "Matériau",
                     "terms": "matériau,matière,substance"
                 },
+                "mattress": {
+                    "label": "Matelas disponibles"
+                },
                 "max_age": {
                     "label": "Âge maximum",
                     "terms": "age maxi,âge maximum,âge maxi,limite d'âge,limite d'age"
@@ -1568,6 +1587,10 @@
                     "placeholder": "40, 50, 60...",
                     "terms": "conseil de vitesse,limite de vitesse,vitesse conseillée"
                 },
+                "maxspeed/hgv": {
+                    "label": "Vitesse maximale autorisée pour les camions",
+                    "placeholder": "40, 50, 60..."
+                },
                 "maxstay": {
                     "label": "Durée maximale",
                     "terms": "durée maximale,séjour"
@@ -1579,6 +1602,9 @@
                 "maxweight_bridge": {
                     "label": "Charge maximale",
                     "terms": "poids,limite,maximum,poids max,poids limite,limite de poids"
+                },
+                "maxwidth": {
+                    "label": "Largeur Maximum"
                 },
                 "memorial": {
                     "label": "Type"
@@ -1649,7 +1675,7 @@
                     "label": "Type"
                 },
                 "name": {
-                    "label": "Nom propre",
+                    "label": "Nom",
                     "placeholder": "Nom courant (si existant)",
                     "terms": "nom,étiquette,label,titre"
                 },
@@ -2543,6 +2569,12 @@
                 "studio": {
                     "label": "Type"
                 },
+                "subject": {
+                    "label": "Sujet"
+                },
+                "subject/wikidata": {
+                    "label": "Sujet Wikidata"
+                },
                 "substance": {
                     "label": "Substance"
                 },
@@ -2794,7 +2826,15 @@
                     "terms": "visibilité,chemin,sentier,itinéraire"
                 },
                 "transformer": {
-                    "label": "Type"
+                    "label": "Type",
+                    "options": {
+                        "auxiliary": "Auxiliaire (vers les sous-stations)",
+                        "converter": "Convertisseur",
+                        "distribution": "Distribution (vers le consommateur final)",
+                        "generator": "Générateur (pour augmenter la tension)",
+                        "phase_angle_regulator": "Déphaseur",
+                        "yes": "Rôle indéfini"
+                    }
                 },
                 "trees": {
                     "label": "Arbres"
@@ -2996,6 +3036,12 @@
                     "label": "Enroulements",
                     "placeholder": "1, 2, 3...",
                     "terms": "enroulement,bobinage,enroulage,bobine"
+                },
+                "windings/auto": {
+                    "options": {
+                        "no": "Non",
+                        "yes": "Oui"
+                    }
                 },
                 "windings/configuration": {
                     "label": "Configuration des enroulements",
@@ -5071,6 +5117,10 @@
                     "name": "Passage piéton marqué",
                     "terms": "zebra,marquage,passage piéton"
                 },
+                "highway/crossing/traffic_signals": {
+                    "name": "Passage piéton avec Feux piétons",
+                    "terms": "feux piétons,passage piéton avec feux"
+                },
                 "highway/crossing/uncontrolled": {
                     "name": "Traversée sans feux"
                 },
@@ -5111,6 +5161,10 @@
                 "highway/elevator_line": {
                     "name": "Ascenseur incliné",
                     "terms": "ascenseur,incliné,en pente"
+                },
+                "highway/emergency_access_point": {
+                    "name": "Panneau de localisation en cas d'urgence",
+                    "terms": "panneau,signalisation,marqueur,urgence,secours"
                 },
                 "highway/emergency_bay": {
                     "name": "Refuge pour automobile",
@@ -5314,7 +5368,7 @@
                     "terms": "péage"
                 },
                 "highway/track": {
-                    "name": "Voie carrossable",
+                    "name": "Piste carrossable",
                     "terms": "voie carrossable"
                 },
                 "highway/traffic_mirror": {
@@ -5582,6 +5636,12 @@
                 "landuse/military/barracks": {
                     "name": "Caserne militaire",
                     "terms": "caserne militaire"
+                },
+                "landuse/military/base": {
+                    "name": "Base militaire"
+                },
+                "landuse/military/base/navy": {
+                    "name": "Base navale"
                 },
                 "landuse/military/danger_area": {
                     "name": "Zone dangereuse",
@@ -6047,9 +6107,6 @@
                     "name": "Ligne",
                     "terms": "ligne"
                 },
-                "man_made": {
-                    "name": "Construction humaine"
-                },
                 "man_made/adit": {
                     "name": "Entrée de mine",
                     "terms": "entrée de galerie de mine,entrée de galerie"
@@ -6194,8 +6251,8 @@
                     "terms": "antenne,diffusion,tour de télédiffusion,mât de communication,tour,mât de télévision,télévision,transmission,tv"
                 },
                 "man_made/mast/lighting": {
-                    "name": "Paratonnerre",
-                    "terms": "mât de paratonnerre"
+                    "name": "Mât d'éclairage",
+                    "terms": "mât d'éclairage"
                 },
                 "man_made/mineshaft": {
                     "name": "Puits de mine",
@@ -7426,10 +7483,6 @@
                     "name": "Boutique de manga et anime",
                     "terms": "manga,bd,figurine"
                 },
-                "shop/antiques": {
-                    "name": "Antiquaire",
-                    "terms": "brocante"
-                },
                 "shop/appliance": {
                     "name": "Magasin d'électroménager",
                     "terms": "magasin d'électroménager,électroménager,appareil électroménager,petit électroménager,gros électroménager,shop appliance,appliances,bouilloire,centrifugeuse,cuiseur,cuit vapeur,fouet électrique,grille-pain,machine à pain,mixeur,pierrade,presse-agrumes,robot de cuisine,robot multifonctions,pèse-personne,épilateur,rasoir électrique,cafetière,moulin à café,aspirateur,cireuse,nettoyeur à vapeur,tondeuse,repassage,centrale vapeur,fer à repasser,cuisinière,four micro-ondes,four traditionnel,four à vapeur,cuisinière à gaz,hotte aspirante,plaque de cuisson,lave-linge,lave-vaisselle,sèche-linge,cave à vin,congélateur,réfrigérateur,climatiseur"
@@ -7485,10 +7538,6 @@
                 "shop/bookmaker": {
                     "name": "Bookmaker",
                     "terms": "preneur de paris,bookmaker"
-                },
-                "shop/books": {
-                    "name": "Librairie",
-                    "terms": "bouquiniste,livres d'occasion"
                 },
                 "shop/boutique": {
                     "name": "Petit magasin de mode"
@@ -7609,10 +7658,6 @@
                     "name": "Magasin de cosmétiques",
                     "terms": "vente de cosmétiques,parfumerie"
                 },
-                "shop/country_store": {
-                    "name": "Magasin de campagne",
-                    "terms": "campagne,chasse,pêche,équitation,cheval,chevaux"
-                },
                 "shop/craft": {
                     "name": "Magasin d'arts et loisirs créatifs",
                     "terms": "art,loisir,peinture"
@@ -7624,10 +7669,6 @@
                 "shop/dairy": {
                     "name": "Crèmerie",
                     "terms": "crèmerie"
-                },
-                "shop/deli": {
-                    "name": "Épicerie de luxe",
-                    "terms": "epicerie fine,traiteur"
                 },
                 "shop/department_store": {
                     "name": "Grand magasin",
@@ -7752,10 +7793,6 @@
                     "name": "Quincaillerie",
                     "terms": "quincaillerie"
                 },
-                "shop/health_food": {
-                    "name": "Magasin d'alimentation de santé",
-                    "terms": "magasin d'alimentation de santé,vitamines"
-                },
                 "shop/hearing_aids": {
                     "name": "Audioprothésiste",
                     "terms": "vente de prothèses auditives"
@@ -7868,10 +7905,6 @@
                     "name": "Magasin d'instruments de musique",
                     "terms": "magasin d'instruments de musique"
                 },
-                "shop/newsagent": {
-                    "name": "Magasin de journaux",
-                    "terms": "vente de journaux,de magazines,maison de la presse"
-                },
                 "shop/nutrition_supplements": {
                     "name": "Boutique de compléments alimentaires",
                     "terms": "compléments alimentaires;compléments nutritionnels"
@@ -7899,10 +7932,6 @@
                 "shop/pastry": {
                     "name": "Pâtisserie",
                     "terms": "gaufre"
-                },
-                "shop/pawnbroker": {
-                    "name": "Prêteur sur gages",
-                    "terms": "mont-de-piété,crédit municipal"
                 },
                 "shop/perfumery": {
                     "name": "Parfumerie",
@@ -7959,10 +7988,6 @@
                 "shop/seafood": {
                     "name": "Poissonnerie / Vente de fruits de mer",
                     "terms": "vendeur de poissons,fruits de mer,écailler,conserverie"
-                },
-                "shop/second_hand": {
-                    "name": "Dépôt-vente/produits d'occasion",
-                    "terms": "produits de seconde main"
                 },
                 "shop/sewing": {
                     "name": "Magasin de couture",
@@ -8062,10 +8087,6 @@
                 "shop/vacuum_cleaner": {
                     "name": "Magasin d'électroménager de nettoyage",
                     "terms": "aspirateur,nettoyage"
-                },
-                "shop/variety_store": {
-                    "name": "Magasin à prix unique ou à bas prix",
-                    "terms": "épicerie,hard-discount"
                 },
                 "shop/video": {
                     "name": "Vidéo-club",

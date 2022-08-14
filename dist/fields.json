@@ -56,7 +56,7 @@
             "bicycle",
             "mtb",
             "horse",
-            "Ski"
+            "ski"
         ]
     },
     "addr/interpolation": {
@@ -408,6 +408,11 @@
     "building/material": {
         "key": "building:material",
         "type": "combo"
+    },
+    "building/part": {
+        "key": "building:part",
+        "type": "combo",
+        "default": "yes"
     },
     "bunker_type": {
         "key": "bunker_type",
@@ -798,7 +803,8 @@
             "track",
             "share_busway",
             "opposite_lane",
-            "opposite"
+            "opposite",
+            "separate"
         ]
     },
     "dance/style": {
@@ -1064,6 +1070,10 @@
     "drink_multi": {
         "key": "drink:",
         "type": "multiCombo"
+    },
+    "drinking_water_available": {
+        "key": "drinking_water",
+        "type": "check"
     },
     "drinking_water": {
         "key": "drinking_water",
@@ -1710,6 +1720,10 @@
         "type": "combo",
         "snake_case": false
     },
+    "kitchen": {
+        "key": "kitchen",
+        "type": "check"
+    },
     "kneipp_water_cure_multi": {
         "key": "kneipp_water_cure:",
         "type": "multiCombo"
@@ -1899,6 +1913,10 @@
         "key": "material",
         "type": "combo"
     },
+    "mattress": {
+        "key": "mattress",
+        "type": "check"
+    },
     "max_age": {
         "key": "max_age",
         "type": "number",
@@ -1915,6 +1933,10 @@
     },
     "maxspeed/advisory": {
         "key": "maxspeed:advisory",
+        "type": "roadspeed"
+    },
+    "maxspeed/hgv": {
+        "key": "maxspeed:hgv",
         "type": "roadspeed"
     },
     "maxstay": {
@@ -2258,6 +2280,7 @@
     "parking/orientation": {
         "key": "parking:orientation",
         "type": "combo",
+        "autoSuggestions": false,
         "options": [
             "parallel",
             "diagonal",
@@ -2981,10 +3004,6 @@
             "only"
         ]
     },
-    "sector/name": {
-        "key": "sector:name",
-        "type": "text"
-    },
     "segregated": {
         "key": "segregated",
         "type": "check"
@@ -3264,6 +3283,18 @@
         "key": "studio",
         "type": "combo"
     },
+    "subject": {
+        "key": "subject",
+        "type": "text"
+    },
+    "subject/wikidata": {
+        "key": "subject:wikidata",
+        "keys": [
+            "subject:wikidata",
+            "subject:wikipedia"
+        ],
+        "type": "wikidata"
+    },
     "substance": {
         "key": "substance",
         "type": "combo"
@@ -3394,6 +3425,14 @@
         "key": "taxon",
         "type": "combo",
         "snake_case": false
+    },
+    "tee": {
+        "key": "tee",
+        "type": "semiCombo",
+        "reference": {
+            "key": "golf",
+            "value": "tee"
+        }
     },
     "telecom": {
         "key": "telecom",
@@ -3592,6 +3631,10 @@
         "key": "tunnel",
         "type": "typeCombo",
         "usage": "group"
+    },
+    "turning_circle": {
+        "key": "turning_circle",
+        "type": "combo"
     },
     "usage_rail": {
         "key": "usage",
