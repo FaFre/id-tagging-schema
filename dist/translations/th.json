@@ -143,6 +143,8 @@
                 "address": {
                     "label": "ที่อยู่",
                     "placeholders": {
+                        "block_number": "เลขบล็อก",
+                        "block_number!jp": "หมายเลขบล็อก",
                         "city": "แขวง/ตำบล",
                         "conscriptionnumber": "123",
                         "country": "ประเทศ",
@@ -158,11 +160,16 @@
                         "state": "รัฐ",
                         "street": "ถนน",
                         "subdistrict": "แขวง/ตำบล",
-                        "suburb": "ชานเมือง"
+                        "suburb": "ชานเมือง",
+                        "suburb!jp": "ห้อง",
+                        "unit": "ยูนิต"
                     }
                 },
                 "admin_level": {
                     "label": "อำนาจการปกครอง"
+                },
+                "advertising": {
+                    "label": "ชนิด"
                 },
                 "aerialway": {
                     "label": "รูปแบบ"
@@ -174,6 +181,9 @@
                         "entry": "ทางเข้า",
                         "exit": "ทางออก"
                     }
+                },
+                "aerialway/bubble": {
+                    "label": "ร่มกันสภาพอากาศ"
                 },
                 "aerialway/capacity": {
                     "label": "จำนวนคน (ต่อชั่วโมง)",
@@ -217,6 +227,7 @@
                     "terms": "ตึก,อาคาร,สิ่งปลูกสร้าง"
                 },
                 "contact/webcam": {
+                    "label": "URL ของกล้อง",
                     "placeholder": "http://example.com/"
                 },
                 "cuisine": {
@@ -225,7 +236,15 @@
                     }
                 },
                 "currency_multi": {
-                    "label": "ชนิดเงินตรา"
+                    "label": "ชนิดเงินตรา",
+                    "terms": "สกุลเงิน"
+                },
+                "cutting": {
+                    "label": "ชนิด",
+                    "placeholder": "พิ้นฐาน"
+                },
+                "cycle_network": {
+                    "label": "เครือข่าย"
                 },
                 "cycleway": {
                     "label": "เลนจักรยาน",
@@ -254,10 +273,323 @@
                         "male": "ชาย",
                         "unisex": "ชายและหญิง"
                     },
-                    "placeholder": "ไม่ทราบ"
+                    "placeholder": "ไม่ทราบ",
+                    "terms": "เพศ,เพศสภาพ,เจนเดอร์"
+                },
+                "generator/method": {
+                    "label": "วิธี",
+                    "options": {
+                        "anaerobic_digestion": "การย่อยแบบไม่ใช้ออกซิเจน",
+                        "barrage": "เขื่อนกั้นน้ำ",
+                        "combustion": "สันดาป",
+                        "fission": "ฟิชชัน",
+                        "fusion": "ฟิวชั่น",
+                        "gasification": "แก๊สซิฟิเคชัน",
+                        "photovoltaic": "ไฟฟ้าโซลาร์เซลล์",
+                        "run-of-the-river": "การไหลของแม่น้ำ",
+                        "stream": "กระแสน้ำ",
+                        "thermal": "ความร้อนจากแสงอาทิตย์",
+                        "water-pumped-storage": "ปั๊มเก็บ",
+                        "water-storage": "อ่างเก็บน้ำ",
+                        "wind_turbine": "กังหันลม"
+                    }
+                },
+                "generator/output/electricity": {
+                    "label": "กำลังไฟออก",
+                    "placeholder": "50 MW, 100 MW, 200 MW..."
                 },
                 "generator/source": {
-                    "label": "แหล่งที่มา"
+                    "label": "แหล่งที่มา",
+                    "options": {
+                        "battery": "แบตเตอรี่",
+                        "biofuel": "เชื้อเพลิงจากพืช",
+                        "biogas": "ก๊าซชีวภาพ",
+                        "biomass": "วัตถุพืช",
+                        "coal": "ถ่านหิน",
+                        "diesel": "ดีเซล",
+                        "gas": "ก๊าซธรรมชาติ",
+                        "gasoline": "แก็สโซลีน",
+                        "geothermal": "พลังงานความร้อนใต้พิภพ",
+                        "hydro": "ไฟฟ้าพลังน้ำ",
+                        "nuclear": "พลังงานนิวเคลียร์",
+                        "oil": "น้ำมัน",
+                        "solar": "รังสีสุริยะ",
+                        "tidal": "พลังน้ำขึ้นน้ำลง",
+                        "waste": "ของเสีย",
+                        "wave": "พลังคลื่น",
+                        "wind": "ลม"
+                    }
+                },
+                "generator/type": {
+                    "label": "ประเภท"
+                },
+                "genus": {
+                    "label": "สกุล",
+                    "placeholder": "Acer, Platanus, Quercus …",
+                    "terms": "จีนัส"
+                },
+                "geyser/height": {
+                    "label": "ความสูงของการปะทุ"
+                },
+                "gnis/feature_id-US": {
+                    "label": "ID คุณลักษณะ GNIS"
+                },
+                "government": {
+                    "label": "ประเภท"
+                },
+                "grades": {
+                    "label": "ระดับชั้น"
+                },
+                "grape_variety": {
+                    "label": "พันธุ์องุ่น"
+                },
+                "group_only": {
+                    "label": "กลุ่มเท่านั้น"
+                },
+                "guest_house": {
+                    "label": "ประเภท"
+                },
+                "handicap": {
+                    "label": "แฮนดิแคป",
+                    "placeholder": "1-18"
+                },
+                "handrail": {
+                    "label": "ราวจับ"
+                },
+                "hashtags": {
+                    "label": "แฮชแท็ก",
+                    "placeholder": "#example"
+                },
+                "healthcare": {
+                    "label": "ประเภท"
+                },
+                "healthcare/speciality": {
+                    "label": "ความเชี่ยวชาญ",
+                    "options": {
+                        "abortion": "การทำแท้ง",
+                        "acupuncture": "การฝังเข็ม",
+                        "allergology": "ภูมิแพ้ และหอบหืด",
+                        "anaesthetics": "วิสัญญีวิทยา",
+                        "angiology": "วิทยาหลอดเลือดและหลอดน้ำเหลือง",
+                        "anthroposophical": "เวชศาสตร์มานุษยวิทยา",
+                        "applied_kinesiology": "กายภาพประยุกต์",
+                        "aromatherapy": "สุคนธบำบัด",
+                        "ayurveda": "อายุรเวท",
+                        "behavior": "พฤติกรรมบำบัด",
+                        "biochemistry": "ชีวเคมี",
+                        "biology": "ชีววิทยา",
+                        "blood_check": "ตรวจเลือด",
+                        "body": "กายบำบัด",
+                        "cardiology": "หทัยวิทยา",
+                        "cardiothoracic_surgery": "การผ่าตัดหัวใจ",
+                        "child_psychiatry": "จิตเวชศาสตร์เด็กและวัยรุ่น",
+                        "chiropractic": "จัดกระดูก",
+                        "clinical_pathology": "พยาธิวิทยาคลินิก",
+                        "community": "สาธารณสุข",
+                        "dental_oral_maxillo_facial_surgery": "ศัลยกรรมช่องฟัน ปากและขากรรไกร",
+                        "depth": "จิตวิทยาเชิงลึก",
+                        "dermatology": "ตจวิทยา",
+                        "dermatovenereology": "ตจกามโรควิทยา",
+                        "diabetology": "เบาหวานวิทยา",
+                        "diagnostic_radiology": "รังสีวินิจฉัย",
+                        "emergency": "เวชศาสตร์ฉุกเฉิน",
+                        "endocrinology": "ต่อมไร้ท่อวิทยา",
+                        "fertility": "เจริญพันธุ์",
+                        "gastroenterology": "วิทยาทางเดินอาหาร",
+                        "general": "เวชปฏิบัติทั่วไป",
+                        "geriatrics": "เวชศาสตร์ผู้สูงอายุ",
+                        "gynaecology": "สูตินรีเวชวิทยา",
+                        "haematology": "โลหิตวิทยา",
+                        "hepatology": "วิทยาตับ",
+                        "herbalism": "เวชสมุนไพรวิทยา",
+                        "homeopathy": "โฮมีโอพาธี",
+                        "humanistic": "จิตวิทยามนุษยนิยม",
+                        "hydrotherapy": "วารีบำบัด",
+                        "hypnosis": "การสะกดจิต",
+                        "infectious_diseases": "โรคติดเชื้อ",
+                        "intensive": "อภิบาล",
+                        "internal": "อายุรศาสตร์",
+                        "naturopathy": "ธรรมชาติบำบัด",
+                        "neonatology": "กุมารเวชศาสตร์ทารกแรกเกิด",
+                        "nephrology": "วักกวิทยา",
+                        "neurology": "ประสาทวิทยา",
+                        "neuropsychiatry": "ประสาทจิตเวช",
+                        "neurosurgery": "ประสาทศัลยศาสตร์",
+                        "nuclear": "เวชศาสตร์นิวเคลียร์",
+                        "occupational": "อาชีวเวชศาสตร์",
+                        "oncology": "วิทยามะเร็ง",
+                        "ophthalmology": "จักษุวิทยา",
+                        "orthodontics": "ทันตกรรมจัดฟัน",
+                        "orthopaedics": "ศัลยศาสตร์ออร์โธปิดิกส์",
+                        "osteopathy": "ออสทีโอพาธี",
+                        "otolaryngology": "หู คอ จมูก",
+                        "paediatric_surgery": "กุมารศัลยศาสตร์",
+                        "paediatrics": "กุมารเวชศาสตร์",
+                        "palliative": "การดูแลประคับประคอง",
+                        "pathology": "พยาธิวิทยา",
+                        "physiatry": "เวชศาสตร์ฟื้นฟู",
+                        "plastic_surgery": "ศัลยศาสตร์พลาสติก",
+                        "podiatry": "บาทาเวชศาสตร์",
+                        "proctology": "ศัลยศาสตร์ลำไส้ใหญ่และทวารหนัก",
+                        "psychiatry": "จิตเวชศาสตร์",
+                        "pulmonology": "วิทยาปอด",
+                        "radiology": "รังสีวิทยา",
+                        "radiotherapy": "รังสีรักษา",
+                        "reflexology": "การนวดกดจุดสะท้อนเท้า",
+                        "reiki": "เรกิ",
+                        "rheumatology": "วิทยารูมาติก",
+                        "shiatsu": "ชิอัตสึ",
+                        "stomatology": "โอษฐวิทยา",
+                        "surgery": "ศัลยกรรมทั่วไป",
+                        "systemic": "การรักษาที่มีผลทั่วร่าง",
+                        "traditional_chinese_medicine": "แพทย์แผนจีน",
+                        "transplant": "การปลูกถ่ายอวัยวะ",
+                        "trauma": "ศัลยศาสตร์อุบัติเหตุ",
+                        "tropical": "เวชศาสตร์เขตร้อน",
+                        "tuina": "ทุยหนา",
+                        "unani": "แพทย์แผนยูนาน",
+                        "urology": "วิทยาทางเดินปัสสาวะ",
+                        "vaccination": "วัคซีน",
+                        "vascular_surgery": "ศัลยกรรมหลอดเลือด"
+                    }
+                },
+                "heating": {
+                    "label": "เครื่องทำความร้อน"
+                },
+                "height": {
+                    "label": "ความสูง (เมตร)"
+                },
+                "height/hub": {
+                    "label": "ความสูงของแกนหมุน (เมตร)",
+                    "terms": "ความสูงของแกน (เมตร)"
+                },
+                "height_building": {
+                    "label": "ความสูงอาคาร (เมตร)",
+                    "terms": "ความสูงอาคาร (เมตร)"
+                },
+                "highchair": {
+                    "label": "เก้าอี้สูง",
+                    "terms": "เก้าอี้ยกสูง"
+                },
+                "highspeed": {
+                    "label": "ความเร็วสูง"
+                },
+                "highway": {
+                    "label": "ประเภท"
+                },
+                "highway_cartpath": {
+                    "label": "ประเภทของทาง",
+                    "options": {
+                        "path": "ทางรถคาร์ท",
+                        "service": "ถนนบริการ"
+                    }
+                },
+                "historic": {
+                    "label": "ประเภท"
+                },
+                "historic/civilization": {
+                    "label": "อารยธรรมประวัติศาสตร์"
+                },
+                "historic/wreck/date_sunk": {
+                    "label": "วันที่จม"
+                },
+                "historic/wreck/visible_at_high_tide": {
+                    "label": "มองเห็นได้เมื่อน้ำขึ้น"
+                },
+                "historic/wreck/visible_at_low_tide": {
+                    "label": "มองเห็นได้เมื่อน้ำลง"
+                },
+                "holding_position/type": {
+                    "label": "ประเภท",
+                    "options": {
+                        "ILS": "เครื่องช่วยการเดินอากาศ",
+                        "intermediate": "ทางแยกแท็กซี่เวย์กับแท็กซี่เวย์",
+                        "runway": "รันเวย์"
+                    }
+                },
+                "hoops": {
+                    "label": "จำนวนห่วง",
+                    "placeholder": "1, 2, 4..."
+                },
+                "horse_dressage": {
+                    "label": "ศิลปะการบังคับม้า",
+                    "options": {
+                        "equestrian": "ใช่",
+                        "undefined": "ไม่"
+                    }
+                },
+                "horse_riding": {
+                    "label": "การขี่ม้า",
+                    "options": {
+                        "horse_riding": "ใช่",
+                        "undefined": "ไม่"
+                    }
+                },
+                "horse_scale": {
+                    "label": "ความยากการขี่ม้า",
+                    "options": {
+                        "common": "ง่าย: ไม่มีปัญหา หรือความยาก (พื้นฐาน)",
+                        "critical": "ก้ำกึ่ง: ผ่านได้เฉพาะผู้ขี่และม้าที่มีประสบการณ์เท่านั้น มีอุปสรรค ควรจะตรวจสอบสะพานอย่างรอบคอบ",
+                        "dangerous": "อันตราย: เฉพาะนักขี่และม้าที่มีประสบการณ์สูงเท่านั้น และในสภาพอากาศที่ดีเท่านั้น",
+                        "demanding": "ด้วยความระมัดระวัง : ทางไม่เรียบ ขรุขระเป็นบางช่วง",
+                        "difficult": "ยาก: ทางแคบและเปิดโล่ง อาจมีอุปสรรคในการข้าม และทางเดินที่แคบ",
+                        "impossible": "ผ่านไม่ได้: ม้าไม่สามารถผ่านทางหรือสะพานได้ แคบเกินไป โครงสร้างรองรับไม่เพียงพอ สิ่งกีดขวางเหมือนบันได อันตรายถึงชีวิต"
+                    },
+                    "placeholder": "ยาก, อันตราย, …"
+                },
+                "horse_stables": {
+                    "label": "คอกม้า",
+                    "options": {
+                        "stables": "ใช่",
+                        "undefined": "ไม่"
+                    }
+                },
+                "hot_water": {
+                    "label": "น้ำร้อน"
+                },
+                "iata": {
+                    "label": "รหัสท่าอากาศยาน IATA"
+                },
+                "icao": {
+                    "label": "รหัสท่าอากาศยาน ICAO"
+                },
+                "image": {
+                    "label": "ภาพ",
+                    "placeholder": "https://example.com/photo.jpg",
+                    "terms": "ภาพถ่าย"
+                },
+                "incline": {
+                    "label": "ความลาดชัน",
+                    "terms": "ความชัน"
+                },
+                "incline_steps": {
+                    "options": {
+                        "down": "ลง",
+                        "up": "ขึ้น"
+                    }
+                },
+                "indoor": {
+                    "label": "ในร่ม",
+                    "terms": "มีร่ม,ภายในอาคาร"
+                },
+                "indoor_type": {
+                    "label": "ประเภท"
+                },
+                "industrial": {
+                    "label": "ประเภท"
+                },
+                "informal": {
+                    "label": "ไม่เป็นทางการ"
+                },
+                "information": {
+                    "label": "ประเภท"
+                },
+                "inscription": {
+                    "label": "ข้อความจารึก"
+                },
+                "intermittent": {
+                    "label": "ไม่สม่ำเสมอ",
+                    "terms": "ไม่ต่อเนื่อง,เป็นพักๆ,เป็นช่วงๆ"
                 },
                 "height_building": {
                     "label": "ความสูงอาคาร (เมตร)"
@@ -272,9 +604,94 @@
                     "label": "น้ำร้อน"
                 },
                 "internet_access": {
+                    "label": "บริการอินเทอร์เน็ต",
                     "options": {
+                        "no": "ไม่มี",
+                        "terminal": "เครื่องปลายทาง",
                         "wired": "ใช้สาย",
-                        "wlan": "ไร้สาย"
+                        "wlan": "ไร้สาย",
+                        "yes": "ใช่"
+                    },
+                    "terms": "การเชื่อมต่ออินเตอร์เน็ต"
+                },
+                "internet_access/fee": {
+                    "label": "การเข้าถึงอินเตอร์เน็ต",
+                    "options": {
+                        "customers": "เฉพาะลูกค้า",
+                        "no": "ฟรี",
+                        "yes": "เสียเงิน"
+                    },
+                    "terms": "การเข้าถึงอินเตอร์เน็ต"
+                },
+                "internet_access/ssid": {
+                    "label": "ชื่อเครือข่าย WiFi",
+                    "terms": "ชื่อเครือข่ายไวไฟ"
+                },
+                "interval": {
+                    "label": "ระยะห่างเวลา",
+                    "terms": "ระยะเวลาระหว่าง"
+                },
+                "junction/ref_oneway": {
+                    "label": "หมายเลขทางแยก",
+                    "terms": "เลขทางแยก"
+                },
+                "junction_line": {
+                    "label": "ทางแยก",
+                    "options": {
+                        "circular": "ทางแยกวงกลม",
+                        "jughandle": "ทางเบี่ยงแยก",
+                        "roundabout": "วงเวียน"
+                    },
+                    "terms": "แยก"
+                },
+                "kerb": {
+                    "label": "ขอบถนน"
+                },
+                "kerb/height": {
+                    "label": "ความสูง"
+                },
+                "kitchen": {
+                    "label": "ห้องครัว",
+                    "terms": "ครัว"
+                },
+                "kneipp_water_cure_multi": {
+                    "label": "ชนิดอ่าง"
+                },
+                "label": {
+                    "label": "ป้าย"
+                },
+                "lamp_mount": {
+                    "label": "เสา"
+                },
+                "lamp_type": {
+                    "label": "ประเภท"
+                },
+                "landuse": {
+                    "label": "ประเภท"
+                },
+                "lane_markings": {
+                    "label": "เครื่องหมายเลน",
+                    "terms": "การหมายเลน"
+                },
+                "lanes": {
+                    "label": "ช่องทาง",
+                    "placeholder": "1, 2, 3...",
+                    "terms": "ช่องทาง,ช่องจราจร,เลน"
+                },
+                "language_multi": {
+                    "label": "ภาษา"
+                },
+                "layer": {
+                    "label": "ชั้น",
+                    "placeholder": "0",
+                    "terms": "เลเยอร์"
+                },
+                "leaf_cycle": {
+                    "label": "วงจรใบไม้"
+                },
+                "location_pool": {
+                    "options": {
+                        "roof": "ดาดฟ้า"
                     }
                 },
                 "location_pool": {

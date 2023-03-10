@@ -7,8 +7,9 @@ It includes presets, fields, deprecations, and more.
 
 ## Background
 
-OpenStreetMap itself does not have a formal tagging [schema](https://en.wikipedia.org/wiki/Database_schema),
-but editing tools need to know how tags are used in order to facilitate mapping.
+OpenStreetMap itself does not have a formal rigid [database schema](https://en.wikipedia.org/wiki/Database_schema),
+but relies on a [tagging](https://wiki.openstreetmap.org/wiki/Tags) [folksonomy](https://en.wikipedia.org/wiki/Folksonomy) instead.
+Editing tools need to know how tags are used in order to facilitate mapping.
 This Tagging Schema fills that need, but with a number of caveats:
 
 - This isn't authoritative or definitive
@@ -23,7 +24,7 @@ This Tagging Schema fills that need, but with a number of caveats:
 
 * Apart from that, translations are managed [in the Transifex Project of the iD Editor](https://www.transifex.com/openstreetmap/id-editor/) inside the translation resource _'preset'_.
 
-  To translate, you can [open the translation page](https://www.transifex.com/openstreetmap/id-editor/translate/), select a language, select _'preset'_ and search for `key:living_street` or `translation_text:'Living Street'` to find and change translations.
+  To translate, you can [open the translation page](https://www.transifex.com/openstreetmap/id-editor/translate/), select a language, select _'presets'_ and search for `key:living_street` or `translation_text:'Living Street'` to find and change translations.
 
   To contribute to a language: [Select a language](https://www.transifex.com/openstreetmap/id-editor/languages/) and use 'Join team' to request access. The administrators will approve requests routinely, only rejecting requests for overly specific locales.
 
@@ -37,9 +38,15 @@ The [westnordost/osmfeatures](https://github.com/westnordost/osmfeatures) projec
 a component of [StreetComplete](https://github.com/westnordost/StreetComplete),
 makes it easier to use this data with Android or other Java platforms.
 
+### Use by Other Editors
+
+iD tagging schema is used not only by iD. Here's a [list of projects](https://github.com/openstreetmap/id-tagging-schema/wiki/Projects-that-are-using-this-tagging-schema) which use the data from the id-tagging-schema.
+
 ## Related Projects
 
-iD also incorporates preset data from the [name-suggestion-index](https://github.com/osmlab/name-suggestion-index).
+* The [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Map_features) documents the current usage of tags, and hosts discussions about proposed new tags.
+* iD also incorporates preset data from the [name-suggestion-index](https://github.com/osmlab/name-suggestion-index).
+* Other editors also include their own models of interpretations of OSM tags. See for example [Vespucci's](https://github.com/simonpoole/beautified-JOSM-preset) or [JOSM's](https://josm.openstreetmap.de/wiki/Presets) tagging presets.
 
 ## Contributing
 

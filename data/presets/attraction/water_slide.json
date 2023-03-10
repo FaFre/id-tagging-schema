@@ -1,5 +1,5 @@
 {
-    "icon": "temaki-slide",
+    "icon": "roentgen-slide_and_water",
     "fields": [
         "{attraction}",
         "height"
@@ -10,8 +10,8 @@
         "min_age"
     ],
     "geometry": [
-        "line",
-        "area"
+        "point",
+        "line"
     ],
     "terms": [
         "theme park",

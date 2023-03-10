@@ -9,9 +9,9 @@
     ],
     "moreFields": [
         "{amenity/bar}",
-        "building_area",
         "cuisine",
-        "opening_hours/covid19"
+        "opening_hours/covid19",
+        "website/menu"
     ],
     "geometry": [
         "point",

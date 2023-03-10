@@ -7,10 +7,12 @@
     "fields": [
         "name",
         "operator",
+        "operator/type",
         "address",
         "opening_hours"
     ],
     "moreFields": [
+        "access_simple",
         "dog",
         "email",
         "fax",

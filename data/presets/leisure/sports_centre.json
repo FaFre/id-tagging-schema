@@ -2,8 +2,10 @@
     "icon": "maki-pitch",
     "fields": [
         "name",
+        "operator",
+        "operator/type",
         "sport",
-        "building",
+        "building_area",
         "address",
         "fee",
         "opening_hours",
@@ -11,6 +13,7 @@
         "charge_fee"
     ],
     "moreFields": [
+        "access_simple",
         "email",
         "fax",
         "gnis/feature_id-US",

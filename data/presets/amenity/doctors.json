@@ -5,7 +5,7 @@
         "operator",
         "healthcare/speciality",
         "address",
-        "building_area",
+        "building_area_yes",
         "opening_hours"
     ],
     "moreFields": [
@@ -23,7 +23,8 @@
         "area"
     ],
     "terms": [
-        "medic*",
+        "medic",
+        "medical doctor",
         "physician"
     ],
     "tags": {

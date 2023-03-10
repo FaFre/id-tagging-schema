@@ -87,7 +87,7 @@
         "members": [
             "highway/path",
             "highway/footway",
-            "highway/footway/marked",
+            "highway/footway/crossing/uncontrolled",
             "highway/footway/sidewalk",
             "highway/steps",
             "highway/cycleway",
@@ -188,6 +188,8 @@
             "type/route/light_rail",
             "type/route/tram",
             "type/route/subway",
+            "type/route/railway",
+            "type/route/trolleybus",
             "type/route/ferry",
             "type/route/power",
             "type/route/pipeline",

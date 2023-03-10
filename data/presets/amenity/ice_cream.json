@@ -3,7 +3,7 @@
     "fields": [
         "name",
         "address",
-        "building_area",
+        "building_area_yes",
         "opening_hours",
         "outdoor_seating"
     ],
@@ -20,8 +20,10 @@
         "level",
         "opening_hours/covid19",
         "payment_multi",
+        "ref/FR/siret-FR",
         "phone",
         "takeaway",
+        "website/menu",
         "wheelchair"
     ],
     "geometry": [

@@ -43,6 +43,9 @@
                 "access": {
                     "label": "அனுமதிக்கப்பட்ட அணுகல்",
                     "options": {
+                        "customers": {
+                            "title": "வாடிக்கையாளர்கள்"
+                        },
                         "designated": {
                             "title": "நியமிக்கப்பட்ட"
                         },
@@ -81,10 +84,19 @@
                     "label": "வகை"
                 },
                 "access_simple": {
-                    "label": "அனுமதிக்கப்பட்ட அணுகல்"
+                    "label": "அனுமதிக்கப்பட்ட அணுகல்",
+                    "options": {
+                        "no": "எதுவுமில்லை",
+                        "private": "தனியார்",
+                        "unknown": "அறியப்படவில்லை",
+                        "yes": "பொது"
+                    }
                 },
                 "addr/interpolation": {
-                    "label": "வகை"
+                    "label": "வகை",
+                    "options": {
+                        "all": "அனைத்தும்"
+                    }
                 },
                 "address": {
                     "label": "முகவரி",
@@ -199,6 +211,12 @@
                 "barrier": {
                     "label": "வகை"
                 },
+                "barrier_planter": {
+                    "options": {
+                        "planter": "ஆம்",
+                        "undefined": "இல்லை"
+                    }
+                },
                 "basin": {
                     "label": "வகை"
                 },
@@ -211,6 +229,9 @@
                 "bath/type": {
                     "label": "தனிமுறைச் சிறப்புத்தொழில்"
                 },
+                "beauty": {
+                    "label": "சேவைகள்"
+                },
                 "bench": {
                     "label": "விசுப்பலகை"
                 },
@@ -219,6 +240,12 @@
                 },
                 "bin": {
                     "label": "குப்பைத்தொட்டி"
+                },
+                "blind": {
+                    "options": {
+                        "no": "இல்லை",
+                        "yes": "ஆம்"
+                    }
                 },
                 "blood_components": {
                     "label": "குருதிப் பாகங்கள் ",
@@ -243,6 +270,9 @@
                 "boundary": {
                     "label": "வகை"
                 },
+                "branch_brand": {
+                    "label": "கிளை"
+                },
                 "brand": {
                     "label": "வியாபாரக் குறி"
                 },
@@ -259,8 +289,14 @@
                 "building": {
                     "label": "கட்டிடம்"
                 },
-                "building_area": {
-                    "label": "கட்டிடம்"
+                "building/flats": {
+                    "placeholder": "2, 4, 6, 8..."
+                },
+                "building/levels": {
+                    "placeholder": "2, 4, 6..."
+                },
+                "building/levels/underground": {
+                    "placeholder": "2, 4, 6..."
                 },
                 "bunker_type": {
                     "label": "வகை"
@@ -276,8 +312,35 @@
                     "label": "கொள்ளளவு",
                     "placeholder": "50, 100, 200..."
                 },
+                "capacity/caravans": {
+                    "placeholder": "10, 20, 50..."
+                },
+                "capacity/disabled_parking": {
+                    "placeholder": "1, 2, 3..."
+                },
+                "capacity/persons": {
+                    "placeholder": "50, 100, 200..."
+                },
+                "capacity/tents": {
+                    "placeholder": "10, 20, 50..."
+                },
+                "capacity_parking": {
+                    "placeholder": "10, 20, 30..."
+                },
+                "capacity_volume": {
+                    "placeholder": "50, 100, 200..."
+                },
                 "castle_type": {
-                    "label": "வகை"
+                    "label": "வகை",
+                    "options": {
+                        "palace": "கோட்டை"
+                    }
+                },
+                "check_date": {
+                    "placeholder": "YYYY-MM-DD"
+                },
+                "circumference": {
+                    "placeholder": "1 மீ, 20 செமீ, 30\"…"
                 },
                 "clothes": {
                     "label": "உடைகள்"
@@ -303,20 +366,68 @@
                 "country": {
                     "label": "நாடு"
                 },
+                "couplings": {
+                    "placeholder": "1, 2, 3..."
+                },
                 "covered": {
                     "label": "மறைக்கப்பட்டுள்ளது"
+                },
+                "covered_no": {
+                    "options": {
+                        "no": "இல்லை",
+                        "yes": "ஆம்"
+                    }
                 },
                 "craft": {
                     "label": "வகை"
                 },
                 "crop": {
-                    "label": "பயிர்கள்"
+                    "label": "பயிர்கள்",
+                    "options": {
+                        "cotton": "பருத்தி",
+                        "flowers": "பூக்கள்",
+                        "grape": "திராட்சைகள்",
+                        "grass": "புற்கள்",
+                        "potato": "உருளைக்கிழங்குகள்",
+                        "rice": "அரிசி",
+                        "sugarcane": "கரும்பு",
+                        "sunflower": "சூரியகாந்தி பூக்கள்",
+                        "tea": "தேயிலை",
+                        "vegetable": "காய்கறிகள்",
+                        "wheat": "கோதுமை"
+                    }
                 },
                 "crossing": {
                     "label": "வகை"
                 },
+                "crossing/barrier": {
+                    "options": {
+                        "no": "இல்லை",
+                        "yes": "ஆம்"
+                    }
+                },
+                "crossing_raised": {
+                    "options": {
+                        "table": "ஆம்",
+                        "undefined": "இல்லை"
+                    }
+                },
                 "cuisine": {
-                    "label": "சமையல் பாணி"
+                    "label": "சமையல் பாணி",
+                    "options": {
+                        "american": "அமெரிக்கர்",
+                        "asian": "ஆசியர்",
+                        "chicken": "கோழி",
+                        "fish": "மீன்",
+                        "french": "பிரஞ்சு",
+                        "german": "செருமன்",
+                        "indian": "இந்தியர்",
+                        "indonesian": "இந்தோனேசியர்",
+                        "italian": "இத்தாலியர்",
+                        "japanese": "சப்பானியர்",
+                        "kebab": "கபாப்",
+                        "malaysian": "மலேசியர்"
+                    }
                 },
                 "currency_multi": {
                     "label": "நாணய வகைகள்"
@@ -329,24 +440,7 @@
                     "label": "பிணையம்"
                 },
                 "cycleway": {
-                    "label": "ஈருருளை சந்துகள்",
-                    "options": {
-                        "none": {
-                            "description": "ஈருருளை இல்லா சந்துகள்",
-                            "title": "எதுவுமில்லை"
-                        },
-                        "shared_lane": {
-                            "title": "பகிர்ந்த ஈருருளை சந்துகள்"
-                        },
-                        "track": {
-                            "title": "ஈருருளைப் பாதை"
-                        }
-                    },
-                    "placeholder": "எதுவுமில்லை",
-                    "types": {
-                        "cycleway:left": "இடப்பக்கம்",
-                        "cycleway:right": "வலது பக்கம்"
-                    }
+                    "label": "ஈருருளை சந்துகள்"
                 },
                 "date": {
                     "label": "தேதி"
@@ -360,6 +454,11 @@
                 "denotation": {
                     "label": "குறிப்பீடு"
                 },
+                "departures_board": {
+                    "options": {
+                        "yes": "ஆம்"
+                    }
+                },
                 "description": {
                     "label": "விளக்கம்"
                 },
@@ -367,8 +466,17 @@
                     "label": "கருவிகள்",
                     "placeholder": "1, 2, 3..."
                 },
+                "diet_multi": {
+                    "options": {
+                        "halal": "ஹலால்",
+                        "vegetarian": "சைவம்"
+                    }
+                },
                 "diplomatic": {
                     "label": "வகை"
+                },
+                "diplomatic/services": {
+                    "label": "சேவைகள்"
                 },
                 "direction": {
                     "placeholder": "45, 90, 180, 270"
@@ -378,6 +486,9 @@
                     "options": {
                         "clockwise": "கடிகாரச்சுற்று"
                     }
+                },
+                "direction_point": {
+                    "placeholder": "45, 90, 180, 270"
                 },
                 "direction_vertex": {
                     "options": {
@@ -476,9 +587,6 @@
                 "fuel": {
                     "label": "எரிபொருள்"
                 },
-                "fuel_multi": {
-                    "label": "எரிபொருள் வகைகள்"
-                },
                 "gender": {
                     "label": "பாலினம்",
                     "options": {
@@ -544,7 +652,6 @@
                     "label": "சாய்வு தளம்"
                 },
                 "incline_steps": {
-                    "label": "சாய்வு தளம்",
                     "options": {
                         "down": "கீழ்",
                         "up": "மேலே"
@@ -610,10 +717,7 @@
                     }
                 },
                 "leaf_type_singular": {
-                    "label": "இலை வகை",
-                    "options": {
-                        "leafless": "இலைகளற்ற"
-                    }
+                    "label": "இலை வகை"
                 },
                 "leisure": {
                     "label": "வகை"
@@ -728,7 +832,6 @@
                     }
                 },
                 "oneway_yes": {
-                    "label": "ஒரு வழி",
                     "options": {
                         "no": "இல்லை",
                         "undefined": "ஆம் எனக் கருதப்படுகிறது",
@@ -1744,11 +1847,20 @@
                 "natural/peak": {
                     "name": "மலை உச்சி"
                 },
+                "natural/sand": {
+                    "name": "மண்"
+                },
+                "natural/spring": {
+                    "name": "ஊற்று"
+                },
                 "natural/tree": {
                     "name": "மரம்"
                 },
                 "natural/tree_row": {
                     "name": "மரம் வரிசை"
+                },
+                "natural/valley": {
+                    "name": "பள்ளத்தாக்கு"
                 },
                 "natural/volcano": {
                     "name": "எரிமலை"

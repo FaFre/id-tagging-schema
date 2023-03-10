@@ -1,10 +1,12 @@
 {
     "fields": [
         "crossing",
-        "access",
         "surface",
         "tactile_paving",
-        "crossing/island"
+        "crossing/island",
+        "crossing/markings",
+        "crossing_raised",
+        "access"
     ],
     "geometry": [
         "line"

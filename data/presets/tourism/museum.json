@@ -6,7 +6,7 @@
         "operator/type",
         "museum",
         "address",
-        "building_area",
+        "building_area_yes",
         "opening_hours"
     ],
     "moreFields": [
@@ -25,6 +25,8 @@
         "opening_hours/covid19",
         "payment_multi",
         "phone",
+        "toilets",
+        "toilets/wheelchair",
         "wheelchair"
     ],
     "geometry": [
@@ -32,15 +34,23 @@
         "area"
     ],
     "terms": [
-        "art*",
-        "exhibit*",
-        "gallery",
+        "archaeological",
+        "archeological",
+        "art",
+        "cultural",
+        "excavation",
+        "exhibition",
         "foundation",
+        "gallery",
         "hall",
+        "history",
         "institution",
-        "paint*",
-        "photo*",
-        "sculpt*"
+        "nature",
+        "painting",
+        "photograph",
+        "science",
+        "sculpture",
+        "technology"
     ],
     "tags": {
         "tourism": "museum"

@@ -95,13 +95,16 @@
             "addr:subdistrict",
             "addr:suburb",
             "addr:unit"
-        ],
-        "icon": "address"
+        ]
     },
     "admin_level": {
         "key": "admin_level",
         "type": "number",
         "minValue": 1
+    },
+    "advertising": {
+        "key": "advertising",
+        "type": "typeCombo"
     },
     "aerialway": {
         "key": "aerialway",
@@ -198,7 +201,18 @@
     },
     "artwork_type": {
         "key": "artwork_type",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "sculpture",
+            "statue",
+            "mural",
+            "installation",
+            "graffiti",
+            "bust",
+            "painting",
+            "mosaic",
+            "relief"
+        ]
     },
     "ascent": {
         "key": "ascent",
@@ -211,7 +225,28 @@
     },
     "attraction": {
         "key": "attraction",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "animal",
+            "water_slide",
+            "amusement_ride",
+            "roller_coaster",
+            "carousel",
+            "maze",
+            "summer_toboggan",
+            "big_wheel",
+            "train",
+            "bumper_car",
+            "bungee_jumping",
+            "dark_ride",
+            "drop_tower",
+            "kiddie_ride",
+            "log_flume",
+            "pirate_ship",
+            "river_rafting",
+            "swing_carousel",
+            "alpine_coaster"
+        ]
     },
     "automated": {
         "key": "automated",
@@ -257,11 +292,42 @@
     },
     "barrier": {
         "key": "barrier",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "fence",
+            "gate",
+            "wall",
+            "hedge",
+            "kerb",
+            "bollard",
+            "lift_gate",
+            "retaining_wall",
+            "block",
+            "guard_rail",
+            "cycle_barrier",
+            "stile",
+            "entrance",
+            "swing_gate",
+            "cattle_grid",
+            "ditch",
+            "toll_booth",
+            "city_wall",
+            "kissing_gate",
+            "chain",
+            "jersey_barrier",
+            "height_restrictor",
+            "turnstile"
+        ]
     },
     "basin": {
         "key": "basin",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "detention",
+            "evaporation",
+            "infiltration",
+            "retention"
+        ]
     },
     "bath/open_air": {
         "key": "bath:open_air",
@@ -273,7 +339,14 @@
     },
     "bath/type": {
         "key": "bath:type",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "hammam",
+            "hot_spring",
+            "lake",
+            "onsen",
+            "thermal"
+        ]
     },
     "beauty": {
         "key": "beauty",
@@ -294,7 +367,19 @@
     },
     "bicycle_parking": {
         "key": "bicycle_parking",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "stands",
+            "wall_loops",
+            "shed",
+            "lockers",
+            "building",
+            "handlebar_holder"
+        ]
+    },
+    "bike_ride": {
+        "key": "bike_ride",
+        "type": "check"
     },
     "bin": {
         "key": "bin",
@@ -321,11 +406,29 @@
     },
     "board_type": {
         "key": "board_type",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "art",
+            "astronomy",
+            "geology",
+            "history",
+            "nature",
+            "notice",
+            "plants",
+            "welcome_sign",
+            "wildlife"
+        ]
     },
     "bollard": {
         "key": "bollard",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "fixed",
+            "flexible",
+            "foldable",
+            "removable",
+            "rising"
+        ]
     },
     "booth": {
         "key": "booth",
@@ -369,17 +472,87 @@
         "key": "bridge:support",
         "type": "typeCombo"
     },
-    "building_area": {
+    "building_area_yes": {
         "key": "building",
         "type": "combo",
         "default": "yes",
         "geometry": [
             "area"
-        ]
+        ],
+        "label": "{building}"
+    },
+    "building_area": {
+        "key": "building",
+        "type": "combo",
+        "geometry": [
+            "area"
+        ],
+        "label": "{building}"
     },
     "building": {
         "key": "building",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "allotment_house",
+            "apartments",
+            "barn",
+            "boathouse",
+            "bungalow",
+            "bunker",
+            "cabin",
+            "carport",
+            "cathedral",
+            "chapel",
+            "church",
+            "civic",
+            "college",
+            "commercial",
+            "construction",
+            "cowshed",
+            "detached",
+            "dormitory",
+            "farm",
+            "farm_auxiliary",
+            "fire_station",
+            "garage",
+            "garages",
+            "ger",
+            "grandstand",
+            "greenhouse",
+            "hangar",
+            "hospital",
+            "hotel",
+            "house",
+            "houseboat",
+            "hut",
+            "industrial",
+            "kindergarten",
+            "manufacture",
+            "mosque",
+            "office",
+            "outbuilding",
+            "pavilion",
+            "public",
+            "residential",
+            "retail",
+            "roof",
+            "ruins",
+            "school",
+            "semidetached_house",
+            "service",
+            "shed",
+            "stable",
+            "stadium",
+            "static_caravan",
+            "sty",
+            "synagogue",
+            "temple",
+            "terrace",
+            "train_station",
+            "transportation",
+            "university",
+            "warehouse"
+        ]
     },
     "building/flats": {
         "key": "building:flats",
@@ -390,6 +563,8 @@
         "key": "building:levels",
         "type": "number",
         "minValue": 0,
+        "label": "{building/levels}",
+        "placeholder": "{building/levels}",
         "prerequisiteTag": {
             "key": "building",
             "valueNot": "no"
@@ -485,7 +660,11 @@
     "capacity/caravans": {
         "key": "capacity:caravans",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "prerequisiteTag": {
+            "key": "caravans",
+            "valueNot": "no"
+        }
     },
     "capacity/disabled_parking": {
         "key": "capacity:disabled",
@@ -505,6 +684,10 @@
             "key": "tents",
             "valueNot": "no"
         }
+    },
+    "caravans": {
+        "key": "caravans",
+        "type": "check"
     },
     "cash_in": {
         "key": "cash_in",
@@ -547,7 +730,8 @@
     },
     "check_date": {
         "key": "check_date",
-        "type": "text"
+        "type": "date",
+        "universal": true
     },
     "circumference": {
         "key": "circumference",
@@ -556,7 +740,27 @@
     },
     "clothes": {
         "key": "clothes",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "babies",
+            "children",
+            "denim",
+            "fur",
+            "hats",
+            "maternity",
+            "men",
+            "motorcycle",
+            "oversize",
+            "socks",
+            "sports",
+            "suits",
+            "swimwear",
+            "traditional",
+            "underwear",
+            "wedding",
+            "women",
+            "workwear"
+        ]
     },
     "club": {
         "key": "club",
@@ -572,7 +776,7 @@
     },
     "colour": {
         "key": "colour",
-        "type": "text"
+        "type": "colour"
     },
     "comment": {
         "key": "comment",
@@ -601,8 +805,7 @@
     },
     "contact/webcam": {
         "key": "contact:webcam",
-        "type": "url",
-        "icon": "website"
+        "type": "url"
     },
     "content": {
         "key": "content",
@@ -656,6 +859,7 @@
     "covered_no": {
         "key": "covered",
         "type": "check",
+        "label": "{covered}",
         "options": [
             "undefined",
             "yes",
@@ -668,22 +872,116 @@
     },
     "craft": {
         "key": "craft",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "agricultural_engines",
+            "basket_maker",
+            "beekeeper",
+            "blacksmith",
+            "boatbuilder",
+            "bookbinder",
+            "brewery",
+            "builder",
+            "carpenter",
+            "carpet_layer",
+            "caterer",
+            "chimney_sweeper",
+            "cleaning",
+            "clockmaker",
+            "confectionery",
+            "distillery",
+            "dressmaker",
+            "electronics_repair",
+            "electrician",
+            "floorer",
+            "gardener",
+            "glaziery",
+            "grinding_mill",
+            "handicraft",
+            "hvac",
+            "insulation",
+            "jeweller",
+            "joiner",
+            "key_cutter",
+            "locksmith",
+            "metal_construction",
+            "oil_mill",
+            "painter",
+            "parquet_layer",
+            "photographer",
+            "photographic_laboratory",
+            "plasterer",
+            "plumber",
+            "pottery",
+            "rigger",
+            "roofer",
+            "saddler",
+            "sailmaker",
+            "sawmill",
+            "scaffolder",
+            "sculptor",
+            "shoemaker",
+            "signmaker",
+            "stonemason",
+            "tailor",
+            "tiler",
+            "tinsmith",
+            "upholsterer",
+            "watchmaker",
+            "window_construction",
+            "winery"
+        ]
     },
     "crane/type": {
         "key": "crane:type",
         "type": "combo",
+        "icons": {
+            "portal_crane": "roentgen-crane_portal",
+            "gantry_crane": "roentgen-crane_gantry",
+            "tower_crane": "roentgen-crane",
+            "travel_lift": "roentgen-crane_travel_lift"
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
             "portal_crane",
             "floor-mounted_crane",
-            "travel_lift"
+            "travel_lift",
+            "gantry_crane",
+            "tower_crane"
         ]
     },
     "crop": {
         "key": "crop",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "asparagus",
+            "barley",
+            "beet",
+            "cassava",
+            "coffee",
+            "cotton",
+            "cranberries",
+            "fast_growing_wood",
+            "flowers",
+            "grape",
+            "grass",
+            "hop",
+            "lavender",
+            "maize",
+            "potato",
+            "rape",
+            "rice",
+            "strawberry",
+            "sugar_beet",
+            "sugarcane",
+            "sunflower",
+            "soy",
+            "tea",
+            "tobacco",
+            "vegetable",
+            "wheat"
+        ]
     },
     "crossing_raised": {
         "key": "traffic_calming",
@@ -695,7 +993,12 @@
     },
     "crossing": {
         "key": "crossing",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "traffic_signals",
+            "uncontrolled",
+            "unmarked"
+        ]
     },
     "crossing/barrier": {
         "key": "crossing:barrier",
@@ -721,6 +1024,49 @@
     "crossing/light": {
         "key": "crossing:light",
         "type": "check"
+    },
+    "crossing/markings_yes": {
+        "key": "crossing:markings",
+        "type": "combo",
+        "label": "{crossing/markings}",
+        "stringsCrossReference": "{crossing/markings}",
+        "iconsCrossReference": "{crossing/markings}",
+        "default": "yes"
+    },
+    "crossing/markings": {
+        "key": "crossing:markings",
+        "type": "combo",
+        "icons": {
+            "zebra": "iD-crossing_markings-zebra",
+            "lines": "iD-crossing_markings-lines",
+            "ladder": "iD-crossing_markings-ladder",
+            "dots": "iD-crossing_markings-dots",
+            "dashes": "iD-crossing_markings-dashes",
+            "surface": "iD-crossing_markings-surface",
+            "ladder:skewed": "iD-crossing_markings-ladder_skewed",
+            "lines:paired": "iD-crossing_markings-lines_paired",
+            "zebra:double": "iD-crossing_markings-zebra_double",
+            "zebra:paired": "iD-crossing_markings-zebra_paired",
+            "zebra:bicolour": "iD-crossing_markings-zebra_bicolour",
+            "ladder:paired": "iD-crossing_markings-ladder_paired"
+        },
+        "options": [
+            "zebra",
+            "lines",
+            "no",
+            "ladder",
+            "dots",
+            "dashes",
+            "yes",
+            "surface",
+            "ladder:skewed",
+            "pictograms",
+            "lines:paired",
+            "zebra:double",
+            "zebra:paired",
+            "zebra:bicolour",
+            "ladder:paired"
+        ]
     },
     "cuisine": {
         "key": "cuisine",
@@ -774,7 +1120,8 @@
     },
     "currency_multi": {
         "key": "currency:",
-        "type": "multiCombo"
+        "type": "multiCombo",
+        "caseSensitive": true
     },
     "cutting": {
         "key": "cutting",
@@ -784,20 +1131,22 @@
     "cycle_network": {
         "key": "cycle_network",
         "type": "networkCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "cycleway": {
+        "key": "cycleway",
         "keys": [
-            "cycleway",
             "cycleway:left",
             "cycleway:right"
         ],
         "reference": {
             "key": "cycleway"
         },
-        "type": "cycleway",
+        "type": "directionalCombo",
+        "autoSuggestions": true,
         "options": [
-            "none",
+            "no",
             "lane",
             "shared_lane",
             "track",
@@ -851,6 +1200,10 @@
         "key": "trolley:deposit",
         "type": "check"
     },
+    "depot": {
+        "key": "depot",
+        "type": "combo"
+    },
     "depth": {
         "key": "depth",
         "minValue": 0,
@@ -866,13 +1219,60 @@
         "type": "textarea",
         "universal": true
     },
+    "design_power_pole": {
+        "key": "design",
+        "type": "combo",
+        "label": "{design}",
+        "icons": {
+            "one-level": "roentgen-power_pole_1_level",
+            "two-level": "roentgen-power_pole_2_level",
+            "three-level": "roentgen-power_pole_3_level",
+            "four-level": "roentgen-power_pole_4_level",
+            "asymmetric": "roentgen-power_pole_asymmetric",
+            "triangle": "roentgen-power_pole_triangle",
+            "flag": "roentgen-power_pole_flag",
+            "delta": "roentgen-power_pole_delta",
+            "armless": "roentgen-power_pole_armless",
+            "armless_asymmetric": "roentgen-power_pole_asymmetric_armless",
+            "armless_triangle": "roentgen-power_pole_triangle_armless"
+        }
+    },
+    "design_power_tower": {
+        "key": "design",
+        "type": "combo",
+        "label": "{design}",
+        "icons": {
+            "one-level": "roentgen-power_tower_1_level",
+            "two-level": "roentgen-power_tower_2_level",
+            "three-level": "roentgen-power_tower_3_level",
+            "four-level": "roentgen-power_tower_4_level",
+            "asymmetric": "roentgen-power_tower_asymmetric",
+            "triangle": "roentgen-power_tower_triangle",
+            "flag": "roentgen-power_tower_flag",
+            "delta": "roentgen-power_tower_delta",
+            "delta_two-level": "roentgen-power_tower_delta_2_level",
+            "delta_tree-level": "roentgen-power_tower_delta_3_level",
+            "donau": "roentgen-power_tower_donau",
+            "barrel": "roentgen-power_tower_barrel",
+            "x-frame": "roentgen-power_tower_x_frame",
+            "y-frame": "roentgen-power_tower_y_frame",
+            "h-frame": "roentgen-power_tower_h_frame",
+            "h-frame_two-level": "roentgen-power_tower_h_frame_2_level",
+            "guyed_h-frame": "roentgen-power_tower_guyed_h_frame",
+            "portal": "roentgen-power_tower_portal",
+            "portal_two-level": "roentgen-power_tower_portal_2_level",
+            "portal_three-level": "roentgen-power_tower_portal_3_level"
+        }
+    },
     "design": {
         "key": "design",
-        "type": "combo"
+        "type": "combo",
+        "usage": "manual"
     },
     "destination_oneway": {
         "key": "destination",
         "type": "semiCombo",
+        "label": "{destination}",
         "prerequisiteTag": {
             "key": "oneway",
             "value": "yes"
@@ -886,25 +1286,30 @@
     "destination": {
         "key": "destination",
         "type": "semiCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "destination/ref_oneway": {
         "key": "destination:ref",
         "type": "semiCombo",
+        "label": "{destination/ref}",
         "prerequisiteTag": {
             "key": "oneway",
             "value": "yes"
         },
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "destination/ref": {
         "key": "destination:ref",
         "type": "semiCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "destination/symbol_oneway": {
         "key": "destination:symbol",
         "type": "semiCombo",
+        "label": "{destination/symbol}",
         "prerequisiteTag": {
             "key": "oneway",
             "value": "yes"
@@ -981,6 +1386,7 @@
     "direction_point": {
         "key": "direction",
         "type": "number",
+        "label": "{direction}",
         "increment": 5,
         "geometry": [
             "point"
@@ -989,16 +1395,24 @@
     "direction_vertex_dual": {
         "key": "direction",
         "type": "combo",
-        "autoSuggestions": false,
-        "customValues": false,
+        "label": "{direction_vertex}",
+        "stringsCrossReference": "{direction_vertex}",
         "options": [
             "forward",
             "backward"
-        ]
+        ],
+        "geometry": [
+            "vertex"
+        ],
+        "autoSuggestions": false,
+        "customValues": false
     },
     "direction_vertex": {
         "key": "direction",
         "type": "combo",
+        "geometry": [
+            "vertex"
+        ],
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1014,8 +1428,7 @@
     },
     "dispensing": {
         "key": "dispensing",
-        "type": "check",
-        "default": "yes"
+        "type": "check"
     },
     "display": {
         "key": "display",
@@ -1090,7 +1503,7 @@
     "ele_node": {
         "key": "ele",
         "type": "number",
-        "icon": "elevation",
+        "label": "{ele}",
         "universal": true,
         "geometry": [
             "point",
@@ -1100,7 +1513,6 @@
     "ele": {
         "key": "ele",
         "type": "number",
-        "icon": "elevation",
         "geometry": [
             "line",
             "area",
@@ -1161,7 +1573,19 @@
     },
     "entrance": {
         "key": "entrance",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "yes",
+            "main",
+            "secondary",
+            "service",
+            "exit",
+            "entrance",
+            "emergency",
+            "staircase",
+            "home",
+            "garage"
+        ]
     },
     "except": {
         "key": "except",
@@ -1221,7 +1645,8 @@
     "fire_hydrant/pressure": {
         "key": "fire_hydrant:pressure",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "fire_hydrant/type": {
         "key": "fire_hydrant:type",
@@ -1334,6 +1759,7 @@
     "frequency_electrified": {
         "key": "frequency",
         "type": "combo",
+        "label": "{frequency}",
         "prerequisiteTag": {
             "key": "electrified",
             "valueNot": "no"
@@ -1347,13 +1773,70 @@
         "key": "from",
         "type": "text"
     },
-    "fuel_multi": {
-        "key": "fuel:",
-        "type": "multiCombo"
-    },
     "fuel": {
         "key": "fuel",
         "type": "combo"
+    },
+    "fuel/fuel_multi-RU": {
+        "key": "fuel:",
+        "type": "multiCombo",
+        "label": "{fuel/fuel_multi}",
+        "stringsCrossReference": "{fuel/fuel_multi}",
+        "options": [
+            "diesel",
+            "octane_80",
+            "octane_92",
+            "octane_95",
+            "octane_98",
+            "octane_100",
+            "lpg",
+            "cng"
+        ],
+        "autoSuggestions": false,
+        "locationSet": {
+            "include": [
+                "RU"
+            ]
+        }
+    },
+    "fuel/fuel_multi": {
+        "key": "fuel:",
+        "type": "multiCombo",
+        "autoSuggestions": true,
+        "caseSensitive": true,
+        "locationSet": {
+            "exclude": [
+                "RU"
+            ]
+        },
+        "options": [
+            "diesel",
+            "GTL_diesel",
+            "HGV_diesel",
+            "biodiesel",
+            "octane_80",
+            "octane_85",
+            "octane_87",
+            "octane_88",
+            "octane_89",
+            "octane_90",
+            "octane_91",
+            "octane_92",
+            "octane_93",
+            "octane_95",
+            "octane_97",
+            "octane_98",
+            "octane_100",
+            "e10",
+            "e85",
+            "lpg",
+            "cng",
+            "propane",
+            "LH2",
+            "h70",
+            "adblue",
+            "adblue:canister"
+        ]
     },
     "gambling": {
         "key": "gambling",
@@ -1382,16 +1865,68 @@
     },
     "generator/method": {
         "key": "generator:method",
-        "type": "combo"
+        "type": "combo",
+        "autoSuggestions": false,
+        "options": [
+            "fission",
+            "fusion",
+            "wind_turbine",
+            "water-storage",
+            "water-pumped-storage",
+            "run-of-the-river",
+            "barrage",
+            "stream",
+            "thermal",
+            "photovoltaic",
+            "combustion",
+            "gasification",
+            "anaerobic_digestion"
+        ]
+    },
+    "generator/method/hydro": {
+        "key": "generator:method",
+        "type": "combo",
+        "label": "{generator/method}",
+        "stringsCrossReference": "{generator/method}",
+        "options": [
+            "water-storage",
+            "water-pumped-storage",
+            "run-of-the-river"
+        ],
+        "autoSuggestions": false,
+        "prerequisiteTag": {
+            "key": "generator:source",
+            "value": "hydro"
+        }
     },
     "generator/output/electricity": {
         "key": "generator:output:electricity",
         "type": "typeCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "generator/source": {
         "key": "generator:source",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "nuclear",
+            "wind",
+            "hydro",
+            "tidal",
+            "wave",
+            "geothermal",
+            "solar",
+            "coal",
+            "gas",
+            "biomass",
+            "biofuel",
+            "biogas",
+            "oil",
+            "diesel",
+            "gasoline",
+            "waste",
+            "battery"
+        ]
     },
     "generator/type": {
         "key": "generator:type",
@@ -1400,7 +1935,8 @@
     "genus": {
         "key": "genus",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "geyser/height": {
         "key": "geyser:height",
@@ -1424,7 +1960,8 @@
     "grades": {
         "key": "grades",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "grape_variety": {
         "key": "grape_variety",
@@ -1461,7 +1998,94 @@
     },
     "healthcare/speciality": {
         "key": "healthcare:speciality",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "abortion",
+            "acupuncture",
+            "allergology",
+            "anaesthetics",
+            "angiology",
+            "anthroposophical",
+            "applied_kinesiology",
+            "aromatherapy",
+            "ayurveda",
+            "behavior",
+            "biochemistry",
+            "biology",
+            "blood_check",
+            "body",
+            "cardiology",
+            "cardiothoracic_surgery",
+            "child_psychiatry",
+            "chiropractic",
+            "clinical_pathology",
+            "community",
+            "depth",
+            "dermatology",
+            "dermatovenereology",
+            "diabetology",
+            "diagnostic_radiology",
+            "emergency",
+            "endocrinology",
+            "fertility",
+            "gastroenterology",
+            "general",
+            "geriatrics",
+            "gynaecology",
+            "haematology",
+            "hepatology",
+            "herbalism",
+            "homeopathy",
+            "humanistic",
+            "hydrotherapy",
+            "hypnosis",
+            "infectious_diseases",
+            "intensive",
+            "internal",
+            "dental_oral_maxillo_facial_surgery",
+            "naturopathy",
+            "neonatology",
+            "nephrology",
+            "neurology",
+            "neuropsychiatry",
+            "neurosurgery",
+            "nuclear",
+            "occupational",
+            "oncology",
+            "ophthalmology",
+            "orthodontics",
+            "orthopaedics",
+            "osteopathy",
+            "otolaryngology",
+            "paediatric_surgery",
+            "paediatrics",
+            "palliative",
+            "pathology",
+            "physiatry",
+            "plastic_surgery",
+            "podiatry",
+            "proctology",
+            "psychiatry",
+            "pulmonology",
+            "radiology",
+            "radiotherapy",
+            "reflexology",
+            "reiki",
+            "rheumatology",
+            "shiatsu",
+            "stomatology",
+            "surgery",
+            "systemic",
+            "traditional_chinese_medicine",
+            "transplant",
+            "trauma",
+            "tropical",
+            "tuina",
+            "unani",
+            "urology",
+            "vaccination",
+            "vascular_surgery"
+        ]
     },
     "heating": {
         "key": "heating",
@@ -1478,6 +2102,11 @@
     },
     "height": {
         "key": "height",
+        "minValue": 0,
+        "type": "number"
+    },
+    "height/hub": {
+        "key": "height:hub",
         "minValue": 0,
         "type": "number"
     },
@@ -1512,7 +2141,7 @@
     },
     "historic/wreck/date_sunk": {
         "key": "wreck:date_sunk",
-        "type": "text"
+        "type": "date"
     },
     "historic/wreck/visible_at_high_tide": {
         "key": "wreck:visible_at_high_tide",
@@ -1608,6 +2237,7 @@
     "incline_steps": {
         "key": "incline",
         "type": "combo",
+        "label": "{incline}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1646,6 +2276,7 @@
     "intermittent_yes": {
         "key": "intermittent",
         "type": "check",
+        "label": "{intermittent}",
         "default": "yes"
     },
     "intermittent": {
@@ -1764,14 +2395,16 @@
     "leaf_cycle_singular": {
         "key": "leaf_cycle",
         "type": "combo",
-        "autoSuggestions": false,
-        "customValues": false,
+        "label": "{leaf_cycle}",
+        "stringsCrossReference": "{leaf_cycle}",
         "options": [
             "evergreen",
             "deciduous",
             "semi_evergreen",
             "semi_deciduous"
-        ]
+        ],
+        "autoSuggestions": false,
+        "customValues": false
     },
     "leaf_cycle": {
         "key": "leaf_cycle",
@@ -1789,17 +2422,23 @@
     "leaf_type_singular": {
         "key": "leaf_type",
         "type": "combo",
-        "autoSuggestions": false,
-        "customValues": false,
+        "stringsCrossReference": "{leaf_type}",
+        "iconsCrossReference": "{leaf_type}",
         "options": [
             "broadleaved",
             "needleleaved",
             "leafless"
-        ]
+        ],
+        "autoSuggestions": false,
+        "customValues": false
     },
     "leaf_type": {
         "key": "leaf_type",
         "type": "combo",
+        "icons": {
+            "broadleaved": "roentgen-tree",
+            "needleleaved": "roentgen-needleleaved_tree"
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1833,9 +2472,25 @@
         "key": "liaison",
         "type": "combo"
     },
+    "license_classes": {
+        "key": "license_classes",
+        "type": "semiCombo"
+    },
     "lifeguard": {
         "key": "lifeguard",
         "type": "check"
+    },
+    "lift_gate/type": {
+        "key": "lift_gate:type",
+        "type": "combo",
+        "reference": {
+            "key": "barrier",
+            "value": "lift_gate"
+        },
+        "options": [
+            "single",
+            "double"
+        ]
     },
     "line_attachment": {
         "key": "line_attachment",
@@ -1852,6 +2507,7 @@
     "location_pool": {
         "key": "location",
         "type": "combo",
+        "label": "{location}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1911,7 +2567,35 @@
     },
     "material": {
         "key": "material",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "adobe",
+            "aluminium",
+            "brass",
+            "brick",
+            "bronze",
+            "concrete",
+            "dry_stone",
+            "glass",
+            "granite",
+            "iron",
+            "limestone",
+            "marble",
+            "metal",
+            "plastic",
+            "reinforced_conrete",
+            "rock",
+            "sand",
+            "sandstone",
+            "soil",
+            "steel",
+            "stone",
+            "wood"
+        ]
+    },
+    "mattress": {
+        "key": "mattress",
+        "type": "check"
     },
     "mattress": {
         "key": "mattress",
@@ -1943,17 +2627,17 @@
         "key": "maxstay",
         "type": "combo",
         "options": [
-            "15 min",
-            "30 min",
-            "45 min",
-            "1 hr",
-            "1.5 hr",
-            "2 hr",
-            "2.5 hr",
-            "3 hr",
-            "4 hr",
+            "15 minutes",
+            "30 minutes",
+            "45 minutes",
+            "1 hour",
+            "1.5 hours",
+            "2 hours",
+            "2.5 hours",
+            "3 hours",
+            "4 hours",
             "1 day",
-            "2 day"
+            "2 days"
         ],
         "autoSuggestions": false,
         "snake_case": false
@@ -1961,6 +2645,7 @@
     "maxweight_bridge": {
         "key": "maxweight",
         "type": "combo",
+        "label": "{maxweight}",
         "snake_case": false,
         "prerequisiteTag": {
             "key": "bridge",
@@ -1979,6 +2664,23 @@
     },
     "memorial": {
         "key": "memorial",
+        "type": "combo",
+        "options": [
+            "blue_plaque",
+            "bust",
+            "cross",
+            "obelisk",
+            "plaque",
+            "sculpture",
+            "statue",
+            "stele",
+            "stolperstein",
+            "stone",
+            "war_memorial"
+        ]
+    },
+    "message": {
+        "key": "message",
         "type": "combo"
     },
     "microbrewery": {
@@ -2124,7 +2826,8 @@
     "network_road": {
         "key": "network",
         "type": "networkCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "network": {
         "key": "network",
@@ -2140,21 +2843,85 @@
     "not/name": {
         "key": "not:name",
         "type": "semiCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "note": {
         "key": "note",
         "type": "textarea",
-        "universal": true,
-        "icon": "note"
+        "universal": true
+    },
+    "nudism": {
+        "key": "nudism",
+        "type": "combo",
+        "autoSuggestions": false,
+        "customValues": false,
+        "options": [
+            "customary",
+            "designated",
+            "no",
+            "obligatory",
+            "permissive",
+            "yes"
+        ]
     },
     "office": {
         "key": "office",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "accountant",
+            "adoption_agency",
+            "advertising_agency",
+            "architect",
+            "association",
+            "charity",
+            "company",
+            "construction_company",
+            "consulting",
+            "courier",
+            "coworking",
+            "diplomatic",
+            "educational_institution",
+            "employment_agency",
+            "energy_supplier",
+            "engineer",
+            "estate_agent",
+            "financial",
+            "financial_advisor",
+            "forestry",
+            "foundation",
+            "government",
+            "graphic_design",
+            "guide",
+            "insurance",
+            "it",
+            "lawyer",
+            "logistics",
+            "moving_company",
+            "newspaper",
+            "ngo",
+            "notary",
+            "physician",
+            "political_party",
+            "private_investigator",
+            "property_management",
+            "quango",
+            "religion",
+            "research",
+            "security",
+            "surveyor",
+            "tax_advisor",
+            "telecommunication",
+            "therapist",
+            "travel_agent",
+            "union",
+            "water_utility"
+        ]
     },
     "oneway_yes": {
         "key": "oneway",
         "type": "onewayCheck",
+        "label": "{oneway}",
         "options": [
             "undefined",
             "yes",
@@ -2187,17 +2954,19 @@
     },
     "opening_date": {
         "key": "opening_date",
-        "type": "text"
+        "type": "date"
     },
     "opening_hours": {
         "key": "opening_hours",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "opening_hours/covid19": {
         "key": "opening_hours:covid19",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "operator": {
         "key": "operator",
@@ -2250,10 +3019,14 @@
     "parking_entrance": {
         "key": "parking",
         "type": "combo",
+        "stringsCrossReference": "{parking}",
         "options": [
             "underground",
-            "multi-storey"
-        ]
+            "multi-storey",
+            "surface"
+        ],
+        "autoSuggestions": false,
+        "customValues": true
     },
     "parking_space": {
         "key": "parking_space",
@@ -2274,7 +3047,10 @@
             "rooftop",
             "sheds",
             "street_side",
-            "layby"
+            "layby",
+            "on_kerb",
+            "half_on_kerb",
+            "shoulder"
         ]
     },
     "parking/orientation": {
@@ -2287,17 +3063,102 @@
             "perpendicular"
         ]
     },
+    "parking/side/orientation": {
+        "key": "parking:both:orientation",
+        "keys": [
+            "parking:left:orientation",
+            "parking:right:orientation"
+        ],
+        "reference": {
+            "key": "parking:orientation"
+        },
+        "type": "directionalCombo",
+        "autoSuggestions": false,
+        "customValues": false,
+        "options": [
+            "parallel",
+            "diagonal",
+            "perpendicular"
+        ]
+    },
+    "parking/side/parking": {
+        "key": "parking:both",
+        "keys": [
+            "parking:left",
+            "parking:right"
+        ],
+        "reference": {
+            "key": "parking"
+        },
+        "type": "directionalCombo",
+        "autoSuggestions": false,
+        "customValues": false,
+        "options": [
+            "lane",
+            "street_side",
+            "on_kerb",
+            "half_on_kerb",
+            "shoulder",
+            "no",
+            "separate",
+            "yes"
+        ]
+    },
     "payment_multi_fee": {
         "key": "payment:",
         "type": "multiCombo",
+        "label": "{payment_multi}",
         "prerequisiteTag": {
             "key": "fee",
             "valueNot": "no"
-        }
+        },
+        "stringsCrossReference": "{payment_multi}"
     },
     "payment_multi": {
         "key": "payment:",
-        "type": "multiCombo"
+        "type": "multiCombo",
+        "options": [
+            "account_cards",
+            "app",
+            "cards",
+            "cash",
+            "cheque",
+            "coins",
+            "contactless",
+            "credit_cards",
+            "cryptocurrencies",
+            "debit_cards",
+            "electronic_purses",
+            "notes",
+            "prepaid_ticket",
+            "telephone_cards",
+            "alipay",
+            "american_express",
+            "apple_pay",
+            "bancomat",
+            "blik",
+            "clipper",
+            "diners_club",
+            "discover_card",
+            "dkv",
+            "ep_easycard",
+            "ep_geldkarte",
+            "ep_ipass",
+            "girocard",
+            "google_pay",
+            "jcb",
+            "maestro",
+            "mastercard",
+            "mastercard_contactless",
+            "paypal",
+            "unionpay",
+            "uta",
+            "v_pay",
+            "visa",
+            "visa_debit",
+            "visa_electron",
+            "wechat"
+        ]
     },
     "phases": {
         "key": "phases",
@@ -2306,12 +3167,20 @@
     },
     "phone": {
         "key": "phone",
-        "type": "tel",
-        "icon": "maki-telephone"
+        "type": "tel"
+    },
+    "picnic_table": {
+        "key": "picnic_table",
+        "type": "check"
+    },
+    "pipeline": {
+        "key": "pipeline",
+        "type": "typeCombo"
     },
     "piste/difficulty_downhill": {
         "key": "piste:difficulty",
         "type": "combo",
+        "label": "{piste/difficulty}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2327,6 +3196,7 @@
     "piste/difficulty_nordic": {
         "key": "piste:difficulty",
         "type": "combo",
+        "label": "{piste/difficulty}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2340,6 +3210,7 @@
     "piste/difficulty_skitour": {
         "key": "piste:difficulty",
         "type": "combo",
+        "label": "{piste/difficulty}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2370,6 +3241,7 @@
     "piste/grooming_downhill": {
         "key": "piste:grooming",
         "type": "combo",
+        "label": "{piste/grooming}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2381,6 +3253,7 @@
     "piste/grooming_hike": {
         "key": "piste:grooming",
         "type": "combo",
+        "label": "{piste/grooming}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2391,6 +3264,7 @@
     "piste/grooming_nordic": {
         "key": "piste:grooming",
         "type": "combo",
+        "label": "{piste/grooming}",
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -2443,16 +3317,85 @@
     },
     "plant/method": {
         "key": "plant:method",
-        "type": "combo"
+        "type": "combo",
+        "stringsCrossReference": "{generator/method}",
+        "autoSuggestions": false
+    },
+    "plant/method/hydro": {
+        "key": "plant:method",
+        "type": "combo",
+        "label": "{plant/method}",
+        "stringsCrossReference": "{generator/method}",
+        "options": [
+            "water-storage",
+            "water-pumped-storage",
+            "run-of-the-river"
+        ],
+        "autoSuggestions": false,
+        "prerequisiteTag": {
+            "key": "plant:source",
+            "value": "hydro"
+        }
+    },
+    "plant/method/solar": {
+        "key": "plant:method",
+        "type": "combo",
+        "label": "{plant/method}",
+        "stringsCrossReference": "{generator/method}",
+        "options": [
+            "thermal",
+            "photovoltaic"
+        ],
+        "autoSuggestions": false,
+        "prerequisiteTag": {
+            "key": "plant:source",
+            "value": "solar"
+        }
+    },
+    "plant/method/waste": {
+        "key": "plant:method",
+        "type": "combo",
+        "label": "{plant/method}",
+        "stringsCrossReference": "{generator/method}",
+        "options": [
+            "combustion",
+            "gasification"
+        ],
+        "autoSuggestions": false,
+        "prerequisiteTag": {
+            "key": "plant:source",
+            "value": "waste"
+        }
+    },
+    "plant/output": {
+        "key": "plant:output",
+        "type": "multiCombo",
+        "autoSuggestions": false,
+        "options": [
+            "electricity",
+            "hot_water",
+            "hot_air",
+            "cold_water",
+            "cold_air",
+            "compressed_air",
+            "steam",
+            "vacuum"
+        ]
     },
     "plant/output/electricity": {
         "key": "plant:output:electricity",
         "type": "typeCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true,
+        "prerequisiteTag": {
+            "key": "plant:output:electricity",
+            "valueNot": "no"
+        }
     },
     "plant/source": {
         "key": "plant:source",
-        "type": "combo"
+        "type": "combo",
+        "stringsCrossReference": "{generator/source}"
     },
     "playground": {
         "key": "playground",
@@ -2476,9 +3419,51 @@
         "type": "number",
         "minValue": 0
     },
+    "population/date": {
+        "key": "population:date",
+        "type": "text",
+        "prerequisiteTag": {
+            "key": "population"
+        }
+    },
     "portable": {
         "key": "portable",
         "type": "check"
+    },
+    "post_box/type-GB": {
+        "key": "post_box:type",
+        "locationSet": {
+            "include": [
+                "gb"
+            ]
+        },
+        "type": "typeCombo",
+        "label": "{post_box/type}",
+        "stringsCrossReference": "{post_box/type}",
+        "options": [
+            "pillar",
+            "lamp",
+            "wall"
+        ],
+        "autoSuggestions": false,
+        "customValues": false
+    },
+    "post_box/type": {
+        "key": "post_box:type",
+        "locationSet": {
+            "exclude": [
+                "gb"
+            ]
+        },
+        "type": "typeCombo",
+        "autoSuggestions": true,
+        "customValues": true,
+        "options": [
+            "pillar",
+            "lamp",
+            "wall",
+            "community"
+        ]
     },
     "post": {
         "type": "address",
@@ -2570,7 +3555,8 @@
     "rating": {
         "key": "rating",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "rcn_ref": {
         "key": "rcn_ref",
@@ -2589,6 +3575,7 @@
     "recycling_accepts": {
         "key": "recycling:",
         "type": "multiCombo",
+        "caseSensitive": true,
         "options": [
             "glass_bottles",
             "glass",
@@ -2669,9 +3656,33 @@
         "key": "ref",
         "type": "text"
     },
+    "ref/FR/siret-FR": {
+        "key": "ref:FR:SIRET",
+        "type": "identifier",
+        "urlFormat": "https://annuaire-entreprises.data.gouv.fr/etablissement/{value}",
+        "pattern": "^[0-9]{9}([1-7][0-9]{3}|0[1-9][0-9]{2}|00[1-9][0-9]|000[1-9])[0-9]$",
+        "locationSet": {
+            "include": [
+                "fr"
+            ]
+        }
+    },
     "ref/isil": {
         "key": "ref:isil",
         "type": "text"
+    },
+    "ref/linz/place_id-NZ": {
+        "key": "ref:linz:place_id",
+        "type": "identifier",
+        "urlFormat": "http://gazetteer.linz.govt.nz/place/{value}",
+        "pattern": "^[0-9;]{1,}$",
+        "universal": true,
+        "locationSet": {
+            "include": [
+                "nz",
+                "aq"
+            ]
+        }
     },
     "ref/vatin": {
         "key": "ref:vatin",
@@ -2737,7 +3748,31 @@
     },
     "religion": {
         "key": "religion",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "bahai",
+            "benzhu",
+            "buddhist",
+            "caodaism",
+            "chinese_folk",
+            "christian",
+            "confucian",
+            "hindu",
+            "jain",
+            "jewish",
+            "multifaith",
+            "muslim",
+            "none",
+            "pagan",
+            "shinto",
+            "sikh",
+            "spiritualist",
+            "taoist",
+            "tenrikyo",
+            "unitarian_universalist",
+            "vietnamese_folk",
+            "voodoo"
+        ]
     },
     "reservation": {
         "key": "reservation",
@@ -2761,7 +3796,18 @@
     },
     "resource": {
         "key": "resource",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "aggregate",
+            "clay",
+            "coal",
+            "gold",
+            "gravel",
+            "iron_ore",
+            "limestone",
+            "peat",
+            "sand"
+        ]
     },
     "restriction": {
         "key": "restriction",
@@ -2772,7 +3818,6 @@
         "geometry": [
             "vertex"
         ],
-        "icon": "iD-restrictions",
         "usage": "manual",
         "reference": {
             "rtype": "restriction"
@@ -2780,7 +3825,7 @@
     },
     "roof/colour": {
         "key": "roof:colour",
-        "type": "text"
+        "type": "colour"
     },
     "room": {
         "key": "room",
@@ -2790,6 +3835,11 @@
         "key": "rooms",
         "type": "number",
         "minValue": 0
+    },
+    "rotor/diameter": {
+        "key": "rotor:diameter",
+        "minValue": 0,
+        "type": "number"
     },
     "roundtrip": {
         "key": "roundtrip",
@@ -2802,6 +3852,23 @@
     "route": {
         "key": "route",
         "type": "combo"
+    },
+    "royal_cypher": {
+        "key": "royal_cypher",
+        "type": "typeCombo",
+        "autoSuggestions": false,
+        "customValues": false,
+        "options": [
+            "VR",
+            "EVIIR",
+            "EVIIIR",
+            "GR",
+            "GVIR",
+            "EIIR",
+            "CIIIR",
+            "scottish_crown",
+            "no"
+        ]
     },
     "ruins": {
         "key": "ruins",
@@ -3083,10 +4150,6 @@
             "other"
         ]
     },
-    "site_type": {
-        "key": "site_type",
-        "type": "combo"
-    },
     "site": {
         "key": "site",
         "type": "combo"
@@ -3131,12 +4194,22 @@
     },
     "social_facility": {
         "key": "social_facility",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "ambulatory_care",
+            "assisted_living",
+            "day_care",
+            "food_bank",
+            "group_home",
+            "nursing_home",
+            "outreach",
+            "shelter",
+            "workshop"
+        ]
     },
     "source": {
         "key": "source",
         "type": "semiCombo",
-        "icon": "source",
         "universal": true,
         "snake_case": false,
         "caseSensitive": true,
@@ -3150,10 +4223,20 @@
             "osm notes"
         ]
     },
+    "source/population": {
+        "key": "source:population",
+        "type": "combo",
+        "prerequisiteTag": {
+            "key": "population"
+        },
+        "snake_case": false,
+        "caseSensitive": true
+    },
     "species": {
         "key": "species",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "species/wikidata": {
         "key": "species:wikidata",
@@ -3210,7 +4293,44 @@
     },
     "sport": {
         "key": "sport",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "american_football",
+            "athletics",
+            "badminton",
+            "baseball",
+            "basketball",
+            "beachvolleyball",
+            "boules",
+            "bowls",
+            "climbing",
+            "cricket",
+            "cycling",
+            "equestrian",
+            "fitness",
+            "free_flying",
+            "futsal",
+            "golf",
+            "gymnastics",
+            "handball",
+            "horse_racing",
+            "karting",
+            "motocross",
+            "motor",
+            "netball",
+            "padel",
+            "rugby_union",
+            "running",
+            "shooting",
+            "skateboard",
+            "skiing",
+            "soccer",
+            "softball",
+            "swimming",
+            "table_tennis",
+            "tennis",
+            "volleyball"
+        ]
     },
     "stars": {
         "key": "stars",
@@ -3218,8 +4338,12 @@
     },
     "start_date": {
         "key": "start_date",
-        "type": "text",
+        "type": "date",
         "universal": true
+    },
+    "static_caravans": {
+        "key": "static_caravans",
+        "type": "check"
     },
     "step_count": {
         "key": "step_count",
@@ -3251,6 +4375,17 @@
             "yes",
             "limited",
             "no"
+        ]
+    },
+    "structure_power": {
+        "type": "combo",
+        "key": "structure",
+        "autoSuggestions": false,
+        "customValues": false,
+        "options": [
+            "lattice",
+            "solid",
+            "tubular"
         ]
     },
     "structure_waterway": {
@@ -3297,11 +4432,49 @@
     },
     "substance": {
         "key": "substance",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "fuel",
+            "gas",
+            "hot_water",
+            "oil",
+            "rainwater",
+            "sewage",
+            "water"
+        ]
+    },
+    "substation_pipeline": {
+        "key": "substation",
+        "type": "typeCombo",
+        "autoSuggestions": false,
+        "options": [
+            "transmission",
+            "distribution",
+            "minor_distribution",
+            "industrial",
+            "compression",
+            "measurement",
+            "valve",
+            "valve_group",
+            "inspection_gauge",
+            "field_gathering"
+        ]
     },
     "substation": {
         "key": "substation",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "autoSuggestions": false,
+        "options": [
+            "transmission",
+            "distribution",
+            "minor_distribution",
+            "industrial",
+            "generation",
+            "transition",
+            "traction",
+            "converter",
+            "compensation"
+        ]
     },
     "supervised": {
         "key": "supervised",
@@ -3323,11 +4496,17 @@
             "compacted",
             "concrete",
             "paving_stones",
+            "sett",
             "dirt",
             "grass",
             "sand",
             "wood",
-            "artificial_turf"
+            "metal",
+            "artificial_turf",
+            "unhewn_cobblestone",
+            "mud",
+            "woodchips",
+            "salt"
         ]
     },
     "surveillance": {
@@ -3382,7 +4561,7 @@
     },
     "survey/date": {
         "key": "survey:date",
-        "type": "text"
+        "type": "date"
     },
     "swimming_pool": {
         "key": "swimming_pool",
@@ -3424,7 +4603,16 @@
     "taxon": {
         "key": "taxon",
         "type": "combo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
+    },
+    "tee": {
+        "key": "tee",
+        "type": "semiCombo",
+        "reference": {
+            "key": "golf",
+            "value": "tee"
+        }
     },
     "tee": {
         "key": "tee",
@@ -3441,6 +4629,10 @@
     "telecom/medium": {
         "key": "telecom:medium",
         "type": "combo"
+    },
+    "tents": {
+        "key": "tents",
+        "type": "check"
     },
     "tidal": {
         "key": "tidal",
@@ -3474,6 +4666,19 @@
         "key": "toilets:position",
         "type": "semiCombo"
     },
+    "toilets/wheelchair": {
+        "key": "toilets:wheelchair",
+        "type": "radio",
+        "prerequisiteTag": {
+            "key": "toilets",
+            "valueNot": "no"
+        },
+        "options": [
+            "yes",
+            "limited",
+            "no"
+        ]
+    },
     "toll": {
         "key": "toll",
         "type": "check"
@@ -3488,7 +4693,18 @@
     },
     "tower/construction": {
         "key": "tower:construction",
-        "type": "combo"
+        "type": "combo",
+        "icons": {
+            "freestanding": "roentgen-tube",
+            "guyed_lattice": "roentgen-lattice_guyed",
+            "guyed_tube": "roentgen-tube_guyed",
+            "lattice": "roentgen-lattice"
+        }
+    },
+    "tower/platforms": {
+        "key": "tower:platforms",
+        "type": "number",
+        "minValue": 1
     },
     "tower/type": {
         "key": "tower:type",
@@ -3517,12 +4733,37 @@
     },
     "traffic_calming": {
         "key": "traffic_calming",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "icons": {
+            "bump": "roentgen-bump",
+            "cushion": "roentgen-traffic_cushion",
+            "dip": "roentgen-dip",
+            "double_dip": "roentgen-double_dip",
+            "hump": "roentgen-hump",
+            "mini_bumps": "roentgen-mini_bumps",
+            "rumble_strip": "roentgen-rumble_strip",
+            "table": "roentgen-traffic_table"
+        },
+        "options": [
+            "bump",
+            "chicane",
+            "choker",
+            "choked_table",
+            "cushion",
+            "dip",
+            "double_dip",
+            "hump",
+            "island",
+            "mini_bumps",
+            "rumble_strip",
+            "table"
+        ]
     },
     "traffic_sign": {
         "key": "traffic_sign",
         "type": "typeCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "traffic_sign/direction": {
         "key": "traffic_sign:direction",
@@ -3625,7 +4866,13 @@
     },
     "tunnel_combo": {
         "key": "tunnel",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "avalanche_protector",
+            "building_passage",
+            "culvert",
+            "flooded"
+        ]
     },
     "tunnel": {
         "key": "tunnel",
@@ -3670,7 +4917,16 @@
     },
     "utility": {
         "key": "utility",
-        "type": "typeCombo"
+        "type": "typeCombo",
+        "options": [
+            "gas",
+            "oil",
+            "power",
+            "sewerage",
+            "street_lighting",
+            "telecom",
+            "water"
+        ]
     },
     "valve": {
         "key": "valve",
@@ -3716,7 +4972,8 @@
     "via": {
         "key": "via",
         "type": "semiCombo",
-        "snake_case": false
+        "snake_case": false,
+        "caseSensitive": true
     },
     "video_calls": {
         "key": "video",
@@ -3736,6 +4993,11 @@
     "volcano/status": {
         "key": "volcano:status",
         "type": "combo",
+        "icons": {
+            "active": "roentgen-stratovolcano___lava",
+            "dormant": "roentgen-stratovolcano___smoke",
+            "extinct": "roentgen-stratovolcano"
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -3747,6 +5009,11 @@
     "volcano/type": {
         "key": "volcano:type",
         "type": "combo",
+        "icons": {
+            "stratovolcano": "roentgen-stratovolcano___smoke_2",
+            "shield": "roentgen-shield_volcano___smoke_2",
+            "scoria": "roentgen-volcanic_cone___smoke_2"
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -3758,6 +5025,7 @@
     "voltage_electrified": {
         "key": "voltage",
         "type": "combo",
+        "label": "{voltage}",
         "prerequisiteTag": {
             "key": "electrified",
             "valueNot": "no"
@@ -3785,7 +5053,13 @@
     },
     "waste": {
         "key": "waste",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "options": [
+            "cigarettes",
+            "dog_excrement",
+            "organic",
+            "trash"
+        ]
     },
     "water_point": {
         "key": "water_point",
@@ -3793,17 +5067,18 @@
     },
     "water_source": {
         "key": "water_source",
-        "default": "main",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "main",
+            "water_tank",
+            "pond",
+            "river",
+            "stream"
+        ]
     },
     "water_tank/volume": {
         "key": "water_tank:volume",
         "type": "text"
-    },
-    "water_volume": {
-        "key": "water_volume",
-        "type": "number",
-        "snake_case": false
     },
     "water": {
         "key": "water",
@@ -3816,7 +5091,6 @@
     "website": {
         "key": "website",
         "type": "url",
-        "icon": "website",
         "universal": true
     },
     "wetland": {
@@ -3838,7 +5112,6 @@
     "wheelchair": {
         "key": "wheelchair",
         "type": "radio",
-        "icon": "maki-wheelchair",
         "options": [
             "yes",
             "limited",
@@ -3861,7 +5134,6 @@
             "wikipedia"
         ],
         "type": "wikidata",
-        "icon": "wikipedia",
         "universal": true
     },
     "wikimedia_commons": {
@@ -3878,7 +5150,6 @@
             "wikidata"
         ],
         "type": "wikipedia",
-        "icon": "wikipedia",
         "universal": true
     },
     "windings": {

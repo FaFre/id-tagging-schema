@@ -31,5 +31,11 @@
         "value": "bridge"
     },
     "name": "Bridge Area",
-    "matchScore": 0.85
+    "aliases": [
+        "Bridge"
+    ],
+    "terms": [
+        "bridge outline",
+        "viaduct"
+    ]
 }

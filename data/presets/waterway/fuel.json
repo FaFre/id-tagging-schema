@@ -5,7 +5,7 @@
         "operator",
         "address",
         "opening_hours",
-        "fuel_multi"
+        "fuel/fuel_multi"
     ],
     "moreFields": [
         "branch_brand",
@@ -32,6 +32,11 @@
     ],
     "tags": {
         "waterway": "fuel"
+    },
+    "addTags": {
+        "waterway": "fuel",
+        "seamark:type": "small_craft_facility",
+        "seamark:small_craft_facility:category": "fuel_station"
     },
     "name": "Marine Fuel Station"
 }

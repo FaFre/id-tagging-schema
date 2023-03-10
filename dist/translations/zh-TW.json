@@ -185,6 +185,9 @@
                 "admin_level": {
                     "label": "行政級別"
                 },
+                "advertising": {
+                    "label": "類型"
+                },
                 "aerialway": {
                     "label": "種類"
                 },
@@ -244,6 +247,24 @@
                 "animal_shelter": {
                     "label": "動物"
                 },
+                "archaeological_site": {
+                    "label": "類型",
+                    "options": {
+                        "baths": "浴室",
+                        "city": "歷史城市",
+                        "crannog": "Crannog",
+                        "enclosure": "圍欄",
+                        "fortification": "防禦工事",
+                        "hut_circle": "小屋圈",
+                        "megalith": "巨石",
+                        "necropolis": "大墓地",
+                        "petroglyph": "岩刻",
+                        "roman_circus": "羅馬馬戲團",
+                        "roman_villa": "羅馬別墅",
+                        "settlement": "聚居地",
+                        "tumulus": "墳塚"
+                    }
+                },
                 "architect": {
                     "label": "建築樣式",
                     "terms": "建築師"
@@ -255,7 +276,18 @@
                     "label": "藝術家"
                 },
                 "artwork_type": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "bust": "半身像",
+                        "graffiti": "塗鴉",
+                        "installation": "裝置藝術",
+                        "mosaic": "馬賽克",
+                        "mural": "壁畫",
+                        "painting": "繪畫",
+                        "relief": "浮雕",
+                        "sculpture": "雕塑",
+                        "statue": "雕像"
+                    }
                 },
                 "ascent": {
                     "label": "總上升",
@@ -265,7 +297,28 @@
                     "label": "自動提款機"
                 },
                 "attraction": {
-                    "label": "類型"
+                    "label": "類型",
+                    "options": {
+                        "alpine_coaster": "雲霄飛車",
+                        "amusement_ride": "機動遊戲",
+                        "animal": "圈養動物",
+                        "big_wheel": "摩天輪",
+                        "bumper_car": "碰碰車",
+                        "bungee_jumping": "高空彈跳",
+                        "carousel": "旋轉木馬",
+                        "dark_ride": "鬼屋列車",
+                        "drop_tower": "大怒神",
+                        "kiddie_ride": "兒童遊樂設施",
+                        "log_flume": "原木水道",
+                        "maze": "迷宮",
+                        "pirate_ship": "海盜船",
+                        "river_rafting": "急流泛舟",
+                        "roller_coaster": "雲霄飛車",
+                        "summer_toboggan": "夏季雪橇",
+                        "swing_carousel": "旋轉木馬",
+                        "train": "無軌小火車",
+                        "water_slide": "滑水道"
+                    }
                 },
                 "automated": {
                     "label": "自動化"
@@ -294,7 +347,32 @@
                     "terms": "bar,酒廊"
                 },
                 "barrier": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "block": "大型障礙",
+                        "bollard": "護柱",
+                        "cattle_grid": "防畜欄",
+                        "chain": "鏈式柵欄",
+                        "city_wall": "城牆",
+                        "cycle_barrier": "自行車柵欄",
+                        "ditch": "溝渠",
+                        "entrance": "入口",
+                        "fence": "柵欄",
+                        "gate": "閘門",
+                        "guard_rail": "護欄",
+                        "hedge": "樹籬",
+                        "height_restrictor": "限高器",
+                        "jersey_barrier": "紐澤西護欄",
+                        "kerb": "路緣",
+                        "kissing_gate": "單人轉門",
+                        "lift_gate": "升降桿",
+                        "retaining_wall": "擋土牆",
+                        "stile": "梯磴",
+                        "swing_gate": "回旋式柵門",
+                        "toll_booth": "收費亭",
+                        "turnstile": "旋轉門",
+                        "wall": "牆"
+                    }
                 },
                 "barrier_planter": {
                     "label": "屏障物",
@@ -304,7 +382,13 @@
                     }
                 },
                 "basin": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "detention": "滯洪池",
+                        "evaporation": "蒸發池",
+                        "infiltration": "滲透池",
+                        "retention": "蓄水池"
+                    }
                 },
                 "bath/open_air": {
                     "label": "露天浴場"
@@ -313,7 +397,14 @@
                     "label": "沙浴"
                 },
                 "bath/type": {
-                    "label": "專業"
+                    "label": "專業",
+                    "options": {
+                        "hammam": "土耳其浴",
+                        "hot_spring": "溫泉",
+                        "lake": "湖",
+                        "onsen": "日式溫泉",
+                        "thermal": "溫泉浴"
+                    }
                 },
                 "beauty": {
                     "label": "服務",
@@ -332,7 +423,19 @@
                     "terms": "椅子"
                 },
                 "bicycle_parking": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "building": "在建築物內",
+                        "handlebar_holder": "把手自行車架",
+                        "lockers": "個人儲物櫃",
+                        "shed": "封閉式車棚",
+                        "stands": "支架",
+                        "wall_loops": "自行車駐輪式停放架"
+                    }
+                },
+                "bike_ride": {
+                    "label": "停自行車轉乘",
+                    "terms": "停自行車轉乘"
                 },
                 "bin": {
                     "label": "垃圾筒",
@@ -357,13 +460,32 @@
                     }
                 },
                 "board_type": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "art": "藝術品",
+                        "astronomy": "天文學",
+                        "geology": "地質學",
+                        "history": "歷史",
+                        "nature": "自然",
+                        "notice": "公告欄",
+                        "plants": "植物",
+                        "welcome_sign": "歡迎標誌",
+                        "wildlife": "野生動物"
+                    }
                 },
                 "bollard": {
-                    "label": "類型"
+                    "label": "類型",
+                    "options": {
+                        "fixed": "固定式護柱",
+                        "flexible": "彈性護柱",
+                        "foldable": "可折疊護柱",
+                        "removable": "可移除護柱",
+                        "rising": "上升護柱"
+                    }
                 },
                 "booth": {
-                    "label": "亭子"
+                    "label": "亭子",
+                    "terms": "亭子"
                 },
                 "bottle": {
                     "label": "裝瓶"
@@ -398,6 +520,67 @@
                 },
                 "building": {
                     "label": "建築物",
+                    "options": {
+                        "allotment_house": "社區花園房屋",
+                        "apartments": "公寓建築物",
+                        "barn": "穀倉",
+                        "boathouse": "船屋",
+                        "bungalow": "平房",
+                        "bunker": "碉堡",
+                        "cabin": "小木屋",
+                        "carport": "車棚",
+                        "cathedral": "大教堂建築",
+                        "chapel": "小聖堂建築",
+                        "church": "教堂建築",
+                        "civic": "公共建築物",
+                        "college": "學院校舍",
+                        "commercial": "商業建築物",
+                        "construction": "施工中建築",
+                        "cowshed": "牛棚",
+                        "detached": "獨立式房屋",
+                        "dormitory": "宿舍",
+                        "farm": "農舍",
+                        "farm_auxiliary": "農業設施",
+                        "fire_station": "消防局建築物",
+                        "garage": "車庫",
+                        "garages": "車庫",
+                        "ger": "蒙古包",
+                        "grandstand": "正面看臺",
+                        "greenhouse": "溫室",
+                        "hangar": "機庫建築",
+                        "hospital": "醫院建築物",
+                        "hotel": "旅館建築物",
+                        "house": "住宅",
+                        "houseboat": "船屋",
+                        "hut": "棚屋",
+                        "industrial": "工業建築物",
+                        "kindergarten": "幼兒園建築物",
+                        "manufacture": "工業生產建築物",
+                        "mosque": "清真寺建築",
+                        "office": "辦公室建築物",
+                        "outbuilding": "附屬建築",
+                        "pavilion": "亭樓",
+                        "public": "公共建築",
+                        "residential": "住宅建築物",
+                        "retail": "零售建築物",
+                        "roof": "頂棚",
+                        "ruins": "建築廢墟",
+                        "school": "中小學建築物",
+                        "semidetached_house": "半獨立式房屋",
+                        "service": "服務建築",
+                        "shed": "小屋",
+                        "stable": "馬廄",
+                        "stadium": "體育館",
+                        "static_caravan": "露營車",
+                        "sty": "豬圈",
+                        "synagogue": "猶太會堂建築物",
+                        "temple": "寺廟建築物",
+                        "terrace": "排屋",
+                        "train_station": "鐵路車站建築物",
+                        "transportation": "大眾運輸建築物",
+                        "university": "大學建築物",
+                        "warehouse": "倉庫"
+                    },
                     "terms": "建築"
                 },
                 "building/flats": {
@@ -413,11 +596,6 @@
                     "label": "地下樓層數",
                     "placeholder": "2, 4, 6...",
                     "terms": "地下樓層"
-                },
-                "building/levels_building": {
-                    "label": "建築物樓層",
-                    "placeholder": "2, 4, 6...",
-                    "terms": "建築樓層數"
                 },
                 "building/material": {
                     "label": "材料",
@@ -473,7 +651,7 @@
                     "terms": "容量,位子數"
                 },
                 "capacity/caravans": {
-                    "label": "容量（露營拖車）",
+                    "label": "容量（露營車 / 露營拖車）",
                     "placeholder": "10, 20, 50..."
                 },
                 "capacity/disabled_parking": {
@@ -495,6 +673,10 @@
                 "capacity_volume": {
                     "label": "容量（立方公尺）",
                     "placeholder": "50, 100, 200..."
+                },
+                "caravans": {
+                    "label": "露營車 / 露營拖車",
+                    "terms": "露營車 / 露營拖車"
                 },
                 "cash_in": {
                     "label": "存款"
@@ -528,14 +710,36 @@
                 },
                 "check_date": {
                     "label": "最後檢查日期",
-                    "placeholder": "YYYY-MM-DD"
+                    "placeholder": "YYYY-MM-DD",
+                    "terms": "最後檢查日期"
                 },
                 "circumference": {
                     "label": "週長（胸高處）",
-                    "placeholder": "1 m, 20 cm, 30\"…"
+                    "placeholder": "1 m, 20 cm, 30\"…",
+                    "terms": "週長（胸高處）,週長,周長"
                 },
                 "clothes": {
                     "label": "服飾",
+                    "options": {
+                        "babies": "嬰兒服飾",
+                        "children": "兒童服飾",
+                        "denim": "牛仔服飾",
+                        "fur": "毛皮服飾",
+                        "hats": "帽子",
+                        "maternity": "孕婦裝",
+                        "men": "男士服飾",
+                        "motorcycle": "機車服裝",
+                        "oversize": "特大服飾",
+                        "socks": "襪子",
+                        "sports": "運動服",
+                        "suits": "套裝",
+                        "swimwear": "泳衣",
+                        "traditional": "傳統服裝 / 民間服飾",
+                        "underwear": "內衣",
+                        "wedding": "婚紗",
+                        "women": "女士服飾",
+                        "workwear": "工作服裝"
+                    },
                     "terms": "服飾"
                 },
                 "club": {
@@ -604,30 +808,121 @@
                     "terms": "有覆蓋的"
                 },
                 "covered_no": {
-                    "label": "有遮蓋",
                     "options": {
                         "no": "無",
                         "undefined": "假設為無",
                         "yes": "有"
-                    },
-                    "terms": "有遮蓋,有覆蓋的"
+                    }
                 },
                 "craft": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "agricultural_engines": "農用機械工房",
+                        "basket_maker": "籃子編織者",
+                        "beekeeper": "蜂農",
+                        "blacksmith": "鐵匠",
+                        "boatbuilder": "造船匠",
+                        "bookbinder": "書籍釘裝",
+                        "brewery": "啤酒廠",
+                        "builder": "營造商",
+                        "carpenter": "木匠",
+                        "carpet_layer": "地毯工程",
+                        "caterer": "辦桌",
+                        "chimney_sweeper": "煙囪清掃工 ",
+                        "cleaning": "清潔服務",
+                        "clockmaker": "製鐘匠",
+                        "confectionery": "糖果製造匠",
+                        "distillery": "酒廠",
+                        "dressmaker": "裁縫",
+                        "electrician": "電機技師",
+                        "electronics_repair": "修理電器",
+                        "floorer": "地板工匠",
+                        "gardener": "園藝師",
+                        "glaziery": "玻璃工坊",
+                        "grinding_mill": "磨坊",
+                        "handicraft": "手工藝",
+                        "hvac": "空調工程",
+                        "insulation": "隔熱工程",
+                        "jeweller": "首飾店",
+                        "joiner": "細木工匠",
+                        "key_cutter": "配匙店",
+                        "locksmith": "鎖匠",
+                        "metal_construction": "金工",
+                        "oil_mill": "榨油廠",
+                        "painter": "油漆工程",
+                        "parquet_layer": "嵌木細工",
+                        "photographer": "攝影店",
+                        "photographic_laboratory": "影像研究室",
+                        "plasterer": "泥水匠",
+                        "plumber": "水管工",
+                        "pottery": "製陶業",
+                        "rigger": "吊運服務",
+                        "roofer": "屋頂工程",
+                        "saddler": "車船坐椅",
+                        "sailmaker": "遊艇廠",
+                        "sawmill": "鋸木廠",
+                        "scaffolder": "棚架工程",
+                        "sculptor": "雕塑家",
+                        "shoemaker": "鞋匠",
+                        "signmaker": "招牌製造商",
+                        "stonemason": "切石廠",
+                        "tailor": "裁縫",
+                        "tiler": "地磚鋪設工程",
+                        "tinsmith": "錫匠",
+                        "upholsterer": "室內裝修",
+                        "watchmaker": "鐘錶匠",
+                        "window_construction": "窗戶製作",
+                        "winery": "釀酒廠"
+                    }
                 },
                 "crane/type": {
                     "label": "起重機類型",
                     "options": {
                         "floor-mounted_crane": "落地式起重機",
+                        "gantry_crane": "高架起重機",
                         "portal_crane": "門式起重機",
+                        "tower_crane": "塔式起重機",
                         "travel_lift": "移動式起重機"
                     }
                 },
                 "crop": {
-                    "label": "作物"
+                    "label": "作物",
+                    "options": {
+                        "asparagus": "蘆筍",
+                        "barley": "大麥",
+                        "beet": "甜菜",
+                        "cassava": "木薯",
+                        "coffee": "咖啡",
+                        "cotton": "棉花",
+                        "cranberries": "蔓越莓",
+                        "fast_growing_wood": "短輪伐期灌木",
+                        "flowers": "花卉",
+                        "grape": "葡萄",
+                        "grass": "草地",
+                        "hop": "啤酒花",
+                        "lavender": "薰衣草",
+                        "maize": "玉米",
+                        "potato": "馬鈴薯",
+                        "rape": "油菜籽",
+                        "rice": "稻米",
+                        "soy": "大豆",
+                        "strawberry": "草莓",
+                        "sugar_beet": "甜菜",
+                        "sugarcane": "甘蔗",
+                        "sunflower": "向日葵",
+                        "tea": "茶",
+                        "tobacco": "菸草",
+                        "vegetable": "蔬菜",
+                        "wheat": "小麥"
+                    }
                 },
                 "crossing": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "traffic_signals": "有紅綠燈的行人穿越道",
+                        "uncontrolled": "僅道路標誌",
+                        "unmarked": "無道路標誌或紅綠燈"
+                    }
                 },
                 "crossing/barrier": {
                     "label": "起落欄柵",
@@ -647,6 +942,27 @@
                 },
                 "crossing/light": {
                     "label": "燈號"
+                },
+                "crossing/markings": {
+                    "label": "行人穿越道標誌",
+                    "options": {
+                        "dashes": "橫向虛線",
+                        "dots": "點狀虛線",
+                        "ladder": "帶有縱向桿狀標誌的梯狀線",
+                        "ladder:paired": "帶有成對縱向桿狀標誌的梯狀線",
+                        "ladder:skewed": "帶有斜向桿狀標誌的梯狀線",
+                        "lines": "橫向線",
+                        "lines:paired": "雙重橫向線",
+                        "no": "無標記",
+                        "pictograms": "彩繪象形圖示",
+                        "surface": "僅表面處理",
+                        "yes": "以某種方式標記",
+                        "zebra": "斑馬線",
+                        "zebra:bicolour": "帶有交替顏色的斑馬線",
+                        "zebra:double": "從中間分開的斑馬線",
+                        "zebra:paired": "成對的斑馬線"
+                    },
+                    "terms": "行人穿越道標記"
                 },
                 "crossing_raised": {
                     "label": "交通寧靜區",
@@ -721,19 +1037,23 @@
                     "options": {
                         "lane": {
                             "description": "以標線和汽車區別的單車道",
-                            "title": "標準單車道"
+                            "title": "標準自行車道"
                         },
-                        "none": {
-                            "description": "沒有單車道",
+                        "no": {
+                            "description": "無自行車道",
                             "title": "無"
                         },
                         "opposite": {
                             "description": "可以雙向通行，在單行道的單車道",
-                            "title": "逆向單車道"
+                            "title": "反方向自行車道"
                         },
                         "opposite_lane": {
                             "description": "通行方向與交通通行方向相反的單車道",
-                            "title": "逆向單車道"
+                            "title": "雙向自行車道"
+                        },
+                        "separate": {
+                            "description": "表示腳踏車道被繪製為單獨的幾何圖形",
+                            "title": "單獨繪製的自行車道"
                         },
                         "separate": {
                             "description": "表示腳踏車道被繪製為單獨的幾何圖形",
@@ -741,18 +1061,18 @@
                         },
                         "share_busway": {
                             "description": "與公車專用道共用的單車道",
-                            "title": "單車道與公車共用"
+                            "title": "自行車道與公車共用"
                         },
                         "shared_lane": {
                             "description": "與動力車無分隔的單車道",
-                            "title": "共用單車道"
+                            "title": "共用自行車道"
                         },
                         "track": {
                             "description": "實體屏障物分隔的單車道",
-                            "title": "單車路徑"
+                            "title": "自行車路徑"
                         }
                     },
-                    "placeholder": "無",
+                    "placeholder": "車道、路徑、反方向……",
                     "terms": "腳踏車道",
                     "types": {
                         "cycleway:left": "左側",
@@ -777,10 +1097,11 @@
                     "terms": "教派"
                 },
                 "denotation": {
-                    "label": "表示"
+                    "label": "表示",
+                    "terms": "表示"
                 },
                 "departures_board": {
-                    "label": "出發告示牌",
+                    "label": "出發/到達時刻表",
                     "options": {
                         "no": "無",
                         "realtime": "即時",
@@ -790,6 +1111,9 @@
                 },
                 "deposit/trolley": {
                     "label": "押金"
+                },
+                "depot": {
+                    "label": "類型"
                 },
                 "depth": {
                     "label": "深度（公尺）"
@@ -811,18 +1135,8 @@
                 "destination/ref": {
                     "label": "目的地道路編號"
                 },
-                "destination/ref_oneway": {
-                    "label": "目的地道路編號"
-                },
                 "destination/symbol": {
                     "label": "目的地符號"
-                },
-                "destination/symbol_oneway": {
-                    "label": "目的地符號",
-                    "terms": "目的地標示"
-                },
-                "destination_oneway": {
-                    "label": "目的地"
                 },
                 "destination_waterway": {
                     "label": "目的地"
@@ -883,7 +1197,6 @@
                     }
                 },
                 "direction_point": {
-                    "label": "方向（順時針角度）",
                     "placeholder": "45, 90, 180, 270"
                 },
                 "direction_vertex": {
@@ -894,13 +1207,6 @@
                         "forward": "前進"
                     },
                     "terms": "受影響的方向,影響的方向"
-                },
-                "direction_vertex_dual": {
-                    "label": "受影響的方向",
-                    "options": {
-                        "backward": "向後",
-                        "forward": "向前"
-                    }
                 },
                 "dispensing": {
                     "label": "發放處方"
@@ -969,10 +1275,6 @@
                     "label": "海拔（公尺）",
                     "terms": "海拔（公尺）,海拔"
                 },
-                "ele_node": {
-                    "label": "海拔（公尺）",
-                    "terms": "海拔（公尺）,海拔"
-                },
                 "electrified": {
                     "label": "電氣化",
                     "options": {
@@ -1020,6 +1322,18 @@
                 },
                 "entrance": {
                     "label": "種類",
+                    "options": {
+                        "emergency": "緊急出口",
+                        "entrance": "僅入口",
+                        "exit": "僅出口",
+                        "garage": "車庫門",
+                        "home": "私人住宅或公寓",
+                        "main": "主要",
+                        "secondary": "次要",
+                        "service": "服務",
+                        "staircase": "樓梯",
+                        "yes": "未指定"
+                    },
                     "terms": "類別,類型,種類"
                 },
                 "except": {
@@ -1142,18 +1456,42 @@
                     "label": "運作頻率",
                     "terms": "運作電壓"
                 },
-                "frequency_electrified": {
-                    "label": "運作頻率",
-                    "terms": "運作頻率"
-                },
                 "from": {
                     "label": "從"
                 },
                 "fuel": {
                     "label": "燃料"
                 },
-                "fuel_multi": {
-                    "label": "燃料種類"
+                "fuel/fuel_multi": {
+                    "label": "燃料種類",
+                    "options": {
+                        "GTL_diesel": "GTL 柴油",
+                        "HGV_diesel": "卡車柴油",
+                        "LH2": "液氫",
+                        "adblue": "AdBlue / AUS 32",
+                        "adblue:canister": "AdBlue / AUS 32（罐裝出售）",
+                        "biodiesel": "生質柴油",
+                        "cng": "壓縮天然氣",
+                        "diesel": "柴油",
+                        "e10": "E10 汽油",
+                        "e85": "E85 汽油",
+                        "h70": "氣態氫（700 巴）",
+                        "lpg": "液化石油氣",
+                        "octane_100": "汽油（辛烷值 100）",
+                        "octane_80": "汽油（辛烷值 80）",
+                        "octane_85": "汽油（辛烷值 85）",
+                        "octane_87": "汽油（辛烷值 87）",
+                        "octane_88": "汽油（辛烷值 88）",
+                        "octane_89": "汽油（辛烷值 89）",
+                        "octane_90": "汽油（辛烷值 90）",
+                        "octane_91": "汽油（辛烷值 91）",
+                        "octane_92": "汽油（辛烷值 92）",
+                        "octane_93": "汽油（辛烷值 93）",
+                        "octane_95": "汽油（辛烷值 95）",
+                        "octane_97": "汽油（辛烷值 97）",
+                        "octane_98": "汽油（辛烷值 98）",
+                        "propane": "丙烷"
+                    }
                 },
                 "gambling": {
                     "label": "遊戲"
@@ -1175,14 +1513,48 @@
                     "terms": "性別,男女"
                 },
                 "generator/method": {
-                    "label": "方法"
+                    "label": "方法",
+                    "options": {
+                        "anaerobic_digestion": "厭氧消化",
+                        "barrage": "潮汐能",
+                        "combustion": "火力",
+                        "fission": "核分裂",
+                        "fusion": "核融合",
+                        "gasification": "氣化",
+                        "photovoltaic": "太陽能發電",
+                        "run-of-the-river": "川流式發電",
+                        "stream": "海流能",
+                        "thermal": "太陽熱能",
+                        "water-pumped-storage": "抽水蓄能電站",
+                        "water-storage": "水輪機",
+                        "wind_turbine": "風力發電機"
+                    }
                 },
                 "generator/output/electricity": {
                     "label": "電力輸出",
                     "placeholder": "50 MW, 100 MW, 200 MW..."
                 },
                 "generator/source": {
-                    "label": "來源"
+                    "label": "來源",
+                    "options": {
+                        "battery": "電池",
+                        "biofuel": "生物燃料",
+                        "biogas": "生物燃氣",
+                        "biomass": "生物質",
+                        "coal": "煤",
+                        "diesel": "柴油",
+                        "gas": "天然氣",
+                        "gasoline": "汽油",
+                        "geothermal": "地熱能",
+                        "hydro": "水電",
+                        "nuclear": "核能",
+                        "oil": "油",
+                        "solar": "太陽輻射能",
+                        "tidal": "潮汐能",
+                        "waste": "廢棄物",
+                        "wave": "波浪能",
+                        "wind": "風力"
+                    }
                 },
                 "generator/type": {
                     "label": "種類"
@@ -1231,7 +1603,94 @@
                     "label": "類型"
                 },
                 "healthcare/speciality": {
-                    "label": "專科"
+                    "label": "專科",
+                    "options": {
+                        "abortion": "墮胎",
+                        "acupuncture": "針灸",
+                        "allergology": "過敏與哮喘",
+                        "anaesthetics": "麻醉",
+                        "angiology": "血管",
+                        "anthroposophical": "人智醫學",
+                        "applied_kinesiology": "應用運動學",
+                        "aromatherapy": "芳香療法",
+                        "ayurveda": "阿育吠陀",
+                        "behavior": "行為治療",
+                        "biochemistry": "生物化學",
+                        "biology": "生物學",
+                        "blood_check": "血液檢查",
+                        "body": "身體治療",
+                        "cardiology": "心臟學",
+                        "cardiothoracic_surgery": "胸腔外科學",
+                        "child_psychiatry": "兒童與青少年精神醫學",
+                        "chiropractic": "脊骨神經醫學",
+                        "clinical_pathology": "臨床病理",
+                        "community": "公共衛生",
+                        "dental_oral_maxillo_facial_surgery": "口腔頜面外科",
+                        "depth": "深度心理學",
+                        "dermatology": "皮膚科",
+                        "dermatovenereology": "皮膚性病學",
+                        "diabetology": "糖尿病學",
+                        "diagnostic_radiology": "醫學影像",
+                        "emergency": "急診",
+                        "endocrinology": "內分泌學",
+                        "fertility": "生育",
+                        "gastroenterology": "胃腸學",
+                        "general": "一般科",
+                        "geriatrics": "老人醫學",
+                        "gynaecology": "婦產科",
+                        "haematology": "血液學",
+                        "hepatology": "肝病學",
+                        "herbalism": "草藥醫學",
+                        "homeopathy": "順勢療法",
+                        "humanistic": "人本主義心理學",
+                        "hydrotherapy": "水療",
+                        "hypnosis": "催眠",
+                        "infectious_diseases": "感染科",
+                        "intensive": "重症醫學",
+                        "internal": "內科",
+                        "naturopathy": "自然醫學",
+                        "neonatology": "新生兒科",
+                        "nephrology": "腎臟科",
+                        "neurology": "神經內科",
+                        "neuropsychiatry": "神經精神病學",
+                        "neurosurgery": "神經外科",
+                        "nuclear": "核醫學",
+                        "occupational": "職業醫學",
+                        "oncology": "腫瘤學",
+                        "ophthalmology": "眼科",
+                        "orthodontics": "齒顎矯正學",
+                        "orthopaedics": "骨科",
+                        "osteopathy": "整骨療法",
+                        "otolaryngology": "耳鼻喉科",
+                        "paediatric_surgery": "小兒外科",
+                        "paediatrics": "小兒科",
+                        "palliative": "安寧緩和醫療",
+                        "pathology": "病理解剖學",
+                        "physiatry": "復健科",
+                        "plastic_surgery": "整形外科",
+                        "podiatry": "足病學",
+                        "proctology": "直腸病學",
+                        "psychiatry": "精神醫學",
+                        "pulmonology": "胸腔醫學",
+                        "radiology": "放射線醫學",
+                        "radiotherapy": "放射治療",
+                        "reflexology": "區域反射療法",
+                        "reiki": "靈氣療法",
+                        "rheumatology": "風濕病學",
+                        "shiatsu": "指壓按摩",
+                        "stomatology": "口腔醫學",
+                        "surgery": "一般外科",
+                        "systemic": "全身治療",
+                        "traditional_chinese_medicine": "傳統中醫",
+                        "transplant": "器官移植",
+                        "trauma": "創傷外科",
+                        "tropical": "熱帶醫學",
+                        "tuina": "推拿",
+                        "unani": "尤那尼醫學",
+                        "urology": "泌尿外科",
+                        "vaccination": "疫苗接種",
+                        "vascular_surgery": "血管外科"
+                    }
                 },
                 "heating": {
                     "label": "加熱"
@@ -1239,6 +1698,10 @@
                 "height": {
                     "label": "高度 (公尺)",
                     "terms": "高度 (m)"
+                },
+                "height/hub": {
+                    "label": "渦輪高度（公尺）",
+                    "terms": "渦輪高度（公尺）"
                 },
                 "height_building": {
                     "label": "建築物高度（公尺）",
@@ -1342,7 +1805,6 @@
                     "terms": "傾斜程度"
                 },
                 "incline_steps": {
-                    "label": "斜坡",
                     "options": {
                         "down": "下坡",
                         "up": "上坡"
@@ -1372,9 +1834,6 @@
                 "intermittent": {
                     "label": "週期性的",
                     "terms": "週期性水流"
-                },
-                "intermittent_yes": {
-                    "label": "週期性水流"
                 },
                 "internet_access": {
                     "label": "網際網路連線",
@@ -1462,40 +1921,27 @@
                 "leaf_cycle": {
                     "label": "落葉期",
                     "options": {
-                        "deciduous": "落葉林",
-                        "evergreen": "長青樹",
-                        "mixed": "混合林",
-                        "semi_deciduous": "半落葉林",
-                        "semi_evergreen": "半長青林"
+                        "deciduous": "落葉",
+                        "evergreen": "常綠",
+                        "mixed": "混合",
+                        "semi_deciduous": "半落葉",
+                        "semi_evergreen": "半常綠"
                     },
                     "terms": "落葉期"
                 },
-                "leaf_cycle_singular": {
-                    "label": "落葉期",
-                    "options": {
-                        "deciduous": "落葉樹",
-                        "evergreen": "常青樹",
-                        "semi_deciduous": "半落葉樹",
-                        "semi_evergreen": "半長青樹"
-                    }
-                },
                 "leaf_type": {
-                    "label": "葉子種類",
+                    "label": "葉形",
                     "options": {
                         "broadleaved": "闊葉林",
                         "leafless": "落葉林",
-                        "mixed": "混合林",
+                        "mixed": "混合",
                         "needleleaved": "針葉林"
                     },
-                    "terms": "葉子種類"
+                    "terms": "葉,種類,形狀,針葉,闊葉"
                 },
                 "leaf_type_singular": {
-                    "label": "葉子種類",
-                    "options": {
-                        "broadleaved": "闊葉林",
-                        "leafless": "落葉樹",
-                        "needleleaved": "針葉樹"
-                    }
+                    "label": "葉形",
+                    "terms": "葉子種類"
                 },
                 "leisure": {
                     "label": "種類"
@@ -1515,11 +1961,23 @@
                 "liaison": {
                     "label": "類型"
                 },
+                "license_classes": {
+                    "label": "駕照類別",
+                    "terms": "駕照類別"
+                },
                 "lifeguard": {
                     "label": "救生員"
                 },
+                "lift_gate/type": {
+                    "label": "類型",
+                    "options": {
+                        "double": "對向雙桿",
+                        "single": "單桿"
+                    }
+                },
                 "line_attachment": {
-                    "label": "線纜固著"
+                    "label": "線纜固著",
+                    "terms": "線纜固著"
                 },
                 "line_management": {
                     "label": "線路管理",
@@ -1534,7 +1992,6 @@
                     "terms": "地點"
                 },
                 "location_pool": {
-                    "label": "位置",
                     "options": {
                         "indoor": "室內",
                         "outdoor": "室外",
@@ -1576,6 +2033,30 @@
                 },
                 "material": {
                     "label": "材質",
+                    "options": {
+                        "adobe": "土坯",
+                        "aluminium": "鋁",
+                        "brass": "黃銅",
+                        "brick": "磚",
+                        "bronze": "青銅",
+                        "concrete": "混凝土",
+                        "dry_stone": "乾砌石牆",
+                        "glass": "玻璃",
+                        "granite": "花崗岩",
+                        "iron": "鐵",
+                        "limestone": "石灰岩",
+                        "marble": "大理石",
+                        "metal": "金屬",
+                        "plastic": "塑膠",
+                        "reinforced_conrete": "鋼筋混凝土",
+                        "rock": "岩石",
+                        "sand": "沙",
+                        "sandstone": "砂岩",
+                        "soil": "土壤",
+                        "steel": "鋼",
+                        "stone": "石頭",
+                        "wood": "木頭"
+                    },
                     "terms": "素材,材質"
                 },
                 "mattress": {
@@ -1613,16 +2094,29 @@
                     "label": "最大承重",
                     "terms": "最高承重"
                 },
-                "maxweight_bridge": {
-                    "label": "最大重量",
-                    "terms": "最高承重"
-                },
                 "maxwidth": {
                     "label": "最大寬度",
                     "terms": "最大允許寬度"
                 },
                 "memorial": {
-                    "label": "類型"
+                    "label": "類型",
+                    "options": {
+                        "blue_plaque": "藍色牌匾",
+                        "bust": "半身像",
+                        "cross": "十字架",
+                        "obelisk": "方尖碑",
+                        "plaque": "紀念牌匾",
+                        "sculpture": "雕塑",
+                        "statue": "雕像",
+                        "stele": "石碑",
+                        "stolperstein": "絆腳石",
+                        "stone": "石頭",
+                        "war_memorial": "戰爭紀念物"
+                    }
+                },
+                "message": {
+                    "label": "訊息類型",
+                    "terms": "訊息,訊息類型"
                 },
                 "microbrewery": {
                     "label": "微釀啤酒作坊",
@@ -1647,13 +2141,17 @@
                     "placeholder": "20, 30, 40...",
                     "terms": "最低速限"
                 },
+                "model": {
+                    "label": "型號",
+                    "terms": "型號"
+                },
                 "monitoring_multi": {
                     "label": "監測"
                 },
                 "mtb/scale": {
                     "label": "越越單車難度",
                     "options": {
-                        "0": "0: 堅實的碩石土路，沒有障礙物，大灣曲",
+                        "0": "0: 堅實的碩石土路，沒有障礙物，大彎曲",
                         "1": "1: 鋪面部分鬆散，有小的障礙物，大彎曲",
                         "2": "2: 大都是鬆散的鋪面，有的障礙物，容易通過的髮夾彎",
                         "3": "3: 鋪面光滑，有大的障礙物，",
@@ -1748,8 +2246,69 @@
                     "label": "備註",
                     "terms": "註解"
                 },
+                "nudism": {
+                    "label": "裸體主義",
+                    "options": {
+                        "customary": "習慣",
+                        "designated": "指定",
+                        "no": "禁止",
+                        "obligatory": "強制",
+                        "permissive": "許可",
+                        "yes": "允許"
+                    },
+                    "terms": "裸體主義"
+                },
                 "office": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "accountant": "會計師事務所",
+                        "adoption_agency": "收養機構",
+                        "advertising_agency": "廣告代理公司",
+                        "architect": "建築師事務所",
+                        "association": "非營利組織辦公室",
+                        "charity": "慈善機構",
+                        "company": "公司辦公室",
+                        "construction_company": "建築公司辦公室",
+                        "consulting": "顧問公司辦公室",
+                        "courier": "快遞公司辦公室",
+                        "coworking": "共同工作空間",
+                        "diplomatic": "外交辦公室",
+                        "educational_institution": "教育機構",
+                        "employment_agency": "就業服務站",
+                        "energy_supplier": "電力公司辦公室",
+                        "engineer": "工程師辦公室",
+                        "estate_agent": "房地產仲介",
+                        "financial": "金融機構辦公室",
+                        "financial_advisor": "財務顧問",
+                        "forestry": "林業事業辦公室",
+                        "foundation": "基金會辦公室",
+                        "government": "政府機關",
+                        "graphic_design": "平面設計師辦公室",
+                        "guide": "導遊辦公室",
+                        "insurance": "保險公司辦公室",
+                        "it": "資訊公司辦公室",
+                        "lawyer": "律師事務所",
+                        "logistics": "貨運代理商",
+                        "moving_company": "搬家公司辦公室",
+                        "newspaper": "報社辦公室",
+                        "ngo": "非政府組織辦公室",
+                        "notary": "公證機構",
+                        "physician": "醫務所",
+                        "political_party": "政黨辦公室",
+                        "private_investigator": "私家偵探辦公室",
+                        "property_management": "物業管理辦公室",
+                        "quango": "準非政府組織辦公室",
+                        "religion": "宗教辦公處所",
+                        "research": "研究機構",
+                        "security": "保全辦公室",
+                        "surveyor": "測繪公司辦公室",
+                        "tax_advisor": "稅務顧問辦公室",
+                        "telecommunication": "電信公司辦事處",
+                        "therapist": "治療師辦公室",
+                        "travel_agent": "旅行社",
+                        "union": "工會辦公室",
+                        "water_utility": "自來水公司"
+                    }
                 },
                 "oneway": {
                     "label": "單行道",
@@ -1767,7 +2326,6 @@
                     "terms": "單行道 (單車),單行道 (腳踏車)"
                 },
                 "oneway_yes": {
-                    "label": "單程路",
                     "options": {
                         "alternating": "交替",
                         "no": "否",
@@ -1785,7 +2343,7 @@
                     "placeholder": "YYYY-MM-DD"
                 },
                 "opening_hours": {
-                    "label": "小時",
+                    "label": "營運時間",
                     "placeholder": "未知",
                     "terms": "營運小時"
                 },
@@ -1837,11 +2395,14 @@
                     "options": {
                         "carports": "車棚",
                         "garage_boxes": "垃圾桶",
+                        "half_on_kerb": "部份在人行道上",
                         "lane": "路邊停車位",
                         "layby": "休息站",
                         "multi-storey": "立體",
+                        "on_kerb": "在人行道上",
                         "rooftop": "屋頂",
                         "sheds": "有覆蓋",
+                        "shoulder": "路肩",
                         "street_side": "路邊",
                         "surface": "平面",
                         "underground": "地下"
@@ -1855,22 +2416,87 @@
                         "perpendicular": "與道路呈直角"
                     }
                 },
-                "parking_entrance": {
-                    "label": "類型",
+                "parking/side/orientation": {
+                    "label": "停車方向",
                     "options": {
-                        "multi-storey": "多層",
-                        "underground": "地下"
+                        "diagonal": "與道路呈對角（約 45°）",
+                        "parallel": "與道路平行",
+                        "perpendicular": "與道路呈直角（約 90°）"
+                    },
+                    "terms": "停車方向",
+                    "types": {
+                        "parking:left:orientation": "左側",
+                        "parking:right:orientation": "右側"
                     }
+                },
+                "parking/side/parking": {
+                    "label": "停車場",
+                    "options": {
+                        "half_on_kerb": "部份在人行道上",
+                        "lane": "路邊停車位",
+                        "no": "否",
+                        "on_kerb": "在人行道上",
+                        "separate": "單獨繪製的停車場",
+                        "shoulder": "路肩",
+                        "street_side": "路邊",
+                        "yes": "是 (未指名)"
+                    },
+                    "terms": "停車",
+                    "types": {
+                        "parking:left": "左側",
+                        "parking:right": "右側"
+                    }
+                },
+                "parking_entrance": {
+                    "label": "類型"
                 },
                 "parking_space": {
                     "label": "類型"
                 },
                 "payment_multi": {
                     "label": "付款類型",
-                    "terms": "付費方式,付款方式,付費種類"
-                },
-                "payment_multi_fee": {
-                    "label": "付款類型",
+                    "options": {
+                        "account_cards": "帳戶卡",
+                        "alipay": "支付寶",
+                        "american_express": "美國運通",
+                        "app": "行動應用程式",
+                        "apple_pay": "Apple Pay",
+                        "bancomat": "Bancomat",
+                        "blik": "Blik",
+                        "cards": "支付卡",
+                        "cash": "現金",
+                        "cheque": "支票",
+                        "clipper": "路路通",
+                        "coins": "硬幣",
+                        "contactless": "非接觸式支付",
+                        "credit_cards": "信用卡",
+                        "cryptocurrencies": "密碼學貨幣",
+                        "debit_cards": "簽帳金融卡",
+                        "diners_club": "大來信用卡",
+                        "discover_card": "發現卡",
+                        "dkv": "DKV",
+                        "electronic_purses": "電子錢包",
+                        "ep_easycard": "悠遊卡",
+                        "ep_geldkarte": "GeldKarte",
+                        "ep_ipass": "一卡通",
+                        "girocard": "Girocard",
+                        "google_pay": "Google Pay",
+                        "jcb": "JCB",
+                        "maestro": "Maestro",
+                        "mastercard": "萬事達卡",
+                        "mastercard_contactless": "Mastercard Contactless",
+                        "notes": "紙鈔",
+                        "paypal": "PayPal",
+                        "prepaid_ticket": "預付票",
+                        "telephone_cards": "電話卡",
+                        "unionpay": "銀聯卡",
+                        "uta": "UTA",
+                        "v_pay": "V Pay",
+                        "visa": "Visa",
+                        "visa_debit": "Visa Debit",
+                        "visa_electron": "Visa Electron",
+                        "wechat": "微信支付"
+                    },
                     "terms": "付費方式,付款方式,付費種類"
                 },
                 "phases": {
@@ -1881,6 +2507,13 @@
                     "label": "電話",
                     "placeholder": "+31 42 123 4567",
                     "terms": "電話,話亭,電話亭"
+                },
+                "picnic_table": {
+                    "label": "野餐桌",
+                    "terms": "野餐桌子"
+                },
+                "pipeline": {
+                    "label": "類型"
                 },
                 "piste/difficulty": {
                     "label": "難度",
@@ -1896,7 +2529,6 @@
                     "placeholder": "容易, 中階, 進階"
                 },
                 "piste/difficulty_downhill": {
-                    "label": "難易度",
                     "options": {
                         "advanced": "進階 (黑色鑽石型) ",
                         "easy": "容易 (綠圈) ",
@@ -1909,7 +2541,6 @@
                     "placeholder": "容易、中階、進階"
                 },
                 "piste/difficulty_nordic": {
-                    "label": "難易度",
                     "options": {
                         "advanced": "進階 - 狹窄，陡或是冰凍路段，急彎",
                         "easy": "簡單 - 平緩的小丘，短短的陡路段",
@@ -1920,7 +2551,6 @@
                     "placeholder": "簡單、中階、進階..."
                 },
                 "piste/difficulty_skitour": {
-                    "label": "難易度",
                     "options": {
                         "advanced": "進階 - S：40-45° 上坡",
                         "easy": "容易 - WS：30-35° 上坡",
@@ -1944,7 +2574,6 @@
                     }
                 },
                 "piste/grooming_downhill": {
-                    "label": "疏導",
                     "options": {
                         "backcountry": "偏遠 - 沒有疏導",
                         "classic": "經典",
@@ -1952,14 +2581,12 @@
                     }
                 },
                 "piste/grooming_hike": {
-                    "label": "疏導",
                     "options": {
                         "backcountry": "偏遠 - 雪鞋健走",
                         "classic": "經典 - 冬季健行"
                     }
                 },
                 "piste/grooming_nordic": {
-                    "label": "疏導",
                     "options": {
                         "backcountry": "偏遠, 無疏導",
                         "classic": "經典",
@@ -1992,6 +2619,19 @@
                 "plant/method": {
                     "label": "發電方式"
                 },
+                "plant/output": {
+                    "label": "電力輸出形式",
+                    "options": {
+                        "cold_air": "冷空氣",
+                        "cold_water": "冷水",
+                        "compressed_air": "壓縮空氣",
+                        "electricity": "電力",
+                        "hot_air": "熱空氣",
+                        "hot_water": "熱水",
+                        "steam": "蒸氣",
+                        "vacuum": "真空"
+                    }
+                },
                 "plant/output/electricity": {
                     "label": "電力輸出",
                     "placeholder": "500 MW, 1000 MW, 2000 MW..."
@@ -2016,12 +2656,25 @@
                 "population": {
                     "label": "人口數"
                 },
+                "population/date": {
+                    "label": "人口數統計日期",
+                    "placeholder": "YYYY-MM-DD"
+                },
                 "portable": {
                     "label": "流動",
                     "terms": "流動"
                 },
                 "post": {
                     "label": "郵寄地址"
+                },
+                "post_box/type": {
+                    "label": "類型",
+                    "options": {
+                        "community": "社區信箱",
+                        "lamp": "附著在桿子上",
+                        "pillar": "郵筒",
+                        "wall": "安裝在牆上"
+                    }
                 },
                 "power": {
                     "label": "種類"
@@ -2113,8 +2766,16 @@
                     "label": "參考編號",
                     "terms": "參考號碼,參考代碼"
                 },
+                "ref/FR/siret-FR": {
+                    "label": "SIRET 編號",
+                    "terms": "siret 編號"
+                },
                 "ref/isil": {
                     "label": "ISIL 代碼"
+                },
+                "ref/linz/place_id-NZ": {
+                    "label": "NZGB地點編號",
+                    "terms": "nzgb place id"
                 },
                 "ref/vatin": {
                     "label": "VAT ID 號碼",
@@ -2167,6 +2828,30 @@
                 },
                 "religion": {
                     "label": "宗教",
+                    "options": {
+                        "bahai": "巴哈伊信仰",
+                        "benzhu": "本主教",
+                        "buddhist": "佛教",
+                        "caodaism": "高臺教",
+                        "chinese_folk": "中國民間信仰",
+                        "christian": "基督教",
+                        "confucian": "儒家",
+                        "hindu": "印度教",
+                        "jain": "耆那教",
+                        "jewish": "猶太教",
+                        "multifaith": "多信仰",
+                        "muslim": "伊斯蘭教",
+                        "none": "非宗教",
+                        "pagan": "異教",
+                        "shinto": "神道教",
+                        "sikh": "錫克教",
+                        "spiritualist": "靈媒",
+                        "taoist": "道教",
+                        "tenrikyo": "天理教",
+                        "unitarian_universalist": "普救一位神教",
+                        "vietnamese_folk": "越南民間信仰",
+                        "voodoo": "巫毒"
+                    },
                     "terms": "宗教派別"
                 },
                 "reservation": {
@@ -2186,7 +2871,18 @@
                     "label": "類型"
                 },
                 "resource": {
-                    "label": "資源"
+                    "label": "資源",
+                    "options": {
+                        "aggregate": "骨料",
+                        "clay": "黏土",
+                        "coal": "煤",
+                        "gold": "黃金",
+                        "gravel": "碎石",
+                        "iron_ore": "鐵礦",
+                        "limestone": "石灰岩",
+                        "peat": "泥炭",
+                        "sand": "沙"
+                    }
                 },
                 "restriction": {
                     "label": "種類"
@@ -2204,6 +2900,10 @@
                 "rooms": {
                     "label": "房間數"
                 },
+                "rotor/diameter": {
+                    "label": "轉子直徑（公尺）",
+                    "terms": "轉子直徑（公尺）"
+                },
                 "roundtrip": {
                     "label": "組成迴圈",
                     "terms": "組成迴圈"
@@ -2213,6 +2913,20 @@
                 },
                 "route_master": {
                     "label": "種類"
+                },
+                "royal_cypher": {
+                    "label": "皇家暗號",
+                    "options": {
+                        "CIIIR": "CIIIR（查爾斯三世）",
+                        "EIIR": "EIIR（伊莉莎白二世）",
+                        "EVIIIR": "EVIIIR（愛德華八世）",
+                        "EVIIR": "EVIIR（愛德華七世）",
+                        "GR": "GR（喬治五世）",
+                        "GVIR": "GVIR（喬治六世）",
+                        "VR": "VR（維多利亞女王）",
+                        "no": "無",
+                        "scottish_crown": "蘇格蘭王冠"
+                    }
                 },
                 "ruins": {
                     "label": "類型"
@@ -2409,6 +3123,9 @@
                 "shelter_type": {
                     "label": "種類"
                 },
+                "shoes": {
+                    "label": "鞋子"
+                },
                 "shop": {
                     "label": "種類"
                 },
@@ -2429,9 +3146,6 @@
                 },
                 "site": {
                     "label": "種類"
-                },
-                "site_type": {
-                    "label": "遺址類型"
                 },
                 "smoking": {
                     "label": "吸煙",
@@ -2466,7 +3180,18 @@
                     "terms": "sms"
                 },
                 "social_facility": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "ambulatory_care": "門診護理",
+                        "assisted_living": "照護",
+                        "day_care": "日間護理",
+                        "food_bank": "食物銀行",
+                        "group_home": "團體之家",
+                        "nursing_home": "養老院",
+                        "outreach": "外展社會工作",
+                        "shelter": "庇護所",
+                        "workshop": "庇護工場"
+                    }
                 },
                 "social_facility_for": {
                     "label": "服務對象"
@@ -2483,6 +3208,9 @@
                     },
                     "terms": "來源,消息來源"
                 },
+                "source/population": {
+                    "label": "人口數來源"
+                },
                 "species": {
                     "label": "物種",
                     "placeholder": "Acer platanoides, Quercus robur, …",
@@ -2493,7 +3221,44 @@
                     "terms": "wikidata 物種"
                 },
                 "sport": {
-                    "label": "運動"
+                    "label": "運動",
+                    "options": {
+                        "american_football": "美式足球",
+                        "athletics": "田徑",
+                        "badminton": "羽球",
+                        "baseball": "棒球",
+                        "basketball": "籃球",
+                        "beachvolleyball": "沙灘排球",
+                        "boules": "滾球",
+                        "bowls": "草地滾球",
+                        "climbing": "攀岩",
+                        "cricket": "板球",
+                        "cycling": "騎腳踏車",
+                        "equestrian": "馬術",
+                        "fitness": "健身",
+                        "free_flying": "滑翔翼",
+                        "futsal": "室內五人制足球",
+                        "golf": "高爾夫球",
+                        "gymnastics": "體操",
+                        "handball": "團隊手球",
+                        "horse_racing": "賽馬",
+                        "karting": "卡丁車",
+                        "motocross": "越野摩托車",
+                        "motor": "動力運動",
+                        "netball": "無擋板籃球",
+                        "padel": "Padel",
+                        "rugby_union": "美式足球",
+                        "running": "跑步",
+                        "shooting": "射擊",
+                        "skateboard": "滑板",
+                        "skiing": "滑雪",
+                        "soccer": "足球",
+                        "softball": "壘球",
+                        "swimming": "遊泳",
+                        "table_tennis": "桌球",
+                        "tennis": "網球",
+                        "volleyball": "排球"
+                    }
                 },
                 "sport_ice": {
                     "label": "運動",
@@ -2542,6 +3307,9 @@
                     "placeholder": "YYYY-MM-DD",
                     "terms": "開始日期,開工日期,開業日期"
                 },
+                "static_caravans": {
+                    "label": "露營車"
+                },
                 "step_count": {
                     "label": "階梯數字",
                     "terms": "階梯數"
@@ -2557,7 +3325,8 @@
                     }
                 },
                 "street_cabinet": {
-                    "label": "類型"
+                    "label": "類型",
+                    "terms": "類型"
                 },
                 "stroller": {
                     "label": "嬰兒車",
@@ -2580,6 +3349,14 @@
                     "placeholder": "未知種類",
                     "terms": "結構"
                 },
+                "structure_power": {
+                    "label": "人造結構物",
+                    "options": {
+                        "lattice": "格狀",
+                        "solid": "堅實",
+                        "tubular": "管狀"
+                    }
+                },
                 "structure_waterway": {
                     "label": "結構體",
                     "options": {
@@ -2599,10 +3376,45 @@
                     "terms": "主題的維基數據"
                 },
                 "substance": {
-                    "label": "材質"
+                    "label": "材質",
+                    "options": {
+                        "fuel": "燃料",
+                        "gas": "天然氣",
+                        "hot_water": "熱水",
+                        "oil": "原油",
+                        "rainwater": "雨水",
+                        "sewage": "污水處理",
+                        "water": "飲用水"
+                    }
                 },
                 "substation": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "compensation": "無功功率補償",
+                        "converter": "轉換變電所",
+                        "distribution": "配電站",
+                        "generation": "發變電站",
+                        "industrial": "工業變電站",
+                        "minor_distribution": "小型配電站",
+                        "traction": "牽引變電所",
+                        "transition": "地上/地下轉換變電站",
+                        "transmission": "輸電變電所"
+                    }
+                },
+                "substation_pipeline": {
+                    "label": "類型",
+                    "options": {
+                        "compression": "壓縮變電站",
+                        "distribution": "配電站",
+                        "field_gathering": "集氣",
+                        "industrial": "工業",
+                        "inspection_gauge": "檢查儀表",
+                        "measurement": "測量",
+                        "minor_distribution": "小型配電站",
+                        "transmission": "輸電變電站",
+                        "valve": "閥門",
+                        "valve_group": "閥門組"
+                    }
                 },
                 "supervised": {
                     "label": "受監察",
@@ -2623,11 +3435,17 @@
                         "grass": "草地",
                         "gravel": "碎石",
                         "ground": "地面",
+                        "metal": "金屬",
+                        "mud": "持續泥濘",
                         "paved": "鋪面",
                         "paving_stones": "鋪路石",
+                        "salt": "鹽份",
                         "sand": "沙",
+                        "sett": "石塊",
+                        "unhewn_cobblestone": "未切割的鵝卵石",
                         "unpaved": "無鋪面",
-                        "wood": "木頭"
+                        "wood": "木頭",
+                        "woodchips": "木片"
                     },
                     "terms": "表面"
                 },
@@ -2651,7 +3469,7 @@
                 },
                 "survey_point/datum_aligned": {
                     "label": "與當地大地基準對齊",
-                    "terms": "大地基準,大地測量基準"
+                    "terms": "大地基準,大地測量基準,與當地大地基準對齊"
                 },
                 "survey_point/purpose": {
                     "label": "目的",
@@ -2721,6 +3539,9 @@
                 "telecom/medium": {
                     "label": "媒介"
                 },
+                "tents": {
+                    "label": "帳篷"
+                },
                 "tidal": {
                     "label": "潮汐",
                     "terms": "潮汐"
@@ -2749,6 +3570,15 @@
                     "label": "位置",
                     "terms": "位置,地點"
                 },
+                "toilets/wheelchair": {
+                    "label": "輪椅無障礙廁所",
+                    "options": {
+                        "limited": "有限制",
+                        "no": "否",
+                        "yes": "是"
+                    },
+                    "terms": "輪椅無障礙廁所"
+                },
                 "toll": {
                     "label": "收費站",
                     "terms": "收費亭"
@@ -2763,6 +3593,10 @@
                     "label": "建材",
                     "placeholder": "拉線、鋼格、偽裝、..."
                 },
+                "tower/platforms": {
+                    "label": "平台",
+                    "placeholder": "1, 2, 3..."
+                },
                 "tower/type": {
                     "label": "類型"
                 },
@@ -2772,7 +3606,7 @@
                 "tracktype": {
                     "label": "產業道路種類",
                     "options": {
-                        "grade1": "剛性鋪面：鋪面為柏油、水泥或由剛性材質密實組成",
+                        "grade1": "堅固：有鋪面",
                         "grade2": "近剛性鋪面：礫石與石塊混合柔性材質",
                         "grade3": "混合剛性與柔性材質",
                         "grade4": "近柔性鋪面：土壤、砂土與草地混合其他剛性材質",
@@ -2784,7 +3618,21 @@
                     "label": "類型"
                 },
                 "traffic_calming": {
-                    "label": "種類"
+                    "label": "種類",
+                    "options": {
+                        "bump": "減速丘",
+                        "chicane": "減速彎道",
+                        "choked_table": "阻塞減速丘",
+                        "choker": "道路縮減",
+                        "cushion": "減速墊",
+                        "dip": "減速坡",
+                        "double_dip": "雙重減速坡",
+                        "hump": "減速標線",
+                        "island": "分隔島",
+                        "mini_bumps": "迷你減速帶",
+                        "rumble_strip": "跳動路面",
+                        "table": "減速丘"
+                    }
                 },
                 "traffic_sign": {
                     "label": "交通號誌"
@@ -2830,7 +3678,7 @@
                         "no": "否",
                         "walk": {
                             "description": "僅允許步行的訊號",
-                            "title": "步行指示器"
+                            "title": "步行指示"
                         },
                         "yes": "是"
                     }
@@ -2878,7 +3726,24 @@
                     "placeholder": "預設"
                 },
                 "tunnel_combo": {
-                    "label": "類型"
+                    "label": "類型",
+                    "options": {
+                        "avalanche_protector": "雪崩防護器具",
+                        "building_passage": "建物連接通道",
+                        "culvert": "涵洞",
+                        "flooded": "淹水隧道"
+                    }
+                },
+                "turning_circle": {
+                    "label": "形狀"
+                },
+                "two_sided": {
+                    "label": "兩側",
+                    "options": {
+                        "undefined": "否",
+                        "yes": "是"
+                    },
+                    "terms": "兩側"
                 },
                 "turning_circle": {
                     "label": "形狀"
@@ -2907,7 +3772,16 @@
                     }
                 },
                 "utility": {
-                    "label": "公用事業"
+                    "label": "公用事業",
+                    "options": {
+                        "gas": "天然氣",
+                        "oil": "油",
+                        "power": "電力",
+                        "sewerage": "廢水",
+                        "street_lighting": "街道照明",
+                        "telecom": "電信",
+                        "water": "水"
+                    }
                 },
                 "utility_semi": {
                     "label": "公用事業"
@@ -2982,15 +3856,17 @@
                     "label": "三次電壓",
                     "terms": "三要電壓"
                 },
-                "voltage_electrified": {
-                    "label": "電壓",
-                    "terms": "電壓"
-                },
                 "wall": {
                     "label": "種類"
                 },
                 "waste": {
-                    "label": "廢棄物"
+                    "label": "廢棄物",
+                    "options": {
+                        "cigarettes": "香煙",
+                        "dog_excrement": "狗屎",
+                        "organic": "有機廢棄物",
+                        "trash": "垃圾"
+                    }
                 },
                 "water": {
                     "label": "種類"
@@ -2999,16 +3875,19 @@
                     "label": "取水點"
                 },
                 "water_source": {
-                    "label": "水源"
+                    "label": "水源",
+                    "options": {
+                        "main": "配水管",
+                        "pond": "池塘",
+                        "river": "河流",
+                        "stream": "溪流",
+                        "water_tank": "水塔"
+                    }
                 },
                 "water_tank/volume": {
                     "label": "容積（公升）",
                     "placeholder": "10000, 20000, 30000…",
                     "terms": "容量,公升數"
-                },
-                "water_volume": {
-                    "label": "儲水量（立方公尺）",
-                    "terms": "儲水容量 (m³),儲水容量 (立方公尺)"
                 },
                 "waterway": {
                     "label": "種類"
@@ -3097,6 +3976,10 @@
                 "address": {
                     "name": "地址",
                     "terms": "地址,位置,位址"
+                },
+                "advertising": {
+                    "name": "廣告裝置",
+                    "terms": "廣告裝置"
                 },
                 "advertising/billboard": {
                     "name": "廣告牌",
@@ -3373,6 +4256,10 @@
                     "name": "墮胎診所",
                     "terms": "墮胎診所"
                 },
+                "amenity/clinic/dialysis": {
+                    "name": "透析中心",
+                    "terms": "透析中心"
+                },
                 "amenity/clinic/fertility": {
                     "name": "生產診所",
                     "terms": "生產診所,不孕診所"
@@ -3432,9 +4319,117 @@
                     "name": "醫生",
                     "terms": "醫生診療處"
                 },
+                "amenity/doctors/allergology": {
+                    "name": "過敏科",
+                    "terms": "過敏科"
+                },
+                "amenity/doctors/cardiology": {
+                    "name": "心臟科",
+                    "terms": "心臟科"
+                },
+                "amenity/doctors/child_psychiatry": {
+                    "name": "兒童與青少年醫生",
+                    "terms": "兒童與青少年醫生"
+                },
+                "amenity/doctors/dermatology": {
+                    "name": "皮膚科",
+                    "terms": "皮膚科"
+                },
+                "amenity/doctors/gastroenterology": {
+                    "name": "腸胃科",
+                    "terms": "腸胃科"
+                },
+                "amenity/doctors/general": {
+                    "name": "初級照護醫師",
+                    "terms": "初級照護醫師,全科醫師"
+                },
                 "amenity/doctors/gynaecology": {
                     "name": "婦科醫生",
                     "terms": "婦科醫生"
+                },
+                "amenity/doctors/haematology": {
+                    "name": "血液科",
+                    "terms": "血液科"
+                },
+                "amenity/doctors/internal": {
+                    "name": "內科",
+                    "terms": "內科"
+                },
+                "amenity/doctors/nephrology": {
+                    "name": "腎臟科",
+                    "terms": "腎臟科"
+                },
+                "amenity/doctors/neurology": {
+                    "name": "神經科",
+                    "terms": "神經科"
+                },
+                "amenity/doctors/neurosurgery": {
+                    "name": "神經外科",
+                    "terms": "神經外科"
+                },
+                "amenity/doctors/oncology": {
+                    "name": "腫瘤科",
+                    "terms": "腫瘤科"
+                },
+                "amenity/doctors/ophthalmology": {
+                    "name": "眼科",
+                    "terms": "眼科"
+                },
+                "amenity/doctors/orthopaedics": {
+                    "name": "骨科",
+                    "terms": "骨科"
+                },
+                "amenity/doctors/otolaryngology": {
+                    "name": "耳鼻喉科",
+                    "terms": "耳鼻喉科"
+                },
+                "amenity/doctors/paediatrics": {
+                    "name": "兒科",
+                    "terms": "兒科"
+                },
+                "amenity/doctors/pathology": {
+                    "name": "病理學家",
+                    "terms": "病理學家"
+                },
+                "amenity/doctors/plastic_surgery": {
+                    "name": "整形外科",
+                    "terms": "整形外科"
+                },
+                "amenity/doctors/podiatry": {
+                    "name": "足科",
+                    "terms": "足科"
+                },
+                "amenity/doctors/proctology": {
+                    "name": "直腸病科",
+                    "terms": "直腸病科"
+                },
+                "amenity/doctors/psychiatrist": {
+                    "name": "心理醫生",
+                    "terms": "心理醫生"
+                },
+                "amenity/doctors/pulmonology": {
+                    "name": "胸腔科",
+                    "terms": "胸腔科"
+                },
+                "amenity/doctors/radiology": {
+                    "name": "放射科",
+                    "terms": "放射科"
+                },
+                "amenity/doctors/rheumatology": {
+                    "name": "風濕病專科",
+                    "terms": "風濕病專科"
+                },
+                "amenity/doctors/surgery": {
+                    "name": "一般外科",
+                    "terms": "一般外科"
+                },
+                "amenity/doctors/trauma": {
+                    "name": "創傷外科",
+                    "terms": "創傷外科"
+                },
+                "amenity/doctors/urology": {
+                    "name": "泌尿外科",
+                    "terms": "泌尿外科"
                 },
                 "amenity/dojo": {
                     "name": "道場/武術研習班",
@@ -3447,6 +4442,10 @@
                 "amenity/drinking_water": {
                     "name": "飲水機",
                     "terms": "飲水,水源,活水,飲處,取水處"
+                },
+                "amenity/driver_training": {
+                    "name": "駕駛員訓練場",
+                    "terms": "駕校,駕駛,訓練,培訓,場"
                 },
                 "amenity/driving_school": {
                     "name": "駕訓班",
@@ -3470,6 +4469,10 @@
                 "amenity/fast_food/burger": {
                     "name": "漢堡速食店",
                     "terms": "漢堡店,速食店"
+                },
+                "amenity/fast_food/cafeteria": {
+                    "name": "自助餐廳",
+                    "terms": "自助餐廳"
                 },
                 "amenity/fast_food/chicken": {
                     "name": "雞肉速食店",
@@ -3952,6 +4955,10 @@
                 "amenity/social_facility/ambulatory_care": {
                     "name": "日間護理服務"
                 },
+                "amenity/social_facility/assisted_living": {
+                    "name": "老年生活輔助設施",
+                    "terms": "老年生活輔助設施"
+                },
                 "amenity/social_facility/food_bank": {
                     "name": "食物銀行",
                     "terms": "食物銀行,food bank"
@@ -3967,6 +4974,10 @@
                 "amenity/social_facility/nursing_home": {
                     "name": "養老院",
                     "terms": "療養院,老人安養中心,nursing home"
+                },
+                "amenity/stripclub": {
+                    "name": "脫衣舞俱樂部",
+                    "terms": "脫衣舞俱樂部"
                 },
                 "amenity/studio": {
                     "name": "工作室",
@@ -4025,7 +5036,7 @@
                 },
                 "amenity/townhall": {
                     "name": "鄉鎮市區公所",
-                    "terms": "鄉公所、鎮公所、市公所、區公所、市政廳"
+                    "terms": "鄉公所,鎮公所,市公所,區公所,市政廳"
                 },
                 "amenity/townhall/city": {
                     "name": "市政府",
@@ -4200,7 +5211,7 @@
                 },
                 "attraction/big_wheel": {
                     "name": "摩天輪",
-                    "terms": "摩天輪"
+                    "terms": "觀覽車"
                 },
                 "attraction/bumper_car": {
                     "name": "碰碰車",
@@ -4381,8 +5392,8 @@
                     "terms": "u形旋轉小門,v形旋轉小門"
                 },
                 "barrier/lift_gate": {
-                    "name": "道閘",
-                    "terms": "閘門"
+                    "name": "遮斷機",
+                    "terms": "遮斷機"
                 },
                 "barrier/log": {
                     "name": "倒塌的樹木"
@@ -4541,6 +5552,10 @@
                     "name": "農業設施",
                     "terms": "農業設施"
                 },
+                "building/fire_station": {
+                    "name": "消防局建築物",
+                    "terms": "消防局建築物"
+                },
                 "building/garage": {
                     "name": "車庫",
                     "terms": "車庫"
@@ -4655,8 +5670,8 @@
                     "terms": "體育館、運動中心"
                 },
                 "building/static_caravan": {
-                    "name": "固定的拖掛式房車",
-                    "terms": "固定的拖掛式房車"
+                    "name": "露營車",
+                    "terms": "露營車"
                 },
                 "building/sty": {
                     "name": "豬圈",
@@ -4741,8 +5756,8 @@
                     "terms": "書籍釘裝"
                 },
                 "craft/brewery": {
-                    "name": "釀酒匠",
-                    "terms": "釀酒廠"
+                    "name": "精釀啤酒廠",
+                    "terms": "精釀啤酒廠,啤酒廠,釀酒廠"
                 },
                 "craft/carpenter": {
                     "name": "木匠",
@@ -5056,6 +6071,10 @@
                     "name": "主要入口",
                     "terms": "主要入口"
                 },
+                "entrance/staircase": {
+                    "name": "樓梯入口",
+                    "terms": "樓梯入口"
+                },
                 "ford": {
                     "name": "淺灘",
                     "terms": "淺灘"
@@ -5119,9 +6138,33 @@
                     "name": "替代療法",
                     "terms": "替代療法"
                 },
+                "healthcare/alternative/acupuncture": {
+                    "name": "針灸師",
+                    "terms": "針灸師"
+                },
+                "healthcare/alternative/ayurveda": {
+                    "name": "阿育吠陀從業人員",
+                    "terms": "阿育吠陀從業人員"
+                },
                 "healthcare/alternative/chiropractic": {
                     "name": "脊骨神經醫師",
                     "terms": "脊骨神經醫師,脊骨按摩治療師,脊椎指壓治療者"
+                },
+                "healthcare/alternative/homeopathy": {
+                    "name": "順勢療法",
+                    "terms": "順勢療法"
+                },
+                "healthcare/alternative/naturopathy": {
+                    "name": "自然療法",
+                    "terms": "自然療法"
+                },
+                "healthcare/alternative/osteopathy": {
+                    "name": "整骨師",
+                    "terms": "整骨師"
+                },
+                "healthcare/alternative/traditional_chinese_medicine": {
+                    "name": "中醫師",
+                    "terms": "中醫師"
                 },
                 "healthcare/audiologist": {
                     "name": "聽覺矯正",
@@ -5204,6 +6247,10 @@
                 "highway/bus_stop": {
                     "name": "公車站"
                 },
+                "highway/busway": {
+                    "name": "公車專用道",
+                    "terms": "公車專用道"
+                },
                 "highway/construction": {
                     "name": "施工中的道路",
                     "terms": "道路施工中,道路施工"
@@ -5215,23 +6262,17 @@
                 "highway/crossing": {
                     "name": "穿越道"
                 },
-                "highway/crossing/marked": {
-                    "name": "標記人行穿越道",
-                    "terms": "有斑馬線穿越道"
-                },
                 "highway/crossing/traffic_signals": {
                     "name": "有行人燈號的十字路口",
                     "terms": "有行人燈號的十字路口"
                 },
                 "highway/crossing/uncontrolled": {
-                    "name": "標記人行穿越道"
+                    "name": "有標記人行穿越道",
+                    "terms": "有標記人行穿越道"
                 },
                 "highway/crossing/unmarked": {
                     "name": "無標記人行穿越道",
                     "terms": "無斑馬線穿越道"
-                },
-                "highway/crossing/zebra": {
-                    "name": "標記人行穿越道"
                 },
                 "highway/cycleway": {
                     "name": "單車路線",
@@ -5248,7 +6289,11 @@
                     "name": "自行車與行人穿越道",
                     "terms": "自行車與行人穿越道"
                 },
-                "highway/cycleway/crossing/marked": {
+                "highway/cycleway/crossing/traffic_signals": {
+                    "name": "有紅綠燈的單車穿越道",
+                    "terms": "有紅綠燈的單車穿越道"
+                },
+                "highway/cycleway/crossing/uncontrolled": {
                     "name": "有標記的單車穿越道",
                     "terms": "有標記的腳踏車穿越道"
                 },
@@ -5276,6 +6321,10 @@
                     "name": "避車彎",
                     "terms": "避車彎"
                 },
+                "highway/escape": {
+                    "name": "避險車道",
+                    "terms": "避險車道"
+                },
                 "highway/footway": {
                     "name": "步道",
                     "terms": "步行徑,人行步道"
@@ -5291,27 +6340,28 @@
                 "highway/footway/crossing": {
                     "name": "行人穿越道"
                 },
+                "highway/footway/crossing/traffic_signals": {
+                    "name": "有行人燈號的十字路口",
+                    "terms": "有行人燈號的十字路口"
+                },
+                "highway/footway/crossing/uncontrolled": {
+                    "name": "有標記人行穿越道",
+                    "terms": "有標記人行穿越道"
+                },
+                "highway/footway/crossing/unmarked": {
+                    "name": "無標記人行穿越道",
+                    "terms": "無標記人行穿越道"
+                },
                 "highway/footway/informal": {
                     "name": "非正式的步行路徑"
-                },
-                "highway/footway/marked": {
-                    "name": "有標記人行穿越道",
-                    "terms": "有斑馬線穿越道"
                 },
                 "highway/footway/sidewalk": {
                     "name": "路邊人行道",
                     "terms": "人行道"
                 },
-                "highway/footway/traffic_signals": {
-                    "name": "有行人燈號的十字路口",
-                    "terms": "有行人燈號的十字路口"
-                },
-                "highway/footway/unmarked": {
-                    "name": "無標記人行穿越道",
-                    "terms": "無斑馬線穿越道"
-                },
-                "highway/footway/zebra": {
-                    "name": "標記人行穿越道"
+                "highway/footway/traffic_island": {
+                    "name": "安全島",
+                    "terms": "安全島"
                 },
                 "highway/give_way": {
                     "name": "通行標誌",
@@ -5338,10 +6388,6 @@
                     "terms": "高速公路,交流道,出口,交匯處,快速道路"
                 },
                 "highway/motorway_link": {
-                    "name": "高速公路聯絡道",
-                    "terms": "高速公路聯絡道"
-                },
-                "highway/motorway_link-US-CA": {
                     "name": "高速公路聯絡道",
                     "terms": "高速公路聯絡道"
                 },
@@ -5374,10 +6420,6 @@
                     "terms": "一級道路、主要道路、省道"
                 },
                 "highway/primary_link": {
-                    "name": "一級道路聯絡道",
-                    "terms": "一級道路聯絡道"
-                },
-                "highway/primary_link-US-CA": {
                     "name": "一級道路聯絡道",
                     "terms": "一級道路聯絡道"
                 },
@@ -5441,6 +6483,9 @@
                     "name": "停車場通道",
                     "terms": "停車場通道"
                 },
+                "highway/service_area": {
+                    "name": "有鋪面的服務區"
+                },
                 "highway/services": {
                     "name": "公路服務區",
                     "terms": "公路服務區、公路休息站"
@@ -5502,10 +6547,6 @@
                     "terms": "快速道路,封閉道路"
                 },
                 "highway/trunk_link": {
-                    "name": "幹道聯絡道",
-                    "terms": "幹道聯絡道"
-                },
-                "highway/trunk_link-US-CA": {
                     "name": "幹道聯絡道",
                     "terms": "幹道聯絡道"
                 },
@@ -5721,6 +6762,10 @@
                     "name": "工業用地",
                     "terms": "工業區"
                 },
+                "landuse/industrial/depot": {
+                    "name": "車廠",
+                    "terms": "機廠"
+                },
                 "landuse/industrial/scrap_yard": {
                     "name": "廢車場",
                     "terms": "廢車場"
@@ -5786,7 +6831,7 @@
                 },
                 "landuse/quarry": {
                     "name": "礦區",
-                    "terms": "礦場,採礦場"
+                    "terms": "礦場,採礦場,採石,採砂"
                 },
                 "landuse/railway": {
                     "name": "鐵路用地",
@@ -5810,6 +6855,10 @@
                 "landuse/residential/apartments": {
                     "name": "公寓用地",
                     "terms": "公寓大樓,公寓"
+                },
+                "landuse/residential/trailer_park": {
+                    "name": "露營車公園",
+                    "terms": "露營車公園"
                 },
                 "landuse/retail": {
                     "name": "零售用地",
@@ -5958,6 +7007,10 @@
                     "name": "社區花園",
                     "terms": "社區花園"
                 },
+                "leisure/garden/residential": {
+                    "name": "住宅花園",
+                    "terms": "住宅花園"
+                },
                 "leisure/golf_course": {
                     "name": "高爾夫球場",
                     "terms": "高爾夫球場"
@@ -6014,6 +7067,10 @@
                     "name": "美式足球場",
                     "terms": "美式足球場"
                 },
+                "leisure/pitch/american_handball": {
+                    "name": "美式手球場",
+                    "terms": "美式手球場"
+                },
                 "leisure/pitch/archery": {
                     "name": "射箭場",
                     "terms": "射箭場"
@@ -6055,8 +7112,8 @@
                     "terms": "板球場"
                 },
                 "leisure/pitch/equestrian": {
-                    "name": "騎馬場",
-                    "terms": "騎馬場"
+                    "name": "馬術場",
+                    "terms": "馬術場"
                 },
                 "leisure/pitch/field_hockey": {
                     "name": "曲棍球場",
@@ -6292,6 +7349,14 @@
                     "name": "起重機",
                     "terms": "起重機"
                 },
+                "man_made/crane/gantry_crane": {
+                    "name": "高架起重機",
+                    "terms": "高架起重機,跨越式起重機,高架式起重機,支架式起重機,門型起重機"
+                },
+                "man_made/crane/portal_crane": {
+                    "name": "跨式起重機",
+                    "terms": "跨式起重機,龍門型起重機,門式起重機,門形起重機,龍門起重機"
+                },
                 "man_made/cross": {
                     "name": "十字架",
                     "terms": "十字架"
@@ -6315,6 +7380,10 @@
                 "man_made/flagpole": {
                     "name": "旗桿",
                     "terms": "旗桿"
+                },
+                "man_made/gantry": {
+                    "name": "門架",
+                    "terms": "門架"
                 },
                 "man_made/gasometer": {
                     "name": "煤氣鼓",
@@ -6420,10 +7489,6 @@
                     "name": "地下管線",
                     "terms": "地下水管"
                 },
-                "man_made/pipeline/valve": {
-                    "name": "管道閥門",
-                    "terms": "管道閥門"
-                },
                 "man_made/planter": {
                     "name": "花盆",
                     "terms": "花盆"
@@ -6451,6 +7516,26 @@
                 "man_made/street_cabinet": {
                     "name": "街櫃"
                 },
+                "man_made/street_cabinet/postal_service": {
+                    "name": "郵政中繼箱",
+                    "terms": "郵政中繼箱"
+                },
+                "man_made/street_cabinet/traffic_control": {
+                    "name": "交通控制系統箱",
+                    "terms": "交通控制系統箱"
+                },
+                "man_made/street_cabinet/traffic_monitoring": {
+                    "name": "交通監控箱",
+                    "terms": "交通監控箱"
+                },
+                "man_made/street_cabinet/transport_management": {
+                    "name": "運輸管理箱",
+                    "terms": "運輸管理箱"
+                },
+                "man_made/street_cabinet/waste": {
+                    "name": "私人垃圾收集箱",
+                    "terms": "私人垃圾收集箱"
+                },
                 "man_made/surveillance": {
                     "name": "監視器",
                     "terms": "監視錄影器"
@@ -6462,6 +7547,10 @@
                 "man_made/survey_point": {
                     "name": "測量標",
                     "terms": "測量點,三角點,土地測量點,控制點,基準點"
+                },
+                "man_made/tailings_pond": {
+                    "name": "沉澱池",
+                    "terms": "沉澱池"
                 },
                 "man_made/torii": {
                     "name": "鳥居",
@@ -6486,6 +7575,10 @@
                 "man_made/tower/defensive": {
                     "name": "守衛塔",
                     "terms": "槍塔,衛塔"
+                },
+                "man_made/tower/diving": {
+                    "name": "跳水平台",
+                    "terms": "跳水平台"
                 },
                 "man_made/tower/minaret": {
                     "name": "尖塔",
@@ -6685,6 +7778,10 @@
                 "natural/stone": {
                     "name": "孤石"
                 },
+                "natural/strait": {
+                    "name": "海峽",
+                    "terms": "海峽"
+                },
                 "natural/tree": {
                     "name": "樹木",
                     "terms": "樹"
@@ -6692,6 +7789,10 @@
                 "natural/tree_row": {
                     "name": "一排樹",
                     "terms": "一排樹"
+                },
+                "natural/tree_stump": {
+                    "name": "樹樁",
+                    "terms": "樹樁"
                 },
                 "natural/valley": {
                     "name": "峽谷",
@@ -6720,6 +7821,10 @@
                 "natural/water/moat": {
                     "name": "護城河",
                     "terms": "護城河"
+                },
+                "natural/water/oxbow": {
+                    "name": "牛軛湖",
+                    "terms": "牛軛湖"
                 },
                 "natural/water/pond": {
                     "name": "池塘",
@@ -6861,6 +7966,10 @@
                     "name": "電力公司辦公室",
                     "terms": "電力公司辦公室,台電,台電辦事處"
                 },
+                "office/engineer": {
+                    "name": "工程師辦公室",
+                    "terms": "工程師辦公室"
+                },
                 "office/estate_agent": {
                     "name": "房地產仲介",
                     "terms": "地產代理,房仲,不動產仲介"
@@ -6896,6 +8005,10 @@
                 "office/government/tax": {
                     "name": "稅捐機關",
                     "terms": "稅捐處、稅務局、稅捐稽徵處"
+                },
+                "office/graphic_design": {
+                    "name": "平面設計師辦公室",
+                    "terms": "平面設計師辦公室"
                 },
                 "office/guide": {
                     "name": "導遊辦公室",
@@ -6943,6 +8056,10 @@
                     "name": "私家偵探辦公室",
                     "terms": "私家偵探"
                 },
+                "office/property_management": {
+                    "name": "物業管理/租賃辦公室",
+                    "terms": "物業管理,租賃辦公室"
+                },
                 "office/quango": {
                     "name": "準非政府組織辦公室",
                     "terms": "準非政府組織辦公室"
@@ -6978,12 +8095,27 @@
                 "office/travel_agent": {
                     "name": "旅行社"
                 },
+                "office/union": {
+                    "name": "工會辦公室",
+                    "terms": "工會辦公室"
+                },
                 "office/water_utility": {
                     "name": "自來水公司",
                     "terms": "自來水事務處,自來水公司"
                 },
                 "office/yes": {
                     "name": "辦公室（未指定類型）"
+                },
+                "pipeline": {
+                    "name": "管線圖徵"
+                },
+                "pipeline/substation": {
+                    "name": "管線變電站",
+                    "terms": "管線變電站"
+                },
+                "pipeline/valve": {
+                    "name": "管線閥門",
+                    "terms": "管線閥門"
                 },
                 "piste/downhill": {
                     "name": "下坡滑雪道",
@@ -7077,7 +8209,7 @@
                 },
                 "place/town": {
                     "name": "鄉鎮市區",
-                    "terms": "鄉、鎮、縣轄市、區、市鎮、城鎮"
+                    "terms": "鄉,鎮,縣轄市,區,市鎮,城鎮"
                 },
                 "place/village": {
                     "name": "村里",
@@ -7224,6 +8356,10 @@
                     "name": "地下電纜",
                     "terms": "電纜,地底式電纜"
                 },
+                "power/catenary_mast": {
+                    "name": "懸鏈線桿",
+                    "terms": "懸鏈線桿"
+                },
                 "power/generator": {
                     "name": "發電機",
                     "terms": "發電機"
@@ -7275,6 +8411,10 @@
                     "name": "水力發電廠",
                     "terms": "水力發電廠"
                 },
+                "power/plant/source/method/photovoltaic": {
+                    "name": "光伏發電廠",
+                    "terms": "太陽能,光伏,電"
+                },
                 "power/plant/source/nuclear": {
                     "name": "核能發電廠",
                     "terms": "核能發電廠"
@@ -7284,8 +8424,8 @@
                     "terms": "燃油發電廠"
                 },
                 "power/plant/source/solar": {
-                    "name": "太陽能農場",
-                    "terms": "太陽能農場"
+                    "name": "太陽能發電廠",
+                    "terms": "太陽能發電廠,太陽能電廠"
                 },
                 "power/plant/source/waste": {
                     "name": "焚化爐發電廠",
@@ -7298,6 +8438,10 @@
                 "power/pole": {
                     "name": "電線桿",
                     "terms": "電線桿"
+                },
+                "power/portal": {
+                    "name": "電力門架",
+                    "terms": "電力門架"
                 },
                 "power/substation": {
                     "name": "變電所",
@@ -7599,6 +8743,10 @@
                 },
                 "railway/tram_stop": {
                     "name": "街車停靠點"
+                },
+                "railway/turntable": {
+                    "name": "鐵路調車轉盤",
+                    "terms": "鐵路調車轉盤"
                 },
                 "railway/yard": {
                     "name": "鐵路貨運站",
@@ -8102,6 +9250,10 @@
                     "name": "營養補充品店",
                     "terms": "營養補充品店,保健食品專賣店"
                 },
+                "shop/nuts": {
+                    "name": "堅果商店",
+                    "terms": "堅果商店"
+                },
                 "shop/optician": {
                     "name": "眼鏡行",
                     "terms": "眼鏡行"
@@ -8139,8 +9291,8 @@
                     "terms": "寵物用品店"
                 },
                 "shop/pet_grooming": {
-                    "name": "寵物美容店",
-                    "terms": "寵物美容店"
+                    "name": "寵物美容師",
+                    "terms": "寵物美容師"
                 },
                 "shop/photo": {
                     "name": "攝影用品店",
@@ -8569,6 +9721,10 @@
                 "traffic_sign/maxspeed": {
                     "name": "速限指標",
                     "terms": "速限"
+                },
+                "traffic_sign/variable_message": {
+                    "name": "資訊可變標誌",
+                    "terms": "資訊可變標誌"
                 },
                 "type/boundary": {
                     "name": "邊界",

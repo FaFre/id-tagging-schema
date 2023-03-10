@@ -126,9 +126,9 @@
                         "bicycle": "Xe đạp",
                         "hiking": "Đi bộ Đường dài",
                         "horse": "Cưỡi ngựa",
-                        "mtb": "Xe đạp Leo núi"
-                    },
-                    "terms": "môn thể thao,hoạt động,mon the thao,hoat dong"
+                        "mtb": "Xe đạp Leo núi",
+                        "ski": "Trượt tuyết"
+                    }
                 },
                 "addr/interpolation": {
                     "label": "Kiểu",
@@ -408,11 +408,6 @@
                     "placeholder": "2, 4, 6, …",
                     "terms": "số hầm,số lầu hầm,số tầng hầm,số lầu dưới đất,số tầng dưới đất,hầm,lầu hầm,tầng hầm,lầu dưới đất,tầng dưới đất,so ham,so lau ham,so tang ham,so lau duoi dat,so tang duoi dat,ham,lau ham,tang ham,lau duoi dat,tang duoi dat"
                 },
-                "building/levels_building": {
-                    "label": "Số Lầu",
-                    "placeholder": "2, 4, 6, …",
-                    "terms": "số lầu,số tầng,lầu,tầng,so lau,so tang,lau,tang"
-                },
                 "building/material": {
                     "label": "Chất liệu"
                 },
@@ -465,7 +460,6 @@
                     "placeholder": "50, 100, 200, …"
                 },
                 "capacity/caravans": {
-                    "label": "Số Đoàn",
                     "placeholder": "10, 20, 50, …"
                 },
                 "capacity/disabled_parking": {
@@ -594,13 +588,11 @@
                     "label": "Có Mái Che"
                 },
                 "covered_no": {
-                    "label": "Có Mái Che",
                     "options": {
                         "no": "Không có",
                         "undefined": "Không có theo Mặc định",
                         "yes": "Có"
-                    },
-                    "terms": "có mái che,mái che,bị che,che,co mai che,mai che,bi che"
+                    }
                 },
                 "craft": {
                     "label": "Loại"
@@ -709,44 +701,32 @@
                     "label": "Làn Xe đạp",
                     "options": {
                         "lane": {
-                            "description": "Làn xe đạp được phân cách bằng vạch trên mặt đường",
-                            "title": "Làn xe đạp chuẩn"
-                        },
-                        "none": {
-                            "description": "Không có làn xe đạp",
-                            "title": "Không có"
+                            "description": "Làn xe đạp được phân cách bằng vạch trên mặt đường"
                         },
                         "opposite": {
-                            "description": "Làn xe đạp hai chiều trên đường một chiều",
-                            "title": "Làm xe đạp ngược chiều giao thông"
+                            "description": "Làn xe đạp hai chiều trên đường một chiều"
                         },
                         "opposite_lane": {
-                            "description": "Làn xe đạp chạy ngược chiều giao thông",
-                            "title": "Làn xe đạp ngược chiều lối"
+                            "description": "Làn xe đạp chạy ngược chiều giao thông"
+                        },
+                        "separate": {
+                            "description": "Đã vẽ lối đi xe đạp như một đường kẻ riêng"
                         },
                         "separate": {
                             "description": "Đã vẽ lối đi xe đạp như một đường kẻ riêng",
                             "title": "Lối đi xe đạp vẽ riêng"
                         },
                         "share_busway": {
-                            "description": "Làn xe đạp cũng dành cho xe buýt",
-                            "title": "Làn xe đạp lẫn xe buýt"
+                            "description": "Làn xe đạp cũng dành cho xe buýt"
                         },
                         "shared_lane": {
-                            "description": "Làn xe đạp không được phân cách khỏi giao thông",
-                            "title": "Làn xe đạp dùng chung"
+                            "description": "Làn xe đạp không được phân cách khỏi giao thông"
                         },
                         "track": {
-                            "description": "Làn xe đạp được phân cách bằng chướng ngại",
-                            "title": "Đường xe đạp riêng"
+                            "description": "Làn xe đạp được phân cách bằng chướng ngại"
                         }
                     },
-                    "placeholder": "không có",
-                    "terms": "làn xe đạp,làn đường xe đạp,lan xe dap,lan duong xe dap",
-                    "types": {
-                        "cycleway:left": "Bên trái",
-                        "cycleway:right": "Bên phải"
-                    }
+                    "terms": "làn xe đạp,làn đường xe đạp,lan xe dap,lan duong xe dap"
                 },
                 "dance/style": {
                     "label": "Thể loại Khiêu vũ"
@@ -768,7 +748,6 @@
                     "label": "Tầm Quan trọng"
                 },
                 "departures_board": {
-                    "label": "Bảng Giờ đi",
                     "options": {
                         "no": "Không có",
                         "realtime": "Thời gian thực",
@@ -799,17 +778,8 @@
                 "destination/ref": {
                     "label": "Số Đường trên Hướng Đường đến"
                 },
-                "destination/ref_oneway": {
-                    "label": "Số Đường trên Hướng Đường đến"
-                },
                 "destination/symbol": {
                     "label": "Ký hiệu Tiện nghi trên Hướng Đường đến"
-                },
-                "destination/symbol_oneway": {
-                    "label": "Ký hiệu Tiện nghi trên Hướng Đường đến"
-                },
-                "destination_oneway": {
-                    "label": "Địa điểm trên Hướng Đường đến"
                 },
                 "destination_waterway": {
                     "label": "Nơi Chảy Đến"
@@ -869,7 +839,6 @@
                     }
                 },
                 "direction_point": {
-                    "label": "Hướng (Độ theo Chiều Kim Đồng hồ)",
                     "placeholder": "45, 90, 180, 270"
                 },
                 "direction_vertex": {
@@ -880,13 +849,6 @@
                         "forward": "Tiến"
                     },
                     "terms": "hướng ảnh hưởng,hướng được ảnh hưởng,huong anh huong,huong duoc anh huong"
-                },
-                "direction_vertex_dual": {
-                    "label": "Hướng Ảnh hưởng",
-                    "options": {
-                        "backward": "Ngược",
-                        "forward": "Tiến"
-                    }
                 },
                 "dispensing": {
                     "label": "Phát Thuốc"
@@ -952,10 +914,6 @@
                     "terms": "mất thời gian,thời gian,giây,phút,giờ,tiếng đồng hồ,tiếng hồ,tiếng,ngày,đêm,tuần,tuần lễ,tháng,năm,khoảng thời gian,thời khoảng,trường độ"
                 },
                 "ele": {
-                    "label": "Cao độ (Mét)",
-                    "terms": "cao độ,độ cao,cao do,do cao"
-                },
-                "ele_node": {
                     "label": "Cao độ (Mét)",
                     "terms": "cao độ,độ cao,cao do,do cao"
                 },
@@ -1127,18 +1085,11 @@
                     "label": "Tần số Hoạt động",
                     "terms": "tần số hoạt động,héc,hertz,hz,kilôhéc,kilôhertz,kilohertz,khz,mêgahéc,mêgahertz,megahertz,mhz,gigahéc,gigahertz,ghz,chu kỳ,chu kì,kilô chu kỳ,kilô chu kì,mêga chu kỳ,mêga chu kì,tan so hoat dong,hec,kilohec,megahec,gigahec,chu ky,chu ki,kilo chu ky,kilo chu ki,mega chu ky,mega chu ki"
                 },
-                "frequency_electrified": {
-                    "label": "Tần số Hoạt động",
-                    "terms": "tần số hoạt động,héc,hertz,hz,chu kỳ,chu kì,tan so hoat dong,hec,chu ky,chu ki"
-                },
                 "from": {
                     "label": "Từ"
                 },
                 "fuel": {
                     "label": "Nhiên liệu"
-                },
-                "fuel_multi": {
-                    "label": "Loại Xăng"
                 },
                 "gambling": {
                     "label": "Trò chơi"
@@ -1325,7 +1276,6 @@
                     "label": "Độ dốc"
                 },
                 "incline_steps": {
-                    "label": "Độ dốc",
                     "options": {
                         "down": "Xuống",
                         "up": "Lên"
@@ -1352,9 +1302,6 @@
                 },
                 "intermittent": {
                     "label": "Lúc chảy Lúc không"
-                },
-                "intermittent_yes": {
-                    "label": "Lúc có nước Lúc không"
                 },
                 "internet_access": {
                     "label": "Kết nối Internet",
@@ -1450,15 +1397,6 @@
                     },
                     "terms": "thời gian mọc lá,mùa mọc lá,thoi gian moc la,mua moc la"
                 },
-                "leaf_cycle_singular": {
-                    "label": "Thời gian Mọc Lá",
-                    "options": {
-                        "deciduous": "Rụng Lá",
-                        "evergreen": "Thường xanh",
-                        "semi_deciduous": "Bán Rụng Lá",
-                        "semi_evergreen": "Bán Thường xanh"
-                    }
-                },
                 "leaf_type": {
                     "label": "Loại Lá",
                     "options": {
@@ -1470,12 +1408,7 @@
                     "terms": "loại lá,kiểu lá,hình dạng lá,loai la,kieu la,hinh dang la"
                 },
                 "leaf_type_singular": {
-                    "label": "Loại Lá",
-                    "options": {
-                        "broadleaved": "Hình Quạt",
-                        "leafless": "Không có",
-                        "needleleaved": "Hình Kim"
-                    }
+                    "label": "Loại Lá"
                 },
                 "leisure": {
                     "label": "Loại"
@@ -1495,6 +1428,10 @@
                 "liaison": {
                     "label": "Cấp"
                 },
+                "license_classes": {
+                    "label": "Cấp Bằng Lái xe",
+                    "terms": "cấp bằng lái xe,cap bang lai xe"
+                },
                 "lifeguard": {
                     "label": "Nhân viên Cứu hộ Bơi lội"
                 },
@@ -1513,7 +1450,6 @@
                     "terms": "vị trí,địa điểm,nơi,chỗ,vi tri,dia diem,noi,cho"
                 },
                 "location_pool": {
-                    "label": "Vị trí",
                     "options": {
                         "indoor": "Trong Nhà",
                         "outdoor": "Ngoài trời",
@@ -1587,10 +1523,6 @@
                     "label": "Thời gian Ở Tối đa"
                 },
                 "maxweight": {
-                    "label": "Trọng lượng Tối đa",
-                    "terms": "trọng lượng tối đa,cân nặng tối đa,giới hạn trọng lượng,trong luong toi da,can nang toi da,gioi han trong luong"
-                },
-                "maxweight_bridge": {
                     "label": "Trọng lượng Tối đa",
                     "terms": "trọng lượng tối đa,cân nặng tối đa,giới hạn trọng lượng,trong luong toi da,can nang toi da,gioi han trong luong"
                 },
@@ -1738,7 +1670,6 @@
                     "label": "Một Chiều (Xe đạp)"
                 },
                 "oneway_yes": {
-                    "label": "Chiều",
                     "options": {
                         "alternating": "Thay phiên",
                         "no": "2 Chiều",
@@ -1826,19 +1757,12 @@
                     }
                 },
                 "parking_entrance": {
-                    "label": "Kiểu",
-                    "options": {
-                        "multi-storey": "Cao tầng",
-                        "underground": "Ngầm"
-                    }
+                    "label": "Kiểu"
                 },
                 "parking_space": {
                     "label": "Kiểu"
                 },
                 "payment_multi": {
-                    "label": "Phương thức Thanh toán"
-                },
-                "payment_multi_fee": {
                     "label": "Phương thức Thanh toán"
                 },
                 "phases": {
@@ -1864,7 +1788,6 @@
                     "placeholder": "Dễ, Trung bình, Nâng cao, …"
                 },
                 "piste/difficulty_downhill": {
-                    "label": "Độ Hiểm trở",
                     "options": {
                         "advanced": "Cao cấp (Mỹ: thoi đen; Âu: đen; Nhật: đen)",
                         "easy": "Dễ (Mỹ: tròn lục; Âu: xanh lục; Nhật: lục)",
@@ -1877,7 +1800,6 @@
                     "placeholder": "Dễ, Trung bình, Nâng cao, …"
                 },
                 "piste/difficulty_nordic": {
-                    "label": "Độ Hiểm trở",
                     "options": {
                         "advanced": "Cao cấp – phần chật hẹp, dốc, hoặc đóng băng, ngoặt đột ngột",
                         "easy": "Dễ – đồi mềm, phần dốc ngắn",
@@ -1888,7 +1810,6 @@
                     "placeholder": "Dễ, Trung bình, Nâng cao, …"
                 },
                 "piste/difficulty_skitour": {
-                    "label": "Độ Hiểm trở",
                     "options": {
                         "advanced": "Cao cấp – S: dốc 40–45°",
                         "easy": "Dễ – WS: dốc 30–35°",
@@ -1912,7 +1833,6 @@
                     }
                 },
                 "piste/grooming_downhill": {
-                    "label": "Kiểu Ủi Tuyết",
                     "options": {
                         "backcountry": "Hẻo lánh, không ủi tuyết",
                         "classic": "Cổ điển",
@@ -1920,14 +1840,12 @@
                     }
                 },
                 "piste/grooming_hike": {
-                    "label": "Kiểu Ủi Tuyết",
                     "options": {
                         "backcountry": "Hẻo lánh – đi giày tuyết",
                         "classic": "Cổ điển – đi bộ đường dài mùa đông"
                     }
                 },
                 "piste/grooming_nordic": {
-                    "label": "Kiểu Ủi Tuyết",
                     "options": {
                         "backcountry": "Hẻo lánh, không ủi tuyết",
                         "classic": "Cổ điển",
@@ -1961,7 +1879,6 @@
                     "label": "Hình thức Sản xuất"
                 },
                 "plant/output/electricity": {
-                    "label": "Điện năng lượng",
                     "placeholder": "500 MW, 1000 MW, 2000 MW, …"
                 },
                 "plant/source": {
@@ -2077,6 +1994,10 @@
                 },
                 "ref": {
                     "label": "Mã số Tham chiếu"
+                },
+                "ref/FR/siret-FR": {
+                    "label": "Mã số SIRET",
+                    "terms": "mã số siret,số siret,ma so siret,so siret,siret"
                 },
                 "ref/isil": {
                     "label": "Mã Nhận dạng ISIL"
@@ -2386,9 +2307,6 @@
                 },
                 "site": {
                     "label": "Loại"
-                },
-                "site_type": {
-                    "label": "Loại Di chỉ"
                 },
                 "smoking": {
                     "label": "Hút thuốc",
@@ -2715,7 +2633,7 @@
                 "tracktype": {
                     "label": "Loại Đường mòn",
                     "options": {
-                        "grade1": "Rất Chắc: Mặt lát hoặc bằng cốt liệu chắc",
+                        "grade1": "Rất Chắc: Mặt lát",
                         "grade2": "Khá Chắc: Sỏi đá pha một tí nguyên liệu mềm",
                         "grade3": "Pha trộn đều các nguyên liệu cứng mềm",
                         "grade4": "Khá Mềm: Đất/cát/cỏ pha một tí nguyên liệu cứng",
@@ -2821,6 +2739,9 @@
                 "tunnel_combo": {
                     "label": "Kiểu"
                 },
+                "turning_circle": {
+                    "label": "Hình dạng"
+                },
                 "usage_rail": {
                     "label": "Kiểu Sử dụng",
                     "options": {
@@ -2917,9 +2838,6 @@
                 "voltage/tertiary": {
                     "label": "Điện áp Thứ 3"
                 },
-                "voltage_electrified": {
-                    "label": "Điện áp"
-                },
                 "wall": {
                     "label": "Kiểu"
                 },
@@ -2939,9 +2857,6 @@
                     "label": "Thể tích (Lít)",
                     "placeholder": "10000, 20000, 30000, …",
                     "terms": "thể tích,dung tích,lít,the tich,dung tich,lit"
-                },
-                "water_volume": {
-                    "label": "Thể tích Nước Dự trữ (m³)"
                 },
                 "waterway": {
                     "label": "Loại"
@@ -3358,6 +3273,10 @@
                 "amenity/drinking_water": {
                     "name": "Nước Uống",
                     "terms": "máy nước,vòi nước uống,nước uống,uống,may nuoc,voi nuoc uong,nuoc uong,uong"
+                },
+                "amenity/driver_training": {
+                    "name": "Sân Tập Lái xe",
+                    "terms": "sân tập lái xe,bãi tập lái xe,sân đào tạo lái xe,san tap lai xe,bai tap lai xe,san dao tao lai xe"
                 },
                 "amenity/driving_school": {
                     "name": "Trường Dạy Lái Xe",
@@ -4235,10 +4154,6 @@
                     "name": "Cửa Hàng rào Chắn Trâu bò",
                     "terms": "cửa hàng rào chắn trâu bò,cua hang rao chan trau bo"
                 },
-                "barrier/lift_gate": {
-                    "name": "Rào chắn Đóng mở",
-                    "terms": "rào chắn đóng mở,rao chan dong mo"
-                },
                 "barrier/log": {
                     "name": "Cây Đổ"
                 },
@@ -4496,10 +4411,6 @@
                     "name": "Kiến trúc Sân vận động",
                     "terms": "kiến trúc sân vận động,tòa nhà sân vận động,toà nhà sân vận động,kiến trúc svđ,tòa nhà svđ,toà nhà svđ,kien truc san van dong,toa nha san van dong,kien truc svd,toa nha svd"
                 },
-                "building/static_caravan": {
-                    "name": "Nhà Lưu động để Một Chỗ",
-                    "terms": "nhà lưu động để một chỗ,nhà di động để một chỗ,nha luu dong de mot cho,nha di dong de mot cho"
-                },
                 "building/sty": {
                     "name": "Chuồng Heo",
                     "terms": "chuồng heo,chuồng lợn,chuong heo,chuong lon"
@@ -4577,10 +4488,6 @@
                 "craft/bookbinder": {
                     "name": "Đóng Sách",
                     "terms": "thợ đóng sách,thợ đóng cuốn,thợ đóng sổ,tho dong sach,tho dong cuon,tho dong so"
-                },
-                "craft/brewery": {
-                    "name": "Ủ Bia",
-                    "terms": "nhà máy bia,nhà máy rượu,người ủ rượu,người ủ bia,nha may bia,nha may ruou,nguoi u ruou,nguoi u bia"
                 },
                 "craft/carpenter": {
                     "name": "Đóng Đồ Gỗ",
@@ -4863,7 +4770,7 @@
                 },
                 "emergency/water_tank": {
                     "name": "Bể nước Cứu hỏa",
-                    "terms": "bể nước cứu hỏa,thùng nước cứu hỏa,bể nước cứu hoả,thùng nước cứu hoả,bể nước chữa cháy,thùng nước chữa cháy,be nuoc cuu hoa,thung nuoc cuu hoa,be nuoc chua chay,thung nuoc chua chay"
+                    "terms": "bể nước cứu hỏa,thùng nước cứu hỏa,bể nước cứu hoả,thùng nước cứu hoả,bể nước chữa cháy,thùng nước chữa cháy,bể nước phòng cháy,thùng nước phòng cháy,be nuoc cuu hoa,thung nuoc cuu hoa,be nuoc chua chay,thung nuoc chua chay,be nuoc phong chay,thung nuoc phong chay"
                 },
                 "emergency/yes": {
                     "name": "Dành cho Dịch vụ Khẩn cấp"
@@ -5035,23 +4942,13 @@
                 "highway/crossing": {
                     "name": "Lối Băng qua Đường"
                 },
-                "highway/crossing/marked": {
-                    "name": "Vạch Qua đường",
-                    "terms": "vạch qua đường,vạch sang đường,vạch đi bộ sang đường,vạch kẻ qua đường,vạch kẻ sang đường,đường ngựa vằn,vach qua duong,vach sang duong,vach di bo qua duong,vach di bo sang duong,vach ke qua duong,vach ke sang duong,duong ngua van"
-                },
                 "highway/crossing/traffic_signals": {
                     "name": "Lối Qua đường có Đèn Cảnh báo",
                     "terms": "lối qua đường có đèn cảnh báo,lối qua đường có đèn tín hiệu,vạch qua đường có đèn cảnh báo,vạch qua đường có đèn tín hiệu,loi qua duong co den canh bao,loi qua duong co den tin hieu,vach qua duong co den canh bao,vach qua duong co den tin hieu"
                 },
-                "highway/crossing/uncontrolled": {
-                    "name": "Vạch Qua đường"
-                },
                 "highway/crossing/unmarked": {
                     "name": "Lối Qua đường Không có Vạch",
                     "terms": "lối băng qua đường không có vạch,lối qua đường không có vạch,loi bang qua duong khong co vach,loi qua duong khong co vach"
-                },
-                "highway/crossing/zebra": {
-                    "name": "Vạch Qua đường"
                 },
                 "highway/cycleway": {
                     "name": "Đường Xe đạp",
@@ -5067,10 +4964,6 @@
                 "highway/cycleway/crossing/bicycle_foot": {
                     "name": "Lối Đi bộ & Xe đạp Qua đường",
                     "terms": "lối đi bộ và xe đạp qua đường,loi di bo va xe dap qua duong"
-                },
-                "highway/cycleway/crossing/marked": {
-                    "name": "Vạch Xe đạp Qua đường",
-                    "terms": "vạch xe đạp qua đường,vạch kẻ đường cho xe đạp,vach xe dap qua duong,vach ke duong cho xe dap"
                 },
                 "highway/cycleway/crossing/unmarked": {
                     "name": "Lối Băng qua Đường dành cho Xe đạp Không có Vạch",
@@ -5092,6 +4985,10 @@
                     "name": "Điểm Dừng Khẩn cấp",
                     "terms": "điểm dừng khẩn cấp,diem dung khan cap"
                 },
+                "highway/escape": {
+                    "name": "Đường dốc Dừng lại Xe tải",
+                    "terms": "đường dốc dừng lại xe tải,đường dốc ngừng lại xe tải,đường dốc ngưng lại xe tải,duong doc dung lai xe tai,duong doc ngung lai xe tai"
+                },
                 "highway/footway": {
                     "name": "Đường Dạo",
                     "terms": "đường đi bộ,hè,vỉa hè,đường mòn,phố,đường đi dạo,đường dạo,duong di bo,he,via he,duong mon,pho,duong di dao,duong dao"
@@ -5106,24 +5003,9 @@
                 "highway/footway/informal": {
                     "name": "Đường dạo Không chính thức"
                 },
-                "highway/footway/marked": {
-                    "name": "Vạch Qua đường",
-                    "terms": "vạch qua đường,vạch sang đường,vạch đi bộ sang đường,vạch kẻ qua đường,vạch kẻ sang đường,đường ngựa vằn,vach qua duong,vach sang duong,vach di bo qua duong,vach di bo sang duong,vach ke qua duong,vach ke sang duong,duong ngua van"
-                },
                 "highway/footway/sidewalk": {
                     "name": "Vỉa hè",
                     "terms": "vỉa hè,hè phố,hè,lề đường,đường đi bộ,đường dạo,le duong,he pho,he,vie he,duong di bo,duong dao"
-                },
-                "highway/footway/traffic_signals": {
-                    "name": "Lối Qua đường có Đèn Cảnh báo",
-                    "terms": "lối qua đường có đèn cảnh báo,lối qua đường có đèn tín hiệu,vạch qua đường có đèn cảnh báo,vạch qua đường có đèn tín hiệu,loi qua duong co den canh bao,loi qua duong co den tin hieu,vach qua duong co den canh bao,vach qua duong co den tin hieu"
-                },
-                "highway/footway/unmarked": {
-                    "name": "Lối Qua đường Không có Vạch",
-                    "terms": "lối băng qua đường không có vạch,lối qua đường không có vạch,loi bang qua duong khong co vach,loi qua duong khong co vach"
-                },
-                "highway/footway/zebra": {
-                    "name": "Vạch Qua đường"
                 },
                 "highway/give_way": {
                     "name": "Bảng Nhường đường",
@@ -5150,10 +5032,6 @@
                     "terms": "giao lộ đường cao tốc,giao lộ quốc lộ,giao lộ xa lộ liên tiểu bang,giao lộ xa lộ liên bang,lối ra đường cao tốc,lối ra quốc lộ,lối ra xa lộ liên tiểu bang,lối ra xa lộ liên bang,giao lo duong cao toc,giao lo quoc lo,giao lo xa lo lien tieu bang,giao lo xa lo lien bang,loi ra duong cao toc,loi ra quoc lo,loi ra xa lo lien tieu bang,loi ra xa lo lien bang"
                 },
                 "highway/motorway_link": {
-                    "name": "Nhánh Ra vào Đường Cao tốc",
-                    "terms": "đường nhánh cao tốc,đoạn nhánh cao tốc,đường nhánh rẽ cao tốc,đoạn nhánh rẽ cao tốc,đường nhánh chuyển đường cao tốc,nhánh chuyển đường cao tốc,lối ra vào đường cao tốc,lối ra đường cao tốc,lối vào đường cao tốc,nhánh ra đường cao tốc,nhánh vào đường cao tốc,đường nối đường cao tốc,duong nhanh cao toc,doan nhanh cao toc,duong nhanh re cao toc,doan nhanh re cao toc,duong nhanh chuyen duong cao toc,nhanh chuyen duong cao toc,loi ra vao duong cao toc,loi ra duong cao toc,loi vao duong cao toc,nhanh ra duong cao toc,nhanh vao duong cao toc,duong noi duong cao toc"
-                },
-                "highway/motorway_link-US-CA": {
                     "name": "Nhánh Ra vào Đường Cao tốc",
                     "terms": "đường nhánh cao tốc,đoạn nhánh cao tốc,đường nhánh rẽ cao tốc,đoạn nhánh rẽ cao tốc,đường nhánh chuyển đường cao tốc,nhánh chuyển đường cao tốc,lối ra vào đường cao tốc,lối ra đường cao tốc,lối vào đường cao tốc,nhánh ra đường cao tốc,nhánh vào đường cao tốc,đường nối đường cao tốc,duong nhanh cao toc,doan nhanh cao toc,duong nhanh re cao toc,doan nhanh re cao toc,duong nhanh chuyen duong cao toc,nhanh chuyen duong cao toc,loi ra vao duong cao toc,loi ra duong cao toc,loi vao duong cao toc,nhanh ra duong cao toc,nhanh vao duong cao toc,duong noi duong cao toc"
                 },
@@ -5186,10 +5064,6 @@
                     "terms": "đường chính,quốc lộ,ql,xa lộ,xl,đường liên tỉnh,đlt,duong chinh,quoc lo,xa lo,duong lien tinh"
                 },
                 "highway/primary_link": {
-                    "name": "Nhánh Ra vào Đường Chính",
-                    "terms": "đường nhánh đường chính,đường nhánh quốc lộ,đường nhánh xa lộ,đoạn nhánh đường chính,đoạn nhánh quốc lộ,đoạn nhánh xa lộ,đường nhánh rẽ đường chính,đường nhánh rẽ quốc lộ,đường nhánh rẽ xa lộ,đoạn nhánh rẽ đường chính,đoạn nhánh rẽ quốc lộ,đoạn nhánh rẽ xa lộ,đường nhánh chuyển đường chính,đường nhánh chuyển quốc lộ,đường nhánh chuyển xa lộ,nhánh chuyển đường chính,nhánh chuyển quốc lộ,nhánh chuyển xa lộ,lối ra vào đường chính,lối ra vào quốc lộ,lối ra vào xa lộ,lối ra đường chính,lối ra quốc lộ,lối ra xa lộ,lối vào đường chính,lối vào quốc lộ,lối vào xa lộ,nhánh ra đường chính,nhánh ra quốc lộ,nhánh ra xa lộ,nhánh vào đường chính,nhánh vào quốc lộ,nhánh vào xa lộ,đường nối đường chính,đường nối quốc lộ,đường nối xa lộ,duong nhanh duong chinh,duong nhanh quoc lo,duong nhanh xa lo,doan nhanh duong chinh,doan nhanh quoc lo,doan nhanh xa lo,duong nhanh re duong chinh,duong nhanh re quoc lo,duong nhanh re xa lo,doan nhanh re duong chinh,doan nhanh re quoc lo,doan nhanh re xa lo,duong nhanh chuyen duong chinh,duong nhanh chuyen quoc lo,duong nhanh chuyen xa lo,nhanh chuyen duong chinh,nhanh chuyen quoc lo,nhanh chuyen xa lo,loi ra vao duong chinh,loi ra vao quoc lo,loi ra vao xa lo,loi ra duong chinh,loi ra quoc lo,loi ra xa lo,loi vao duong chinh,loi vao quoc lo,loi vao xa lo,nhanh ra duong chinh,nhanh ra quoc lo,nhanh ra xa lo,nhanh vao duong chinh,nhanh vao quoc lo,nhanh vao xa lo,duong noi duong chinh,duong noi quoc lo,duong noi xa lo"
-                },
-                "highway/primary_link-US-CA": {
                     "name": "Nhánh Ra vào Đường Chính",
                     "terms": "đường nhánh đường chính,đường nhánh quốc lộ,đường nhánh xa lộ,đoạn nhánh đường chính,đoạn nhánh quốc lộ,đoạn nhánh xa lộ,đường nhánh rẽ đường chính,đường nhánh rẽ quốc lộ,đường nhánh rẽ xa lộ,đoạn nhánh rẽ đường chính,đoạn nhánh rẽ quốc lộ,đoạn nhánh rẽ xa lộ,đường nhánh chuyển đường chính,đường nhánh chuyển quốc lộ,đường nhánh chuyển xa lộ,nhánh chuyển đường chính,nhánh chuyển quốc lộ,nhánh chuyển xa lộ,lối ra vào đường chính,lối ra vào quốc lộ,lối ra vào xa lộ,lối ra đường chính,lối ra quốc lộ,lối ra xa lộ,lối vào đường chính,lối vào quốc lộ,lối vào xa lộ,nhánh ra đường chính,nhánh ra quốc lộ,nhánh ra xa lộ,nhánh vào đường chính,nhánh vào quốc lộ,nhánh vào xa lộ,đường nối đường chính,đường nối quốc lộ,đường nối xa lộ,duong nhanh duong chinh,duong nhanh quoc lo,duong nhanh xa lo,doan nhanh duong chinh,doan nhanh quoc lo,doan nhanh xa lo,duong nhanh re duong chinh,duong nhanh re quoc lo,duong nhanh re xa lo,doan nhanh re duong chinh,doan nhanh re quoc lo,doan nhanh re xa lo,duong nhanh chuyen duong chinh,duong nhanh chuyen quoc lo,duong nhanh chuyen xa lo,nhanh chuyen duong chinh,nhanh chuyen quoc lo,nhanh chuyen xa lo,loi ra vao duong chinh,loi ra vao quoc lo,loi ra vao xa lo,loi ra duong chinh,loi ra quoc lo,loi ra xa lo,loi vao duong chinh,loi vao quoc lo,loi vao xa lo,nhanh ra duong chinh,nhanh ra quoc lo,nhanh ra xa lo,nhanh vao duong chinh,nhanh vao quoc lo,nhanh vao xa lo,duong noi duong chinh,duong noi quoc lo,duong noi xa lo"
                 },
@@ -5306,10 +5180,6 @@
                     "terms": "đường huyết mạch,xa lộ,đường trục,xl,duong huyet mach,xa lo,duong truc"
                 },
                 "highway/trunk_link": {
-                    "name": "Nhánh Ra vào Đường Huyết mạch / Xa lộ",
-                    "terms": "nhánh ra vào đường huyết mạch,đường nhánh đường huyết mạch,lối ra vào đường huyết mạch,lối ra đường huyết mạch,lối vào đường huyết mạch,đường nối đường huyết mạch,nhánh ra vào xa lộ,đường nhánh xa lộ,lối ra vào xa lộ,lối ra xa lộ,lối vào xa lộ,đường nối xa lộ,nhánh ra vào đường trục,đường nhánh đường trục,lối ra vào đường trục,lối ra đường trục,lối vào đường trục,đường nối đường trục,nhanh ra vao duong huyet mach,duong nhanh duong huyet mach,loi ra vao duong huyet mach,loi ra duong huyet mach,loi vao duong huyet mach,duong noi duong huyet mach,nhanh ra vao xa lo,duong nhanh xa lo,loi ra vao xa lo,loi ra xa lo,loi vao xa lo,duong noi xa lo,nhanh ra vao duong truc,duong nhanh duong truc,loi ra vao duong truc,loi ra duong truc,loi vao duong truc,duong noi duong truc"
-                },
-                "highway/trunk_link-US-CA": {
                     "name": "Nhánh Ra vào Đường Huyết mạch / Xa lộ",
                     "terms": "nhánh ra vào đường huyết mạch,đường nhánh đường huyết mạch,lối ra vào đường huyết mạch,lối ra đường huyết mạch,lối vào đường huyết mạch,đường nối đường huyết mạch,nhánh ra vào xa lộ,đường nhánh xa lộ,lối ra vào xa lộ,lối ra xa lộ,lối vào xa lộ,đường nối xa lộ,nhánh ra vào đường trục,đường nhánh đường trục,lối ra vào đường trục,lối ra đường trục,lối vào đường trục,đường nối đường trục,nhanh ra vao duong huyet mach,duong nhanh duong huyet mach,loi ra vao duong huyet mach,loi ra duong huyet mach,loi vao duong huyet mach,duong noi duong huyet mach,nhanh ra vao xa lo,duong nhanh xa lo,loi ra vao xa lo,loi ra xa lo,loi vao xa lo,duong noi xa lo,nhanh ra vao duong truc,duong nhanh duong truc,loi ra vao duong truc,loi ra duong truc,loi vao duong truc,duong noi duong truc"
                 },
@@ -5599,7 +5469,7 @@
                     "terms": "khu vực tôn giáo,khu vuc ton giao"
                 },
                 "landuse/reservoir": {
-                    "name": "Bể nước"
+                    "name": "Hồ Chứa Nước"
                 },
                 "landuse/residential": {
                     "name": "Đất Dân cư",
@@ -5846,10 +5716,6 @@
                 "leisure/pitch/cricket": {
                     "name": "Sân Bóng gậy",
                     "terms": "sân bóng gậy,sân cỏ bóng gậy,sân cỏ crikê,sân cỏ crích-kê,sân cỏ cricket,san bong gay,san co bong gay,san go crike,san co crich-ke,san co cricket"
-                },
-                "leisure/pitch/equestrian": {
-                    "name": "Sân Cưỡi ngựa",
-                    "terms": "sân cưỡi ngựa,câu lạc bộ cưỡi ngựa,clb cưỡi ngựa,câu lạc bộ ngựa,clb ngựa,san cuoi ngua,cau lac bo cuoi ngua,clb cuoi ngua,cau lac bo ngua,clb ngua"
                 },
                 "leisure/pitch/field_hockey": {
                     "name": "Sân cỏ Khúc côn cầu",
@@ -6266,6 +6132,9 @@
                     "name": "Nhà máy",
                     "terms": "nhà máy,xí nghiệp,xưởng,hãng,nha may,xi nghiep,xuong,hang"
                 },
+                "man_made/yes": {
+                    "name": "Nhân tạo (Kiểu Không rõ)"
+                },
                 "military/bunker": {
                     "name": "Boong Ke",
                     "terms": "boong ke,boong-ke,boongke"
@@ -6381,6 +6250,10 @@
                     "name": "Suối",
                     "terms": "suối nước,suoi nuoc"
                 },
+                "natural/strait": {
+                    "name": "Eo biển",
+                    "terms": "eo biển,eo,eo bien"
+                },
                 "natural/tree": {
                     "name": "Cây",
                     "terms": "cây,cay"
@@ -6418,8 +6291,8 @@
                     "terms": "hồ nhỏ,ao,ao cá,hồ cá,hồ đánh cá,ho nho,ao ca,ho ca,ho danh ca"
                 },
                 "natural/water/reservoir": {
-                    "name": "Bể nước",
-                    "terms": "bể nước,be nuoc"
+                    "name": "Hồ Chứa Nước",
+                    "terms": "hồ chứa nước,bể chứa nước,ho chua nuoc,be chua nuoc"
                 },
                 "natural/water/river": {
                     "name": "Mặt Sông",
@@ -6950,10 +6823,6 @@
                 "power/plant/source/oil": {
                     "name": "Nhà máy Điện Đốt Dầu",
                     "terms": "nhà máy điện đốt dầu,nhà máy điện sử dụng dầu,nhà máy điện dùng dầu,nha may dien dot dau,nha may dien su dung dau,nha may dien dung dau"
-                },
-                "power/plant/source/solar": {
-                    "name": "Trang trại Điện Mặt trời",
-                    "terms": "trang trại điện mặt trời,trang trại điện năng lượng mặt trời,trại quang năng,tấm quang năng,trang trai dien mat troi,trang trai dien nang luong mat troi,trai quang nang,tam quang nang"
                 },
                 "power/plant/source/waste": {
                     "name": "Nhà máy Điện rác",
@@ -7745,10 +7614,6 @@
                     "name": "Tiệm Vật nuôi",
                     "terms": "tiệm bán vật nuôi,tiệm bán đồ nuôi thú vật,cửa hàng vật nuôi,cửa hiệu thú vật,đồ ăn thú vật,chó,mèo,tiem ban vat nuoi,tiem ban do nuoi thu vat,cua hang vat nuoi,cua hieu thu vat,do an thu vat,cho,meo"
                 },
-                "shop/pet_grooming": {
-                    "name": "Dịch vụ Tỉa lông",
-                    "terms": "dịch vụ tỉa lông,tỉa lông thú cưng,tỉa lông chó,tỉa lông mèo,tỉa lông ngựa,dich vu tia long,tia long thu cung,tia long cho,tia long meo,tia long ngua"
-                },
                 "shop/photo": {
                     "name": "Tiệm Chụp Hình",
                     "terms": "tiệm chụp hình,tiệm lấy hình,tiệm lấy ảnh,tiệm nhiếp ảnh,cửa hàng chụp hình,cửa hàng lấy hình,cửa hàng lấy ảnh,cửa hàng nhiếp ảnh,tiem chup hinh,tiem lay hinh,tiem lay anh,tiem nhiep anh,cua hang chup hinh,cua hang lay hinh,cua hang lay anh,cua hang nhiep anh"
@@ -8078,8 +7943,8 @@
                     "terms": "thiết bị điều hòa giao thông,thiết bị điều hoà giao thông,thiet bi dieu hoa giao thong"
                 },
                 "traffic_calming/bump": {
-                    "name": "Gờ Giảm Tốc độ",
-                    "terms": "gờ giảm tốc độ,bướu tốc độ,go giam toc do,buou toc do"
+                    "name": "Gờ Giảm tốc",
+                    "terms": "gờ giảm tốc,gờ giảm tốc độ,bướu tốc độ,go giam toc,go giam toc do,buou toc do"
                 },
                 "traffic_calming/chicane": {
                     "name": "Khúc Cua Chữ chi",
@@ -8090,8 +7955,8 @@
                     "terms": "khúc đường hẹp lại,khu duong hep lai"
                 },
                 "traffic_calming/cushion": {
-                    "name": "Nệm Giảm Tốc độ",
-                    "terms": "cái nệm giảm tốc độ,cái đệm giảm tốc độ,cai nem giam toc do,cai dem giam toc do"
+                    "name": "Nệm Giảm tốc",
+                    "terms": "nệm giảm tốc,nệm giảm tốc độ,đệm giảm tốc,đệm giảm tốc độ,nem giam toc,nem giam toc do,dem giam toc,dem giam toc do"
                 },
                 "traffic_calming/dip": {
                     "name": "Chỗ Trũng",
@@ -8104,6 +7969,10 @@
                 "traffic_calming/island": {
                     "name": "Đảo Giao thông",
                     "terms": "đảo giao thông,dao giao thong"
+                },
+                "traffic_calming/mini_bumps": {
+                    "name": "Gờ Nhỏ Giảm tốc",
+                    "terms": "gờ nhỏ giảm tốc,gờ nhỏ giảm tốc độ,go nho giam toc,go nho giam toc do"
                 },
                 "traffic_calming/rumble_strip": {
                     "name": "Dải Gây Ồn",

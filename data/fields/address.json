@@ -23,7 +23,6 @@
         "addr:suburb",
         "addr:unit"
     ],
-    "icon": "address",
     "label": "Address",
     "strings": {
         "types": {

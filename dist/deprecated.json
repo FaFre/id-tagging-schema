@@ -1135,14 +1135,6 @@
     },
     {
         "old": {
-            "dropped_kerb": "*"
-        },
-        "replace": {
-            "kerb": "lowered"
-        }
-    },
-    {
-        "old": {
             "embankment": "1"
         },
         "replace": {
@@ -1408,6 +1400,14 @@
     },
     {
         "old": {
+            "generator:method": "solar"
+        },
+        "replace": {
+            "generator:source": "solar"
+        }
+    },
+    {
+        "old": {
             "golf": "faiway"
         },
         "replace": {
@@ -1465,10 +1465,27 @@
     },
     {
         "old": {
+            "healthcare:speciality": "internist"
+        },
+        "replace": {
+            "healthcare:speciality": "internal"
+        }
+    },
+    {
+        "old": {
             "highway": "abandoned"
         },
         "replace": {
             "abandoned:highway": "*"
+        }
+    },
+    {
+        "old": {
+            "highway": "service",
+            "service": "busway"
+        },
+        "replace": {
+            "highway": "busway"
         }
     },
     {
@@ -1532,6 +1549,24 @@
         "replace": {
             "highway": "road",
             "surface": "unpaved"
+        }
+    },
+    {
+        "old": {
+            "historic": "archaeological_site",
+            "site_type": "*"
+        },
+        "replace": {
+            "historic": "archaeological_site",
+            "archaeological_site": "$1"
+        }
+    },
+    {
+        "old": {
+            "industrial": "gas"
+        },
+        "replace": {
+            "utility": "gas"
         }
     },
     {
@@ -1609,6 +1644,16 @@
     },
     {
         "old": {
+            "information": "board",
+            "board_type": "map"
+        },
+        "replace": {
+            "tourism": "information",
+            "information": "map"
+        }
+    },
+    {
+        "old": {
             "internet_access": "public"
         },
         "replace": {
@@ -1619,6 +1664,22 @@
     {
         "old": {
             "internet_access": "wifi"
+        },
+        "replace": {
+            "internet_access": "wlan"
+        }
+    },
+    {
+        "old": {
+            "internet_access": "wi-fi"
+        },
+        "replace": {
+            "internet_access": "wlan"
+        }
+    },
+    {
+        "old": {
+            "internet_access": "WLAN"
         },
         "replace": {
             "internet_access": "wlan"
@@ -1838,6 +1899,26 @@
     },
     {
         "old": {
+            "landuse": "reservoir",
+            "reservoir_type": "tailings",
+            "natural": "water",
+            "water": "reservoir"
+        },
+        "replace": {
+            "man_made": "tailings_pond"
+        }
+    },
+    {
+        "old": {
+            "landuse": "reservoir",
+            "reservoir_type": "tailings"
+        },
+        "replace": {
+            "man_made": "tailings_pond"
+        }
+    },
+    {
+        "old": {
             "landuse": "school"
         },
         "replace": {
@@ -1965,22 +2046,6 @@
     {
         "old": {
             "levels": "*"
-        },
-        "replace": {
-            "building:levels": "$1"
-        }
-    },
-    {
-        "old": {
-            "LEVELS": "*"
-        },
-        "replace": {
-            "building:levels": "$1"
-        }
-    },
-    {
-        "old": {
-            "levels_count": "*"
         },
         "replace": {
             "building:levels": "$1"
@@ -2243,6 +2308,16 @@
     },
     {
         "old": {
+            "natural": "water",
+            "water": "reservoir",
+            "reservoir_type": "tailings"
+        },
+        "replace": {
+            "man_made": "tailings_pond"
+        }
+    },
+    {
+        "old": {
             "natural": "waterfall"
         },
         "replace": {
@@ -2255,14 +2330,6 @@
         },
         "replace": {
             "note": "$1"
-        }
-    },
-    {
-        "old": {
-            "nosquare": "*"
-        },
-        "replace": {
-            "nonsquare": "$1"
         }
     },
     {
@@ -2311,16 +2378,6 @@
         },
         "replace": {
             "oneway": "alternating"
-        }
-    },
-    {
-        "old": {
-            "oneway": "no;yes"
-        }
-    },
-    {
-        "old": {
-            "oneway": "unknown"
         }
     },
     {
@@ -2687,14 +2744,6 @@
     },
     {
         "old": {
-            "reservations": "*"
-        },
-        "replace": {
-            "reservation": "$1"
-        }
-    },
-    {
-        "old": {
             "roof:color": "*"
         },
         "replace": {
@@ -2716,14 +2765,6 @@
         "replace": {
             "route": "bicycle",
             "network": "ncn"
-        }
-    },
-    {
-        "old": {
-            "rwn_expected_route_relations": "*"
-        },
-        "replace": {
-            "expected_rwn_route_relations": "$1"
         }
     },
     {
@@ -3027,14 +3068,6 @@
     },
     {
         "old": {
-            "showers": "*"
-        },
-        "replace": {
-            "shower": "$1"
-        }
-    },
-    {
-        "old": {
             "sloped_curb": "0"
         },
         "replace": {
@@ -3126,38 +3159,6 @@
     },
     {
         "old": {
-            "speed_limit": "*"
-        },
-        "replace": {
-            "maxspeed": "$1"
-        }
-    },
-    {
-        "old": {
-            "speedlimit": "*"
-        },
-        "replace": {
-            "maxspeed": "$1"
-        }
-    },
-    {
-        "old": {
-            "SpeedLimit": "*"
-        },
-        "replace": {
-            "maxspeed": "$1"
-        }
-    },
-    {
-        "old": {
-            "SPEEDLIMIT": "*"
-        },
-        "replace": {
-            "maxspeed": "$1"
-        }
-    },
-    {
-        "old": {
             "sport": "horse_shoes"
         },
         "replace": {
@@ -3178,6 +3179,14 @@
         },
         "replace": {
             "sport": "shuffleboard"
+        }
+    },
+    {
+        "old": {
+            "sport": "team_handball"
+        },
+        "replace": {
+            "sport": "handball"
         }
     },
     {
@@ -3224,6 +3233,62 @@
         "replace": {
             "intermittent": "yes",
             "waterway": "stream"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "broadband"
+        },
+        "replace": {
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "cable_tv"
+        },
+        "replace": {
+            "utility": "television"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "communications"
+        },
+        "replace": {
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "gas"
+        },
+        "replace": {
+            "utility": "gas"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "power"
+        },
+        "replace": {
+            "utility": "power"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "street_lighting"
+        },
+        "replace": {
+            "utility": "street_lighting"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "telecom"
+        },
+        "replace": {
+            "utility": "telecom"
         }
     },
     {

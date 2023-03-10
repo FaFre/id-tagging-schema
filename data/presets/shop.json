@@ -5,7 +5,7 @@
         "shop",
         "operator",
         "address",
-        "building_area",
+        "building_area_yes",
         "opening_hours",
         "payment_multi",
         "phone"
@@ -28,8 +28,11 @@
         "not/name",
         "opening_hours/covid19",
         "ref/vatin",
+        "ref/FR/siret-FR",
         "second_hand",
         "stroller",
+        "toilets",
+        "toilets/wheelchair",
         "wheelchair"
     ],
     "geometry": [
@@ -44,5 +47,5 @@
         "store"
     ],
     "name": "Shop",
-    "matchScore": 0.4
+    "matchScore": 0.7
 }

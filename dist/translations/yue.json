@@ -321,12 +321,6 @@
                     "label": "地庫樓數",
                     "terms": "underground levels,地庫樓數,地底樓數"
                 },
-                "building/levels_building": {
-                    "placeholder": "2, 4, 6..."
-                },
-                "building_area": {
-                    "label": "屋宇"
-                },
                 "bunker_type": {
                     "label": "類"
                 },
@@ -448,38 +442,23 @@
                     "label": "單車道",
                     "options": {
                         "lane": {
-                            "description": "單車道同車道，地上畫綫隔開",
-                            "title": "標準單車道"
-                        },
-                        "none": {
-                            "description": "無單車道",
-                            "title": "無"
+                            "description": "單車道同車道，地上畫綫隔開"
                         },
                         "opposite": {
-                            "description": "單程路，單車道仍可雙程",
-                            "title": "對頭單車道"
+                            "description": "單程路，單車道仍可雙程"
                         },
                         "opposite_lane": {
-                            "description": "單車道，與交通方向相反",
-                            "title": "雙向單車道，可對頭"
+                            "description": "單車道，與交通方向相反"
                         },
                         "share_busway": {
-                            "description": "單車道同巴士道合用",
-                            "title": "單車道同巴士共用"
+                            "description": "單車道同巴士道合用"
                         },
                         "shared_lane": {
-                            "description": "單車道與車道不分",
-                            "title": "共用單車道"
+                            "description": "單車道與車道不分"
                         },
                         "track": {
-                            "description": "單車道與交通有屏障",
-                            "title": "單連分徑"
+                            "description": "單車道與交通有屏障"
                         }
-                    },
-                    "placeholder": "無",
-                    "types": {
-                        "cycleway:left": "左邊",
-                        "cycleway:right": "右邊"
                     }
                 },
                 "date": {
@@ -632,9 +611,6 @@
                 "fuel": {
                     "label": "燃料"
                 },
-                "fuel_multi": {
-                    "label": "燃料類"
-                },
                 "gauge": {
                     "label": "軌距"
                 },
@@ -698,7 +674,6 @@
                     "label": "斜"
                 },
                 "incline_steps": {
-                    "label": "斜坡",
                     "options": {
                         "down": "落",
                         "up": "上"
@@ -760,15 +735,6 @@
                         "semi_evergreen": "半常綠"
                     }
                 },
-                "leaf_cycle_singular": {
-                    "label": "換葉週期",
-                    "options": {
-                        "deciduous": "落葉",
-                        "evergreen": "常綠",
-                        "semi_deciduous": "半落葉",
-                        "semi_evergreen": "半常綠"
-                    }
-                },
                 "leaf_type": {
                     "label": "葉類",
                     "options": {
@@ -779,12 +745,7 @@
                     }
                 },
                 "leaf_type_singular": {
-                    "label": "葉類",
-                    "options": {
-                        "broadleaved": "闊葉",
-                        "leafless": "無葉",
-                        "needleleaved": "針葉"
-                    }
+                    "label": "葉類"
                 },
                 "leisure": {
                     "label": "類"
@@ -919,7 +880,6 @@
                     }
                 },
                 "oneway_yes": {
-                    "label": "單程",
                     "options": {
                         "alternating": "單綫雙程",
                         "no": "唔係",
@@ -977,19 +937,12 @@
                     "label": "向"
                 },
                 "parking_entrance": {
-                    "label": "類",
-                    "options": {
-                        "multi-storey": "多層",
-                        "underground": "地底"
-                    }
+                    "label": "類"
                 },
                 "parking_space": {
                     "label": "類"
                 },
                 "payment_multi": {
-                    "label": "畀錢方式"
-                },
-                "payment_multi_fee": {
                     "label": "畀錢方式"
                 },
                 "phases": {
@@ -1007,7 +960,6 @@
                     "placeholder": "易、中階、 進階⋯⋯"
                 },
                 "piste/difficulty_downhill": {
-                    "label": "難度",
                     "options": {
                         "advanced": "進階（黑鑽）",
                         "easy": "易（綠圈）",
@@ -1380,7 +1332,6 @@
                 "tracktype": {
                     "label": "道類",
                     "options": {
-                        "grade1": "實：鋪咗，或者壓實咗嘅硬面",
                         "grade2": "多數實：石仔／石，夾雜軟料",
                         "grade3": "軟硬平均夾雜",
                         "grade4": "多實軟：泥／沙／草夾雜一啲硬料",
@@ -1451,9 +1402,6 @@
                     }
                 },
                 "voltage": {
-                    "label": "電壓"
-                },
-                "voltage_electrified": {
                     "label": "電壓"
                 },
                 "wall": {
@@ -1836,10 +1784,6 @@
                     "name": "單人轉門",
                     "terms": "kissing gate,單人轉門"
                 },
-                "barrier/lift_gate": {
-                    "name": "道閘",
-                    "terms": "lift gate,擋車器,道閘"
-                },
                 "barrier/retaining_wall": {
                     "name": "護土牆",
                     "terms": "retaining wall,擋土墻,護土牆"
@@ -1966,9 +1910,6 @@
                 "highway/footway/sidewalk": {
                     "name": "行人路",
                     "terms": "sidewalk,pavement,行人路"
-                },
-                "highway/footway/unmarked": {
-                    "name": "過路無劃綫"
                 },
                 "highway/living_street": {
                     "name": "居住街道",

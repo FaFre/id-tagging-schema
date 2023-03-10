@@ -1,6 +1,7 @@
 {
     "icon": "temaki-lift_gate",
     "fields": [
+        "lift_gate/type",
         "access",
         "locked",
         "opening_hours"
@@ -10,18 +11,17 @@
         "opening_hours/covid19"
     ],
     "geometry": [
-        "vertex",
-        "line"
+        "vertex"
     ],
     "tags": {
         "barrier": "lift_gate"
     },
     "terms": [
-        "boom barrier",
         "boom gate",
         "boom lift",
         "hinged bar",
+        "lift gate",
         "pivoted pole"
     ],
-    "name": "Lift Gate"
+    "name": "Boom Barrier"
 }

@@ -1,8 +1,7 @@
 {
     "key": "ele",
     "type": "number",
-    "icon": "elevation",
-    "label": "Elevation (Meters)",
+    "label": "{ele}",
     "universal": true,
     "geometry": [
         "point",

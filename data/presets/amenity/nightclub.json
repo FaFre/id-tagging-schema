@@ -4,7 +4,7 @@
         "name",
         "operator",
         "address",
-        "building_area",
+        "building_area_yes",
         "opening_hours",
         "min_age",
         "smoking"
@@ -18,6 +18,7 @@
         "payment_multi",
         "opening_hours/covid19",
         "phone",
+        "ref/FR/siret-FR",
         "wheelchair",
         "fee"
     ],
@@ -29,10 +30,12 @@
         "amenity": "nightclub"
     },
     "terms": [
-        "disco*",
-        "night club",
+        "club",
+        "dance club",
         "dancing",
-        "dance club"
+        "disco",
+        "discotheque",
+        "night club"
     ],
     "name": "Nightclub"
 }
