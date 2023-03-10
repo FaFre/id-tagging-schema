@@ -4166,9 +4166,6 @@
                     "name": "Барраки",
                     "terms": "жилые помещения"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Опасная зона"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Армейская полоса препятствий"
                 },
@@ -5457,6 +5454,9 @@
                 "shop/anime": {
                     "name": "Магазин аниме / манги"
                 },
+                "shop/antiques": {
+                    "name": "Антиквариат"
+                },
                 "shop/appliance": {
                     "name": "Магазин бытовой техники"
                 },
@@ -5956,6 +5956,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Магазин по продаже пылесосов",
                     "terms": "пылесосы"
+                },
+                "shop/variety_store": {
+                    "name": "Товары по одной цене",
+                    "terms": "товары по одной цене,всё по одной цене,магазин фиксированной цены,фикс прайс,фикспрайс,fix price"
                 },
                 "shop/video": {
                     "name": "Видеомагазин",

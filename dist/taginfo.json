@@ -132,13 +132,23 @@
         },
         {
             "key": "natural",
-            "description": "🄿 Natural Feature (unsearchable), 🄿 Pipeline Feature (unsearchable), 🄵 Natural",
+            "description": "🄿 Natural Feature (unsearchable), 🄵 Natural",
             "object_types": [
                 "node",
                 "way",
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/natural-15.svg"
+        },
+        {
+            "key": "pipeline",
+            "description": "🄿 Pipeline Feature (unsearchable), 🄵 Type",
+            "object_types": [
+                "node",
+                "way",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/iD-sprite/presets/pipeline-line.svg"
         },
         {
             "key": "place",
@@ -3833,7 +3843,7 @@
         {
             "key": "building",
             "value": "outbuilding",
-            "description": "🄿 Outbuilding (unsearchable)",
+            "description": "🄿 Outbuilding (unsearchable), 🄵🅅 Building: Outbuilding",
             "object_types": [
                 "area"
             ],
@@ -3852,7 +3862,7 @@
         {
             "key": "building",
             "value": "allotment_house",
-            "description": "🄿 Allotment House",
+            "description": "🄿 Allotment House, 🄵🅅 Building: Allotment House",
             "object_types": [
                 "area"
             ],
@@ -5144,7 +5154,7 @@
         },
         {
             "key": "emergency",
-            "value": "lifeboat_station",
+            "value": "water_rescue",
             "description": "🄿 Lifeboat Station",
             "object_types": [
                 "node",
@@ -5413,16 +5423,6 @@
             "key": "healthcare",
             "value": "yes",
             "description": "🄿 Healthcare Facility (Unspecified Type) (unsearchable)",
-            "object_types": [
-                "node",
-                "area"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/hospital-15.svg"
-        },
-        {
-            "key": "healthcare",
-            "value": "alternative",
-            "description": "🄿 Alternative Medicine",
             "object_types": [
                 "node",
                 "area"
@@ -6898,6 +6898,15 @@
         },
         {
             "key": "military",
+            "value": "danger_area",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/danger-15.svg",
+            "description": "🄿 Danger Zone, Access Prohibited"
+        },
+        {
+            "key": "military",
             "value": "airfield",
             "description": "🄿 Military Airfield",
             "object_types": [
@@ -6935,16 +6944,6 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/anchor_medal.svg"
-        },
-        {
-            "key": "military",
-            "value": "danger_area",
-            "description": "🄿 Danger Area",
-            "object_types": [
-                "node",
-                "area"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/danger-15.svg"
         },
         {
             "key": "military",
@@ -7724,6 +7723,16 @@
         },
         {
             "key": "sport",
+            "value": "handball",
+            "description": "🄿 Team Handball Court, 🄵🅅 Sports: Team Handball",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/pitch-15.svg"
+        },
+        {
+            "key": "sport",
             "value": "horseshoes",
             "description": "🄿 Horseshoes Pit",
             "object_types": [
@@ -7795,7 +7804,7 @@
         {
             "key": "sport",
             "value": "shooting",
-            "description": "🄿 Shooting Range, 🄿 Shooting Range Facility, 🄿 Shooting",
+            "description": "🄿 Shooting Range, 🄿 Shooting Range Facility, 🄿 Shooting, 🄵🅅 Sports: Shooting",
             "object_types": [
                 "area",
                 "node"
@@ -10482,16 +10491,6 @@
         },
         {
             "key": "playground",
-            "value": "splash_pad",
-            "description": "🄿 Play Splash Pad",
-            "object_types": [
-                "node",
-                "area"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/ideditor/temaki/icons/fountain.svg"
-        },
-        {
-            "key": "playground",
             "value": "springy",
             "description": "🄿 Spring Rider",
             "object_types": [
@@ -13134,7 +13133,7 @@
         {
             "key": "sport",
             "value": "athletics",
-            "description": "🄿 Athletics",
+            "description": "🄿 Athletics, 🄵🅅 Sports: Athletics",
             "object_types": [
                 "node",
                 "area"
@@ -13223,7 +13222,7 @@
         {
             "key": "sport",
             "value": "fitness",
-            "description": "🄿 Fitness Station",
+            "description": "🄿 Fitness Station, 🄵🅅 Sports: Fitness Training",
             "object_types": [
                 "node",
                 "area"
@@ -13233,7 +13232,7 @@
         {
             "key": "sport",
             "value": "free_flying",
-            "description": "🄿 Free Flying",
+            "description": "🄿 Free Flying, 🄵🅅 Sports: Paragliding / Hang Gliding",
             "object_types": [
                 "node",
                 "area"
@@ -13242,7 +13241,7 @@
         {
             "key": "sport",
             "value": "golf",
-            "description": "🄿 Golf",
+            "description": "🄿 Golf, 🄵🅅 Sports: Golf",
             "object_types": [
                 "node",
                 "area"
@@ -13252,7 +13251,7 @@
         {
             "key": "sport",
             "value": "gymnastics",
-            "description": "🄿 Gymnastics",
+            "description": "🄿 Gymnastics, 🄵🅅 Sports: Gymnastics",
             "object_types": [
                 "node",
                 "area"
@@ -13282,7 +13281,7 @@
         {
             "key": "sport",
             "value": "motor",
-            "description": "🄿 Motorsport, 🄵🅅 Sports: Motorsport",
+            "description": "🄿 Motorsport, 🄵🅅 Sports: Motorsport, 🄵🅅 Sports: Motorsports",
             "object_types": [
                 "node",
                 "area"
@@ -13362,7 +13361,7 @@
         {
             "key": "sport",
             "value": "skiing",
-            "description": "🄿 Skiing",
+            "description": "🄿 Skiing, 🄵🅅 Sports: Skiing",
             "object_types": [
                 "node",
                 "area"
@@ -13906,7 +13905,7 @@
         {
             "key": "traffic_calming",
             "value": "mini_bumps",
-            "description": "🄿 Mini Speed Bumps",
+            "description": "🄿 Mini Speed Bumps, 🄵🅅 Type: Mini Speed Bumps",
             "object_types": [
                 "node",
                 "way"
@@ -14959,6 +14958,75 @@
         {
             "key": "animal_shelter",
             "description": "🄵 For Animals"
+        },
+        {
+            "key": "archaeological_site",
+            "description": "🄵 Type"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "baths",
+            "description": "🄵🅅 Type: Baths"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "city",
+            "description": "🄵🅅 Type: Historic City"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "crannog",
+            "description": "🄵🅅 Type: Crannog"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "enclosure",
+            "description": "🄵🅅 Type: Enclosure"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "fortification",
+            "description": "🄵🅅 Type: Fortification"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "hut_circle",
+            "description": "🄵🅅 Type: Hut Circle"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "megalith",
+            "description": "🄵🅅 Type: Megalith"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "necropolis",
+            "description": "🄵🅅 Type: Necropolis"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "petroglyph",
+            "description": "🄵🅅 Type: Rock Carving"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "roman_circus",
+            "description": "🄵🅅 Type: Roman Circus"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "roman_villa",
+            "description": "🄵🅅 Type: Roman Villa"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "settlement",
+            "description": "🄵🅅 Type: Historic Settlement"
+        },
+        {
+            "key": "archaeological_site",
+            "value": "tumulus",
+            "description": "🄵🅅 Type: Tumulus"
         },
         {
             "key": "archery",
@@ -16041,50 +16109,6 @@
         {
             "key": "cycle_network",
             "description": "🄵 Network"
-        },
-        {
-            "key": "cycleway",
-            "description": "🄵 Bike Lanes"
-        },
-        {
-            "key": "cycleway",
-            "value": "none",
-            "description": "🄵🅅 Bike Lanes: `none`"
-        },
-        {
-            "key": "cycleway",
-            "value": "lane",
-            "description": "🄵🅅 Bike Lanes: `lane`"
-        },
-        {
-            "key": "cycleway",
-            "value": "shared_lane",
-            "description": "🄵🅅 Bike Lanes: `shared_lane`"
-        },
-        {
-            "key": "cycleway",
-            "value": "track",
-            "description": "🄵🅅 Bike Lanes: `track`"
-        },
-        {
-            "key": "cycleway",
-            "value": "share_busway",
-            "description": "🄵🅅 Bike Lanes: `share_busway`"
-        },
-        {
-            "key": "cycleway",
-            "value": "opposite_lane",
-            "description": "🄵🅅 Bike Lanes: `opposite_lane`"
-        },
-        {
-            "key": "cycleway",
-            "value": "opposite",
-            "description": "🄵🅅 Bike Lanes: `opposite`"
-        },
-        {
-            "key": "cycleway",
-            "value": "separate",
-            "description": "🄵🅅 Bike Lanes: `separate`"
         },
         {
             "key": "cycleway:left",
@@ -17738,6 +17762,116 @@
             "description": "🄵 Material"
         },
         {
+            "key": "material",
+            "value": "adobe",
+            "description": "🄵🅅 Material: Adobe"
+        },
+        {
+            "key": "material",
+            "value": "aluminium",
+            "description": "🄵🅅 Material: Aluminum"
+        },
+        {
+            "key": "material",
+            "value": "brass",
+            "description": "🄵🅅 Material: Brass"
+        },
+        {
+            "key": "material",
+            "value": "brick",
+            "description": "🄵🅅 Material: Brick"
+        },
+        {
+            "key": "material",
+            "value": "bronze",
+            "description": "🄵🅅 Material: Bronze"
+        },
+        {
+            "key": "material",
+            "value": "concrete",
+            "description": "🄵🅅 Material: Concrete"
+        },
+        {
+            "key": "material",
+            "value": "dry_stone",
+            "description": "🄵🅅 Material: Dry Stone"
+        },
+        {
+            "key": "material",
+            "value": "glass",
+            "description": "🄵🅅 Material: Glass"
+        },
+        {
+            "key": "material",
+            "value": "granite",
+            "description": "🄵🅅 Material: Granite"
+        },
+        {
+            "key": "material",
+            "value": "iron",
+            "description": "🄵🅅 Material: Iron"
+        },
+        {
+            "key": "material",
+            "value": "limestone",
+            "description": "🄵🅅 Material: Limestone"
+        },
+        {
+            "key": "material",
+            "value": "marble",
+            "description": "🄵🅅 Material: Marble"
+        },
+        {
+            "key": "material",
+            "value": "metal",
+            "description": "🄵🅅 Material: Metal"
+        },
+        {
+            "key": "material",
+            "value": "plastic",
+            "description": "🄵🅅 Material: Plastic"
+        },
+        {
+            "key": "material",
+            "value": "reinforced_conrete",
+            "description": "🄵🅅 Material: Reinforced Concrete"
+        },
+        {
+            "key": "material",
+            "value": "rock",
+            "description": "🄵🅅 Material: Rock"
+        },
+        {
+            "key": "material",
+            "value": "sand",
+            "description": "🄵🅅 Material: Sand"
+        },
+        {
+            "key": "material",
+            "value": "sandstone",
+            "description": "🄵🅅 Material: Sandstone"
+        },
+        {
+            "key": "material",
+            "value": "soil",
+            "description": "🄵🅅 Material: Soil, Earth"
+        },
+        {
+            "key": "material",
+            "value": "steel",
+            "description": "🄵🅅 Material: Steel"
+        },
+        {
+            "key": "material",
+            "value": "stone",
+            "description": "🄵🅅 Material: Stone"
+        },
+        {
+            "key": "material",
+            "value": "wood",
+            "description": "🄵🅅 Material: Wood"
+        },
+        {
             "key": "mattress",
             "description": "🄵 Mattresses Available"
         },
@@ -17925,6 +18059,10 @@
         {
             "key": "model_aerodrome:turbine",
             "description": "🄵 Turbine"
+        },
+        {
+            "key": "model",
+            "description": "🄵 Model"
         },
         {
             "key": "monitoring:",
@@ -18641,10 +18779,6 @@
             "description": "🄵 Picnic Table"
         },
         {
-            "key": "pipeline",
-            "description": "🄵 Type"
-        },
-        {
             "key": "piste:difficulty",
             "description": "🄵 Difficulty"
         },
@@ -18846,11 +18980,6 @@
             "key": "post_box:type",
             "value": "wall",
             "description": "🄵🅅 Type: Mounted in a Wall"
-        },
-        {
-            "key": "post_box:type",
-            "value": "community",
-            "description": "🄵🅅 Type: Community Mailboxes"
         },
         {
             "key": "post:block_number",
@@ -19106,6 +19235,76 @@
         {
             "key": "type",
             "description": "🄵 Type"
+        },
+        {
+            "key": "religion",
+            "value": "bahai",
+            "description": "🄵🅅 Religion: Bahá’í"
+        },
+        {
+            "key": "religion",
+            "value": "benzhu",
+            "description": "🄵🅅 Religion: Benzhu"
+        },
+        {
+            "key": "religion",
+            "value": "caodaism",
+            "description": "🄵🅅 Religion: Caodaist"
+        },
+        {
+            "key": "religion",
+            "value": "chinese_folk",
+            "description": "🄵🅅 Religion: Chinese Folk Religion"
+        },
+        {
+            "key": "religion",
+            "value": "confucian",
+            "description": "🄵🅅 Religion: Confucian"
+        },
+        {
+            "key": "religion",
+            "value": "jain",
+            "description": "🄵🅅 Religion: Jain"
+        },
+        {
+            "key": "religion",
+            "value": "multifaith",
+            "description": "🄵🅅 Religion: Multifaith"
+        },
+        {
+            "key": "religion",
+            "value": "none",
+            "description": "🄵🅅 Religion: Nonreligious"
+        },
+        {
+            "key": "religion",
+            "value": "pagan",
+            "description": "🄵🅅 Religion: Pagan"
+        },
+        {
+            "key": "religion",
+            "value": "spiritualist",
+            "description": "🄵🅅 Religion: Spiritualist"
+        },
+        {
+            "key": "religion",
+            "value": "tenrikyo",
+            "description": "🄵🅅 Religion: Tenrikyo"
+        },
+        {
+            "key": "religion",
+            "value": "unitarian_universalist",
+            "description": "🄵🅅 Religion: Unitarian Universalist"
+        },
+        {
+            "key": "religion",
+            "value": "vietnamese_folk",
+            "description": "🄵🅅 Religion: Vietnamese Folk Religion"
+        },
+        {
+            "key": "religion",
+            "value": "voodoo",
+            "description": "🄵🅅 Religion: Voodoo"
         },
         {
             "key": "reservation",
@@ -19701,6 +19900,10 @@
             "description": "🄵 Shelter"
         },
         {
+            "key": "shoes",
+            "description": "🄵 Shoes"
+        },
+        {
             "key": "shooting",
             "description": "🄵 Shooting Type"
         },
@@ -19944,36 +20147,6 @@
             "key": "sport",
             "value": "dog_racing",
             "description": "🄵🅅 Sports: Dog Racing"
-        },
-        {
-            "key": "sport",
-            "value": "athletics",
-            "description": "🄵🅅 Sports: Athletics"
-        },
-        {
-            "key": "sport",
-            "value": "fitness",
-            "description": "🄵🅅 Sports: Fitness Training"
-        },
-        {
-            "key": "sport",
-            "value": "free_flying",
-            "description": "🄵🅅 Sports: Paragliding / Hang Gliding"
-        },
-        {
-            "key": "sport",
-            "value": "golf",
-            "description": "🄵🅅 Sports: Golf"
-        },
-        {
-            "key": "sport",
-            "value": "gymnastics",
-            "description": "🄵🅅 Sports: Gymnastics"
-        },
-        {
-            "key": "sport",
-            "value": "skiing",
-            "description": "🄵🅅 Sports: Skiing"
         },
         {
             "key": "stars",
@@ -20738,8 +20911,37 @@
             "description": "🄵 Overhead Trolley Wires"
         },
         {
+            "key": "tunnel",
+            "value": "avalanche_protector",
+            "description": "🄵🅅 Type: Avalanche Protector"
+        },
+        {
+            "key": "tunnel",
+            "value": "building_passage",
+            "description": "🄵🅅 Type: Building Passage"
+        },
+        {
+            "key": "tunnel",
+            "value": "culvert",
+            "description": "🄵🅅 Type: Culvert"
+        },
+        {
+            "key": "tunnel",
+            "value": "flooded",
+            "description": "🄵🅅 Type: Flooded Tunnel"
+        },
+        {
             "key": "turning_circle",
             "description": "🄵 Shape"
+        },
+        {
+            "key": "two_sided",
+            "description": "🄵 Two-Sided"
+        },
+        {
+            "key": "two_sided",
+            "value": "yes",
+            "description": "🄵🅅 Two-Sided: Yes"
         },
         {
             "key": "usage",
@@ -21029,6 +21231,10 @@
             "description": "🄵 Website"
         },
         {
+            "key": "website:menu",
+            "description": "🄵 Menu Link"
+        },
+        {
             "key": "wetland",
             "description": "🄵 Type"
         },
@@ -21247,6 +21453,11 @@
             "key": "amenity",
             "value": "kiosk",
             "description": "🄳 (deprecated tag) ➜ shop=kiosk"
+        },
+        {
+            "key": "amenity",
+            "value": "lifeboat_station",
+            "description": "🄳 (deprecated tag) ➜ emergency=water_rescue"
         },
         {
             "key": "amenity",
@@ -21747,6 +21958,31 @@
             "key": "embassy",
             "value": "embassy",
             "description": "🄳 (deprecated tag) ➜ embassy=yes"
+        },
+        {
+            "key": "emergency",
+            "value": "dry_riser_inlet",
+            "description": "🄳 (deprecated tag) ➜ emergency=fire_service_inlet + fire_mains=dry"
+        },
+        {
+            "key": "emergency",
+            "value": "sprinkler_connection",
+            "description": "🄳 (deprecated tag) ➜ emergency=fire_service_inlet +  fire_sprinkler=yes"
+        },
+        {
+            "key": "emergency",
+            "value": "lifeboat_station",
+            "description": "🄳 (deprecated tag) ➜ emergency=water_rescue"
+        },
+        {
+            "key": "emergency",
+            "value": "marine_rescue",
+            "description": "🄳 (deprecated tag) ➜ emergency=water_rescue"
+        },
+        {
+            "key": "emergency_service",
+            "value": "air",
+            "description": "🄳 (deprecated tag) ➜ emergency=air_rescue_service"
         },
         {
             "key": "entrance",
@@ -23074,6 +23310,26 @@
             "key": "wood",
             "value": "mixed",
             "description": "🄳 (deprecated tag) ➜ leaf_cycle=mixed + leaf_type=mixed"
+        },
+        {
+            "key": "cycleway",
+            "value": "none",
+            "description": "🄳 (deprecated tag) ➜ cycleway=no"
+        },
+        {
+            "key": "cycleway:left",
+            "value": "none",
+            "description": "🄳 (deprecated tag) ➜ cycleway:left=no"
+        },
+        {
+            "key": "cycleway:right",
+            "value": "none",
+            "description": "🄳 (deprecated tag) ➜ cycleway:right=no"
+        },
+        {
+            "key": "cycleway:both",
+            "value": "none",
+            "description": "🄳 (deprecated tag) ➜ cycleway:both=no"
         },
         {
             "key": "amenity",

@@ -537,9 +537,9 @@
                 "building/part": {
                     "label": "Deel van een gebouw"
                 },
-                "building_area": {
-                    "label": "Gebouw",
-                    "terms": "gebouw,structuur"
+                "building/prefabricated": {
+                    "label": "Prefab",
+                    "terms": "montage,montagebouw,gefabriceerd,modulair"
                 },
                 "bunker_type": {
                     "label": "Type"
@@ -931,10 +931,6 @@
                         "separate": {
                             "description": "Geeft aan dat het fietspad los is uitgetekend"
                         },
-                        "separate": {
-                            "description": "Geeft aan dat het fietspad los is uitgetekend",
-                            "title": "Fietspad los in kaart gebracht"
-                        },
                         "share_busway": {
                             "description": "Een rijstrook voor bussen en fietsers"
                         },
@@ -1123,7 +1119,8 @@
                     "terms": "drinkbaar,drinkwater"
                 },
                 "drinking_water_available": {
-                    "label": "Drinkwater beschikbaar"
+                    "label": "Drinkwater beschikbaar",
+                    "terms": "drinkbaar,drinkwater"
                 },
                 "drive_through": {
                     "label": "Drive-Through",
@@ -1676,7 +1673,8 @@
                     "label": "Hoogte"
                 },
                 "kitchen": {
-                    "label": "Keuken"
+                    "label": "Keuken",
+                    "terms": "keuken"
                 },
                 "kneipp_water_cure_multi": {
                     "label": "Types opvangbekken"
@@ -1819,7 +1817,8 @@
                     "terms": "materiaal,product,grondstof"
                 },
                 "mattress": {
-                    "label": "Matrassen beschikbaar"
+                    "label": "Matrassen beschikbaar",
+                    "terms": "matrassen"
                 },
                 "max_age": {
                     "label": "Maximale leeftijd",
@@ -4628,15 +4627,6 @@
                 "barrier/planter": {
                     "name": "Plantenbak (barrière)"
                 },
-                "barrier/log": {
-                    "name": "Omgevallen boom"
-                },
-                "barrier/motorcycle_barrier": {
-                    "name": "Motorfietsbarrière"
-                },
-                "barrier/planter": {
-                    "name": "Plantenbarrière"
-                },
                 "barrier/retaining_wall": {
                     "name": "Keermuur",
                     "terms": "steunmuur,terrasmuur,hoogteverschil,afgrond"
@@ -5451,15 +5441,8 @@
                 "highway/crossing": {
                     "name": "Oversteekplaats"
                 },
-                "highway/crossing/marked": {
-                    "name": "Gemarkeerde Voetgangersoversteekplaats",
-                    "terms": "oversteekplaats,zebrapad,voetganger,gemarkeerde"
-                },
                 "highway/crossing/traffic_signals": {
                     "name": "Kruispunt met voetgangersverkeerslichten"
-                },
-                "highway/crossing/uncontrolled": {
-                    "name": "Gemarkeerde voetgangersoversteekplaats"
                 },
                 "highway/crossing/unmarked": {
                     "name": "Ongemarkeerde oversteekplaats",
@@ -5526,16 +5509,6 @@
                 "highway/footway/sidewalk": {
                     "name": "Stoep",
                     "terms": "voetpad,trottoir"
-                },
-                "highway/footway/traffic_signals": {
-                    "name": "Kruispunt met voetgangersverkeerslichten"
-                },
-                "highway/footway/unmarked": {
-                    "name": "Ongemarkeerde Voetgangersoversteekplaats",
-                    "terms": "oversteekplaats,voetganger,ongemarkeerde,niet aangeduide"
-                },
-                "highway/footway/zebra": {
-                    "name": "Zebrapad"
                 },
                 "highway/give_way": {
                     "name": "Voorrangsbord",
@@ -5964,10 +5937,6 @@
                 },
                 "landuse/military/base/navy": {
                     "name": "Marinebasis"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Militaire gevarenzone",
-                    "terms": "bommen,munitie,leger,gevarenzone,geen toegang,ontruimingszone,militaire ontruimingszone"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Militair hindernissenparcours"
@@ -7748,6 +7717,11 @@
                     "name": "Anime-/Mangawinkel",
                     "terms": "anime,manga"
                 },
+                "shop/antiques": {
+                    "name": "Antiekwinkel",
+                    "terms": "antiekhandelaar,antiquair,antiquaar,antiquariaat",
+                    "aliases": "antiekzaak"
+                },
                 "shop/appliance": {
                     "name": "Huishoudelijkeapparatuurwinkel",
                     "terms": "huisraadwinkel,huishoudelijke apparatuur"
@@ -7803,6 +7777,9 @@
                 "shop/bookmaker": {
                     "name": "Bookmaker (gokkantoor)",
                     "terms": "bookmaker"
+                },
+                "shop/books": {
+                    "name": "Boekenwinkel"
                 },
                 "shop/boutique": {
                     "name": "Boetiek"
@@ -7921,6 +7898,9 @@
                     "name": "Cosmeticawinkel",
                     "terms": "parfumerie"
                 },
+                "shop/country_store": {
+                    "name": "Plattelandswinkel"
+                },
                 "shop/craft": {
                     "name": "Winkel voor schilder- en tekengereedschap",
                     "terms": "kunst*,verf*,kader,hobby,borstel"
@@ -7932,6 +7912,9 @@
                 "shop/dairy": {
                     "name": "Zuivelhandel",
                     "terms": "zuivelwinkel"
+                },
+                "shop/deli": {
+                    "name": "Delicatessen"
                 },
                 "shop/department_store": {
                     "name": "Warenhuis",
@@ -8057,6 +8040,10 @@
                     "name": "Bouwmarkt",
                     "terms": "bouwcentrum,bouwmaterialenspeciaalzaak"
                 },
+                "shop/health_food": {
+                    "name": "Natuurvoedingswinkel",
+                    "terms": "biologisch,reformwinkel,gezondheid,vitamines,supplementen,vegetarisch,onbewerkt"
+                },
                 "shop/hearing_aids": {
                     "name": "Hoorapparatenwinkel",
                     "terms": "doof,slechthorend,oor,oren,hoorhulp"
@@ -8169,6 +8156,9 @@
                     "name": "Muziekinstrumentenwinkel",
                     "terms": "musiceren,muziekschool,pianowinkel,gitaarwinkel,vioolwinkel,partituren,pianokruk"
                 },
+                "shop/newsagent": {
+                    "name": "Krantenkiosk"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Voedingssupplementenwinkel",
                     "terms": "supplementen,vitaminen,mineralen,kruiden,eiwitten"
@@ -8197,6 +8187,9 @@
                 "shop/pastry": {
                     "name": "Patisserie",
                     "terms": "patisserie,patissier,cake"
+                },
+                "shop/pawnbroker": {
+                    "name": "Pandjeshuis"
                 },
                 "shop/perfumery": {
                     "name": "Parfumwinkel",
@@ -8249,6 +8242,9 @@
                 "shop/seafood": {
                     "name": "Viswinkel",
                     "terms": "visverkoper"
+                },
+                "shop/second_hand": {
+                    "name": "Tweedehandswinkel"
                 },
                 "shop/sewing": {
                     "name": "Naaiwinkel",
@@ -8348,6 +8344,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Stofzuigerwinkel",
                     "terms": "huishouden,schoonmaken,poetsen,stofzuigen,electro,elektro"
+                },
+                "shop/variety_store": {
+                    "name": "Discountwinkel",
+                    "terms": "discounter,action"
                 },
                 "shop/video": {
                     "name": "Videotheek",

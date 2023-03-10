@@ -130,8 +130,7 @@
                         "horse": "Cabalgatas",
                         "mtb": "Ciclismo de montaña",
                         "ski": "Esquí"
-                    },
-                    "terms": "actividad,ejercicio,deporte"
+                    }
                 },
                 "addr/interpolation": {
                     "label": "Tipo",
@@ -604,9 +603,9 @@
                 "building/part": {
                     "label": "Parte del edificio"
                 },
-                "building_area": {
-                    "label": "Edificio",
-                    "terms": "edificio,construcción"
+                "building/prefabricated": {
+                    "label": "Prefabricado",
+                    "terms": "prefabricado,prefabricada,manufacturado,modular,portátil"
                 },
                 "bunker_type": {
                     "label": "Tipo"
@@ -2662,6 +2661,15 @@
                 "post": {
                     "label": "Dirección de entrega"
                 },
+                "post_box/type": {
+                    "label": "Tipo",
+                    "options": {
+                        "lamp": "Sujeto a un poste",
+                        "pillar": "Caja independiente",
+                        "wall": "Montado en una pared"
+                    },
+                    "terms": "tipo,tipos,género"
+                },
                 "power": {
                     "label": "Tipo"
                 },
@@ -2899,6 +2907,20 @@
                 },
                 "route_master": {
                     "label": "Tipo"
+                },
+                "royal_cypher": {
+                    "label": "Monograma real",
+                    "options": {
+                        "CIIIR": "CIIIR (Carlos III)",
+                        "EIIR": "EIIR (Isabel II)",
+                        "EVIIIR": "EVIIIR (Eduardo VIII)",
+                        "EVIIR": "EVIIR (Eduardo VII)",
+                        "GR": "GR (Jorge V)",
+                        "GVIR": "GVIR (Jorge VI)",
+                        "VR": "VR (Victoria)",
+                        "no": "No",
+                        "scottish_crown": "Corona escocesa"
+                    }
                 },
                 "ruins": {
                     "label": "Tipo"
@@ -3717,9 +3739,6 @@
                     },
                     "terms": "dos lados,doble lado,dos caras,doble cara"
                 },
-                "turning_circle": {
-                    "label": "Forma"
-                },
                 "usage_rail": {
                     "label": "Tipo de uso",
                     "options": {
@@ -3868,6 +3887,11 @@
                     "label": "Sitio web",
                     "placeholder": "https://ejemplo.com/",
                     "terms": "sitio web,sitio,web,presencia en internet,uri,url,página web"
+                },
+                "website/menu": {
+                    "label": "Enlace del menú",
+                    "placeholder": "https://ejemplo.com/",
+                    "terms": "menú online,menú en línea,uri del menú,url del menú,web del menú,menú web,menú,menu,carta"
                 },
                 "wetland": {
                     "label": "Tipo",
@@ -5191,8 +5215,8 @@
                     "terms": "parque temático,atracciones,noria de feria,rueda de chicago,rueda de la fortuna,rueda ferris,rueda gigante,rueda moscovita,viaje a la luna,vuelta al mundo,estrella,atracción de feria,parque de atracciones,parque de diversiones"
                 },
                 "attraction/bumper_car": {
-                    "name": "Autos de choque",
-                    "terms": "atracción,atraccion,coche de choque,autos chocadores,autitos chocadores,carros chocones,parque de atracciones,coches chocantes,coches locos,coches de tope,carritos chocones"
+                    "name": "Autitos chocadores",
+                    "terms": "atracción,atraccion,coche de choque,autos chocadores,autitos chocadores,carros chocones,parque de atracciones,coches chocantes,coches locos,coches de tope,carritos chocones,autitos chocones,caritos chocadores,autos de choque,coches de choque,carros chocadores"
                 },
                 "attraction/bungee_jumping": {
                     "name": "Salto en bungee / Puenting",
@@ -6761,7 +6785,7 @@
                     "terms": "matadero,carne,carnicería,becerro,pollo,vaca,cerdo,aves de corral,corral"
                 },
                 "landuse/landfill": {
-                    "name": "Relleno sanitario",
+                    "name": "Vertedero",
                     "terms": "relleno sanitario,relleno municipal,vertedero de basura,desperdicio,basurales,vertederos,tiraderos,basureros"
                 },
                 "landuse/meadow": {
@@ -6789,8 +6813,8 @@
                     "terms": "base,lucha,fuerza,guardia,marina,armada,barco,submarino,tropa,guerra"
                 },
                 "landuse/military/danger_area": {
-                    "name": "Área de peligro",
-                    "terms": "zona de peligro,bombas,minas,munición,explosivo,militar,ejército,fuerza aérea,marina,armada,fuerza naval"
+                    "name": "Zona peligrosa, acceso prohibido",
+                    "terms": "fuerza aérea,ejército,base,explosión,bomba,explosivo,guardia,marina,mina,tropa,guerra,peligro"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Carrera de obstáculos militares",
@@ -7007,8 +7031,7 @@
                 },
                 "leisure/horse_riding": {
                     "name": "Centro ecuestre",
-                    "terms": "equitación,equino,cabalgar,cabalgatas,caballo,montar,ecuestre,centro,instalación,hípica,montar a caballo,rancho,finca de caballos,granja de caballos",
-                    "aliases": "Centro hípico"
+                    "terms": "equitación,equino,cabalgar,cabalgatas,caballo,montar,ecuestre,centro ecuestre,instalación ecuestre,hípica,montar a caballo,rancho,finca de caballos,granja de caballos,criadero de caballos,centro hípico,club de equitación,poney club"
                 },
                 "leisure/ice_rink": {
                     "name": "Pista de hielo",
@@ -7099,9 +7122,8 @@
                     "terms": "campo de críquet,criquet,cricket"
                 },
                 "leisure/pitch/equestrian": {
-                    "name": "Picadero",
-                    "terms": "picadero,equitación,monta,montar a caballo,caballos,equino,ecuestre,arena,picadero de caballos,doma,conducción de equinos,adiestramiento de caballos,dar cuerda,pista de doma,pista de salto",
-                    "aliases": "Pista de equitación\nPista ecuestre\nPista hípica"
+                    "name": "Pista ecuestre / Arena de rodeo",
+                    "terms": "arena,arena de doma,pista de doma,doma,ecuestre,pista de equitación,equitación,caballo,a caballo,pista de salto,polo,rodeo,picadero,pista ecuestre,pista hípica"
                 },
                 "leisure/pitch/field_hockey": {
                     "name": "Campo de hockey",
@@ -7122,6 +7144,10 @@
                 "leisure/pitch/gaga": {
                     "name": "Pozo de Gaga",
                     "terms": "gaga,gaga ball,pozo de gaga,hoyo de gaga,foso de gaga"
+                },
+                "leisure/pitch/handball": {
+                    "name": "Cancha de handball / Pista de balonmano",
+                    "terms": "handball,balonmano,cancha,pista"
                 },
                 "leisure/pitch/horseshoes": {
                     "name": "Foso de herraduras (juego)",
@@ -7628,6 +7654,10 @@
                 "man_made/works": {
                     "name": "Fábrica",
                     "terms": "factoría,manofactura,industria,taller,ensamblaje,planta,materia prima,fabricado,producción,fabricación,ingenio,procesadora,refinería,cervecería,azucarera"
+                },
+                "man_made/works/brewery": {
+                    "name": "Fábrica de cerveza industrial",
+                    "terms": "alcohol,cerveza,bebida"
                 },
                 "man_made/yes": {
                     "name": "Elemento artificial (tipo no especificado)"
@@ -9676,10 +9706,10 @@
                 },
                 "traffic_calming": {
                     "name": "Reductor de velocidad",
-                    "terms": "moderador de tráfico,apaciguador de tráfico,calmado de tráfico,reductor de velocidad,tráfico,tránsito,circulación,chichón,joroba,velocidad,guardias tumbados,policías acostados,badén"
+                    "terms": "moderador de tráfico,moderador de tránsito,apaciguador de tráfico,apaciguador de tránsito,calmado de tráfico,calmado de tránsito,reductor de velocidad,tráfico,tránsito,circulación,chichón,joroba,velocidad,guardias tumbados,policías acostados,badén"
                 },
                 "traffic_calming/bump": {
-                    "name": "Reductor de velocidad corto",
+                    "name": "Reductor de velocidad",
                     "terms": "atenuador,badén,calmado de tráfico,cojín berlinés,guardia muerto​,guardia tumbado,lomada,lomba,lombada,lomo de burro,lomo de toro,muerto,​ policía acostado,policía muerto,reductor de velocidad,resalte,resalto,rompe-velocidades,rompevelocidades,rompemuelle,tope,túmulo,tumulo,vigilante acostado,banda de frenado"
                 },
                 "traffic_calming/chicane": {
@@ -9699,7 +9729,7 @@
                     "terms": "cuneta,badén,depresión,vado,canalizador de agua,zanja,frenar,velocidad,atenuador,calmado de tráfico,reductor de velocidad"
                 },
                 "traffic_calming/hump": {
-                    "name": "Reductor de velocidad largo",
+                    "name": "Reductor de velocidad ancho",
                     "terms": "atenuador,badén,calmado de tráfico,cojín berlinés,guardia muerto​,guardia tumbado,lomada,lomba,lombada,lomo de burro,lomo de toro,muerto,​ policía acostado,policía muerto,reductor de velocidad,resalte,resalto,rompe-velocidades,rompevelocidades,rompemuelle,tope,túmulo,tumulo,vigilante acostado,banda de frenado"
                 },
                 "traffic_calming/island": {
@@ -9715,8 +9745,8 @@
                     "terms": "banda sonora,atenuador,badén,calmado de tráfico,cojín berlinés,guardia muerto​,guardia tumbado,lomada,lomba,lombada,lomo de burro,lomo de toro,muerto,​ policía acostado,policía muerto,reductor de velocidad,resalte,resalto,rompe-velocidades,rompevelocidades,rompemuelle,tope,túmulo,tumulo,vigilante acostado,banda de frenado"
                 },
                 "traffic_calming/table": {
-                    "name": "Reductor de velocidad con paso peatonal",
-                    "terms": "atenuador,badén,calmado de tráfico,cojín berlinés,guardia muerto​,guardia tumbado,lomada,lomba,lombada,lomo de burro,lomo de toro,muerto,​ policía acostado,policía muerto,reductor de velocidad,resalte,resalto,rompe-velocidades,rompevelocidades,rompemuelle,tope,túmulo,tumulo,vigilante acostado,banda de frenado"
+                    "name": "Reductor de velocidad trapezoidal",
+                    "terms": "atenuador,badén,calmado de tráfico,cojín berlinés,guardia muerto​,guardia tumbado,lomada,lomba,lombada,lomo de burro,lomo de toro,muerto,​ policía acostado,policía muerto,reductor de velocidad,resalte,resalto,rompe-velocidades,rompevelocidades,rompemuelle,tope,túmulo,tumulo,vigilante acostado,banda de frenado,trapezoidal"
                 },
                 "traffic_calming/yes": {
                     "name": "Reductor de velocidad (tipo no especificado)"

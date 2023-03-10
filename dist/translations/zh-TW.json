@@ -130,8 +130,7 @@
                         "horse": "騎馬",
                         "mtb": "山地自行車",
                         "ski": "滑雪"
-                    },
-                    "terms": "活動"
+                    }
                 },
                 "addr/interpolation": {
                     "label": "類型",
@@ -604,9 +603,9 @@
                 "building/part": {
                     "label": "建物的一部分 "
                 },
-                "building_area": {
-                    "label": "建築物",
-                    "terms": "建築,建築物"
+                "building/prefabricated": {
+                    "label": "預先製作",
+                    "terms": "預先製作"
                 },
                 "bunker_type": {
                     "label": "類型"
@@ -1054,10 +1053,6 @@
                         "separate": {
                             "description": "表示腳踏車道被繪製為單獨的幾何圖形",
                             "title": "單獨繪製的自行車道"
-                        },
-                        "separate": {
-                            "description": "表示腳踏車道被繪製為單獨的幾何圖形",
-                            "title": "單獨繪製的腳踏車道"
                         },
                         "share_busway": {
                             "description": "與公車專用道共用的單車道",
@@ -2670,11 +2665,11 @@
                 "post_box/type": {
                     "label": "類型",
                     "options": {
-                        "community": "社區信箱",
                         "lamp": "附著在桿子上",
                         "pillar": "郵筒",
                         "wall": "安裝在牆上"
-                    }
+                    },
+                    "terms": "類型"
                 },
                 "power": {
                     "label": "種類"
@@ -3745,9 +3740,6 @@
                     },
                     "terms": "兩側"
                 },
-                "turning_circle": {
-                    "label": "形狀"
-                },
                 "usage_rail": {
                     "label": "用途類型",
                     "options": {
@@ -3896,6 +3888,11 @@
                     "label": "網站",
                     "placeholder": "https://example.com",
                     "terms": "網站,首頁,網址"
+                },
+                "website/menu": {
+                    "label": "菜單連結",
+                    "placeholder": "https://example.com",
+                    "terms": "菜單連結"
                 },
                 "wetland": {
                     "label": "種類",
@@ -6803,8 +6800,8 @@
                     "terms": "海軍基地"
                 },
                 "landuse/military/danger_area": {
-                    "name": "危險區",
-                    "terms": "危險地區,危險區域,危險區,禁區"
+                    "name": "危險區域，禁止進入",
+                    "terms": "危險區域，禁止進入"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "軍事障礙課程",
@@ -7134,6 +7131,10 @@
                 "leisure/pitch/gaga": {
                     "name": "加加球坑",
                     "terms": "加加球坑"
+                },
+                "leisure/pitch/handball": {
+                    "name": "團隊手球場",
+                    "terms": "團隊手球場,手球場"
                 },
                 "leisure/pitch/horseshoes": {
                     "name": "馬蹄鐵坑",
@@ -7639,6 +7640,10 @@
                 "man_made/works": {
                     "name": "工廠",
                     "terms": "工廠,加工廠,factory"
+                },
+                "man_made/works/brewery": {
+                    "name": "工業啤酒廠",
+                    "terms": "工業啤酒廠,啤酒廠"
                 },
                 "man_made/yes": {
                     "name": "人造圖徵（未指定類型）"

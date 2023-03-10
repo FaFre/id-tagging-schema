@@ -247,6 +247,8 @@
                     "label": "Típus",
                     "options": {
                         "city": "Történelmi város",
+                        "fortification": "Erődítmény",
+                        "megalith": "Megalit",
                         "necropolis": "Nekropolisz",
                         "petroglyph": "Sziklafaragás",
                         "roman_villa": "Római kori villa",
@@ -290,7 +292,8 @@
                         "big_wheel": "Óriáskerék",
                         "bumper_car": "Dodzsem",
                         "maze": "Labirintus",
-                        "roller_coaster": "Hullámvasút"
+                        "roller_coaster": "Hullámvasút",
+                        "train": "Turistavonat"
                     }
                 },
                 "automated": {
@@ -322,6 +325,7 @@
                 "barrier": {
                     "label": "Típus",
                     "options": {
+                        "chain": "Lánc",
                         "city_wall": "Városfal",
                         "entrance": "Bejárat",
                         "fence": "Kerítés",
@@ -355,6 +359,7 @@
                 "bath/type": {
                     "label": "Fürdőtípus",
                     "options": {
+                        "lake": "Tó",
                         "thermal": "Termálfürdő"
                     }
                 },
@@ -419,7 +424,13 @@
                     }
                 },
                 "bollard": {
-                    "label": "Típus"
+                    "label": "Típus",
+                    "options": {
+                        "flexible": "Rugalmas akadály",
+                        "foldable": "Összehajtható akadály",
+                        "removable": "Elmozdítható akadály",
+                        "rising": "Felemelhető akadály"
+                    }
                 },
                 "booth": {
                     "label": "Fülke"
@@ -532,9 +543,8 @@
                 "building/part": {
                     "label": "Épületrész"
                 },
-                "building_area": {
-                    "label": "Épület",
-                    "terms": "építmény,ház,épület"
+                "building/prefabricated": {
+                    "label": "Előregyártott"
                 },
                 "bunker_type": {
                     "label": "Típus"
@@ -579,7 +589,6 @@
                     "terms": "kapacitás,képesség,méret,befogadóképesség"
                 },
                 "capacity/caravans": {
-                    "label": "Kapacitás (lakókocsi)",
                     "placeholder": "10, 20, 50..."
                 },
                 "capacity/disabled_parking": {
@@ -639,6 +648,21 @@
                 },
                 "clothes": {
                     "label": "Ruha",
+                    "options": {
+                        "babies": "Csecsemőruházat",
+                        "children": "Gyermekruházat",
+                        "hats": "Kalapok",
+                        "maternity": "Kismama ruházat",
+                        "men": "Férfiruhák",
+                        "motorcycle": "Motoros öltözet",
+                        "oversize": "Nagy méretű ruhák",
+                        "socks": "Zoknik",
+                        "sports": "Sportruházat",
+                        "swimwear": "Úszóöltözet",
+                        "wedding": "Esküvői ruhák",
+                        "women": "Nőiruhák",
+                        "workwear": "Munkaruhák"
+                    },
                     "terms": "ruha,öltözet,öltözék,viselet,ruházat,ruhanemű"
                 },
                 "club": {
@@ -716,6 +740,7 @@
                 "craft": {
                     "label": "Típus",
                     "options": {
+                        "agricultural_engines": "Mezőgazdasági gép szerelő",
                         "basket_maker": "Kosárfonó",
                         "beekeeper": "Méhész",
                         "blacksmith": "Kovács",
@@ -726,6 +751,8 @@
                         "caterer": "Partyszerviz",
                         "chimney_sweeper": "Kéményseprő",
                         "cleaning": "Takarító",
+                        "clockmaker": "Órás",
+                        "confectionery": "Édességkészítő",
                         "distillery": "Szeszfőzde",
                         "electrician": "Villanyszerelő",
                         "floorer": "Parkettás",
@@ -1363,6 +1390,8 @@
                     "options": {
                         "fission": "Maghasadás",
                         "fusion": "Magfúzió",
+                        "photovoltaic": "Fotovoltaikus",
+                        "water-storage": "Víztározó",
                         "wind_turbine": "Szélturbina"
                     }
                 },
@@ -1442,8 +1471,10 @@
                         "allergology": "Allergia és asztma",
                         "anaesthetics": "Aneszteziológia",
                         "angiology": "Angiológia",
+                        "applied_kinesiology": "Alkalmazott kineziológia",
                         "aromatherapy": "Aromaterápia",
                         "ayurveda": "Ájurvéda",
+                        "behavior": "Viselkedésterápia",
                         "biochemistry": "Biokémia",
                         "biology": "Biológia",
                         "blood_check": "Vérvizsgálat",
@@ -1475,7 +1506,27 @@
                         "neurology": "Ideggyógyászat",
                         "neuropsychiatry": "Idegpszichiátria",
                         "neurosurgery": "Idegsebészet",
-                        "nuclear": "Nukleáris gyógyászat"
+                        "nuclear": "Nukleáris gyógyászat",
+                        "ophthalmology": "Szemészet",
+                        "orthodontics": "Fogszabályozás",
+                        "orthopaedics": "Ortopéd sebészet",
+                        "osteopathy": "Csontkovácsolás",
+                        "otolaryngology": "Fül-orr-gégészet",
+                        "paediatric_surgery": "Gyermeksebészet",
+                        "paediatrics": "Gyermekgyógyászat",
+                        "pathology": "Patológia",
+                        "plastic_surgery": "Plasztikai sebészet",
+                        "proctology": "Vastagbélsebészet",
+                        "psychiatry": "Pszichiátria",
+                        "rheumatology": "Reumatológia",
+                        "stomatology": "Fogászat",
+                        "surgery": "Általános sebészet",
+                        "traditional_chinese_medicine": "Hagyományos kínai gyógyászat",
+                        "trauma": "Baleseti sebészet",
+                        "tropical": "Trópusi orvoslás",
+                        "urology": "Urológia",
+                        "vaccination": "Védőoltás",
+                        "vascular_surgery": "Érsebészet"
                     }
                 },
                 "heating": {
@@ -2933,6 +2984,9 @@
                     "placeholder": "Acer platanoides Columnare, Pyrus calleryana Chanticleer…",
                     "terms": "törzs,osztály,rend,család,nemzetség"
                 },
+                "tee": {
+                    "label": "Teafajta"
+                },
                 "telecom": {
                     "label": "Típus"
                 },
@@ -3073,6 +3127,10 @@
                 "transformer": {
                     "label": "Típus",
                     "options": {
+                        "auxiliary": "Segédtranszformátor: magát az alállomást látja el energiával",
+                        "distribution": "Elosztó transzformátor: a végfelhasználókat látja el energiával.",
+                        "generator": "Fő transzformátor az erőműben",
+                        "main": "Fő transzformátor az átviteli hálózatban",
                         "phase_angle_regulator": "Fázisszög szabályozó",
                         "yes": "Szerepe ismeretlen"
                     }
@@ -4396,10 +4454,6 @@
                     "name": "Állatkifutó",
                     "terms": "kétéltű,állatpark,akvárium,medve,madár,hal,rovar,oroszlán,emlős,majom,pingvin,hüllő,szafari,tematikus park,tigris,állatkert"
                 },
-                "attraction/big_wheel": {
-                    "name": "Óriáskerék",
-                    "terms": "nagy kerék,óriáskerék"
-                },
                 "attraction/bumper_car": {
                     "name": "Dodzsem",
                     "terms": "dodgem"
@@ -4564,9 +4618,6 @@
                 },
                 "barrier/planter": {
                     "name": "Virágláda (akadály)"
-                },
-                "barrier/log": {
-                    "name": "Kidőlt fa"
                 },
                 "barrier/retaining_wall": {
                     "name": "Támfal",
@@ -4759,6 +4810,10 @@
                     "name": "Óvodaépület",
                     "terms": "óvoda"
                 },
+                "building/manufacture": {
+                    "name": "Ipari termelőüzem",
+                    "aliases": "Gyárépület"
+                },
                 "building/mosque": {
                     "name": "Mecset"
                 },
@@ -4814,10 +4869,6 @@
                 "building/stadium": {
                     "name": "Stadionépület",
                     "terms": "labdarúgópálya"
-                },
-                "building/static_caravan": {
-                    "name": "Telepített lakókocsi",
-                    "terms": "rögzített lakókocsi,telepített lakókocsi"
                 },
                 "building/sty": {
                     "name": "Disznóól",
@@ -5339,6 +5390,10 @@
                 "highway/crossing/traffic_signals": {
                     "name": "Jelzőlámpás gyalogátkelőhely"
                 },
+                "highway/crossing/uncontrolled": {
+                    "name": "Jelzett kereszteződés",
+                    "aliases": "Jelölt kereszteződés\nJelzett gyalogátkelő\nJelölt gyalogátkelő"
+                },
                 "highway/crossing/unmarked": {
                     "name": "Jelöletlen gyalogosátkelő"
                 },
@@ -5385,6 +5440,13 @@
                 },
                 "highway/footway/crossing": {
                     "name": "Gyalogosátkelő"
+                },
+                "highway/footway/crossing/uncontrolled": {
+                    "name": "Jelzett kereszteződés",
+                    "aliases": "Jelölt kereszteződés\nJelzett gyalogátkelő\nJelölt gyalogátkelő"
+                },
+                "highway/footway/crossing/unmarked": {
+                    "name": "Jelöletlen gyalogosátkelő"
                 },
                 "highway/footway/informal": {
                     "name": "Nem hivatalos ösvény"
@@ -5548,7 +5610,7 @@
                     "name": "Automatikus útdíjbeszedő kapu"
                 },
                 "highway/track": {
-                    "name": "Földút",
+                    "name": "Mezőgazdasági/erdészeti út",
                     "terms": "erdészeti út,mezőgazdasági út,tanyasi út,földút"
                 },
                 "highway/traffic_mirror": {
@@ -5800,10 +5862,6 @@
                 "landuse/military/base/navy": {
                     "name": "Haditengerészeti támaszpont",
                     "terms": "flottatámaszpont,hadikikötő"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Katonai veszélyzóna",
-                    "terms": "veszély,veszélyes,terület"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Katonai akadálypálya",
@@ -6823,6 +6881,10 @@
                     "name": "Adóhivatal",
                     "terms": "adóhatóság,adóhivatal"
                 },
+                "office/graphic_design": {
+                    "name": "Grafikai stúdió",
+                    "terms": "grafikus,tervező,reklámgrafikus"
+                },
                 "office/guide": {
                     "name": "Idegenvezetői iroda",
                     "terms": "búvárvezető,hegyi vezető,túravezető"
@@ -7470,6 +7532,10 @@
                     "name": "Anime képregényekkel kapcsolatos bolt",
                     "terms": "képregénybolt"
                 },
+                "shop/antiques": {
+                    "name": "Régiségkereskedés",
+                    "terms": "antikvitás"
+                },
                 "shop/appliance": {
                     "name": "Háztartásigép-bolt",
                     "terms": "háztartási,gép,készülék,nagygép,kisgép"
@@ -7653,6 +7719,9 @@
                     "name": "Tejtermékbolt",
                     "terms": "tejtermék,kecsketej,kézműves tejtermékek boltja,tehéntej,juhtej,sajt,joghurt,kefir,tejföl"
                 },
+                "shop/deli": {
+                    "name": "Csemegebolt"
+                },
                 "shop/department_store": {
                     "name": "Nagyáruház",
                     "terms": "áruház,városi áruház,belvárosi áruház"
@@ -7769,6 +7838,9 @@
                 "shop/hardware": {
                     "name": "Vas-műszaki bolt",
                     "terms": "csavarbolt,villanyszerelés,vasbolt,vaskereskedés"
+                },
+                "shop/health_food": {
+                    "name": "Biobolt"
                 },
                 "shop/hearing_aids": {
                     "name": "Hallókészülékbolt",
@@ -7910,6 +7982,9 @@
                 "shop/pastry": {
                     "name": "Cukrászda",
                     "terms": "sütemény,süti,torta,édesség"
+                },
+                "shop/pawnbroker": {
+                    "name": "Zálogház"
                 },
                 "shop/perfumery": {
                     "name": "Parfüméria",

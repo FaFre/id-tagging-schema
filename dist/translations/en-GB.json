@@ -2635,9 +2635,6 @@
                 "landuse/military/barracks": {
                     "name": "Barracks"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Danger Area"
-                },
                 "landuse/military/range": {
                     "name": "Military Range"
                 },

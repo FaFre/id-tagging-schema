@@ -4439,10 +4439,6 @@
                 "landuse/military/base/navy": {
                     "name": "Flådebase"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Farligt område",
-                    "terms": "farligt område,farligt militærområde"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Militær forhindringsbane"
                 },
@@ -5597,6 +5593,9 @@
                     "name": "Vinforhandler",
                     "terms": "vinforhandler,vinbutik,vinforretning"
                 },
+                "shop/antiques": {
+                    "name": "Antikvitetsforretning"
+                },
                 "shop/appliance": {
                     "name": "Hvidevareforretning",
                     "terms": "hvidevare,køleskab,ovn,vaskemaskine"
@@ -5652,6 +5651,10 @@
                 "shop/bookmaker": {
                     "name": "Bookmaker",
                     "terms": "bookmaker"
+                },
+                "shop/books": {
+                    "name": "Boghandel",
+                    "terms": "antikvariat,boglade,bogudsalg"
                 },
                 "shop/boutique": {
                     "name": "Boutique"
@@ -5759,6 +5762,9 @@
                 "shop/dairy": {
                     "name": "Ismejeri",
                     "terms": "ismejeri,mejeri,ostemejeri"
+                },
+                "shop/deli": {
+                    "name": "Delikatesse"
                 },
                 "shop/department_store": {
                     "name": "Stormagasin",
@@ -6003,6 +6009,10 @@
                     "name": "Fiskehandler",
                     "terms": "fiskehandler,fiskebutik"
                 },
+                "shop/second_hand": {
+                    "name": "Genbrugsbutik",
+                    "terms": "genbrugsforretning,secondhandbutik"
+                },
                 "shop/sewing": {
                     "name": "Syforretning",
                     "terms": "sy,syning,stof,garn,symaskine,nørkleri,kreativ"
@@ -6084,6 +6094,9 @@
                 "shop/vacuum_cleaner": {
                     "name": "Støvsugerforhandler",
                     "terms": "støvsugerforhandler"
+                },
+                "shop/variety_store": {
+                    "name": "Discountbutik"
                 },
                 "shop/video": {
                     "name": "Videobutik",

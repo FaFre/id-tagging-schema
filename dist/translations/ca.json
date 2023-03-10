@@ -718,6 +718,7 @@
                         "oversize": "Roba de talles grans",
                         "socks": "Calcetins",
                         "sports": "Roba d'esport",
+                        "suits": "Vestits",
                         "swimwear": "Roba de bany",
                         "traditional": "Roba Tradicional / Vestuari Popular",
                         "underwear": "Llenceria",
@@ -2196,9 +2197,21 @@
                 "note": {
                     "label": "Nota"
                 },
+                "nudism": {
+                    "label": "Nudisme",
+                    "options": {
+                        "no": "Prohibit",
+                        "obligatory": "Obligatori",
+                        "yes": "Permés"
+                    }
+                },
                 "office": {
                     "label": "Tipus",
                     "options": {
+                        "accountant": "Oficina d'un comptable",
+                        "adoption_agency": "Agència d'adopció",
+                        "advertising_agency": "Agència de publicitat",
+                        "architect": "Oficina d'un arquitecte",
                         "insurance": "Oficina d'una Companyia Asseguradora",
                         "it": "Oficina de tecnologies de la informació",
                         "lawyer": "Bufet d'advocats",
@@ -5683,9 +5696,6 @@
                 "landuse/military/base/navy": {
                     "name": "Base naval"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Àrea de perill"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Cursa d'obstacles militar"
                 },
@@ -5997,6 +6007,9 @@
                 "line": {
                     "name": "Línia",
                     "terms": "línia"
+                },
+                "man_made": {
+                    "name": "Objecte fet per l'home"
                 },
                 "man_made/adit": {
                     "name": "Entrada"
@@ -6959,6 +6972,14 @@
                     "name": "Botiga de manga / anime",
                     "terms": "tenda de manga / anime,otaku,manga,japó,kawaii,comic"
                 },
+                "shop/antiques": {
+                    "name": "Botiga d'antiguitats",
+                    "terms": "tenda d'antiguitats,antiquari,vintage,història,vell,antic"
+                },
+                "shop/appliance": {
+                    "name": "Botiga d'electrodomèstics",
+                    "terms": "tenda d'electrodomèstics,electrodomèstic,aire condicionat,secadora,rentadora,llavadora,congelador,nevera,forn,estufa,refrigerador,cafetera,televisió"
+                },
                 "shop/art": {
                     "name": "Botiga d'art",
                     "terms": "art,exhibit,galeria,galeria d'art,exhibició"
@@ -7004,7 +7025,10 @@
                 },
                 "shop/bookmaker": {
                     "name": "Casa d'apostes",
-                    "terms": "apostes,joc d'atzar,escurabujaques,jocs d'atzar,apostar,joc"
+                    "terms": "apostes,joc d'atzar,escurabujaques,jocs d'atzar,apostar,joc,saló,sala"
+                },
+                "shop/books": {
+                    "name": "Llibreria"
                 },
                 "shop/boutique": {
                     "name": "Boutique"
@@ -7264,7 +7288,7 @@
                     "name": "Centre de massatges"
                 },
                 "shop/medical_supply": {
-                    "name": "Farmàcia"
+                    "name": "Botiga d'equipament mèdic"
                 },
                 "shop/military_surplus": {
                     "name": "Botiga d'excedents militars"
@@ -7286,6 +7310,9 @@
                 },
                 "shop/musical_instrument": {
                     "name": "Botiga d'instruments musicals"
+                },
+                "shop/newsagent": {
+                    "name": "Quiosc de premsa"
                 },
                 "shop/nutrition_supplements": {
                     "name": "Botiga de suplements nutricionals"
@@ -7338,6 +7365,9 @@
                 "shop/seafood": {
                     "name": "Botiga de Mariscos",
                     "terms": "marisqueria,pòsit,llotja,tenda de mariscos"
+                },
+                "shop/second_hand": {
+                    "name": "Botiga de segona mà"
                 },
                 "shop/sewing": {
                     "name": "Merceria",
@@ -7415,6 +7445,9 @@
                 },
                 "shop/vacuum_cleaner": {
                     "name": "Botiga d'aspiradors"
+                },
+                "shop/variety_store": {
+                    "name": "Botiga de tot a 100"
                 },
                 "shop/video": {
                     "name": "Botiga de vídeos",
@@ -7547,7 +7580,8 @@
                     "name": "Mapa"
                 },
                 "tourism/information/office": {
-                    "name": "Centre de visitants"
+                    "name": "Centre de visitants",
+                    "terms": "oficina de turisme,turisme,tourist info"
                 },
                 "tourism/information/terminal": {
                     "name": "Terminal d'informació"

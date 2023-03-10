@@ -4357,10 +4357,6 @@
                 "landuse/military/barracks": {
                     "name": "Barracóns"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Área perigosa",
-                    "terms": "zona de perigo,bombas,minas,munición,explosivo,militar,exército,forza aérea,mariña,armada,forza naval,área perigosa,zona de exclusión"
-                },
                 "landuse/military/range": {
                     "name": "Campo de tiro militar"
                 },

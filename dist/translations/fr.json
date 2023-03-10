@@ -380,13 +380,6 @@
                         "undefined": "Non"
                     }
                 },
-                "barrier_planter": {
-                    "label": "Barrière",
-                    "options": {
-                        "planter": "Oui",
-                        "undefined": "Non"
-                    }
-                },
                 "basin": {
                     "label": "Type",
                     "options": {
@@ -1092,7 +1085,7 @@
                     "terms": "signification,dénotation"
                 },
                 "departures_board": {
-                    "label": "Tableau d'arrivés / de départs",
+                    "label": "Tableau des arrivés / des départs",
                     "options": {
                         "no": "Aucun",
                         "realtime": "Temps réel",
@@ -1250,7 +1243,8 @@
                     "terms": "potable,buvable,eau potable"
                 },
                 "drinking_water_available": {
-                    "label": "Eau Potable Disponible"
+                    "label": "Eau Potable Disponible",
+                    "terms": "eau,potable,accessible,disponible,buvable"
                 },
                 "drive_through": {
                     "label": "Service Drive",
@@ -1872,7 +1866,8 @@
                     "label": "Hauteur"
                 },
                 "kitchen": {
-                    "label": "Cuisine"
+                    "label": "Cuisine",
+                    "terms": "cuisine"
                 },
                 "kneipp_water_cure_multi": {
                     "label": "Types de bassin"
@@ -2068,7 +2063,8 @@
                 },
                 "maxspeed/hgv": {
                     "label": "Vitesse maximale autorisée pour les camions",
-                    "placeholder": "40, 50, 60..."
+                    "placeholder": "40, 50, 60...",
+                    "terms": "limitation de vitesse,camion,poids-lourd"
                 },
                 "maxstay": {
                     "label": "Durée maximale",
@@ -2081,9 +2077,6 @@
                 "maxwidth": {
                     "label": "Largeur Maximum",
                     "terms": "largeur maximale,envergure"
-                },
-                "maxwidth": {
-                    "label": "Largeur Maximum"
                 },
                 "memorial": {
                     "label": "Type",
@@ -2650,6 +2643,9 @@
                 "post": {
                     "label": "Adresse de livraison"
                 },
+                "post_box/type": {
+                    "label": "Type"
+                },
                 "power": {
                     "label": "Type"
                 },
@@ -2885,6 +2881,18 @@
                 },
                 "route_master": {
                     "label": "Type"
+                },
+                "royal_cypher": {
+                    "options": {
+                        "CIIIR": "CIIIR (Charles III)",
+                        "EIIR": "EIIR (Elizabeth II)",
+                        "EVIIIR": "EVIIIR (Edward VIII)",
+                        "EVIIR": "EVIIR (Edward VII)",
+                        "GR": "GR (George V)",
+                        "GVIR": "GVIR (George VI)",
+                        "VR": "VR (Victoria)",
+                        "no": "Non"
+                    }
                 },
                 "ruins": {
                     "label": "Type"
@@ -3283,7 +3291,8 @@
                     }
                 },
                 "street_cabinet": {
-                    "label": "Type"
+                    "label": "Type",
+                    "terms": "type,sorte"
                 },
                 "stroller": {
                     "label": "Accès en poussette",
@@ -3325,10 +3334,12 @@
                     "label": "Type"
                 },
                 "subject": {
-                    "label": "Sujet"
+                    "label": "Sujet",
+                    "terms": "sujet"
                 },
                 "subject/wikidata": {
-                    "label": "Sujet Wikidata"
+                    "label": "Sujet Wikidata",
+                    "terms": "wikidata,sujet"
                 },
                 "substance": {
                     "label": "Substance",
@@ -3660,6 +3671,7 @@
                         "converter": "Convertisseur",
                         "distribution": "Distribution (vers le consommateur final)",
                         "generator": "Générateur (pour augmenter la tension)",
+                        "main": "Transformateur principal d'une sous-station",
                         "phase_angle_regulator": "Déphaseur",
                         "yes": "Rôle indéfini"
                     }
@@ -3847,6 +3859,9 @@
                     "placeholder": "https://exemple.com",
                     "terms": "site web,site internet,web,internet,site,page web,page internet,url,uri"
                 },
+                "website/menu": {
+                    "placeholder": "https://example.com"
+                },
                 "wetland": {
                     "label": "Type",
                     "options": {
@@ -3897,10 +3912,13 @@
                     "terms": "enroulement,bobinage,enroulage,bobine"
                 },
                 "windings/auto": {
+                    "label": "Auto-transformateur",
                     "options": {
                         "no": "Non",
+                        "undefined": "Indéfini",
                         "yes": "Oui"
-                    }
+                    },
+                    "terms": "autotransformateur"
                 },
                 "windings/configuration": {
                     "label": "Configuration des enroulements",
@@ -3929,11 +3947,11 @@
                 },
                 "advertising/billboard": {
                     "name": "Panneau publicitaire",
-                    "terms": "publicité,4x3,affiche,panneau d'affichage,billboard,advertising,advertisement"
+                    "terms": "publicité,4x3,affiche,panneau d'affichage"
                 },
                 "advertising/board": {
-                    "name": "Panneau publicitaire",
-                    "terms": "panneau publicitaire,publicité,informations"
+                    "name": "Panneau d'affichage",
+                    "terms": "panneau,support,affichage,électoral,information,publicité,publicitaire"
                 },
                 "advertising/column": {
                     "name": "Colonne Morris",
@@ -4202,6 +4220,9 @@
                 "amenity/clinic/abortion": {
                     "name": "Clinique d'avortement",
                     "terms": "clinique d'avortement,avortement,clinique ivg,clinique img,hopital d'avortement,hopital ivg,hopital img"
+                },
+                "amenity/clinic/dialysis": {
+                    "name": "Centre de dialyse"
                 },
                 "amenity/clinic/fertility": {
                     "name": "Clinique de fertilité",
@@ -6184,10 +6205,6 @@
                     "name": "Passage piéton avec feux de signalisation",
                     "terms": "feux piétons,passage piéton avec feux"
                 },
-                "highway/crossing/traffic_signals": {
-                    "name": "Passage piéton avec Feux piétons",
-                    "terms": "feux piétons,passage piéton avec feux"
-                },
                 "highway/crossing/uncontrolled": {
                     "name": "Passage piéton non protégé",
                     "terms": "passage piéton marqué"
@@ -6445,8 +6462,8 @@
                     "terms": "péage"
                 },
                 "highway/track": {
-                    "name": "Piste carrossable",
-                    "terms": "voie carrossable"
+                    "name": "Piste agricole ou forestière",
+                    "terms": "piste agricole,route forestière,piste pare-feu,chemin d'exploitation,chemin agricole,chemin non entretenu,piste,chemin carrossable,piste carrossable"
                 },
                 "highway/traffic_mirror": {
                     "name": "Miroir routier",
@@ -6714,14 +6731,12 @@
                     "terms": "caserne militaire"
                 },
                 "landuse/military/base": {
-                    "name": "Base militaire"
+                    "name": "Base militaire",
+                    "terms": "base militaire,armée,militaire,soldat,armes,armée de terre"
                 },
                 "landuse/military/base/navy": {
-                    "name": "Base navale"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Zone dangereuse",
-                    "terms": "zone dangereuse"
+                    "name": "Base navale",
+                    "terms": "base navale,militaire,mer,soldat,armée,marine,armes"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Parcours du combattant",
@@ -7046,7 +7061,8 @@
                     "terms": "terrain,foot,football,salle,futsal,ballon"
                 },
                 "leisure/pitch/gaga": {
-                    "name": "Terrain de Gaga"
+                    "name": "Terrain de Gaga",
+                    "terms": "terrain,arène,aire,jeu,balle,gaga,genoux"
                 },
                 "leisure/pitch/handball": {
                     "name": "Terrain de handball"
@@ -7084,8 +7100,8 @@
                     "terms": "centre,stand,champ,zone,club,sport,tir"
                 },
                 "leisure/pitch/shuffleboard": {
-                    "name": "Shuffleboard",
-                    "terms": "shuffleboard,deck shuffleboard,shuffle-board,shovelboard,shove-board,palets,palette"
+                    "name": "Terrain pour jeu de palets américain",
+                    "terms": "terrain,surface,sol,shuffleboard,jeu de galets,palets américain"
                 },
                 "leisure/pitch/skateboard": {
                     "name": "Skatepark",
@@ -7206,6 +7222,9 @@
                 "line": {
                     "name": "Ligne",
                     "terms": "ligne"
+                },
+                "man_made": {
+                    "name": "Construction humaine"
                 },
                 "man_made/adit": {
                     "name": "Entrée de mine",
@@ -8131,7 +8150,8 @@
                     "name": "Jeux"
                 },
                 "playground/activitypanel": {
-                    "name": "Panneau d'activités"
+                    "name": "Panneau de jeux",
+                    "terms": "panneau,tableau,jeu,éducatif,enfant"
                 },
                 "playground/aerialrotator": {
                     "name": "Aéro-rotateur"
@@ -8709,6 +8729,10 @@
                     "name": "Boutique de manga et anime",
                     "terms": "manga,bd,figurine"
                 },
+                "shop/antiques": {
+                    "name": "Antiquaire",
+                    "terms": "anticaire,magasin,antiquité,vieillerie,brocante"
+                },
                 "shop/appliance": {
                     "name": "Magasin d'électroménager",
                     "terms": "magasin d'électroménager,électroménager,appareil électroménager,petit électroménager,gros électroménager,shop appliance,appliances,bouilloire,centrifugeuse,cuiseur,cuit vapeur,fouet électrique,grille-pain,machine à pain,mixeur,pierrade,presse-agrumes,robot de cuisine,robot multifonctions,pèse-personne,épilateur,rasoir électrique,cafetière,moulin à café,aspirateur,cireuse,nettoyeur à vapeur,tondeuse,repassage,centrale vapeur,fer à repasser,cuisinière,four micro-ondes,four traditionnel,four à vapeur,cuisinière à gaz,hotte aspirante,plaque de cuisson,lave-linge,lave-vaisselle,sèche-linge,cave à vin,congélateur,réfrigérateur,climatiseur"
@@ -8764,6 +8788,10 @@
                 "shop/bookmaker": {
                     "name": "Bookmaker",
                     "terms": "preneur de paris,bookmaker"
+                },
+                "shop/books": {
+                    "name": "Librairie",
+                    "terms": "librairie,papeterie"
                 },
                 "shop/boutique": {
                     "name": "Petit magasin de mode"
@@ -8884,6 +8912,10 @@
                     "name": "Magasin de cosmétiques",
                     "terms": "vente de cosmétiques,parfumerie"
                 },
+                "shop/country_store": {
+                    "name": "Quincaillerie",
+                    "terms": "quincaillerie rurale,épicerie rurale,épicerie de campagne,quincaillerie de campagne"
+                },
                 "shop/craft": {
                     "name": "Magasin d'arts et loisirs créatifs",
                     "terms": "art,loisir,peinture"
@@ -8895,6 +8927,10 @@
                 "shop/dairy": {
                     "name": "Crèmerie",
                     "terms": "crèmerie"
+                },
+                "shop/deli": {
+                    "name": "Épicerie fine",
+                    "terms": "épicerie fine,traiteur,charcuterie,plat à emporter"
                 },
                 "shop/department_store": {
                     "name": "Grand magasin",
@@ -9019,6 +9055,10 @@
                     "name": "Quincaillerie",
                     "terms": "quincaillerie"
                 },
+                "shop/health_food": {
+                    "name": "Magasin d'alimentation diététique/bio",
+                    "terms": "magasin,alimentation,produits,aliments,bio,biologique,diététique,naturel,végétarien,végan"
+                },
                 "shop/hearing_aids": {
                     "name": "Audioprothésiste",
                     "terms": "vente de prothèses auditives"
@@ -9131,6 +9171,10 @@
                     "name": "Magasin d'instruments de musique",
                     "terms": "magasin d'instruments de musique"
                 },
+                "shop/newsagent": {
+                    "name": "Kiosque à journaux",
+                    "terms": "kiosque,magasin,échoppe,journaux,magazines,presse"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Boutique de compléments alimentaires",
                     "terms": "compléments alimentaires;compléments nutritionnels"
@@ -9162,6 +9206,10 @@
                 "shop/pastry": {
                     "name": "Pâtisserie",
                     "terms": "gaufre"
+                },
+                "shop/pawnbroker": {
+                    "name": "Prêteur sur gages",
+                    "terms": "prêteur,dépôt,gage,gages,occasion,mont-de-piété,crédit municipal"
                 },
                 "shop/perfumery": {
                     "name": "Parfumerie",
@@ -9218,6 +9266,10 @@
                 "shop/seafood": {
                     "name": "Poissonnerie / Vente de fruits de mer",
                     "terms": "vendeur de poissons,fruits de mer,écailler,conserverie"
+                },
+                "shop/second_hand": {
+                    "name": "Magasin de produits d'occasion",
+                    "terms": "magasin,dépot,friperie,seconde main,aubaine,solidaire"
                 },
                 "shop/sewing": {
                     "name": "Magasin de couture",
@@ -9317,6 +9369,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Magasin d'électroménager de nettoyage",
                     "terms": "aspirateur,nettoyage"
+                },
+                "shop/variety_store": {
+                    "name": "Magasin discount",
+                    "terms": "magasin,bas prix,prix bas,discount"
                 },
                 "shop/video": {
                     "name": "Vidéo-club",

@@ -267,6 +267,24 @@
                 "animal_shelter": {
                     "label": "For Animals"
                 },
+                "archaeological_site": {
+                    "label": "Type",
+                    "options": {
+                        "baths": "Baths",
+                        "city": "Historic City",
+                        "crannog": "Crannog",
+                        "enclosure": "Enclosure",
+                        "fortification": "Fortification",
+                        "hut_circle": "Hut Circle",
+                        "megalith": "Megalith",
+                        "necropolis": "Necropolis",
+                        "petroglyph": "Rock Carving",
+                        "roman_circus": "Roman Circus",
+                        "roman_villa": "Roman Villa",
+                        "settlement": "Historic Settlement",
+                        "tumulus": "Tumulus"
+                    }
+                },
                 "archery": {
                     "label": "Type of archery"
                 },
@@ -603,6 +621,10 @@
                 },
                 "building/part": {
                     "label": "Building Part"
+                },
+                "building/prefabricated": {
+                    "label": "Prefabricated",
+                    "terms": "manufactured,modular,portable"
                 },
                 "bunker_type": {
                     "label": "Type"
@@ -1057,7 +1079,7 @@
                             "description": "A bike lane that travels in both directions on a one-way street"
                         },
                         "separate": {
-                            "title": "Cycleway mapped separately",
+                            "title": "Cycleway Mapped Separately",
                             "description": "Indicates that cycleway was mapped as a separate geometry"
                         }
                     }
@@ -1447,9 +1469,7 @@
                 "free_flying/site": {
                     "label": "Site Type"
                 },
-                "frequency_electrified": {
-                    "label": "Operating Frequency"
-                },
+                "frequency_electrified": {},
                 "frequency": {
                     "label": "Operating Frequency"
                 },
@@ -1598,6 +1618,7 @@
                 "hazard": {
                     "label": "Type of hazard"
                 },
+                "healthcare_therapist": {},
                 "healthcare": {
                     "label": "Type"
                 },
@@ -2036,9 +2057,6 @@
                 "mattress": {
                     "label": "Mattresses Available"
                 },
-                "mattress": {
-                    "label": "Mattresses Available"
-                },
                 "max_age": {
                     "label": "Maximum Age",
                     "terms": "upper age limit"
@@ -2120,6 +2138,9 @@
                 },
                 "model_aerodrome/turbine": {
                     "label": "Turbine"
+                },
+                "model": {
+                    "label": "Model"
                 },
                 "monitoring_multi": {
                     "label": "Monitoring"
@@ -2637,8 +2658,7 @@
                     "options": {
                         "pillar": "Freestanding Box",
                         "lamp": "Attached to a Pole",
-                        "wall": "Mounted in a Wall",
-                        "community": "Community Mailboxes"
+                        "wall": "Mounted in a Wall"
                     }
                 },
                 "post": {
@@ -3076,6 +3096,9 @@
                 },
                 "shelter": {
                     "label": "Shelter"
+                },
+                "shoes": {
+                    "label": "Shoes"
                 },
                 "shooting": {
                     "label": "Shooting Type"
@@ -3662,6 +3685,14 @@
                 "turning_circle": {
                     "label": "Shape"
                 },
+                "two_sided": {
+                    "label": "Two-Sided",
+                    "terms": "double-sided",
+                    "options": {
+                        "undefined": "No",
+                        "yes": "Yes"
+                    }
+                },
                 "usage_rail": {
                     "label": "Usage Type",
                     "options": {
@@ -3803,6 +3834,11 @@
                 "website": {
                     "label": "Website",
                     "terms": "internet presence,uri,url,webpage",
+                    "placeholder": "https://example.com"
+                },
+                "website/menu": {
+                    "label": "Menu Link",
+                    "terms": "online menu,menu uri,menu url,website menu,menu",
                     "placeholder": "https://example.com"
                 },
                 "wetland": {
@@ -6676,6 +6712,7 @@
                     "name": "Military Area",
                     "terms": "air force,army,base,coast guard,depot,marines,navy,security"
                 },
+                "landuse/military/danger_area_point": {},
                 "landuse/military/airfield": {
                     "name": "Military Airfield",
                     "terms": "aerodrome,aeroway,air force,airplane,airport,army,base,bomb,fight,force,guard,helicopter,helipad,jet,marine,navy,plane,troop,war"
@@ -6693,7 +6730,7 @@
                     "terms": "base,fight,force,guard,marine,navy,ship,sub,troop,war"
                 },
                 "landuse/military/danger_area": {
-                    "name": "Danger Area",
+                    "name": "Danger Zone, Access Prohibited",
                     "terms": "air force,army,base,blast,bomb,explosion,explosive,force,guard,marine,mine,navy,troop,war"
                 },
                 "landuse/military/obstacle_course": {
@@ -7013,6 +7050,10 @@
                 "leisure/pitch/gaga": {
                     "name": "Gaga Pit",
                     "terms": "gaga ball"
+                },
+                "leisure/pitch/handball": {
+                    "name": "Team Handball Court",
+                    "terms": "handball"
                 },
                 "leisure/pitch/horseshoes": {
                     "name": "Horseshoes Pit",
@@ -8138,7 +8179,8 @@
                     "name": "Slide"
                 },
                 "playground/splash_pad": {
-                    "name": "Play Splash Pad"
+                    "name": "Play Splash Pad",
+                    "terms": "pad,spray,water"
                 },
                 "playground/springy": {
                     "name": "Spring Rider",
@@ -8740,7 +8782,7 @@
                 "shop/car_repair": {
                     "name": "Car Repair Shop",
                     "aliases": "Automobile Repair Shop\nCar Mechanic\nAuto Mechanic",
-                    "terms": "automechanic,automotive,garage,inspection,mechanic,oil change,service"
+                    "terms": "automechanic,automotive,garage,inspection,mechanic,oil change,panelbeater,panel beater,service"
                 },
                 "shop/car": {
                     "name": "Car Dealership",
@@ -9095,6 +9137,10 @@
                 "shop/nutrition_supplements": {
                     "name": "Nutrition Supplements Store",
                     "terms": "health,protein,supplement,vitamin"
+                },
+                "shop/nuts": {
+                    "name": "Nuts Shop",
+                    "terms": "almonds,cashews,brazil nuts,chestnuts,coconuts,dried fruits,hazelnuts,macadamia,nuts,peanuts,pecans,pistachios,seeds,walnuts"
                 },
                 "shop/optician": {
                     "name": "Optician",

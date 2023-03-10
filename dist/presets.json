@@ -260,7 +260,7 @@
             "area"
         ],
         "tags": {
-            "natural": "*"
+            "pipeline": "*"
         },
         "searchable": false
     },
@@ -1564,7 +1564,8 @@
         "moreFields": [
             "{amenity/bar}",
             "cuisine",
-            "opening_hours/covid19"
+            "opening_hours/covid19",
+            "website/menu"
         ],
         "geometry": [
             "point",
@@ -1714,6 +1715,7 @@
             "takeaway",
             "toilets",
             "toilets/wheelchair",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -3222,6 +3224,7 @@
             "ref/FR/siret-FR",
             "smoking",
             "takeaway",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -3462,6 +3465,7 @@
             "outdoor_seating",
             "phone",
             "smoking",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -3694,6 +3698,7 @@
             "ref/FR/siret-FR",
             "phone",
             "takeaway",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -4899,7 +4904,6 @@
         "fields": [
             "operator",
             "collection_times",
-            "post_box/type",
             "ref"
         ],
         "moreFields": [
@@ -4914,6 +4918,7 @@
             "level",
             "manufacturer",
             "material",
+            "post_box/type",
             "support",
             "wheelchair"
         ],
@@ -5122,6 +5127,7 @@
             "sport_pub",
             "toilets",
             "toilets/wheelchair",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -5477,6 +5483,7 @@
             "takeaway",
             "toilets",
             "toilets/wheelchair",
+            "website/menu",
             "wheelchair"
         ],
         "geometry": [
@@ -10285,10 +10292,10 @@
             "area"
         ],
         "tags": {
-            "emergency": "lifeboat_station"
+            "emergency": "water_rescue"
         },
         "addTags": {
-            "emergency": "lifeboat_station",
+            "emergency": "water_rescue",
             "seamark:type": "rescue_station"
         }
     },
@@ -14432,6 +14439,25 @@
         },
         "matchScore": 0.9
     },
+    "landuse/military/danger_area_point": {
+        "icon": "maki-danger",
+        "fields": [
+            "{landuse/military/danger_area}"
+        ],
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "military": "danger_area"
+        },
+        "addTags": {
+            "landuse": "military",
+            "military": "danger_area"
+        },
+        "searchable": false,
+        "name": "{landuse/military/danger_area}"
+    },
     "landuse/military/airfield": {
         "icon": "temaki-fighter_jet",
         "fields": [
@@ -14513,8 +14539,6 @@
             "name"
         ],
         "geometry": [
-            "point",
-            "vertex",
             "area"
         ],
         "tags": {
@@ -16191,6 +16215,21 @@
         "reference": {
             "key": "sport",
             "value": "gaga"
+        }
+    },
+    "leisure/pitch/handball": {
+        "icon": "maki-pitch",
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "leisure": "pitch",
+            "sport": "handball"
+        },
+        "reference": {
+            "key": "sport",
+            "value": "handball"
         }
     },
     "leisure/pitch/horseshoes": {
@@ -19636,7 +19675,7 @@
         "tags": {
             "office": "*"
         },
-        "matchScore": 0.4
+        "matchScore": 0.7
     },
     "office/administrative": {
         "icon": "maki-suitcase",
@@ -23632,7 +23671,7 @@
         "tags": {
             "shop": "*"
         },
-        "matchScore": 0.4
+        "matchScore": 0.7
     },
     "shop/boutique": {
         "icon": "maki-shop",
@@ -27148,7 +27187,7 @@
         "fields": [
             "name",
             "operator",
-            "building_area",
+            "building_area_yes",
             "access_simple",
             "fee",
             "payment_multi_fee",

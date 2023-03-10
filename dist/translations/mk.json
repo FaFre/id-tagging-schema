@@ -584,8 +584,8 @@
                 "building/part": {
                     "label": "Дел од градба"
                 },
-                "building_area": {
-                    "label": "Градба"
+                "building/prefabricated": {
+                    "label": "Монтажна"
                 },
                 "bunker_type": {
                     "label": "Вид"
@@ -1017,10 +1017,6 @@
                         "opposite_lane": {
                             "description": "Велосипедска патека што оди спротивно од сообраќајот",
                             "title": "Спротивна велосипедска лента"
-                        },
-                        "separate": {
-                            "description": "Укажува дека целосипедската патека е исцртана како посебна геометрија",
-                            "title": "Велосипедска патека исцртана посебно"
                         },
                         "separate": {
                             "description": "Укажува дека целосипедската патека е исцртана како посебна геометрија",
@@ -1968,9 +1964,6 @@
                 "mattress": {
                     "label": "Достапни душеци"
                 },
-                "mattress": {
-                    "label": "Достапни душеци"
-                },
                 "max_age": {
                     "label": "Најголема возраст",
                     "terms": "<преведете со истозначници или сродни поими на „најголема возраст“,одделени со запирки>"
@@ -2543,6 +2536,14 @@
                 "post": {
                     "label": "Адреса за достава"
                 },
+                "post_box/type": {
+                    "label": "Вид",
+                    "options": {
+                        "lamp": "На шипка",
+                        "pillar": "Самостојно сандаче",
+                        "wall": "Ставено на ѕид"
+                    }
+                },
                 "power": {
                     "label": "Вид"
                 },
@@ -2769,6 +2770,20 @@
                 },
                 "route_master": {
                     "label": "Вид"
+                },
+                "royal_cypher": {
+                    "label": "Кралски монограм",
+                    "options": {
+                        "CIIIR": "CIIIR (Чарлс III)",
+                        "EIIR": "EIIR (Елизабета II)",
+                        "EVIIIR": "EVIIIR (Есвард VIII)",
+                        "EVIIR": "EVIIR (Едвард VII)",
+                        "GR": "GR (Џорџ V)",
+                        "GVIR": "GVIR (Џорџ VI)",
+                        "VR": "VR (Викторија)",
+                        "no": "Нема",
+                        "scottish_crown": "Шкотска круна"
+                    }
                 },
                 "ruins": {
                     "label": "Вид"
@@ -3553,9 +3568,6 @@
                         "yes": "Да"
                     }
                 },
-                "turning_circle": {
-                    "label": "Облик"
-                },
                 "usage_rail": {
                     "label": "Вид употреба",
                     "options": {
@@ -3696,6 +3708,10 @@
                 "website": {
                     "label": "Мрежно место",
                     "placeholder": "https://example.com"
+                },
+                "website/menu": {
+                    "label": "Врска во мени",
+                    "placeholder": "https://primer.com"
                 },
                 "wetland": {
                     "label": "Вид",
@@ -5941,7 +5957,8 @@
                     "name": "Поморска база"
                 },
                 "landuse/military/danger_area": {
-                    "name": "Опасно подрачје"
+                    "name": "Зона на опасност — Забранет пристап",
+                    "terms": "[преведете со истозначници и сродни поими на „зона на опасност — забранет пристап“,одделени со запирки]"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Воено вежбалиште со препреки"
@@ -6192,6 +6209,9 @@
                 },
                 "leisure/pitch/gaga": {
                     "name": "Игралиште за гага"
+                },
+                "leisure/pitch/handball": {
+                    "name": "Игралиште за ракомет"
                 },
                 "leisure/pitch/horseshoes": {
                     "name": "Фрлање потковици"
@@ -6573,6 +6593,9 @@
                 },
                 "man_made/works": {
                     "name": "Фабрика"
+                },
+                "man_made/works/brewery": {
+                    "name": "Индустриска пиварница"
                 },
                 "man_made/yes": {
                     "name": "Вештачки елемент (неукажан вид)"

@@ -296,7 +296,11 @@
                     "label": "类型"
                 },
                 "barrier_planter": {
-                    "label": "屏障"
+                    "label": "屏障",
+                    "options": {
+                        "planter": "是",
+                        "undefined": "否"
+                    }
                 },
                 "basin": {
                     "label": "类型"
@@ -416,10 +420,6 @@
                 "building/part": {
                     "label": "建筑物部分"
                 },
-                "building_area": {
-                    "label": "建筑物",
-                    "terms": "建筑物,建筑,结构,房子"
-                },
                 "bunker_type": {
                     "label": "类型"
                 },
@@ -492,7 +492,11 @@
                         "defensive": "防御性城堡",
                         "fortress": "要塞",
                         "hillfort": "山顶堡垒",
-                        "kremlin": "克里姆林宫"
+                        "kremlin": "克里姆林宫",
+                        "manor": "庄园房屋",
+                        "palace": "宫殿",
+                        "shiro": "日式城堡",
+                        "stately": "法式城堡"
                     }
                 },
                 "changing_table": {
@@ -932,7 +936,7 @@
                     "terms": "饮水处,提供饮用水"
                 },
                 "drive_through": {
-                    "label": "免下车",
+                    "label": "得来速",
                     "terms": "免下车,得来速"
                 },
                 "duration": {
@@ -2008,7 +2012,20 @@
                     "label": "接受",
                     "options": {
                         "batteries": "电池",
-                        "scrap_metal": "废金属"
+                        "cans": "罐子",
+                        "cardboard": "纸皮",
+                        "clothes": "衣服",
+                        "cooking_oil": "食用油",
+                        "engine_oil": "机油",
+                        "glass": "各种玻璃（钢化玻璃、窗玻璃、镜子等）",
+                        "glass_bottles": "玻璃瓶子和玻璃罐子",
+                        "green_waste": "绿化植物废弃物",
+                        "paper": "纸",
+                        "plastic": "塑料",
+                        "plastic_bottles": "塑料瓶",
+                        "plastic_packaging": "塑料包裹",
+                        "scrap_metal": "废金属",
+                        "shoes": "鞋子"
                     }
                 },
                 "recycling_type": {
@@ -2299,7 +2316,7 @@
                     "label": "类型",
                     "options": {
                         "alley": "巷",
-                        "drive-through": "免下车",
+                        "drive-through": "得来速",
                         "driveway": "车道",
                         "emergency_access": "消防通道",
                         "parking_aisle": "停车场通道"
@@ -2615,6 +2632,11 @@
                 },
                 "target": {
                     "label": "目标国"
+                },
+                "taxon": {
+                    "label": "物种分类单元",
+                    "placeholder": "Acer platanoides Columnare, Pyrus calleryana Chanticleer …",
+                    "terms": "物种分类单元"
                 },
                 "tee": {
                     "label": "发球区颜色/类型"
@@ -5103,8 +5125,8 @@
                     "terms": "胡同,巷,弄堂,里弄,小巷,弄,窄路,巷弄（可通行机动车）"
                 },
                 "highway/service/drive-through": {
-                    "name": "免下车",
-                    "terms": "免下车,免下车餐馆,免下车银行"
+                    "name": "得来速",
+                    "terms": "免下车,免下车餐馆,免下车银行,得来速"
                 },
                 "highway/service/driveway": {
                     "name": "车道",
@@ -5404,10 +5426,6 @@
                 },
                 "landuse/military/base/navy": {
                     "name": "军港"
-                },
-                "landuse/military/danger_area": {
-                    "name": "军事危险区域",
-                    "terms": "危险区"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "军用障碍训练场"
@@ -6933,8 +6951,8 @@
                     "terms": "废弃的铁路"
                 },
                 "railway/buffer_stop": {
-                    "name": "止冲器",
-                    "terms": "止冲器,末端,缓冲器,缓冲,停车,减速,挡车,停止,轨道,股道,铁轨,铁路,路轨,火车,列车,站台"
+                    "name": "挡车器",
+                    "terms": "止冲挡,止冲器,车挡,末端,缓冲器,缓冲,停车,减速,挡车,停止,轨道,股道,铁轨,铁路,路轨,火车,列车,站台"
                 },
                 "railway/construction": {
                     "name": "在建铁路",
@@ -7147,6 +7165,10 @@
                 "shop/bookmaker": {
                     "name": "书商",
                     "terms": "书商"
+                },
+                "shop/books": {
+                    "name": "书店",
+                    "terms": "书城,图书商店"
                 },
                 "shop/boutique": {
                     "name": "精品店"

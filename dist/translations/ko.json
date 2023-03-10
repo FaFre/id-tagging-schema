@@ -290,8 +290,10 @@
                     "label": "서비스",
                     "options": {
                         "cosmetics": "화장품",
+                        "nails": "매니큐어 / 페디큐어",
                         "skin_care": "스킨 케어",
-                        "tanning": "태닝"
+                        "tanning": "태닝",
+                        "waxing": "왁싱"
                     }
                 },
                 "bench": {
@@ -630,7 +632,8 @@
                     "label": "자전거 차선",
                     "options": {
                         "lane": {
-                            "description": "칠해진 선별로 자동차 교통에서 분리된 자전거 차선"
+                            "description": "칠해진 선별로 자동차 교통에서 분리된 자전거 차선",
+                            "title": "일반 자전거 도로"
                         },
                         "opposite": {
                             "description": "일방 통행로에 양방향으로 이동하는 자전거 전용 도로"
@@ -1258,6 +1261,10 @@
                 },
                 "mtb/scale/imba": {
                     "label": "IMBA 산길 난이도",
+                    "options": {
+                        "0": "⚪ 가장 쉽다 (흰 동 그라미)",
+                        "2": "🟦 중간의 (파란 네모)"
+                    },
                     "placeholder": "쉬움, 중간, 어려움..."
                 },
                 "mtb/scale/uphill": {
@@ -2217,6 +2224,10 @@
                     "label": "웹사이트",
                     "placeholder": "https://example.com"
                 },
+                "website/menu": {
+                    "label": "메뉴 링크",
+                    "placeholder": "https://example.com"
+                },
                 "wetland": {
                     "label": "유형",
                     "options": {
@@ -3173,7 +3184,8 @@
                     "name": "보행자 지역"
                 },
                 "area/highway": {
-                    "name": "도로 구역"
+                    "name": "도로 구역",
+                    "terms": "도로 구역"
                 },
                 "attraction/amusement_ride": {
                     "name": "놀이기구",
@@ -3300,6 +3312,9 @@
                 "barrier/kissing_gate": {
                     "name": "목장 문",
                     "terms": "좁게 열리는 문"
+                },
+                "barrier/lift_gate": {
+                    "name": "차단기"
                 },
                 "barrier/retaining_wall": {
                     "name": "옹벽",
@@ -3847,6 +3862,9 @@
                 },
                 "entrance/main": {
                     "name": "정문"
+                },
+                "entrance/staircase": {
+                    "name": "계단 입구"
                 },
                 "ford": {
                     "name": "여울",
@@ -4398,8 +4416,7 @@
                     "name": "해군 기지"
                 },
                 "landuse/military/danger_area": {
-                    "name": "위험 지역",
-                    "terms": "위험 지역"
+                    "name": "위험 한 존, 접근 금지"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "군용 장애물 코스"
@@ -5840,11 +5857,17 @@
                     "name": "노면전차 궤도",
                     "terms": "트램 길"
                 },
+                "railway/tram_crossing": {
+                    "name": "전차 건널목"
+                },
                 "railway/tram_level_crossing": {
                     "name": "전차-도로 건널목"
                 },
                 "railway/tram_stop": {
                     "name": "전차 정차 위치"
+                },
+                "railway/turntable": {
+                    "name": "기차 턴 테이블"
                 },
                 "railway/yard": {
                     "name": "화물역"
@@ -5893,6 +5916,9 @@
                 "shop/anime": {
                     "name": "애니메이션/만화 가게",
                     "terms": "애니메이션/만화 상점"
+                },
+                "shop/antiques": {
+                    "name": "골동품 가게"
                 },
                 "shop/appliance": {
                     "name": "가전 제품 가게",
@@ -5949,6 +5975,9 @@
                 "shop/bookmaker": {
                     "name": "마권업자",
                     "terms": "마권업자"
+                },
+                "shop/books": {
+                    "name": "서점"
                 },
                 "shop/boutique": {
                     "name": "부티크"
@@ -6192,6 +6221,9 @@
                 "shop/hardware": {
                     "name": "철물점",
                     "terms": "철물점"
+                },
+                "shop/health_food": {
+                    "name": "건강식품 판매점"
                 },
                 "shop/hearing_aids": {
                     "name": "보청기 가게",
@@ -6462,6 +6494,9 @@
                 "shop/vacuum_cleaner": {
                     "name": "진공청소기 가게",
                     "terms": "진공청소기 상점"
+                },
+                "shop/variety_store": {
+                    "name": "할인 판매점"
                 },
                 "shop/video": {
                     "name": "비디오 가게",

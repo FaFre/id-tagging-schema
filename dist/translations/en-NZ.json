@@ -108,7 +108,12 @@
                     "terms": "bbq,grill,barbecue"
                 },
                 "amenity/cafe": {
-                    "name": "Café"
+                    "name": "Café",
+                    "terms": "bistro,coffee,tea,cafe"
+                },
+                "amenity/cafe/bubble_tea": {
+                    "name": "Bubble Tea Café",
+                    "terms": "boba,bubble milk tea,pearl milk tea,taiwanese tea drink,tapioca,pearl tea,boba drink,cafe"
                 },
                 "amenity/community_centre": {
                     "name": "Community Centre"
@@ -291,6 +296,10 @@
                 },
                 "office/employment_agency": {
                     "terms": "job,career,careers,vocational,vocation,occupation"
+                },
+                "office/it": {
+                    "name": "IT/Software Company",
+                    "terms": "computer,information,software,technology,tech,it,ict,information technology"
                 },
                 "office/lawyer": {
                     "name": "Lawyer"

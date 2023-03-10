@@ -183,6 +183,25 @@
         "key": "animal_shelter",
         "type": "semiCombo"
     },
+    "archaeological_site": {
+        "key": "archaeological_site",
+        "type": "combo",
+        "options": [
+            "baths",
+            "city",
+            "crannog",
+            "enclosure",
+            "fortification",
+            "hut_circle",
+            "megalith",
+            "necropolis",
+            "petroglyph",
+            "roman_circus",
+            "roman_villa",
+            "settlement",
+            "tumulus"
+        ]
+    },
     "archery": {
         "key": "archery",
         "type": "text"
@@ -588,6 +607,10 @@
         "key": "building:part",
         "type": "combo",
         "default": "yes"
+    },
+    "building/prefabricated": {
+        "key": "building:prefabricated",
+        "type": "check"
     },
     "bunker_type": {
         "key": "bunker_type",
@@ -1992,6 +2015,18 @@
         "key": "hazard",
         "type": "text"
     },
+    "healthcare_therapist": {
+        "key": "healthcare",
+        "type": "typeCombo",
+        "options": [
+            "physiotherapist",
+            "psychotherapist",
+            "occupational_therapist",
+            "speech_therapist"
+        ],
+        "autoSuggestions": false,
+        "label": "{healthcare}"
+    },
     "healthcare": {
         "key": "healthcare",
         "type": "typeCombo"
@@ -2597,10 +2632,6 @@
         "key": "mattress",
         "type": "check"
     },
-    "mattress": {
-        "key": "mattress",
-        "type": "check"
-    },
     "max_age": {
         "key": "max_age",
         "type": "number",
@@ -2727,6 +2758,11 @@
     "model_aerodrome/turbine": {
         "key": "model_aerodrome:turbine",
         "type": "check"
+    },
+    "model": {
+        "key": "model",
+        "type": "combo",
+        "caseSensitive": true
     },
     "monitoring_multi": {
         "key": "monitoring:",
@@ -3461,8 +3497,7 @@
         "options": [
             "pillar",
             "lamp",
-            "wall",
-            "community"
+            "wall"
         ]
     },
     "post": {
@@ -4123,6 +4158,10 @@
         "key": "shelter",
         "type": "check"
     },
+    "shoes": {
+        "key": "shoes",
+        "type": "semiCombo"
+    },
     "shooting": {
         "key": "shooting",
         "type": "combo"
@@ -4614,14 +4653,6 @@
             "value": "tee"
         }
     },
-    "tee": {
-        "key": "tee",
-        "type": "semiCombo",
-        "reference": {
-            "key": "golf",
-            "value": "tee"
-        }
-    },
     "telecom": {
         "key": "telecom",
         "type": "combo"
@@ -4883,6 +4914,17 @@
         "key": "turning_circle",
         "type": "combo"
     },
+    "two_sided": {
+        "key": "two_sided",
+        "type": "defaultCheck",
+        "geometry": [
+            "line"
+        ],
+        "options": [
+            "undefined",
+            "yes"
+        ]
+    },
     "usage_rail": {
         "key": "usage",
         "type": "combo",
@@ -5092,6 +5134,10 @@
         "key": "website",
         "type": "url",
         "universal": true
+    },
+    "website/menu": {
+        "key": "website:menu",
+        "type": "url"
     },
     "wetland": {
         "key": "wetland",

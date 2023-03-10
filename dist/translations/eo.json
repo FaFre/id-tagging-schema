@@ -420,10 +420,6 @@
                 "building/part": {
                     "label": "Parto de konstruaĵo"
                 },
-                "building_area": {
-                    "label": "Konstruaĵo",
-                    "terms": "konstruajho,konstruajxo.domo,konstruo"
-                },
                 "bunker_type": {
                     "label": "Speco"
                 },
@@ -719,13 +715,8 @@
                         "separate": {
                             "description": "Bicikla koridoro mapigita kiel aparta linio"
                         },
-                        "separate": {
-                            "description": "Bicikla koridoro mapigita kiel aparta linio",
-                            "title": "Bicikl-koridoro mapigita aparte"
-                        },
                         "share_busway": {
-                            "description": "Unu koridoro por ambaŭ bicikloj kaj aŭtobusoj",
-                            "title": "Aŭtobusa kaj bicikla koridoro"
+                            "description": "Unu koridoro por ambaŭ bicikloj kaj aŭtobusoj"
                         },
                         "shared_lane": {
                             "description": "Bicikla koridoro ne aparta de aŭtomobila trafiko"
@@ -924,10 +915,6 @@
                     "terms": "dauxro,dauro,tempodaŭro"
                 },
                 "ele": {
-                    "label": "Altitudo [metroj]",
-                    "terms": "supermara alteco,absoluta alteco,alto"
-                },
-                "ele_node": {
                     "label": "Altitudo [metroj]",
                     "terms": "supermara alteco,absoluta alteco,alto"
                 },
@@ -5371,10 +5358,6 @@
                 "landuse/military/barracks": {
                     "name": "Soldatejo",
                     "terms": "soldathejmo,kazerno"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Danĝerejo",
-                    "terms": "dangherejo,dangxerejo,minkampo,pafaĵejo"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Obstakl-kurejo armea",

@@ -4144,10 +4144,6 @@
                     "name": "軍營",
                     "terms": "barracks,兵房,兵營,營房,軍營"
                 },
-                "landuse/military/danger_area": {
-                    "name": "危險區",
-                    "terms": "danger area,危險地區,危險區域,危險範圍"
-                },
                 "landuse/military/range": {
                     "name": "軍事靶場",
                     "terms": "military range,靶場,軍用靶場,射擊場"

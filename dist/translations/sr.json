@@ -3337,10 +3337,6 @@
                     "name": "Бараке",
                     "terms": "бараке,касарне,дашчаре"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Опасна област",
-                    "terms": "опасна област,опасна зона,опасност"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Војни полигон са препрекама"
                 },

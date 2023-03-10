@@ -130,8 +130,7 @@
                         "horse": "Reiten",
                         "mtb": "Mountainbiking",
                         "ski": "Skifahren"
-                    },
-                    "terms": "aktivität,tätigkeit"
+                    }
                 },
                 "addr/interpolation": {
                     "label": "Typ",
@@ -604,9 +603,9 @@
                 "building/part": {
                     "label": "Gebäudeteil"
                 },
-                "building_area": {
-                    "label": "Gebäude",
-                    "terms": "gebäude,bau,bauwerk,haus"
+                "building/prefabricated": {
+                    "label": "Vorgefertigt",
+                    "terms": "vorgefertigt"
                 },
                 "bunker_type": {
                     "label": "Typ"
@@ -1053,7 +1052,7 @@
                         },
                         "separate": {
                             "description": "Gibt an, dass der Radweg als separate Geometrie kartiert wurde",
-                            "title": "Separat kartierter Radweg"
+                            "title": "Fahrradweg separat eingezeichnet"
                         },
                         "share_busway": {
                             "description": "Fahrradstreifen auf der Busspur",
@@ -2669,7 +2668,8 @@
                         "lamp": "Befestigt an Pfosten/Mast",
                         "pillar": "Freistehender Kasten",
                         "wall": "Eingemauert"
-                    }
+                    },
+                    "terms": "typ"
                 },
                 "power": {
                     "label": "Typ"
@@ -3740,9 +3740,6 @@
                     },
                     "terms": "beidseitig,beiderseitig,doppelseitig"
                 },
-                "turning_circle": {
-                    "label": "Form"
-                },
                 "usage_rail": {
                     "label": "Nutzungsart",
                     "options": {
@@ -3891,6 +3888,11 @@
                     "label": "Webseite",
                     "placeholder": "https://example.com",
                     "terms": "website,internetauftritt,url,uri"
+                },
+                "website/menu": {
+                    "label": "Link zur Speisekarte",
+                    "placeholder": "https://example.com",
+                    "terms": "speisekarte"
                 },
                 "wetland": {
                     "label": "Typ",
@@ -6339,8 +6341,8 @@
                     "terms": "standseilbahn"
                 },
                 "highway/emergency_access_point": {
-                    "name": "Notfall-Zugangspunkt",
-                    "terms": "notfall,rettung"
+                    "name": "Rettungspunkt",
+                    "terms": "notfall,rettung,zugangspunkt"
                 },
                 "highway/emergency_bay": {
                     "name": "Nothaltebucht",
@@ -6832,8 +6834,8 @@
                     "terms": "basis,kampf,kraft,wache,marine,schiff,u-boot,truppe,krieg,seestreitkraft"
                 },
                 "landuse/military/danger_area": {
-                    "name": "Militärischer Gefahrenbereich",
-                    "terms": "militärischer gefährlicher bereich"
+                    "name": "Sperrgebiet, Zutritt verboten",
+                    "terms": "sperrbereich,sperrzone,sperrbezirk,gefahrbereich,gefahrenbereich,militärisches sperrgebiet,spzo"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Militärischer Hindernisparcours",
@@ -7163,6 +7165,10 @@
                 "leisure/pitch/gaga": {
                     "name": "Gagaballfeld",
                     "terms": "gagaball,gaga-ball,gaga"
+                },
+                "leisure/pitch/handball": {
+                    "name": "Handballplatz",
+                    "terms": "mannschaftshandballplatz,handballplatz"
                 },
                 "leisure/pitch/horseshoes": {
                     "name": "Hufeisenwurfplatz",
@@ -7678,6 +7684,11 @@
                     "name": "Fabrik",
                     "terms": "fabrik,werk,betrieb,fabriksanlage,produktionsstätte,fertigungsanlage,industrielle produktionsstätte"
                 },
+                "man_made/works/brewery": {
+                    "name": "Großbrauerei",
+                    "terms": "brauereibetrieb,braustätte,brauerei,bier,brauen,bierbrauen",
+                    "aliases": "Industriebrauerei"
+                },
                 "man_made/yes": {
                     "name": "Künstliche Anlage (unspezifischer Typ)"
                 },
@@ -8161,7 +8172,7 @@
                     "name": "Büro (nicht spezifizierter Typ)"
                 },
                 "pipeline": {
-                    "name": "Pipeline-Inhalt"
+                    "name": "Pipeline Objekt"
                 },
                 "pipeline/substation": {
                     "name": "Unterstation",
@@ -8425,7 +8436,7 @@
                     "terms": "solarstromanlage,photovoltaikanlage"
                 },
                 "power/generator/method/photovoltaic/building/roof": {
-                    "name": "Photovoltaikanlage",
+                    "name": "Dach-Photovoltaikanlage",
                     "terms": "photovoltaikanlage,dach,carport"
                 },
                 "power/generator/method/photovoltaic/location/roof": {

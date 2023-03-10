@@ -308,9 +308,6 @@
                     "label": "Капацитет",
                     "placeholder": "50, 100, 200..."
                 },
-                "capacity/caravans": {
-                    "label": "Капацитет (каравани)"
-                },
                 "capacity/persons": {
                     "label": "Капацитет (души)"
                 },
@@ -359,9 +356,6 @@
                     "label": "Държава"
                 },
                 "covered": {
-                    "label": "Покрит"
-                },
-                "covered_no": {
                     "label": "Покрит"
                 },
                 "craft": {
@@ -666,9 +660,6 @@
                         "tropical": "Тропическа медицина",
                         "urology": "Урология"
                     }
-                },
-                "heating": {
-                    "label": "Отопление"
                 },
                 "heating": {
                     "label": "Отопление"
@@ -1385,6 +1376,12 @@
                 "amenity/pub": {
                     "name": "Пъб"
                 },
+                "amenity/recycling/container/electrical_items": {
+                    "name": "Електронни отпадъци"
+                },
+                "amenity/recycling/container/green_waste": {
+                    "name": "Контейнер за зелени отпадъци"
+                },
                 "amenity/refugee_site": {
                     "name": "Бежански лагер"
                 },
@@ -1442,6 +1439,10 @@
                 },
                 "amenity/shelter/gazebo": {
                     "name": "Беседка"
+                },
+                "amenity/shelter/public_transport": {
+                    "name": "Спирков навес",
+                    "terms": "навес на спирка,спирконавес"
                 },
                 "amenity/social_facility/ambulatory_care": {
                     "name": "Амбулаторна грижа"
@@ -2178,9 +2179,6 @@
                 "man_made/windmill": {
                     "name": "Вятърна мелница"
                 },
-                "man_made/windmill": {
-                    "name": "Вятърна мелница"
-                },
                 "natural/bay": {
                     "name": "Залив"
                 },
@@ -2314,6 +2312,13 @@
                 "point": {
                     "name": "Точка"
                 },
+                "power/cable": {
+                    "name": "Брой кабели"
+                },
+                "power/cable/underground": {
+                    "name": "Подземен електропровод",
+                    "terms": "подземен кабел"
+                },
                 "power/generator/method/photovoltaic": {
                     "name": "Соларен панел",
                     "terms": "слънчев панел,фотоволтаичен панел"
@@ -2349,8 +2354,12 @@
                     "name": "АЕЦ"
                 },
                 "power/plant/source/solar": {
-                    "name": "Фото-волтаична станция",
-                    "terms": "соларна ферма,фотоволтаична инсталация,фотоволтаична станция,соларна станция,слънчева централа,слънчева станция"
+                    "name": "Соларна електроцентрала",
+                    "terms": "слънчева,фотоволтаична"
+                },
+                "power/plant/source/waste": {
+                    "name": "Инсинератор за отпадъци",
+                    "terms": "изгаряне на отпадъци"
                 },
                 "power/plant/source/wind": {
                     "name": "ВяЕЦ",
@@ -2543,6 +2552,9 @@
                 "shop/convenience": {
                     "name": "Магазин за хранителни стоки"
                 },
+                "shop/dairy": {
+                    "name": "Млекарница"
+                },
                 "shop/department_store": {
                     "name": "Универсален магазин"
                 },
@@ -2635,6 +2647,12 @@
                 "shop/optician": {
                     "name": "Оптика"
                 },
+                "shop/pastry": {
+                    "name": "Сладкарница"
+                },
+                "shop/pawnbroker": {
+                    "name": "Заложна къща"
+                },
                 "shop/perfumery": {
                     "name": "Парфюмерия"
                 },
@@ -2678,6 +2696,15 @@
                 "shop/window_blind": {
                     "name": "Магазин за щори",
                     "terms": "ролетни щори"
+                },
+                "telecom/data_center": {
+                    "name": "Център за данни"
+                },
+                "tourism/alpine_hut": {
+                    "name": "Планинска хижа"
+                },
+                "tourism/apartment": {
+                    "name": "Апартамент за гости"
                 },
                 "tourism/aquarium": {
                     "name": "Аквариум"

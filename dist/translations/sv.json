@@ -603,9 +603,9 @@
                 "building/part": {
                     "label": "Byggnadsdel"
                 },
-                "building_area": {
-                    "label": "Byggnad",
-                    "terms": "byggnad,hus,konstruktion,byggnadsverk,bygge,anläggning,fastighet,kåk"
+                "building/prefabricated": {
+                    "label": "Prefabricerad",
+                    "terms": "prefabricerad,monteringsfärdig,prefab,modul,modulhus,portabel,flyttbar,modulbyggnad,barack,temporär,nyckelfärdig,bostadsmodul,bod,byggbod,kontorsmodul,personalbod,manskapsbod"
                 },
                 "bunker_type": {
                     "label": "Typ"
@@ -2077,9 +2077,9 @@
                     "terms": "rekommenderad högsta hastighet,rekommenderad hastighet,rekommenderad fart,rekommendation,hastighet,fart"
                 },
                 "maxspeed/hgv": {
-                    "label": "Hastighetsbegränsning för lastbil",
+                    "label": "Hastighetsbegränsning för tung lastbil",
                     "placeholder": "40, 50, 60...",
-                    "terms": "hastighetsbegränsning för lastbil,lastbildhastighet,fart för lastbil,lastbildsfart"
+                    "terms": "hastighetsbegränsning för tung lastbil,lastbilshastighet,fart för lastbil,lastbilsfart,fart för långtradare,långtradarhastighet,fart för tunga fordon,hastighet för tunga fordon"
                 },
                 "maxstay": {
                     "label": "Maxtid",
@@ -2108,6 +2108,10 @@
                         "stone": "Sten",
                         "war_memorial": "Krigsmonument"
                     }
+                },
+                "message": {
+                    "label": "Meddelande",
+                    "terms": "meddelande,typ av meddelande"
                 },
                 "microbrewery": {
                     "label": "Microbryggeri",
@@ -2658,6 +2662,15 @@
                 "post": {
                     "label": "Leveransadress"
                 },
+                "post_box/type": {
+                    "label": "Typ",
+                    "options": {
+                        "lamp": "Monterad på stolpe",
+                        "pillar": "Fristående låda",
+                        "wall": "Monterad på vägg"
+                    },
+                    "terms": "typ,postlådetyp,postlåda,brevlåda,typ av postlåda,typ av brevlåda"
+                },
                 "power": {
                     "label": "Typ"
                 },
@@ -2754,6 +2767,10 @@
                 },
                 "ref/isil": {
                     "label": "ISIL-kod"
+                },
+                "ref/linz/place_id-NZ": {
+                    "label": "Plats-ID i NZGB",
+                    "terms": "plats-id i nzgb,nzgb-platsidentitet,new zealand gazetteer,nya zealand,landinformation på nya zealand,geografiska gränser på nya zealand"
                 },
                 "ref/vatin": {
                     "label": "VAT ID-nummer",
@@ -2891,6 +2908,20 @@
                 },
                 "route_master": {
                     "label": "Typ"
+                },
+                "royal_cypher": {
+                    "label": "Kungligt monogram",
+                    "options": {
+                        "CIIIR": "CIIIR (Charles III)",
+                        "EIIR": "EIIR (Elizabeth II)",
+                        "EVIIIR": "EVIIIR (Edward VIII)",
+                        "EVIIR": "EVIIR (Edward VII)",
+                        "GR": "GR (Georg V)",
+                        "GVIR": "GVIR (Georg VI)",
+                        "VR": "VR (Viktoria)",
+                        "no": "Nej",
+                        "scottish_crown": "Skotska kronan"
+                    }
                 },
                 "ruins": {
                     "label": "Typ"
@@ -3665,6 +3696,11 @@
                 "transformer": {
                     "label": "Typ",
                     "options": {
+                        "auxiliary": "Lokaltransformator: Matar interna system i transformatorstationer",
+                        "converter": "Omformarstation: Matar kraftomvandlare",
+                        "distribution": "Distribution: Matar slutkonsumenter, installerade utanför transformatorstationer",
+                        "generator": "Generator: Ökar spänningen i kraftverk",
+                        "main": "Primär: Förmedlar kraft",
                         "phase_angle_regulator": "Fasvinkelregulator",
                         "yes": "Okänd roll"
                     }
@@ -3851,6 +3887,11 @@
                     "label": "Hemsida",
                     "placeholder": "https://exempel.se",
                     "terms": "webbsida,webbsite,website,hemsida,www,url,uri,internet,internetsida,internetsite"
+                },
+                "website/menu": {
+                    "label": "Menylänk",
+                    "placeholder": "https://exempel.se",
+                    "terms": "menylänk,länk till meny,meny,matsedel,url till meny,meny-url"
                 },
                 "wetland": {
                     "label": "Typ",
@@ -6740,10 +6781,6 @@
                     "name": "Marinbas",
                     "terms": "marinbas,marint förband,marinen,flottan,amfibiekåren,kustartilleriet,flottilj,flottbas,örlogsbas"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Farligt område",
-                    "terms": "farligt område,skjutbana,säkerhetszon,militärt skyddsområde,militärt övningsområde"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Militär hinderbana",
                     "terms": "militär hinderbana,militär,armé,militärbas,vakt,marin,hinderbana,hoppbana,hinderlöpning,hinderlopp"
@@ -8921,6 +8958,10 @@
                     "name": "Sminkaffär",
                     "terms": "sminkaffär,smink,kosmetika,kosmetikaffär"
                 },
+                "shop/country_store": {
+                    "name": "Butik med landsbygdsförnödenheter",
+                    "terms": "butik med landsbygdsförnödenheter,landsbygdsförnödenheter,lantmannaföreningen,granngården,lanthandel,landsbyggdsbutik,utomhuskläder,jakt,jaktutrustning,ridutrustning,ridtillbehör,trädgårdsbutik,trädgårdsmaskiner,husdjur,foder,djurfoder,bonde,bönder"
+                },
                 "shop/craft": {
                     "name": "Konst- & hantverksbutik",
                     "terms": "konst,konsthantverk,konstverk,hantverk,slöjd"
@@ -9059,6 +9100,10 @@
                 "shop/hardware": {
                     "name": "Järnaffär",
                     "terms": "järnaffär,järnhandlare,skruv,skruvar,bult,bultar,spik,krokar,järnbeslag,järntillbehör,metallverktyg,verktyg,bygg,el,vvs,trädgårdsredskap,redskap,handverktyg,elverktyg,köksutrustning,badrum,kök,hushållsprodukter,lås,nycklar,nyckeltillverkning"
+                },
+                "shop/health_food": {
+                    "name": "Hälsokostbutik",
+                    "terms": "hälsokostbutik,hälsokost,hälsomat,organisk,organist,vitaminer,vegetarian,vegan,naturligt,kosttillskott,köttersättning,mjölkersättning"
                 },
                 "shop/hearing_aids": {
                     "name": "Hörapparater",

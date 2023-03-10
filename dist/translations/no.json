@@ -2782,7 +2782,7 @@
                         "minor_distribution": "Distribusjonsnett",
                         "traction": "Banestrømforsyning",
                         "transition": "Overgang mellom luftledning og bakkeledning",
-                        "transmission": "Høyspentoverføring"
+                        "transmission": "Transmisjonsnett"
                     }
                 },
                 "substation_pipeline": {
@@ -2791,7 +2791,7 @@
                         "distribution": "Regionalnett",
                         "industrial": "Industriell",
                         "minor_distribution": "Distribusjonsnett",
-                        "transmission": "Sentralnett",
+                        "transmission": "Transmisjonsnett",
                         "valve": "Ventil",
                         "valve_group": "Ventilgruppe"
                     }
@@ -3011,6 +3011,7 @@
                 "transformer": {
                     "label": "Type",
                     "options": {
+                        "distribution": "Fordeling: fordeler strømmen til sluttforbrukere, montert utenfor transformatorstasjoner",
                         "main": "Hoved: viderefører strømmen",
                         "yes": "Ukjent rolle"
                     }
@@ -3049,7 +3050,7 @@
                 "usage_rail": {
                     "label": "Brukstype",
                     "options": {
-                        "branch": "Avgreningsbane",
+                        "branch": "Avgrening",
                         "industrial": "Industriell",
                         "main": "Hoved",
                         "military": "Militær",
@@ -4834,9 +4835,6 @@
                 "landuse/military/barracks": {
                     "name": "Brakker"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Fareområde"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Militær hinderløype"
                 },
@@ -5806,6 +5804,9 @@
                 },
                 "shop/alcohol": {
                     "name": "Vinutsalg"
+                },
+                "shop/anime": {
+                    "name": "Anime- / mangabutikk"
                 },
                 "shop/appliance": {
                     "name": "Hvitevarebutikk"

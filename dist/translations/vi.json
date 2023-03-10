@@ -414,10 +414,6 @@
                 "building/part": {
                     "label": "Phần Tòa nhà"
                 },
-                "building_area": {
-                    "label": "Tòa nhà",
-                    "terms": "tòa nhà,toà nhà,toa nha"
-                },
                 "bunker_type": {
                     "label": "Kiểu"
                 },
@@ -711,10 +707,6 @@
                         },
                         "separate": {
                             "description": "Đã vẽ lối đi xe đạp như một đường kẻ riêng"
-                        },
-                        "separate": {
-                            "description": "Đã vẽ lối đi xe đạp như một đường kẻ riêng",
-                            "title": "Lối đi xe đạp vẽ riêng"
                         },
                         "share_busway": {
                             "description": "Làn xe đạp cũng dành cho xe buýt"
@@ -4004,10 +3996,6 @@
                     "name": "Chuồng Động vật",
                     "terms": "chuồng động vật,cũi động vật,lồng động vật,chuồng thú vật,cũi thú vật,chuồng sư tử,cũi sư tử,chuồng hổ,cũi hổ,chuồng cọp,cũi cọp,chuồng gấu,cũi gấu,chuồng voi,cũi voi,chuồng khỉ,cũi khỉ,chuồng hươu cao cổ,cũi hươu cao cổ,chuồng lợn,cũi lợn,chuồng heo,cũi heo,chuồng trâu,cũi trâu,chuồng chó,cũi chó,chuồng chim,lồng chim,cũi chim,chuồng gà,lồng gà,vườn thú,vườn bách thảo,chuong dong vat,cui dong vat,long dong vat,chuong thu vat,cui thu vat,chuong su tu,cui su tu,chuong ho,cui ho,chuong cop,cui cop,chuong gau,cui gau,chuong voi,cui voi,chuong khi,cui khi,chuong huou cao co,cui huou cao co,chuong lon,cui lon,chuong heo,cui heo,chuong trau,cui trau,chuong cho,cui cho,chuong chim,long chim,cui chim,chuong ga,long ga,vuon thu,vuon bach thao"
                 },
-                "attraction/big_wheel": {
-                    "name": "Vòng Đu quay",
-                    "terms": "vòng đu quay,vòng quay quan sát,đu quay đứng,vòng quay mặt trời,vòng quay ferris,vong du quay,vong quay quan sat,du quay dung,vong quay mat troi,vong quay ferris"
-                },
                 "attraction/bumper_car": {
                     "name": "Xe Điện đụng",
                     "terms": "xe điện đụng,xe dien dung"
@@ -5425,10 +5413,6 @@
                     "name": "Căn cứ Hải quân",
                     "terms": "căn cứ hải quân,can cu hai quan"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Khu vực Nguy hiểm",
-                    "terms": "khu vực nguy hiểm,vùng nguy hiểm,khu vuc nguy hiem,vung nguy hiem"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Đường Chạy vượt Chướng ngại vật Quân sự",
                     "terms": "đường chạy vượt chướng ngại vật quân sự,duong chay vuot chuong ngai vat quan su"
@@ -5884,6 +5868,9 @@
                 "line": {
                     "name": "Đường kẻ",
                     "terms": "đường kẻ,đường,lối,duong ke,duong,loi"
+                },
+                "man_made": {
+                    "name": "Nhân tạo"
                 },
                 "man_made/adit": {
                     "name": "Lối vào Mỏ",
@@ -7192,6 +7179,10 @@
                     "name": "Tiệm Anime/Manga",
                     "terms": "tiệm anime,cửa hàng anime,tiệm manga,cửa hàng manga,tiem anime,cua hang anime,tiem manga,cua hang manga"
                 },
+                "shop/antiques": {
+                    "name": "Tiệm Đồ Cổ",
+                    "terms": "tiệm đồ cổ,cửa hàng đồ cổ,cửa hiệu đồ cổ,người bán đồ cổ,chỗ bán đồ cổ,nơi bán đồ cổ,tiem do co,cua hang do co,cua hieu do co,nguoi ban do co,cho ban do co,noi ban do co"
+                },
                 "shop/appliance": {
                     "name": "Tiệm Gia dụng",
                     "terms": "tiệm gia dụng,tiệm đồ gia dụng,cửa hàng gia dụng,cửa hàng đồ gia dụng,tiem gia dung,tiem do gia dung,cua hang gia dung,cua hang do gia dung"
@@ -7247,6 +7238,10 @@
                 "shop/bookmaker": {
                     "name": "Phòng Đánh cá Ngựa",
                     "terms": "phòng đánh cá ngựa,văn phòng đánh cá ngựa,cửa sổ đánh cá ngựa,tiệm đánh cá ngựa,cửa hàng đánh cá ngựa,nơi đánh cá ngựa,phong danh ca ngua,van phong danh ca ngua,cua so danh ca ngua,tiem danh ca ngua,cua hang danh ca ngua,noi danh ca ngua"
+                },
+                "shop/books": {
+                    "name": "Hiệu Sách",
+                    "terms": "hiệu sách,nhà sách,tiệm sách,chỗ bán sách vở,hieu sach,nha sach,tiem sach,cho ban sach vo"
                 },
                 "shop/boutique": {
                     "name": "Tiệm Thời trang"
@@ -7359,6 +7354,10 @@
                     "name": "Tiệm Mỹ phẩm",
                     "terms": "tiệm mỹ phẩm,tiệm mĩ phẩm,cửa hàng mỹ phẩm,cửa hàng mĩ phẩm,cửa hiệu mỹ phẩm,quán mỹ phẩm,quán mĩ phẩm,tiem my pham,tiem mi pham,cua hang my pham,cua hang mi pham,cua hieu my pham,quan my pham,quan mi pham"
                 },
+                "shop/country_store": {
+                    "name": "Tiệm Nông thôn",
+                    "terms": "tiệm nông thôn,cửa hàng nông thôn,tiệm tạp hóa,tiệm tạp hoá,cửa hàng tạp hóa,cửa hàng tạp hoá,tiem nong thon,cua hang nong thon,tiem tap hoa,cua hang tap hoa"
+                },
                 "shop/craft": {
                     "name": "Tiệm Bán đồ Thủ công",
                     "terms": "tiệm bán đồ thủ công,cửa hàng bán đồ thủ công,cửa hiệu bán đồ thủ công,thủ công mỹ nghệ,nội thất,sơn,hoa giả,giấy,bút,khắc gỗ,tiem ban do thu cong,cua hang ban do thu cong,cua hieu ban do thu cong,thu cong my nghe,noi that,son,hoa gia,giay,but,khac go"
@@ -7370,6 +7369,10 @@
                 "shop/dairy": {
                     "name": "Tiệm Sữa",
                     "terms": "tiệm sữa,cửa hàng sữa,cửa hiệu sữa,quán sữa,pho mát,pho-mát,phó mát,phô mai,phô-ma,phôma,sữa chua,da ua,da-ua,tiem sua,cua hang sua,cua hieu sua,quan sua,pho mat,pho-mat,pho mai,pho-ma,phoma,sua chua"
+                },
+                "shop/deli": {
+                    "name": "Tiệm Thực phẩm Cao cấp",
+                    "terms": "tiệm thực phẩm cao cấp,cửa hàng thực phẩm cao cấp,tiệm deli,cửa hàng deli,chỗ bán đồ ăn nấu sẵn,tiệm đồ ăn thượng hạng,tiem thuc pham cao cap,cua hang thuc pham cao cap,tiem deli,cua hang deli,cho ban do an nau san,tiem do an thuong hang"
                 },
                 "shop/department_store": {
                     "name": "Tiệm Bách hóa",
@@ -7482,6 +7485,10 @@
                     "name": "Tiệm Ngũ kim",
                     "terms": "khu vực bán đồ ngũ kim,chỗ bán đồ ngũ kim,tiệm bán đồ ngũ kim,nơi bán đồ ngũ kim,cửa hàng bán đồ ngũ kim,cửa hiệu bán đồ ngũ kim,quầy bán đồ ngũ kim,nơi đồ ngũ kim,cửa tiệm đồ ngũ kim,đồ xây dựng,vít,đinh,ốc,sơn,đèn,pin,khu vuc ban do ngu kim,cho ban do ngu kim,tiem ban do ngu kim,noi ban do ngu kim,cua hang ban do ngu kim,cua hieu ban do ngu kim,quay ban do ngu kim,noi do ngu kim,cua tiem do ngu kim,do xay dung,vit,dinh,oc,son,den"
                 },
+                "shop/health_food": {
+                    "name": "Tiệm Thực phẩm Thiên nhiên",
+                    "terms": "tiệm thực phẩm tự nhiên,tiệm thực phẩm thiên nhiên,cửa hàng thực phẩm tự nhiên,cửa hàng thực phẩm thiên nhiên,tiệm thực phẩm bổ dưỡng,cửa hàng thực phẩm bổ dưỡng,tiem thuc pham tu nhien,cua hang thuc pham tu nhien,cua hang thuc pham thien nhien,tiem thuc pham bo duong,cua hang thuc pham bo duong"
+                },
                 "shop/hearing_aids": {
                     "name": "Tiệm Ống nghe",
                     "terms": "tiệm ống nghe,cửa hàng ống nghe,cửa hiệu ống nghe,điếc tai,tiem ong nghe,cua hang ong nghe,cua hieu ong nghe,diec tai"
@@ -7582,6 +7589,10 @@
                     "name": "Tiệm Nhạc cụ",
                     "terms": "nhạc cụ,pianô,ghi-ta,ghita,kèn,trống,nhac cu,ken,trong"
                 },
+                "shop/newsagent": {
+                    "name": "Quầy báo",
+                    "terms": "tiệm báo,cửa hàng báo,cửa hiệu báo,quầy báo,tiệm tạp chí,cửa hàng tạp chí,cửa hiệu tạp chí,quầy tạp chí,tiem bao,cua hang bao,cua hieu bao,quay bao,quan bao,tiem tap chi,cua hang tap chi,cua hieu tap chi,quay tap chi"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Tiệm Thuốc bổ",
                     "terms": "tiệm thuốc bổ,tiệm thuốc uống bổ trợ,cửa hàng thuốc bổ,cửa hàng thuốc uống bổ trợ,quầy thuốc bổ,quầy thuốc uống bổ trợ,tiem thuoc bo,tiem thuoc uong bo tro,cua hang thuoc bo,cua hang thuoc uong bo tro,quay thuoc bo,quay thuoc uong bo tro"
@@ -7605,6 +7616,10 @@
                 "shop/pastry": {
                     "name": "Tiệm Bánh ngọt",
                     "terms": "tiệm bánh ngọt,cửa hàng bánh ngọt,quán bánh ngọt,tiệm bánh,cửa hàng bánh,quán bánh,bánh ngọt,bánh quy,bánh qui,bánh sinh nhật,bánh sanh nhật,pa-tê-sô,patêsô,tiem banh ngot,cua hang banh ngot,quan banh ngot,tiem banh,cua hang banh,quan banh,banh ngot,banh quy,banh qui,banh sinh nhat,banh sanh nhat,pa-te-so,pateso"
+                },
+                "shop/pawnbroker": {
+                    "name": "Tiệm Cầm đồ",
+                    "terms": "tiệm cầm đồ,cửa hàng cầm đồ,cửa hiệu cầm đồ,quán cầm đồ,tiem cam do,cua hang cam do,cua hieu cam do,quan cam do"
                 },
                 "shop/perfumery": {
                     "name": "Tiệm Nước hoa",
@@ -7653,6 +7668,10 @@
                 "shop/seafood": {
                     "name": "Tiệm Hải sản",
                     "terms": "tiệm hải sản,tiệm cá,tiem hai san,tiem ca"
+                },
+                "shop/second_hand": {
+                    "name": "Tiệm Mua lại",
+                    "terms": "tiệm mua lại,cửa hàng mua lại,cửa hiệu mua lại,tiệm bán đồ cũ,cửa hàng bán đồ cũ,cửa hiệu bán đồ cũ,tiem mua lai,cua hang mua lai,cua hieu mua lai,tiem ban do cu,cua hang ban do cu,cua hieu ban do cu"
                 },
                 "shop/sewing": {
                     "name": "Tiệm Đồ Kim chỉ",
@@ -7744,6 +7763,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Tiệm Máy Hút bụi",
                     "terms": "tiệm máy hút bụi,cửa hàng máy hút bụi,cửa hiệu máy hút bụi,quán hút bụi,tiem may hut bui,cua hang may hut bui,cua hieu may hut bui,quan hut bui"
+                },
+                "shop/variety_store": {
+                    "name": "Tiệm Tạp hóa",
+                    "terms": "tiệm tạp hóa,tiệm tạp hoá,cửa hàng tạp hóa,cửa hiệu tạp hóa,tiệm giá hạ,cửa hàng giá hạ,tiem tap hoa,cua hang tap hoa,tiem gia ha,cua hang gia ha"
                 },
                 "shop/video": {
                     "name": "Tiệm Phim",

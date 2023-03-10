@@ -2665,7 +2665,6 @@
                 "post_box/type": {
                     "label": "郵便ポストの種類",
                     "options": {
-                        "community": "集合郵便受け付き",
                         "lamp": "柱上",
                         "pillar": "箱形自立",
                         "wall": "壁面設置"
@@ -3698,7 +3697,8 @@
                         "distribution": "配電用変圧器",
                         "generator": "発電用変圧器",
                         "main": "系統用変圧器",
-                        "phase_angle_regulator": "位相調整変圧器"
+                        "phase_angle_regulator": "位相調整変圧器",
+                        "yes": "用途不明"
                     }
                 },
                 "trees": {
@@ -3882,6 +3882,11 @@
                     "label": "ウェブサイト",
                     "placeholder": "https://example.com",
                     "terms": "ウェブサイト,ホームページ"
+                },
+                "website/menu": {
+                    "label": "ウェブサイト上でのメニュー",
+                    "placeholder": "https://example.com",
+                    "terms": "オンラインメニュー,メニューurl,ウェブサイトメニュー"
                 },
                 "wetland": {
                     "label": "種類",
@@ -6272,10 +6277,6 @@
                     "name": "横断歩道(信号なし)",
                     "terms": "横断歩道(信号なし),横断歩道,歩道"
                 },
-                "highway/crossing/traffic_signals": {
-                    "name": "横断歩道（歩行者用信号あり）",
-                    "terms": "横断歩道,信号機,信号,歩行者信号機,歩行者用信号機"
-                },
                 "highway/crossing/unmarked": {
                     "name": "横断歩道(マークなし)",
                     "terms": "横断歩道(マークなし),横断歩道,歩道"
@@ -6365,16 +6366,9 @@
                     "name": "歩道（車道の脇）",
                     "terms": "歩道（車道の脇）,歩道"
                 },
-                "highway/footway/traffic_signals": {
-                    "name": "横断歩道（歩行者用信号あり）",
-                    "terms": "横断歩道,信号機,信号,歩行者信号機,歩行者用信号機"
-                },
-                "highway/footway/unmarked": {
-                    "name": "横断歩道（マークなし）",
-                    "terms": "横断歩道（マークなし）,横断歩道,歩道"
-                },
-                "highway/footway/zebra": {
-                    "name": "横断歩道（ゼブラあり）"
+                "highway/footway/traffic_island": {
+                    "name": "交通島",
+                    "terms": "交通島,交通安全,交通静穏化,道路設備,減速,二段階横断"
                 },
                 "highway/give_way": {
                     "name": "ゆずれ標識（前方優先道路）",
@@ -6818,9 +6812,8 @@
                     "terms": "海軍基地,軍艦,海軍,海自,海上自衛隊,軍事基地"
                 },
                 "landuse/military/danger_area": {
-                    "name": "（軍事的）危険区域",
-                    "terms": "危険区域",
-                    "aliases": "地雷原"
+                    "name": "危険区域",
+                    "terms": "立入禁止区域,立入制限区域"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "障害物コース（軍用）",
@@ -7036,7 +7029,8 @@
                     "terms": "ハッカースペース,ハックラボ,ハックスペース,メーカースペース,ファブラボ,fablab"
                 },
                 "leisure/horse_riding": {
-                    "name": "乗馬施設"
+                    "name": "乗馬施設",
+                    "terms": "乗馬施設,馬事公苑,乗馬クラブ,スポーツ,運動,娯楽,レジャー"
                 },
                 "leisure/ice_rink": {
                     "name": "アイススケート場",
@@ -7127,7 +7121,8 @@
                     "terms": "クリケット場,スポーツ,運動,競技"
                 },
                 "leisure/pitch/equestrian": {
-                    "name": "乗馬場"
+                    "name": "乗馬場",
+                    "terms": "乗馬施設,馬術場,乗馬アリーナ,スポーツ,運動,娯楽,レジャー,乗馬"
                 },
                 "leisure/pitch/field_hockey": {
                     "name": "フィールドホッケー場",
@@ -7290,7 +7285,8 @@
                     "terms": "自転車競技場,自転車,自転車トラック,自転車レース場"
                 },
                 "leisure/track/horse_racing": {
-                    "name": "競馬トラック"
+                    "name": "競馬トラック",
+                    "terms": "競馬トラック,競馬場,競馬,レース,トラック,馬場,ギャンブル"
                 },
                 "leisure/track/running": {
                     "name": "ランニングトラック",
@@ -7879,11 +7875,11 @@
                 },
                 "natural/wetland/bog": {
                     "name": "高層湿原",
-                    "terms": "湿地,泥地,湿原"
+                    "terms": "湿地,ボグ,泥炭地,泥地,降水栄養性湿原,湿原"
                 },
                 "natural/wetland/fen": {
                     "name": "低層湿原",
-                    "terms": "沼地,湿原"
+                    "terms": "鉱物質栄養性湿原,沼地,湿原"
                 },
                 "natural/wetland/mangrove": {
                     "name": "マングローブ林",
@@ -8348,9 +8344,25 @@
                     "name": "ブランコ",
                     "terms": "ブランコ,ぶらんこ,遊具"
                 },
+                "playground/teenshelter": {
+                    "name": "ティーンシェルター",
+                    "terms": "ティーンシェルター,公園,遊具,子供,児童,あずまや(子供用),あずまや"
+                },
+                "playground/tetherball": {
+                    "name": "テザーボールのポール",
+                    "terms": "テザーボール"
+                },
                 "playground/trampoline": {
                     "name": "トランポリン",
                     "terms": "トランポリン"
+                },
+                "playground/tunnel_tube": {
+                    "name": "トンネル(遊具)",
+                    "terms": "トンネル(遊具),遊具,トンネル,子供,児童,公園,子ども,児童遊園,児童公園,遊び,キッズ"
+                },
+                "playground/water": {
+                    "name": "アルキメディアン・スクリュー遊具",
+                    "terms": "アルキメディアン・スクリュー 遊具,遊具,アルキメディアン・スクリュー,公園,児童,子供,水遊び,泥遊び,児童公園,児童遊園,子ども,キッズ"
                 },
                 "playground/zipwire": {
                     "name": "ジップライン",
@@ -8826,6 +8838,10 @@
                     "name": "アニメショップ",
                     "terms": "アニメショップ,娯楽,アニメ,コスプレ,マンガ,まんが,アニメ店,店舗,お店,サブカル"
                 },
+                "shop/antiques": {
+                    "name": "古美術品店",
+                    "terms": "古美術品店,古美術商,骨董品店,店舗,お店,アンティーク"
+                },
                 "shop/appliance": {
                     "name": "白物家電販売店（大型製品）",
                     "terms": "家電販売店,家電量販店,電器屋,買い物,ショッピング,白物家電,白物,生活家電,冷蔵庫,洗濯機,電機屋,家電,電気店,電器店,お店"
@@ -8881,6 +8897,10 @@
                 "shop/bookmaker": {
                     "name": "公営競技投票券売り場",
                     "terms": "公営競技投票券売り場,馬券売り場,車券売り場,舟券売り場,ギャンブル,アダルト"
+                },
+                "shop/books": {
+                    "name": "本屋",
+                    "terms": "本屋,書店,本,書籍,雑誌,新刊,文庫本,漫画,まんが,マンガ,週刊誌,実用書,技術書,辞書,参考書,店舗,お店,ブック"
                 },
                 "shop/boutique": {
                     "name": "ブティック"
@@ -9001,6 +9021,10 @@
                     "name": "化粧品店",
                     "terms": "化粧品,美容,コスメ"
                 },
+                "shop/country_store": {
+                    "name": "農山村用品店",
+                    "terms": "農山村用品店,店舗,田舎,狩猟"
+                },
                 "shop/craft": {
                     "name": "美術・工芸用品店",
                     "terms": "アートショップ,工芸用品,画材,絵の具,美術用品,クラフト,工房"
@@ -9012,6 +9036,10 @@
                 "shop/dairy": {
                     "name": "乳製品店",
                     "terms": "乳製品店,食品,食べ物,牛乳,チーズ,バター,食料品,店舗,お店,デイリーストア"
+                },
+                "shop/deli": {
+                    "name": "デリカテッセン",
+                    "terms": "惣菜屋,弁当屋,デリカ,食品,食べ物,おかず,豆腐,蒟蒻,食料品,店舗,お店,デリカテッセン"
                 },
                 "shop/department_store": {
                     "name": "百貨店",
@@ -9136,6 +9164,10 @@
                     "name": "金物屋",
                     "terms": "金物屋,金物店,工具"
                 },
+                "shop/health_food": {
+                    "name": "健康食品店",
+                    "terms": "健康食品店,健康,食品,食べ物,サプリ,ビタミン,栄養剤,店舗,お店,健康食品"
+                },
                 "shop/hearing_aids": {
                     "name": "補聴器店",
                     "terms": "補聴器店"
@@ -9248,6 +9280,10 @@
                     "name": "楽器店",
                     "terms": "楽器店,音楽"
                 },
+                "shop/newsagent": {
+                    "name": "新聞スタンド",
+                    "terms": "新聞スタンド,新聞,雑誌,新聞販売"
+                },
                 "shop/nutrition_supplements": {
                     "name": "栄養サプリ販売店",
                     "terms": "栄養サプリメント販売店,サプリ専門店,サプリメント専門店,健康,サプリ,サプリメント"
@@ -9279,6 +9315,10 @@
                 "shop/pastry": {
                     "name": "焼菓子（ペイストリー）店",
                     "terms": "焼菓子店,ケーキ屋,食品,パイ,ビスケット,洋菓子,ペイストリー,ペストリー,お菓子,食べ物,食料品,店舗,お店,ケーキ,スイーツ"
+                },
+                "shop/pawnbroker": {
+                    "name": "質屋",
+                    "terms": "質屋,質,金融,お金,借金,サービス,質草"
                 },
                 "shop/perfumery": {
                     "name": "香水店",
@@ -9335,6 +9375,10 @@
                 "shop/seafood": {
                     "name": "魚屋",
                     "terms": "海鮮食品店,魚屋,魚市場,食品,魚介,食べ物,干物,昆布,イカ,タコ,海苔,食料品,店舗,お店"
+                },
+                "shop/second_hand": {
+                    "name": "中古品店",
+                    "terms": "スリフトショップ,リサイクル店,中古品店,再販店,中古屋,中古販売店,リサイクルショップ"
                 },
                 "shop/sewing": {
                     "name": "手芸用品店",
@@ -9434,6 +9478,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "掃除機店",
                     "terms": "掃除機店"
+                },
+                "shop/variety_store": {
+                    "name": "雑貨店(低価格)",
+                    "terms": "雑貨店(低価格),雑貨店,100円ショップ,ディスカウントストア,100均,雑貨,日用雑貨,生活雑貨,100円"
                 },
                 "shop/video": {
                     "name": "ビデオ店",

@@ -128,10 +128,9 @@
                         "bicycle": "Cyklistika",
                         "hiking": "Turistika",
                         "horse": "Jízda na koni",
-                        "mtb": "Horská turistika",
+                        "mtb": "Horská kola",
                         "ski": "Lyžování"
-                    },
-                    "terms": "aktivita,činnost,čilost,působnost"
+                    }
                 },
                 "addr/interpolation": {
                     "label": "Typ",
@@ -604,9 +603,9 @@
                 "building/part": {
                     "label": "Část budovy"
                 },
-                "building_area": {
-                    "label": "Budova",
-                    "terms": "budova,dům,barák,stavba,struktura"
+                "building/prefabricated": {
+                    "label": "Montovaná",
+                    "terms": "vyrobený,modulární,přenosný"
                 },
                 "bunker_type": {
                     "label": "Typ"
@@ -720,7 +719,27 @@
                 },
                 "clothes": {
                     "label": "Oblečení",
-                    "terms": "oblečení,šaty,textil,oděv"
+                    "options": {
+                        "babies": "Kojenecké oblečení",
+                        "children": "Dětské oblečení",
+                        "denim": "Džínové oblečení",
+                        "fur": "Kožešinové oblečení",
+                        "hats": "Klobouky",
+                        "maternity": "Těhotenské oblečení",
+                        "men": "Pánské oblečení",
+                        "motorcycle": "Motocyklové oblečení",
+                        "oversize": "Nadměrná velikost",
+                        "socks": "Ponožky",
+                        "sports": "Sportovní oblečení",
+                        "suits": "Obleky",
+                        "swimwear": "Plavky",
+                        "traditional": "Tradiční oděvy / lidové kroje",
+                        "underwear": "Spodní prádlo",
+                        "wedding": "Svatební oblečení",
+                        "women": "Dámské oblečení",
+                        "workwear": "Pracovní oblečení"
+                    },
+                    "terms": "šaty,textil,oděv"
                 },
                 "club": {
                     "label": "Typ"
@@ -858,9 +877,11 @@
                 "crane/type": {
                     "label": "Typ jeřábu",
                     "options": {
-                        "floor-mounted_crane": "Jeřáb na podlahu",
-                        "portal_crane": "Portálový jeřáb",
-                        "travel_lift": "Přístavní jeřáb - Travel Lift"
+                        "floor-mounted_crane": "Sloupový jeřáb",
+                        "gantry_crane": "Portálový jeřáb",
+                        "portal_crane": "Přístavní jeřáb",
+                        "tower_crane": "Věžový jeřáb",
+                        "travel_lift": "Přepravní jeřáb"
                     }
                 },
                 "crop": {
@@ -1236,10 +1257,6 @@
                     "label": "Pitná voda k dispozici",
                     "terms": "pitné,pitelné"
                 },
-                "drinking_water_available": {
-                    "label": "Pitná voda k dispozici",
-                    "terms": "pitné,pitelné"
-                },
                 "drive_through": {
                     "label": "Obsluha z/do auta",
                     "terms": "projíždějícím,okénko,výdejní okénko,okno,průjezd,s sebou,z auta,z vozu"
@@ -1300,6 +1317,18 @@
                 },
                 "entrance": {
                     "label": "Typ",
+                    "options": {
+                        "emergency": "Únikový východ",
+                        "entrance": "Pouze vchod",
+                        "exit": "Pouze východ",
+                        "garage": "Garážová vrata",
+                        "home": "Soukromý dům nebo byt",
+                        "main": "Hlavní",
+                        "secondary": "Sekundární",
+                        "service": "Účelový",
+                        "staircase": "Schodiště",
+                        "yes": "Nespecifikováno"
+                    },
                     "terms": "typ vchodu,druh vchodu,typ vstupu,druh vstupu"
                 },
                 "except": {
@@ -1528,7 +1557,7 @@
                 "genus": {
                     "label": "Rod",
                     "placeholder": "Acer, Platanus, Quercus …",
-                    "terms": "rod,rostlinný rod,živočišný rod,rodové jméno"
+                    "terms": "rostlinný rod,živočišný rod,rodové jméno"
                 },
                 "geyser/height": {
                     "label": "Výška výtrysku"
@@ -2029,10 +2058,6 @@
                     "label": "Matrace k dispozici",
                     "terms": "dostupné matrace,matrace"
                 },
-                "mattress": {
-                    "label": "Matrace k dispozici",
-                    "terms": "dostupné matrace,matrace"
-                },
                 "max_age": {
                     "label": "Maximální věk",
                     "terms": "max věk,stáří,omezení věku,nejstarší,roků"
@@ -2054,7 +2079,7 @@
                 "maxspeed/hgv": {
                     "label": "Povolená rychlost kamionů",
                     "placeholder": "40, 50, 60…",
-                    "terms": "omezení rychlosti pro kamiony,rychlostní limit pro kamiony,rychlost pro kamiony,povolená rychlost pro kamiony,nejvyšší pro kamiony,omezení rychlosti pro nákladní auta,rychlostní limit pro nákladní auta,rychlost pro nákladní auta,povolená rychlost pro nákladní autay,nejvyšší pro nákladní auta"
+                    "terms": "omezení rychlosti pro kamiony,rychlostní limit pro kamiony,rychlost pro kamiony,povolená rychlost pro kamiony,nejvyšší pro kamiony,omezení rychlosti pro nákladní auta,rychlostní limit pro nákladní auta,rychlost pro nákladní auta,povolená rychlost pro nákladní auta,nejvyšší pro nákladní auta"
                 },
                 "maxstay": {
                     "label": "Povoleno zůstat max.",
@@ -2066,7 +2091,7 @@
                 },
                 "maxwidth": {
                     "label": "Maximální šířka",
-                    "terms": "maximální výška,povolená výška,limit,výška,povolení,omezení"
+                    "terms": "max šířka,povolená šířka,limit,šířka,povolení,omezení"
                 },
                 "memorial": {
                     "label": "Typ",
@@ -2637,6 +2662,14 @@
                 "post": {
                     "label": "Poštovní adresa"
                 },
+                "post_box/type": {
+                    "label": "Typ",
+                    "options": {
+                        "lamp": "Připojena ke sloupu",
+                        "pillar": "Volně stojící schránka",
+                        "wall": "Namontovaná na zdi"
+                    }
+                },
                 "power": {
                     "label": "Typ"
                 },
@@ -2875,6 +2908,20 @@
                 "route_master": {
                     "label": "Typ"
                 },
+                "royal_cypher": {
+                    "label": "Královská šifra",
+                    "options": {
+                        "CIIIR": "CIIIR (Karel III.)",
+                        "EIIR": "EIIR (Alžběta II.)",
+                        "EVIIIR": "EVIIIR (Eduard VIII.)",
+                        "EVIIR": "EVIIR (Eduard VII.)",
+                        "GR": "GR (Jiří V.)",
+                        "GVIR": "GVIR (Jiří VI.)",
+                        "VR": "VR (Viktorie)",
+                        "no": "Ne",
+                        "scottish_crown": "Skotská koruna"
+                    }
+                },
                 "ruins": {
                     "label": "Typ"
                 },
@@ -3045,7 +3092,7 @@
                     }
                 },
                 "service/bicycle": {
-                    "label": "Služby jízdních kol",
+                    "label": "Servis jízdních kol",
                     "terms": "služby pro cyklisty,cyklistické služby,služby jízdních kol,služby pro jízdní kola"
                 },
                 "service/vehicle": {
@@ -3315,10 +3362,12 @@
                     "label": "Typ"
                 },
                 "subject": {
-                    "label": "Předmět"
+                    "label": "Předmět",
+                    "terms": "předmět,objekt"
                 },
                 "subject/wikidata": {
-                    "label": "Wikidata předmětu"
+                    "label": "Wikidata předmětu",
+                    "terms": "wikidata,vikidata,data předmětu wikipedie,zdroj dat předmětu,automatický výpis informací,podrobnosti,automatizace,wiki,id,číslo"
                 },
                 "substance": {
                     "label": "Látka",
@@ -3474,9 +3523,6 @@
                     "label": "Taxon",
                     "placeholder": "Acer platanoides Columnare, Pyrus calleryana Chanticleer …",
                     "terms": "druh,čeleď,řád,třída,rod,kmen,říše,doména,život"
-                },
-                "tee": {
-                    "label": "Barva/typ odpaliště"
                 },
                 "tee": {
                     "label": "Barva/typ odpaliště"
@@ -3693,9 +3739,6 @@
                     },
                     "terms": "dvojstranné"
                 },
-                "turning_circle": {
-                    "label": "Tvar"
-                },
                 "usage_rail": {
                     "label": "Typ použití",
                     "options": {
@@ -3845,6 +3888,11 @@
                     "placeholder": "https://priklad.cz",
                     "terms": "přítomnost na internetu,uri,adresa url,stránka"
                 },
+                "website/menu": {
+                    "label": "Odkaz na nabídku",
+                    "placeholder": "https://priklad.cz",
+                    "terms": "online menu,uri menu,adresa url menu,menu webu,nabídka"
+                },
                 "wetland": {
                     "label": "Typ",
                     "options": {
@@ -3902,14 +3950,6 @@
                         "yes": "Ano"
                     },
                     "terms": "automatický transformátor,automatická transformátorová stanice,automatická elektrická stanice,automatický"
-                },
-                "windings/auto": {
-                    "label": "Autotransformátor",
-                    "options": {
-                        "no": "Ne",
-                        "undefined": "Implicitně Ne",
-                        "yes": "Ano"
-                    }
                 },
                 "windings/configuration": {
                     "label": "Konfigurace vinutí",
@@ -4800,7 +4840,8 @@
                     "terms": "bar,snídaně,kavárna,kafe,kantýna,káva,večeřet,jídelna,večeře,drive-in,jíst,gril,oběd,stůl"
                 },
                 "amenity/restaurant/barbeque": {
-                    "name": "Grilovací restaurace"
+                    "name": "Grilovací restaurace",
+                    "terms": "bar,grilovací,jídelna,večeře,večeřet,drive-in,jíst,gril,oběd,stůl"
                 },
                 "amenity/restaurant/chinese": {
                     "name": "Čínská restaurace",
@@ -5030,9 +5071,6 @@
                     "name": "Prodejní automat duší na jízdní kola",
                     "terms": "duše,duše na kolo,duše na jízdní kolo"
                 },
-                "amenity/vending_machine/bicycle_tube": {
-                    "name": "Prodejní automat duší na jízdní kola"
-                },
                 "amenity/vending_machine/bottle_return": {
                     "name": "Stroj na vrácení lahví",
                     "terms": "vratné lahve"
@@ -5104,9 +5142,6 @@
                 "amenity/vending_machine/pizza": {
                     "name": "Automat na pizzu",
                     "terms": "pizza"
-                },
-                "amenity/vending_machine/pizza": {
-                    "name": "Automat na pizzu"
                 },
                 "amenity/vending_machine/public_transport_tickets": {
                     "name": "Automat na jízdenky",
@@ -5264,7 +5299,8 @@
                     "terms": "průjezdná brána"
                 },
                 "barrier/bus_trap": {
-                    "name": "Autobusová uzávěra"
+                    "name": "Autobusová uzávěra",
+                    "terms": "uzávěra na auta"
                 },
                 "barrier/cable_barrier": {
                     "name": "Kabelové svodidlo",
@@ -5291,7 +5327,7 @@
                     "terms": "koryto,zákop"
                 },
                 "barrier/entrance": {
-                    "name": "Vstup"
+                    "name": "Vchod"
                 },
                 "barrier/fence": {
                     "name": "Plot",
@@ -5305,9 +5341,6 @@
                     "name": "Turniket v plné výšce",
                     "terms": "přepážková brána,turniket"
                 },
-                "barrier/full-height_turnstile": {
-                    "name": "Turniket v plné výšce"
-                },
                 "barrier/gate": {
                     "name": "Brána",
                     "terms": "branka,vjezd,vchod"
@@ -5317,7 +5350,8 @@
                     "terms": "zábradlí,dopravní bariéra,svodidlo,střední bariéra,silniční bariéra,armco bariéra"
                 },
                 "barrier/hampshire_gate": {
-                    "name": "Drátěná brána"
+                    "name": "Drátěná brána",
+                    "terms": "brána hampshire,brána nového zélandu"
                 },
                 "barrier/handrail": {
                     "name": "Zábradlí"
@@ -5331,7 +5365,8 @@
                     "terms": "výšková bariéra,bariéra s omezením výšky,maximální výška,měřič maximální výšky"
                 },
                 "barrier/jersey_barrier": {
-                    "name": "Betonová bariéra"
+                    "name": "Betonová bariéra",
+                    "terms": "betonová střední,betonová zábrana,svodidlo s konstantním sklonem,svodidlo ve tvaru f,k-kolejnice,střední,zeď z new jersey,vysoká zeď v ontariu,plastová bariéra"
                 },
                 "barrier/kerb": {
                     "name": "Obrubník",
@@ -5418,9 +5453,6 @@
                 "barrier/yes": {
                     "name": "Zábrana (nespecifikovaný typ)"
                 },
-                "barrier/yes": {
-                    "name": "Zábrana (nespecifikovaný typ)"
-                },
                 "boundary": {
                     "name": "Hranice"
                 },
@@ -5441,7 +5473,8 @@
                     "terms": "struktura"
                 },
                 "building/allotment_house": {
-                    "name": "Zahradní dům"
+                    "name": "Zahradní dům",
+                    "terms": "chata,chatka,zahradní domek,domek na zahradě,domek"
                 },
                 "building/apartments": {
                     "name": "Budova s byty",
@@ -5580,9 +5613,6 @@
                 "building/manufacture": {
                     "name": "Budova průmyslové výroby"
                 },
-                "building/manufacture": {
-                    "name": "Budova průmyslové výroby"
-                },
                 "building/mosque": {
                     "name": "Budova mešity",
                     "terms": "mešita,muslim,islámský,dům uctívání,posvátné místo,alláh,islám"
@@ -5590,9 +5620,6 @@
                 "building/office": {
                     "name": "Kancelářská budova",
                     "terms": "business centrum,kanceláře"
-                },
-                "building/outbuilding": {
-                    "name": "Přístavba"
                 },
                 "building/outbuilding": {
                     "name": "Přístavba"
@@ -5688,10 +5715,12 @@
                     "name": "Budova"
                 },
                 "cemetery/grave": {
-                    "name": "Hrob"
+                    "name": "Hrob",
+                    "terms": "mauzoleum,hrobka"
                 },
                 "cemetery/sector": {
-                    "name": "Hřbitovní oddíl"
+                    "name": "Hřbitovní oddíl",
+                    "terms": "pohřebiště,hřbitov,krchov,kostel,kolumbárium,hřbitovy,krchovy,mauzoleum,hrobka"
                 },
                 "club": {
                     "name": "Klub",
@@ -6498,7 +6527,8 @@
                     "terms": "sledování průjezdu,automatická mýtná brána,výběr mýta,dálniční portál,čtecí zařízení,průjezdná mýtná brána,kamera,kamery,spz,čtečka spz,mýto,placená dálnice,placená silnice,radar"
                 },
                 "highway/track": {
-                    "name": "Nezpevněná lesní / polní, cesta"
+                    "name": "Nezpevněná lesní, polní cesta",
+                    "terms": "4wd,4x4,zemědělská silnice,atv,vozová cesta,polní cesta,dvoukolejka,farmářská cesta,požární cesta,lesní cesta,cesta v lese,náhon na čtyři kola,odvozní cesta,nákladní cesta,vysoká světlá výška,džíp,těžba dřeva,těžební linka,offroad,terénní,zarostlý,primitivní,čtyřkolka,ranch road,vyjetá kolej,dvoukolejné,kolejné,neudržované,vozová stezka,lesní stezka"
                 },
                 "highway/traffic_mirror": {
                     "name": "Dopravní zrcadlo",
@@ -6771,10 +6801,6 @@
                 "landuse/military/base/navy": {
                     "name": "Námořní základna",
                     "terms": "základna,boj,síla,stráž,mariňák,námořnictvo,loď,ponorka,vojska,válka"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Nebezpečné území",
-                    "terms": "letectvo,armáda,námořnictvo,válka,výbuch,exploze"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Vojenská překážková dráha",
@@ -7206,7 +7232,8 @@
                     "terms": "slaňování,umělá lezecká stěna,jištění,bouldering,horolezecké zařízení,vnitřní skalní stěna,slaňovat,skalní tělocvična,lana"
                 },
                 "leisure/sports_centre/horse_racing": {
-                    "name": "Kurz jízdy na koni"
+                    "name": "Kurz jízdy na koni",
+                    "terms": "jezdecká dostihová dráha,cval,sázení na dostihy,dostihy,dostihové,sázky,dostihová dráha,jezdecká dráha"
                 },
                 "leisure/sports_centre/shooting": {
                     "name": "Areál střelnice",
@@ -7857,7 +7884,8 @@
                     "name": "Mokrá louka"
                 },
                 "natural/wood": {
-                    "name": "Přírodní les"
+                    "name": "Přírodní les",
+                    "terms": "bor,les,lesy,tajga,strom,stromy,háje,háj"
                 },
                 "network/type/node_network-DE-NL-BE-LU": {
                     "name": "Bod rekreační sítě",
@@ -8761,6 +8789,9 @@
                     "name": "Obchod s Anime / Mangou",
                     "terms": "manga,japonské,cosplay,figurína,dakimakura"
                 },
+                "shop/antiques": {
+                    "name": "Starožitnictví"
+                },
                 "shop/appliance": {
                     "name": "Prodejna spotřební elektroniky",
                     "terms": "klimatizace,spotřebič,myčka,sušička,mraznička,lednička,gril,kuchyně,trouba,lednice,sporák,pračka,prací stroj"
@@ -8816,6 +8847,9 @@
                 "shop/bookmaker": {
                     "name": "Sázková kancelář",
                     "terms": "sázková kancelář,sázky,sázení,kurzové sázení,bookmaker,sazka,tipsport,fortuna"
+                },
+                "shop/books": {
+                    "name": "Knihkupectví"
                 },
                 "shop/boutique": {
                     "name": "Módní butik"
@@ -8935,6 +8969,9 @@
                     "name": "Obchod s kosmetikou",
                     "terms": "kosmetika,kosmetický,makeup,parfém,parfumerie"
                 },
+                "shop/country_store": {
+                    "name": "Venkovské potřeby"
+                },
                 "shop/craft": {
                     "name": "Obchod s uměleckými a řemeslnými potřebami",
                     "terms": "umění*,barva*,rám,hobby"
@@ -8946,6 +8983,10 @@
                 "shop/dairy": {
                     "name": "Mléčné výrobky",
                     "terms": "mléčné výrobky,mlékařství,mléko,mléčné produkty,sýr,jogurt,smetana"
+                },
+                "shop/deli": {
+                    "name": "Lahůdkářství",
+                    "terms": "delikatesy"
                 },
                 "shop/department_store": {
                     "name": "Obchodní dům",
@@ -9068,6 +9109,10 @@
                     "name": "Železářství",
                     "terms": "řemeslo,kutilství,udělej si sám,hardware,domácí kutily,nástroje"
                 },
+                "shop/health_food": {
+                    "name": "Obchod zdravé výživy",
+                    "terms": "potraviny,výživové,bio,syrové potraviny,nezpracované,vegetariánské,veganské,vitamíny,celkové potraviny"
+                },
                 "shop/hearing_aids": {
                     "name": "Obchod s naslouchátky",
                     "terms": "naslouchátko,naslouchátka,naslouchadlo,naslouchadla,neslyšící,nedoslýchavý,nedoslýchavost"
@@ -9179,6 +9224,10 @@
                     "name": "Obchod s hudebními nástroji",
                     "terms": "hudba,hudební nástroj,hudební nástroje,hudebnina,hudebniny,muzika,hudebník,muzikant"
                 },
+                "shop/newsagent": {
+                    "name": "Novinový stánek",
+                    "terms": "trafika,noviny,tabák"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Obchod s potravními doplňky",
                     "terms": "doplňky stravy,potravní doplňky,doplňky potravy,potravinové doplňky,doplňky výživy,výživové doplňky,nutraceutika,supplementy,vitamíny,minerály,léky"
@@ -9210,6 +9259,9 @@
                 "shop/pastry": {
                     "name": "Cukrárna",
                     "terms": "cukrářství,dorty"
+                },
+                "shop/pawnbroker": {
+                    "name": "Zastavárna"
                 },
                 "shop/perfumery": {
                     "name": "Parfumerie",
@@ -9265,6 +9317,10 @@
                 "shop/seafood": {
                     "name": "Rybárna",
                     "terms": "rybárna,rybářství,ryby,ryba,plody moře,seafood,mořské potvory"
+                },
+                "shop/second_hand": {
+                    "name": "Second hand",
+                    "terms": "bazarové,přeprodej,použité"
                 },
                 "shop/sewing": {
                     "name": "Šicí potřeby, galanterie",
@@ -9361,6 +9417,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Obchod s vysavači",
                     "terms": "vysavač,vysavače,vysávat,lux,luxovat"
+                },
+                "shop/variety_store": {
+                    "name": "Diskontní prodejna",
+                    "terms": "za pár babek,za bura"
                 },
                 "shop/video": {
                     "name": "Video obchod",

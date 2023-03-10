@@ -4873,10 +4873,6 @@
                 "landuse/military/base/navy": {
                     "name": "Deniz üssü"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Tehlikeli Bölge",
-                    "terms": "tehlikeli bölge"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Askeri Engel Sahası"
                 },
@@ -5247,6 +5243,9 @@
                 "line": {
                     "name": "Çizgi",
                     "terms": "çizgi"
+                },
+                "man_made": {
+                    "name": "İnsan Yapımı Özellik"
                 },
                 "man_made/adit": {
                     "name": "Tünel Girişi",
@@ -6420,6 +6419,10 @@
                     "name": "Bahis Merkezi",
                     "terms": "bahis merkezi"
                 },
+                "shop/books": {
+                    "name": "Kitapçı",
+                    "terms": "kitapçı"
+                },
                 "shop/boutique": {
                     "name": "Butik Mağaza"
                 },
@@ -6531,6 +6534,10 @@
                 "shop/dairy": {
                     "name": "Süt Mağazası",
                     "terms": "süt mağazası"
+                },
+                "shop/deli": {
+                    "name": "Şarküteri",
+                    "terms": "şarküteri"
                 },
                 "shop/department_store": {
                     "name": "Mağaza",
@@ -6745,6 +6752,10 @@
                     "name": "Müzik Aletleri Mağazası",
                     "terms": "müzik aletleri mağazası"
                 },
+                "shop/newsagent": {
+                    "name": "Gazete Bayii",
+                    "terms": "gazete bayii"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Gıda Takviye Ürünleri Mağazası",
                     "terms": "gıda takviye ürünleri mağazası,enerji takviye ürünleri mağazası"
@@ -6906,6 +6917,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Elektrikli Süpürge Mağazası",
                     "terms": "elektrikli süpürge mağazası"
+                },
+                "shop/variety_store": {
+                    "name": "İndirim Mağazası",
+                    "terms": "1 tl mağazası"
                 },
                 "shop/video": {
                     "name": "Film - Video Mağazası",

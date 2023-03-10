@@ -1742,6 +1742,10 @@
                     "name": "Ümbertöötluskeskus",
                     "terms": "taaskasutuskeskus"
                 },
+                "amenity/recycling_container": {
+                    "name": "Pakendijäätmete kogumispunkt",
+                    "terms": "taaskasutuskonteiner"
+                },
                 "amenity/restaurant": {
                     "name": "Restoran"
                 },
@@ -1865,6 +1869,10 @@
                 },
                 "amenity/university": {
                     "name": "Ülikooliala"
+                },
+                "amenity/vending_machine/bottle_return": {
+                    "name": "Taaraautomaat",
+                    "terms": "taarapunkt,taara tagastus"
                 },
                 "amenity/vending_machine/parking_tickets": {
                     "name": "Parkimispileti automaat"
@@ -2621,9 +2629,6 @@
                 },
                 "landuse/military/barracks": {
                     "name": "Kasarmu"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Militaarohu ala"
                 },
                 "landuse/orchard": {
                     "name": "Viljapuuaed"

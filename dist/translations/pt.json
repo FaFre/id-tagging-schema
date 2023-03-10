@@ -599,9 +599,9 @@
                 "building/part": {
                     "label": "Parte de edifício"
                 },
-                "building_area": {
-                    "label": "Edifício",
-                    "terms": "edifício,edificação,prédio,casa,residência,construção,construções,imóvel,imóveis"
+                "building/prefabricated": {
+                    "label": "Pré-fabricado",
+                    "terms": "modular,portable,portátil,móvel,préfabricado"
                 },
                 "bunker_type": {
                     "label": "Tipo"
@@ -2654,7 +2654,6 @@
                 "post_box/type": {
                     "label": "Tipo",
                     "options": {
-                        "community": "Comunitário",
                         "lamp": "Num poste",
                         "pillar": "Marco/caixote isolado",
                         "wall": "Na parede"
@@ -3876,6 +3875,11 @@
                     "label": "Sítio oficial",
                     "placeholder": "https://exemplo.com",
                     "terms": "website"
+                },
+                "website/menu": {
+                    "label": "URL da ementa",
+                    "placeholder": "https://exemplo.com",
+                    "terms": "website,link,ligação,http,url,menu,ementa,cardápio,online,on-line,internet"
                 },
                 "wetland": {
                     "label": "Tipo",
@@ -6769,10 +6773,6 @@
                     "name": "Base naval",
                     "terms": "marinha,militares,guerra,tropas,guardas,soldados,combate,navios,submarinos,mar,oceano,marítimo,costeira,costa,litoral"
                 },
-                "landuse/military/danger_area": {
-                    "name": "Área perigosa",
-                    "terms": "área perigosa,perigo,perigosa,perigoso,interdito,interdição"
-                },
                 "landuse/military/obstacle_course": {
                     "name": "Percurso militar com obstáculos",
                     "terms": "percurso militar de obstáculos,percurso militar,percurso de obstáculos militar,obstáculo,militar,treino militar,tropas,tropa,soldados,exército,exercício,forças militares"
@@ -7261,6 +7261,9 @@
                 "line": {
                     "name": "Linha",
                     "terms": "linha,multilinha,multi-linha,polilinha,poli-linha,múltipla"
+                },
+                "man_made": {
+                    "name": "Estrutura artificial"
                 },
                 "man_made/adit": {
                     "name": "Galeria de acesso a mina",
@@ -8760,6 +8763,10 @@
                     "name": "Loja de animé",
                     "terms": "manga,anime,mangá,bd,japão"
                 },
+                "shop/antiques": {
+                    "name": "Loja de antiguidades",
+                    "terms": "antiques shop,antiguidade,antiguidades,antigo,relíquia,relíquias"
+                },
                 "shop/appliance": {
                     "name": "Loja de eletrodomésticos \"brancos\"",
                     "terms": "eletrodoméstico,electrodoméstico,frigorífico,máquinas,fogão,fogões,ar condicionado,aparelhos"
@@ -8815,6 +8822,10 @@
                 "shop/bookmaker": {
                     "name": "Casa de apostas",
                     "terms": "bookmaker,bolsa de apostas,lotaria,totoloto,totobola,euromilhões,sorte,apostas desportivas"
+                },
+                "shop/books": {
+                    "name": "Livraria",
+                    "terms": "book store,loja de livros,livro,livros,livreiro"
                 },
                 "shop/boutique": {
                     "name": "Boutique"
@@ -8935,6 +8946,10 @@
                     "name": "Loja de cosmética",
                     "terms": "cosmetics,cosmética,cosméticos,produtos de beleza,beleza,belesa,maquiagem,maquilhagem"
                 },
+                "shop/country_store": {
+                    "name": "Loja para proprietários rurais",
+                    "terms": "campo,caça,pesca,cavalo,cavalos,jardinagem,hipismo,equestre,horta,maquinaria"
+                },
                 "shop/craft": {
                     "name": "Loja de acessórios para artes manuais",
                     "terms": "artesanato,artezanato,artigos locais,pintura,desenho,carpintaria,olaria"
@@ -8946,6 +8961,10 @@
                 "shop/dairy": {
                     "name": "Loja de laticínios",
                     "terms": "dairy,produtos lácteos,leite,queijo,manteiga,requeijão"
+                },
+                "shop/deli": {
+                    "name": "Loja gourmet",
+                    "terms": "deli,gourmet,comida,mercearia,dop,produtos de qualidade,origem protegida,iguarias"
                 },
                 "shop/department_store": {
                     "name": "Grande armazém",
@@ -9070,6 +9089,10 @@
                     "name": "Loja de ferragens",
                     "terms": "hardware,ferragens,pregos,martelos,chaves,parafusos,anilhas,berbequins"
                 },
+                "shop/health_food": {
+                    "name": "Loja de comida saudável",
+                    "terms": "alimentos naturais,comida saudável,vitaminas,suplementos alimentares,vegetariano,vegetariana,vegan,celeiro,orgânicos,orgânica,biológica,biológico,vegano"
+                },
                 "shop/hearing_aids": {
                     "name": "Loja de aparelhos auditivos",
                     "terms": "hearing,auditivos,audição,ouvidos"
@@ -9182,6 +9205,10 @@
                     "name": "Loja de instrumentos musicais",
                     "terms": "guitarra,piano,violino,bateria,som,música,instrumento,baixo"
                 },
+                "shop/newsagent": {
+                    "name": "Loja de jornais / revistas",
+                    "terms": "newspaper,magazine,jornal,revista,newsagent"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Loja de suplementos alimentares",
                     "terms": "nutrição,vitaminas,proteínas,minerais,fitness,musculação,peso,saúde"
@@ -9213,6 +9240,10 @@
                 "shop/pastry": {
                     "name": "Pastelaria",
                     "terms": "pastelaria,bolos,pastel,pastéis"
+                },
+                "shop/pawnbroker": {
+                    "name": "Loja de penhoras",
+                    "terms": "pawn shop,penhores,penhoras,penhorar"
                 },
                 "shop/perfumery": {
                     "name": "Perfumaria",
@@ -9269,6 +9300,10 @@
                 "shop/seafood": {
                     "name": "Peixaria",
                     "terms": "peixe,seafood,camarão,lagosta,caranguejo,ameijoas,mexilhões,peixes,polvo,lulas,peixe fresco,congelados,sardinhas,carapau"
+                },
+                "shop/second_hand": {
+                    "name": "Loja de produtos em segunda mão",
+                    "terms": "consignment,thrift store,loja de consignação,2ª mão,usados,usado,segunda mão,consignação,roupa usada,2.ª mão"
                 },
                 "shop/sewing": {
                     "name": "Retrosaria",
@@ -9368,6 +9403,10 @@
                 "shop/vacuum_cleaner": {
                     "name": "Loja de aspiradores",
                     "terms": "vacuum cleaner,aspirador,aspiradores,aspirar"
+                },
+                "shop/variety_store": {
+                    "name": "Loja de variedades",
+                    "terms": "loja dos 300,loja dos trezentos,bijuterias,adereços,quinquilharia,chineses,chinês"
                 },
                 "shop/video": {
                     "name": "Videoclube",

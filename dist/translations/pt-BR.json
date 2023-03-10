@@ -298,6 +298,7 @@
                         "drop_tower": "Torre de queda livre",
                         "kiddie_ride": "Atração infantil",
                         "maze": "Labirinto",
+                        "pirate_ship": "Navio Pirata (Parque de diversões)",
                         "roller_coaster": "Montanha Russa",
                         "water_slide": "Toboágua"
                     }
@@ -344,6 +345,7 @@
                         "jersey_barrier": "Barreira Jersey",
                         "kerb": "Meio-fio ou guia",
                         "toll_booth": "Cabine de pedágio",
+                        "turnstile": "Catraca",
                         "wall": "Muro"
                     }
                 },
@@ -490,6 +492,9 @@
                     "options": {
                         "apartments": "Edifício de apartamentos",
                         "barn": "Celeiro",
+                        "boathouse": "Guarderia para embarcações",
+                        "bungalow": "Bangalô",
+                        "cabin": "Cabine de Madeira",
                         "carport": "Abrigo de automóvel",
                         "cathedral": "Catedral",
                         "chapel": "Capela",
@@ -538,6 +543,7 @@
                         "synagogue": "Sinagoga",
                         "temple": "Templo",
                         "terrace": "Renque de casas",
+                        "train_station": "Edifício de estação de trem",
                         "university": "Edifício universitário",
                         "warehouse": "Armazém"
                     },
@@ -674,10 +680,23 @@
                     "label": "Roupas",
                     "options": {
                         "babies": "Roupas para bebês",
+                        "children": "Infantis",
+                        "denim": "Jeans",
+                        "fur": "Casacos de Pelo",
                         "hats": "Chapéus",
+                        "maternity": "Recém Nascidos",
+                        "men": "Masculinas",
                         "motorcycle": "Roupas para motociclistas",
+                        "oversize": "Plus Size",
                         "socks": "Meias",
-                        "sports": "Roupas esportivas"
+                        "sports": "Roupas esportivas",
+                        "suits": "Ternos",
+                        "swimwear": "Moda praia / Natação",
+                        "traditional": "Tradicionais / Folclóricas",
+                        "underwear": "Moda Íntima",
+                        "wedding": "Casamentos",
+                        "women": "Femininas",
+                        "workwear": "Roupas de trabalho"
                     },
                     "terms": "vestuário,indumentária,traje"
                 },
@@ -784,11 +803,13 @@
                         "oil_mill": "Lagar de óleo",
                         "painter": "Pintor",
                         "photographer": "Fotógrafo",
+                        "photographic_laboratory": "Laboratório Fotográfico",
                         "plasterer": "Estucador",
                         "plumber": "Encanador",
                         "pottery": "Olaria",
                         "roofer": "Telhadista",
                         "saddler": "Selaria ",
+                        "sailmaker": "Fabricante de Velas Náuticas",
                         "sawmill": "Serraria",
                         "sculptor": "Escultor",
                         "shoemaker": "Sapateiro",
@@ -1027,6 +1048,9 @@
                 },
                 "deposit/trolley": {
                     "label": "Garagem"
+                },
+                "depot": {
+                    "label": "Tipo"
                 },
                 "depth": {
                     "label": "Profundidade (metros)"
@@ -1885,7 +1909,28 @@
                     "label": "Tipo"
                 },
                 "material": {
-                    "label": "Material"
+                    "label": "Material",
+                    "options": {
+                        "adobe": "Adobe",
+                        "aluminium": "Alumínio",
+                        "brass": "Latão",
+                        "brick": "Tijolo",
+                        "bronze": "Bronze",
+                        "concrete": "Concreto",
+                        "glass": "Vidros",
+                        "granite": "Granito",
+                        "iron": "Ferro",
+                        "marble": "Mármore",
+                        "metal": "Metal",
+                        "plastic": "Plástico",
+                        "reinforced_conrete": "Concreto Armado",
+                        "sand": "Areia",
+                        "sandstone": "Arenito",
+                        "soil": "Solo / Terra",
+                        "steel": "Aço",
+                        "stone": "Rocha",
+                        "wood": "Madeira"
+                    }
                 },
                 "mattress": {
                     "label": "Colchões"
@@ -3395,9 +3440,12 @@
                 "wetland": {
                     "label": "Tipo",
                     "options": {
+                        "fen": "Charco",
+                        "mangrove": "Manguezal",
                         "marsh": "Brejo",
                         "reedbed": "Taboa",
-                        "swamp": "Pântano"
+                        "swamp": "Pântano",
+                        "wet_meadow": "Campo alagável"
                     }
                 },
                 "wheelchair": {
@@ -4945,7 +4993,7 @@
                     "name": "Edifício de corpo de bombeiros"
                 },
                 "building/garage": {
-                    "name": "Garagem Residencial Privada",
+                    "name": "Garagem individual privada",
                     "terms": "garagem residencial,garagem privada,abrigo de automóveis"
                 },
                 "building/garages": {
@@ -5989,7 +6037,7 @@
                     "name": "Recurso interno"
                 },
                 "indoor/area": {
-                    "name": "Área interna",
+                    "name": "Área Interna",
                     "terms": "área interna"
                 },
                 "indoor/corridor": {
@@ -6108,6 +6156,9 @@
                     "name": "Área industrial",
                     "terms": "indústria,parque industrial,fábrica,fábricas"
                 },
+                "landuse/industrial/depot": {
+                    "name": "Garagem de veículos"
+                },
                 "landuse/industrial/scrap_yard": {
                     "name": "Ferro-velho",
                     "terms": "pátio de sucata,sucata,metal,ferro velho"
@@ -6141,10 +6192,6 @@
                 },
                 "landuse/military/base/navy": {
                     "name": "Base naval"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Zona de exclusão militar",
-                    "terms": "área de perigo,área perigosa,perigo,área militar,tiro,bombas,nuclear,zona militar,zona de exclusão"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Curso de obstáculo militar",
@@ -6596,6 +6643,9 @@
                 "line": {
                     "name": "Linha",
                     "terms": "linha"
+                },
+                "man_made": {
+                    "name": "Elemento construído"
                 },
                 "man_made/adit": {
                     "name": "Ádito de mineração",
@@ -7130,6 +7180,17 @@
                     "name": "Zona úmida",
                     "terms": "zona úmida,pântano,charco,paul,sapal,turfa,solo,cobertura de solo"
                 },
+                "natural/wetland/bog": {
+                    "name": "Turfeira",
+                    "aliases": "Paul"
+                },
+                "natural/wetland/fen": {
+                    "name": "Charco",
+                    "terms": "charco,vereda"
+                },
+                "natural/wetland/mangrove": {
+                    "name": "Mangue"
+                },
                 "natural/wetland/marsh": {
                     "name": "Brejo",
                     "terms": "área úmida,alagadiço,charco"
@@ -7138,9 +7199,23 @@
                     "name": "Taboa",
                     "terms": "bunho,tabua,morrão-dos-fogueteiros,tabua-larga,brejo,canavial"
                 },
+                "natural/wetland/saltmarsh": {
+                    "name": "Marisma",
+                    "aliases": "Sapal"
+                },
+                "natural/wetland/string_bog": {
+                    "name": "Cordão pantanoso"
+                },
                 "natural/wetland/swamp": {
                     "name": "Pântano",
                     "terms": "brejo,charneca,tremedal,alagadiço,mangue,manguezal"
+                },
+                "natural/wetland/tidalflat": {
+                    "name": "Planície de maré",
+                    "aliases": "Planície mareal"
+                },
+                "natural/wetland/wet_meadow": {
+                    "name": "Campo alagável"
                 },
                 "natural/wood": {
                     "name": "Mata nativa",
@@ -8048,6 +8123,9 @@
                     "name": "Loja de Anime / Manga",
                     "terms": "loja de anime / manga"
                 },
+                "shop/antiques": {
+                    "name": "Antiquário"
+                },
                 "shop/appliance": {
                     "name": "Loja de Eletrodomésticos"
                 },
@@ -8102,6 +8180,9 @@
                 "shop/bookmaker": {
                     "name": "Casa de Apostas",
                     "terms": "casa de apostas"
+                },
+                "shop/books": {
+                    "name": "Livraria"
                 },
                 "shop/boutique": {
                     "name": "Loja de Alta Costura"
@@ -8221,6 +8302,9 @@
                     "name": "Loja de Cosméticos",
                     "terms": "perfumaria,cosméticos,loja de cosméticos,beleza"
                 },
+                "shop/country_store": {
+                    "name": "Loja de produtos agrícolas"
+                },
                 "shop/craft": {
                     "name": "Loja de artesanato",
                     "terms": "loja de artesanato"
@@ -8232,6 +8316,10 @@
                 "shop/dairy": {
                     "name": "Loja de Laticínios",
                     "terms": "leiteria,laticínios"
+                },
+                "shop/deli": {
+                    "name": "Delicatessen",
+                    "aliases": "Delicatesse\nBuffet de doces e salgados\nLoja de comidas finas e iguarias"
                 },
                 "shop/department_store": {
                     "name": "Loja de Departamentos",
@@ -8356,6 +8444,10 @@
                     "name": "Loja de Material de Construção",
                     "terms": "loja de ferragens,material de construção,loja de tintas,loja de parafusos,madeireira"
                 },
+                "shop/health_food": {
+                    "name": "Loja de comida saudável",
+                    "aliases": "Loja de alimentos saudáveis\nLoja de alimentos naturais"
+                },
                 "shop/hearing_aids": {
                     "name": "Loja de Aparelhos Auditivos",
                     "terms": "farmácia"
@@ -8467,6 +8559,9 @@
                     "name": "Loja de Instrumentos Musicais",
                     "terms": "loja de artigos musicais,instrumentos musicais,música"
                 },
+                "shop/newsagent": {
+                    "name": "Banca de jornais"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Loja de Suplementos Nutricionais",
                     "terms": "loja de suplementos"
@@ -8494,6 +8589,9 @@
                 "shop/pastry": {
                     "name": "Confeitaria",
                     "terms": "doceria,doces,bolos"
+                },
+                "shop/pawnbroker": {
+                    "name": "Loja de penhor"
                 },
                 "shop/perfumery": {
                     "name": "Perfumaria",
@@ -8546,6 +8644,9 @@
                 "shop/seafood": {
                     "name": "Peixaria ou loja de frutos do mar",
                     "terms": "peixaria,pescado,petisqueira,loja de frutos do mar,camarão,lagosta,peixes,peixeiro"
+                },
+                "shop/second_hand": {
+                    "name": "Brechó"
                 },
                 "shop/sewing": {
                     "name": "Loja de suprimentos de costura",
@@ -8645,6 +8746,9 @@
                 "shop/vacuum_cleaner": {
                     "name": "Loja de Aspiradores de Pó",
                     "terms": "loja de aspiradores"
+                },
+                "shop/variety_store": {
+                    "name": "Loja de descontos"
                 },
                 "shop/video": {
                     "name": "Loja/Locadora de Vídeos",
