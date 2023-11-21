@@ -586,14 +586,6 @@
   },
   {
     "old": {
-      "building": "constraction"
-    },
-    "replace": {
-      "building": "construction"
-    }
-  },
-  {
-    "old": {
       "building": "convenience"
     },
     "replace": {
@@ -754,14 +746,6 @@
   },
   {
     "old": {
-      "building": "under constraction"
-    },
-    "replace": {
-      "building": "construction"
-    }
-  },
-  {
-    "old": {
       "building": "under construction"
     },
     "replace": {
@@ -850,16 +834,6 @@
   },
   {
     "old": {
-      "shop": "clothes",
-      "clothes": "second_hand"
-    },
-    "replace": {
-      "shop": "clothes",
-      "second_hand": "yes"
-    }
-  },
-  {
-    "old": {
       "color": "*"
     },
     "replace": {
@@ -934,6 +908,18 @@
     "replace": {
       "crossing": "traffic_signals"
     }
+  },
+  {
+    "old": {"crossing": "no", "highway": "crossing"},
+    "replace": {"crossing": "no"}
+  },
+  {
+    "old": {"cuisine": "barbeque"},
+    "replace": {"cuisine": "barbecue"}
+  },
+  {
+    "old": {"cuisine": "bbq"},
+    "replace": {"cuisine": "barbecue"}
   },
   {
     "old": {
@@ -1132,6 +1118,10 @@
     "replace": {
       "capacity:disabled": "$1"
     }
+  },
+  {
+    "old": {"door": "loadingdock"},
+    "replace": {"amenity": "loading_dock"}
   },
   {
     "old": {
@@ -2524,6 +2514,14 @@
     }
   },
   {
+    "old": {"parking:orientation": "*"},
+    "replace": {"orientation": "$1"}
+  },
+  {
+    "old": {"orientation": "orthogonal"},
+    "replace": {"orientation": "perpendicular"}
+  },
+  {
     "old": {
       "parking:orientation": "orthogonal"
     },
@@ -2922,6 +2920,10 @@
     }
   },
   {
+    "old": {"shop": "clothes", "clothes": "second_hand"},
+    "replace": {"shop": "clothes", "second_hand": "yes"}
+  },
+  {
     "old": {
       "shop": "consulting"
     },
@@ -3051,13 +3053,8 @@
     }
   },
   {
-    "old": {
-      "shop": "organic"
-    },
-    "replace": {
-      "shop": "supermarket",
-      "organic": "only"
-    }
+    "old": {"shop": "organic"},
+    "replace": {"shop": "yes", "organic": "only"}
   },
   {
     "old": {
@@ -3340,6 +3337,10 @@
     "replace": {
       "utility": "telecom"
     }
+  },
+  {
+    "old": {"survey_date": "*"},
+    "replace": {"survey:date": "$1"}
   },
   {
     "old": {
@@ -3974,6 +3975,30 @@
     "replace": {
       "cycleway:both": "no"
     }
+  },
+  {
+    "old": {"communication": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"telephone": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"telecom": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"pstn": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"memorial:type": "stolperstein"},
+    "replace": {"memorial": "stolperstein"}
+  },
+  {
+    "old": {"memorial:text": "*"},
+    "replace": {"inscription": "$1"}
   },
   {
     "old": {

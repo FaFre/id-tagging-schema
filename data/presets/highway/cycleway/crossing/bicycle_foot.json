@@ -3,7 +3,9 @@
         "exclude": [
             "fr",
             "lt",
-            "pl"
+            "pl",
+            "il",
+            "ps"
         ]
     },
     "icon": "temaki-ped_cyclist_crosswalk",
@@ -13,7 +15,7 @@
         "smoothness",
         "tactile_paving",
         "crossing/island",
-        "crossing/markings",
+        "{@templates/crossing/markings}",
         "crossing_raised",
         "access"
     ],
