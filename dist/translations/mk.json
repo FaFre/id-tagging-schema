@@ -522,7 +522,7 @@
                     "label": "Марка"
                 },
                 "brewery": {
-                    "label": "Точено пиво"
+                    "label": "Се продаваат пивата"
                 },
                 "bridge": {
                     "label": "Вид",
@@ -582,6 +582,7 @@
                         "public": "Општествена градба",
                         "residential": "Станбена градба",
                         "retail": "Проджен објект",
+                        "riding_hall": "Јавачка арена",
                         "roof": "Покрив",
                         "ruins": "Разрушена градба",
                         "school": "Училиште",
@@ -1851,15 +1852,8 @@
                     "label": "Обрачи",
                     "placeholder": "1, 2, 4..."
                 },
-                "horse_dressage": {
-                    "label": "Дресурно јавање",
-                    "options": {
-                        "equestrian": "Да",
-                        "undefined": "Не"
-                    }
-                },
                 "horse_riding": {
-                    "label": "Јавање",
+                    "label": "Јавачки центар",
                     "options": {
                         "horse_riding": "Да",
                         "undefined": "Не"
@@ -1876,13 +1870,6 @@
                         "impossible": "Непроодно: Патот или мостот е непрооден за коњи. Премногу тесно, недоволна потпора, препреки како скали. Опасно по живот."
                     },
                     "placeholder": "Тешко, Опасно..."
-                },
-                "horse_stables": {
-                    "label": "Покриена јавачница",
-                    "options": {
-                        "stables": "Да",
-                        "undefined": "Не"
-                    }
                 },
                 "hot_water": {
                     "label": "Топла вода"
@@ -2218,6 +2205,9 @@
                         "stone": "Камен",
                         "war_memorial": "Воен паметник"
                     }
+                },
+                "memorial/addr": {
+                    "label": "Адреса на најблиската зграда"
                 },
                 "message": {
                     "label": "Порака",
@@ -3652,6 +3642,13 @@
                 "telecom/medium": {
                     "label": "Медиум"
                 },
+                "telescope/type": {
+                    "label": "Вид",
+                    "options": {
+                        "optical": "Оптички телескоп",
+                        "radio": "Радиотелескоп"
+                    }
+                },
                 "tents": {
                     "label": "Шатори"
                 },
@@ -4228,6 +4225,9 @@
                 },
                 "amenity/atm": {
                     "name": "Банкомат"
+                },
+                "amenity/baking_oven": {
+                    "name": "Рерна"
                 },
                 "amenity/bank": {
                     "name": "Банка"
@@ -5300,6 +5300,9 @@
                 "building/apartments": {
                     "name": "Станбена зграда"
                 },
+                "building/bakehouse": {
+                    "name": "Фурна"
+                },
                 "building/barn": {
                     "name": "Амбар"
                 },
@@ -5425,6 +5428,10 @@
                 },
                 "building/retail": {
                     "name": "Проджен објект"
+                },
+                "building/riding_hall": {
+                    "name": "Јавачка арена на затворено",
+                    "terms": "[преведете со истозначници и сродни поими на „јавачка арена на затворено“,одделени со запирки]"
                 },
                 "building/roof": {
                     "name": "Покрив"
@@ -6190,6 +6197,9 @@
                 "historic/memorial/plaque": {
                     "name": "Спомен-плоча"
                 },
+                "historic/memorial/stolperstein-EU": {
+                    "name": "Спомен-камен на сопнување"
+                },
                 "historic/monument": {
                     "name": "Споменик"
                 },
@@ -6702,6 +6712,9 @@
                 "leisure/sports_centre/climbing": {
                     "name": "Вежбалница за искачување"
                 },
+                "leisure/sports_centre/climbing_adventure": {
+                    "name": "Авантуристички парк"
+                },
                 "leisure/sports_centre/horse_racing": {
                     "name": "Хиподром"
                 },
@@ -6939,6 +6952,9 @@
                 "man_made/reservoir_covered": {
                     "name": "Покриен водозборник"
                 },
+                "man_made/satellite_dish": {
+                    "name": "Сателитска чинија"
+                },
                 "man_made/silo": {
                     "name": "Силос"
                 },
@@ -6977,6 +6993,15 @@
                 },
                 "man_made/tailings_pond": {
                     "name": "Јаловиште"
+                },
+                "man_made/telescope": {
+                    "name": "Телескоп"
+                },
+                "man_made/telescope/optical": {
+                    "name": "Оптички телескоп"
+                },
+                "man_made/telescope/radio": {
+                    "name": "<преведете со истозначници или сродни поими на „Радиотелескоп“, одделени со запирки>"
                 },
                 "man_made/torii": {
                     "name": "тории"

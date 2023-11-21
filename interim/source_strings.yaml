@@ -2380,6 +2380,10 @@ en:
         label: Hashtags
         # hashtags field placeholder
         placeholder: '#example'
+      hazard:
+        # hazard=*
+        label: Type of hazard
+        terms: '[translate with synonyms or related terms for ''Type of hazard'', separated by commas]'
       hazard_boundary:
         # hazard=*
         label: Hazard

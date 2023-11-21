@@ -6,9 +6,6 @@
                     "label": "Rubbish Bin",
                     "terms": "waste bin,garbage bin"
                 },
-                "brewery": {
-                    "label": "Draught Beers"
-                },
                 "building/flats": {
                     "label": "Unit Count"
                 },

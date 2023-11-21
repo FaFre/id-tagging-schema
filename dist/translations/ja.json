@@ -537,8 +537,8 @@
                     "terms": "ブランド,系列"
                 },
                 "brewery": {
-                    "label": "ドラフトビール",
-                    "terms": "ドラフトビール,ビール"
+                    "label": "取り扱いビールブランド",
+                    "terms": "ビールブランド,ドラフトビール,ビール"
                 },
                 "bridge": {
                     "label": "種類",
@@ -599,6 +599,7 @@
                         "public": "公共建築物",
                         "residential": "住居全般（建物）",
                         "retail": "店舗用の建物",
+                        "riding_hall": "屋内馬場",
                         "roof": "屋根",
                         "ruins": "廃墟（建物）",
                         "school": "学校（建物）",
@@ -1923,15 +1924,8 @@
                     "label": "輪の数",
                     "placeholder": "1, 2, 4..."
                 },
-                "horse_dressage": {
-                    "label": "馬場馬術乗馬",
-                    "options": {
-                        "equestrian": "あり",
-                        "undefined": "なし"
-                    }
-                },
                 "horse_riding": {
-                    "label": "乗馬",
+                    "label": "乗馬施設",
                     "options": {
                         "horse_riding": "あり",
                         "undefined": "なし"
@@ -1949,13 +1943,6 @@
                     },
                     "placeholder": "困難, 危険...",
                     "terms": "乗馬の難易度,乗馬,難易度"
-                },
-                "horse_stables": {
-                    "label": "乗馬施設",
-                    "options": {
-                        "stables": "Yes",
-                        "undefined": "No"
-                    }
                 },
                 "hot_water": {
                     "label": "温水"
@@ -3826,6 +3813,13 @@
                 "telecom/medium": {
                     "label": "通信線の素材"
                 },
+                "telescope/type": {
+                    "label": "望遠鏡の種別",
+                    "options": {
+                        "optical": "光学望遠鏡",
+                        "radio": "電波望遠鏡"
+                    }
+                },
                 "tents": {
                     "label": "テント"
                 },
@@ -4464,6 +4458,10 @@
                 "amenity/atm": {
                     "name": "ATM",
                     "terms": "atm,cd,現金自動預払機,お金,金融"
+                },
+                "amenity/baking_oven": {
+                    "name": "公共オーブン",
+                    "terms": "パン焼き窯"
                 },
                 "amenity/bank": {
                     "name": "銀行",
@@ -5870,6 +5868,10 @@
                     "name": "集合住宅（個々の建物）",
                     "terms": "アパート,マンション,集合住宅,住宅"
                 },
+                "building/bakehouse": {
+                    "name": "オーブン小屋",
+                    "terms": "パン焼き小屋"
+                },
                 "building/barn": {
                     "name": "納屋",
                     "terms": "納屋,小屋"
@@ -6033,6 +6035,10 @@
                 "building/retail": {
                     "name": "店舗用の建物",
                     "terms": "商業施設,店舗,商業ビル,店,お店,ショッピング,小売"
+                },
+                "building/riding_hall": {
+                    "name": "屋内馬場",
+                    "terms": "屋内馬場,屋内馬術場,屋内乗馬場"
                 },
                 "building/roof": {
                     "name": "屋根",
@@ -7028,6 +7034,10 @@
                     "name": "銘板",
                     "terms": "銘板,プレート,銘"
                 },
+                "historic/memorial/stolperstein-EU": {
+                    "name": "ストルパーシュタイン",
+                    "terms": "ストルパーシュタイン,シュトルパーシュタイン,つまずきの石"
+                },
                 "historic/monument": {
                     "name": "記念堂",
                     "terms": "記念堂,記念建造物,歴史"
@@ -7140,7 +7150,7 @@
                 },
                 "landuse/farmland": {
                     "name": "耕作地",
-                    "terms": "農地,畑,田,茶畑,田んぼ,田畑,耕作地,農業"
+                    "terms": "農地,畑,田,田んぼ,水田,田畑,耕作地,農業"
                 },
                 "landuse/farmyard": {
                     "name": "農家（敷地）",
@@ -7694,6 +7704,10 @@
                     "name": "クライミングジム",
                     "terms": "クライミングジム,クライミング,スポーツ,ボルダリング,トレーニング"
                 },
+                "leisure/sports_centre/climbing_adventure": {
+                    "name": "アドベンチャーパーク",
+                    "terms": "アスレチック,フィールドアスレチック,ロープクライミング,ジップライン"
+                },
                 "leisure/sports_centre/horse_racing": {
                     "name": "競馬場",
                     "terms": "競馬コース,馬場"
@@ -8003,6 +8017,10 @@
                     "name": "地下の貯水槽",
                     "terms": "地下の貯水槽,貯水槽,貯水池"
                 },
+                "man_made/satellite_dish": {
+                    "name": "衛星アンテナ",
+                    "terms": "衛星アンテナ,パラボラアンテナ,衛星通信"
+                },
                 "man_made/silo": {
                     "name": "サイロ",
                     "terms": "サイロ,貯蔵タンク"
@@ -8054,6 +8072,18 @@
                 "man_made/tailings_pond": {
                     "name": "尾鉱池",
                     "terms": "尾鉱池"
+                },
+                "man_made/telescope": {
+                    "name": "望遠鏡",
+                    "terms": "望遠鏡,天体望遠鏡"
+                },
+                "man_made/telescope/optical": {
+                    "name": "光学望遠鏡",
+                    "terms": "光学望遠鏡,屈折望遠鏡,反射望遠鏡,天体望遠鏡,望遠鏡"
+                },
+                "man_made/telescope/radio": {
+                    "name": "電波望遠鏡",
+                    "terms": "電波望遠鏡,天体望遠鏡,望遠鏡,パラボラアンテナ,アンテナ"
                 },
                 "man_made/torii": {
                     "name": "鳥居",
@@ -9527,7 +9557,7 @@
                 },
                 "shop/copyshop": {
                     "name": "コピー店",
-                    "terms": "コピー店"
+                    "terms": "コピー店,印刷"
                 },
                 "shop/cosmetics": {
                     "name": "化粧品店",

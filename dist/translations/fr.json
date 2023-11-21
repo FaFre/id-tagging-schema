@@ -536,10 +536,6 @@
                     "label": "Marque",
                     "terms": "marque"
                 },
-                "brewery": {
-                    "label": "Bières à la pression",
-                    "terms": "bière pression,à la pression,pression"
-                },
                 "bridge": {
                     "label": "Type",
                     "placeholder": "Défaut"
@@ -1923,15 +1919,8 @@
                     "label": "Nombre d'arceaux",
                     "placeholder": "1, 2, 4..."
                 },
-                "horse_dressage": {
-                    "label": "Dressage",
-                    "options": {
-                        "equestrian": "Oui",
-                        "undefined": "Non"
-                    }
-                },
                 "horse_riding": {
-                    "label": "Équitation",
+                    "label": "Centre équestre",
                     "options": {
                         "horse_riding": "Oui",
                         "undefined": "Non"
@@ -1949,13 +1938,6 @@
                     },
                     "placeholder": "Difficile, Dangereux...",
                     "terms": "équitation,équestre,cheval,difficulté"
-                },
-                "horse_stables": {
-                    "label": "Étable pour cavaliers",
-                    "options": {
-                        "stables": "Oui",
-                        "undefined": "Non"
-                    }
                 },
                 "hot_water": {
                     "label": "Eau chaude"
@@ -2211,6 +2193,14 @@
                 "marker": {
                     "label": "Type",
                     "options": {
+                        "aerial": {
+                            "description": "Conçu pour être visible depuis le ciel.",
+                            "title": "Aérien"
+                        },
+                        "ground": {
+                            "description": "Marqueur plat posé au sol.",
+                            "title": "Sol"
+                        },
                         "pedestal": {
                             "title": "Piédestal"
                         },
@@ -2218,6 +2208,7 @@
                             "title": "Plaque"
                         },
                         "stone": {
+                            "description": "Marques peintes ou gravées sur une pierre.",
                             "title": "Pierre"
                         }
                     }
@@ -2312,6 +2303,10 @@
                         "stone": "Pierre",
                         "war_memorial": "Mémorial de guerre"
                     }
+                },
+                "memorial/addr": {
+                    "label": "Adresse la plus proche",
+                    "terms": "adresse la plus proche"
                 },
                 "message": {
                     "label": "Message",
@@ -3810,6 +3805,13 @@
                 "telecom/medium": {
                     "label": "Moyenne"
                 },
+                "telescope/type": {
+                    "label": "Type",
+                    "options": {
+                        "optical": "Télescope optique",
+                        "radio": "Radiotélescope"
+                    }
+                },
                 "tents": {
                     "label": "Tentes"
                 },
@@ -4448,6 +4450,10 @@
                 "amenity/atm": {
                     "name": "Distributeur de billets",
                     "terms": "distributeur de billets,distributeur automatique,distributeur automatique de billets,guichet automatique,dab,gab,billets de banque,retrait d'argent,retrait de liquide,guichet de retrait,retrait automatique,atm,amenity atm,mister cash,bancontact"
+                },
+                "amenity/baking_oven": {
+                    "name": "Four à bois",
+                    "terms": "four à bois"
                 },
                 "amenity/bank": {
                     "name": "Banque",
@@ -5843,6 +5849,10 @@
                     "name": "Immeuble",
                     "terms": "immeuble,appartements"
                 },
+                "building/bakehouse": {
+                    "name": "Four à pain",
+                    "terms": "four à pain"
+                },
                 "building/barn": {
                     "name": "Grange",
                     "terms": "grange,hangar agricole,bâtiment agricole,stockage,grenier,abri,remise,étable,ferme,barn"
@@ -7000,6 +7010,10 @@
                     "name": "Plaque commémorative",
                     "terms": "épitaphe,marque historique,historique,souvenir,mémoire,plaque historique"
                 },
+                "historic/memorial/stolperstein-EU": {
+                    "name": "Plaque mémorielle Stolpersteine",
+                    "terms": "plaque mémorielle stolpersteine,stolpersteine"
+                },
                 "historic/monument": {
                     "name": "Grand monument commémoratif",
                     "terms": "grand mémorial"
@@ -7973,6 +7987,10 @@
                     "name": "Réservoir couvert",
                     "terms": "réservoir,bassin,couvert,enterré,souterrain"
                 },
+                "man_made/satellite_dish": {
+                    "name": "Antenne satellite",
+                    "terms": "antenne satellite"
+                },
                 "man_made/silo": {
                     "name": "Silo",
                     "terms": "réservoir,emplacement de stockage"
@@ -8024,6 +8042,18 @@
                 "man_made/tailings_pond": {
                     "name": "Bassin de résidus miniers",
                     "terms": "bassin,étang,résidus,déchets,mine,minier,sédimentation"
+                },
+                "man_made/telescope": {
+                    "name": "Télescope",
+                    "terms": "télescope"
+                },
+                "man_made/telescope/optical": {
+                    "name": "Télescope optique",
+                    "terms": "télescope optique"
+                },
+                "man_made/telescope/radio": {
+                    "name": "Radiotélescope",
+                    "terms": "radiotélescope"
                 },
                 "man_made/torii": {
                     "name": "Torii",

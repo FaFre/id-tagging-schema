@@ -839,6 +839,10 @@
         "key": "shop",
         "type": "typeCombo"
     },
+    "shooting": {
+        "key": "shooting",
+        "type": "combo"
+    },
     "shoes": {
         "key": "shoes",
         "type": "semiCombo"
@@ -2128,18 +2132,6 @@
         "key": "hot_water",
         "type": "check"
     },
-    "horse_stables": {
-        "key": "amenity",
-        "type": "check",
-        "reference": {
-            "key": "amenity",
-            "value": "stables"
-        },
-        "options": [
-            "undefined",
-            "stables"
-        ]
-    },
     "horse_scale": {
         "key": "horse_scale",
         "type": "combo",
@@ -2164,18 +2156,6 @@
         "options": [
             "undefined",
             "horse_riding"
-        ]
-    },
-    "horse_dressage": {
-        "key": "sport",
-        "type": "check",
-        "reference": {
-            "key": "sport",
-            "value": "equestrian"
-        },
-        "options": [
-            "undefined",
-            "equestrian"
         ]
     },
     "hoops": {
@@ -2311,6 +2291,10 @@
             "nuclear",
             "quicksand"
         ]
+    },
+    "hazard": {
+        "key": "hazard",
+        "type": "text"
     },
     "hashtags": {
         "key": "hashtags",
@@ -3444,6 +3428,7 @@
             "public",
             "residential",
             "retail",
+            "riding_hall",
             "roof",
             "ruins",
             "school",
@@ -3762,6 +3747,10 @@
         "key": "architect",
         "type": "text"
     },
+    "archery": {
+        "key": "archery",
+        "type": "text"
+    },
     "archaeological_site": {
         "key": "archaeological_site",
         "type": "combo",
@@ -3828,11 +3817,9 @@
         "keys": [
             "addr:block_number",
             "addr:city",
-            "addr:block_number",
             "addr:conscriptionnumber",
             "addr:county",
             "addr:country",
-            "addr:county",
             "addr:district",
             "addr:floor",
             "addr:hamlet",
@@ -4093,6 +4080,20 @@
             "pitlatrine",
             "chemical",
             "bucket"
+        ]
+    },
+    "telescope/type": {
+        "key": "telescope:type",
+        "type": "combo",
+        "icons": {
+            "optical": "temaki-telescope",
+            "radio": "roentgen-telescope-radio"
+        },
+        "autoSuggestions": true,
+        "customValues": true,
+        "options": [
+            "optical",
+            "radio"
         ]
     },
     "telecom/medium": {
@@ -4869,6 +4870,45 @@
             "4"
         ]
     },
+    "model_aerodrome/turbine": {
+        "key": "model_aerodrome:turbine",
+        "type": "check"
+    },
+    "model_aerodrome/heli": {
+        "key": "model_aerodrome:heli",
+        "type": "check"
+    },
+    "model_aerodrome/electric": {
+        "key": "model_aerodrome:electric",
+        "type": "check"
+    },
+    "model_aerodrome/combustion": {
+        "key": "model_aerodrome:combustion",
+        "type": "check"
+    },
+    "memorial/addr_subtags": {
+        "type": "address",
+        "key": "memorial:addr",
+        "keys": [
+            "memorial:addr:city",
+            "memorial:addr:housename",
+            "memorial:addr:housenumber",
+            "memorial:addr:place",
+            "memorial:addr:postcode",
+            "memorial:addr:street"
+        ],
+        "label": "{memorial/addr}",
+        "prerequisiteTag": {
+            "key": "memorial:addr:street"
+        }
+    },
+    "memorial/addr": {
+        "type": "text",
+        "key": "memorial:addr",
+        "prerequisiteTag": {
+            "keyNot": "memorial:addr:street"
+        }
+    },
     "maxspeed/hgv": {
         "key": "maxspeed:hgv",
         "type": "roadspeed"
@@ -5197,6 +5237,38 @@
             ]
         }
     },
+    "free_flying/site": {
+        "key": "free_flying:site",
+        "type": "combo"
+    },
+    "free_flying/rigid": {
+        "key": "free_flying:rigid",
+        "type": "check"
+    },
+    "free_flying/paragliding": {
+        "key": "free_flying:paragliding",
+        "type": "check"
+    },
+    "free_flying/official": {
+        "key": "free_flying:official",
+        "type": "check"
+    },
+    "free_flying/no-flight-time": {
+        "key": "free_flying:no-flight-time",
+        "type": "text"
+    },
+    "free_flying/hanggliding": {
+        "key": "free_flying:hanggliding",
+        "type": "check"
+    },
+    "free_flying/guest-guidelines": {
+        "key": "free_flying:guest-guidelines",
+        "type": "check"
+    },
+    "free_flying/ground_handling": {
+        "key": "free_flying:ground_handling",
+        "type": "combo"
+    },
     "flag/wikidata": {
         "key": "flag:wikidata",
         "keys": [
@@ -5247,6 +5319,26 @@
         "key": "fire_hydrant:diameter",
         "type": "combo",
         "snake_case": false
+    },
+    "door/width": {
+        "key": "door:width",
+        "minValue": 0,
+        "type": "number"
+    },
+    "door/height": {
+        "key": "door:height",
+        "minValue": 0,
+        "type": "number"
+    },
+    "dock/width": {
+        "key": "dock:width",
+        "minValue": 0,
+        "type": "number"
+    },
+    "dock/height": {
+        "key": "dock:height",
+        "minValue": 0,
+        "type": "number"
     },
     "disused/shop": {
         "key": "disused:shop",

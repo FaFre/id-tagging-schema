@@ -37,6 +37,43 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/shop-15.svg"
         },
         {
+            "key": "shelter",
+            "value": "yes",
+            "description": "🄿 Shelter",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/shelter-15.svg"
+        },
+        {
+            "key": "ruins",
+            "value": "yes",
+            "description": "🄿 Ruins",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/ruins.svg"
+        },
+        {
+            "key": "rental",
+            "description": "🄿 Rental",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/storage_rental.svg"
+        },
+        {
+            "key": "religion",
+            "description": "🄿 Religious, 🄵 Religion",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/place-of-worship-15.svg"
+        },
+        {
             "key": "polling_station",
             "description": "🄿 Temporary Polling Place, 🄵 Polling Place",
             "object_types": [
@@ -92,6 +129,14 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/hospital-15.svg"
         },
         {
+            "key": "harbour",
+            "description": "🄿 Harbour",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/harbor-15.svg"
+        },
+        {
             "key": "ford",
             "value": "yes",
             "description": "🄿 Ford",
@@ -106,6 +151,15 @@
                 "node"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/entrance-alt1-15.svg"
+        },
+        {
+            "key": "drinking_water",
+            "value": "yes",
+            "description": "🄿 Drinking water",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/drinking-water-15.svg"
         },
         {
             "key": "craft",
@@ -126,6 +180,15 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-handshake.svg"
         },
         {
+            "key": "canoe",
+            "description": "🄿 Canoe",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/canoe.svg"
+        },
+        {
             "key": "building:part",
             "description": "🄿 Building Part, 🄵 Building Part",
             "object_types": [
@@ -140,6 +203,25 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/home-15.svg"
+        },
+        {
+            "key": "bin",
+            "value": "yes",
+            "description": "🄿 Waste Basket",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/waste-basket-15.svg"
+        },
+        {
+            "key": "bench",
+            "value": "yes",
+            "description": "🄿 Bench",
+            "object_types": [
+                "node",
+                "way"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/bench.svg"
         },
         {
             "key": "barrier",
@@ -286,7 +368,7 @@
         },
         {
             "key": "leisure",
-            "description": "🄿 Leisure Feature (unsearchable), 🄵 Type, 🄵 Horseback Riding",
+            "description": "🄿 Leisure Feature (unsearchable), 🄵 Type, 🄵 Horseback Riding Center",
             "object_types": [
                 "node",
                 "way",
@@ -362,7 +444,7 @@
         },
         {
             "key": "amenity",
-            "description": "🄿 Amenity (unsearchable), 🄵 Riding Stable, 🄵 Type",
+            "description": "🄿 Amenity (unsearchable), 🄵 Type",
             "object_types": [
                 "node",
                 "way",
@@ -1504,6 +1586,314 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-server.svg"
+        },
+        {
+            "key": "sport",
+            "value": "trampoline",
+            "description": "🄿 Trampoline",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-chevron-circle-up.svg"
+        },
+        {
+            "key": "sport",
+            "value": "skiing",
+            "description": "🄿 Skiing, 🄵🅅 Sports: Skiing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/skiing-15.svg"
+        },
+        {
+            "key": "sport",
+            "value": "skating",
+            "description": "🄿 Skating (ambigious)",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/inline_skating.svg"
+        },
+        {
+            "key": "sport",
+            "value": "shooting",
+            "description": "🄿 Shooting, 🄿 Shooting Range Facility, 🄿 Shooting Range, 🄵🅅 Sports: Shooting",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-crosshairs.svg"
+        },
+        {
+            "key": "sport",
+            "value": "scuba_diving",
+            "description": "🄿 Scuba Diving, 🄵🅅 Sports: Scuba Diving",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/scuba_diving.svg"
+        },
+        {
+            "key": "sport",
+            "value": "sailing",
+            "description": "🄿 Sailing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/sailing.svg"
+        },
+        {
+            "key": "sport",
+            "value": "rugby",
+            "description": "🄿 Rugby (ambigious)",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/american-football-15.svg"
+        },
+        {
+            "key": "sport",
+            "value": "rowing",
+            "description": "🄿 Rowing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/kayaking.svg"
+        },
+        {
+            "key": "sport",
+            "value": "paintball",
+            "description": "🄿 Paintball, 🄿 Paintball Field",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-gun.svg"
+        },
+        {
+            "key": "sport",
+            "value": "orienteering",
+            "description": "🄿 Orienteering, 🄵🅅 Sports: Orienteering",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-compass.svg"
+        },
+        {
+            "key": "sport",
+            "value": "multi",
+            "description": "🄿 Multiple Sports, 🄵🅅 Sports: Unspecified Other Sports",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-whistle.svg"
+        },
+        {
+            "key": "sport",
+            "value": "motor",
+            "description": "🄿 Motorsport, 🄵🅅 Sports: Motorsports",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-cars.svg"
+        },
+        {
+            "key": "sport",
+            "value": "motocross",
+            "description": "🄿 Motocross, 🄿 Motocross Racetrack, 🄵🅅 Sports: Motocross",
+            "object_types": [
+                "way",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-motorcycle.svg"
+        },
+        {
+            "key": "sport",
+            "value": "model_aerodrome",
+            "description": "🄿 Model Aerodrome",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/planes_bidirectional.svg"
+        },
+        {
+            "key": "sport",
+            "value": "hockey",
+            "description": "🄿 Hockey (ambigious)",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/field_hockey.svg"
+        },
+        {
+            "key": "sport",
+            "value": "gymnastics",
+            "description": "🄿 Gymnastics, 🄵🅅 Sports: Gymnastics",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/balance_beam.svg"
+        },
+        {
+            "key": "sport",
+            "value": "golf",
+            "description": "🄿 Golf, 🄵🅅 Sports: Golf",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/golf-15.svg"
+        },
+        {
+            "key": "sport",
+            "value": "free_flying",
+            "description": "🄿 Free Flying, 🄵🅅 Sports: Paragliding / Hang Gliding",
+            "object_types": [
+                "node",
+                "area"
+            ]
+        },
+        {
+            "key": "sport",
+            "value": "fitness",
+            "description": "🄿 Fitness Station, 🄵🅅 Sports: Fitness Training",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/horizontal_bar.svg"
+        },
+        {
+            "key": "sport",
+            "value": "fishing",
+            "description": "🄿 Fishing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/fishing_pier.svg"
+        },
+        {
+            "key": "sport",
+            "value": "facilityTemplate",
+            "description": "🄿 Template for Sport Facilities",
+            "object_types": [
+                "node",
+                "area"
+            ]
+        },
+        {
+            "key": "sport",
+            "value": "disc_golf",
+            "description": "🄿 Disc Golf, 🄵🅅 Sports: Disc Golf",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/disc_golf_basket.svg"
+        },
+        {
+            "key": "sport",
+            "value": "climbing_adventure",
+            "description": "🄿 Adventure Park",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/abseiling.svg"
+        },
+        {
+            "key": "sport",
+            "value": "canoe",
+            "description": "🄿 Canoe, 🄵🅅 Sports: Canoeing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/canoe.svg"
+        },
+        {
+            "key": "sport",
+            "value": "boxing",
+            "description": "🄿 Boxing",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-boxing-glove.svg"
+        },
+        {
+            "key": "sport",
+            "value": "bmx",
+            "description": "🄿 BMX, 🄵🅅 Sports: BMX",
+            "object_types": [
+                "way",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-biking.svg"
+        },
+        {
+            "key": "sport",
+            "value": "billiards",
+            "description": "🄿 Billiards, 🄵🅅 Sports: Cue Sports, 🄵🅅 Sports: `billiards`",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-pool-8-ball.svg"
+        },
+        {
+            "key": "sport",
+            "value": "athletics",
+            "description": "🄿 Athletics, 🄿 Track & Field Runway (unsearchable), 🄿 Track & Field Pitch (unsearchable), 🄵🅅 Sports: Track & Field",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/horizontal_bar.svg"
+        },
+        {
+            "key": "sport",
+            "value": "archery",
+            "description": "🄿 Archery, 🄿 Archery Range",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/archery.svg"
+        },
+        {
+            "key": "sport",
+            "value": "9pin",
+            "description": "🄿 Bowling 9pin, 🄵🅅 Sports: Nine-Pin Bowling",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/bowling.svg"
+        },
+        {
+            "key": "sport",
+            "value": "10pin",
+            "description": "🄿 Bowling 10pin, 🄵🅅 Sports: Ten-Pin Bowling",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/bowling.svg"
         },
         {
             "key": "shop",
@@ -5890,6 +6280,16 @@
         },
         {
             "key": "man_made",
+            "value": "telescope",
+            "description": "🄿 Telescope",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-satellite-dish.svg"
+        },
+        {
+            "key": "man_made",
             "value": "tailings_pond",
             "description": "🄿 Tailings Pond",
             "object_types": [
@@ -5944,6 +6344,16 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/silo.svg"
+        },
+        {
+            "key": "man_made",
+            "value": "satellite_dish",
+            "description": "🄿 Satellite Dish",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-satellite-dish.svg"
         },
         {
             "key": "man_made",
@@ -6425,6 +6835,25 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-bell.svg"
         },
         {
+            "key": "telescope:type",
+            "value": "radio",
+            "description": "🄿 Radio Telescope, 🄵🅅 Type: Radio Telescope",
+            "object_types": [
+                "node",
+                "area"
+            ]
+        },
+        {
+            "key": "telescope:type",
+            "value": "optical",
+            "description": "🄿 Optical Telescope, 🄵🅅 Type: Optical Telescope",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/telescope.svg"
+        },
+        {
             "key": "surveillance:type",
             "value": "camera",
             "description": "🄿 Surveillance Camera, 🄵🅅 Surveillance Type: Camera",
@@ -6842,7 +7271,7 @@
         {
             "key": "leisure",
             "value": "horse_riding",
-            "description": "🄿 Horseback Riding Center, 🄵🅅 Horseback Riding: Yes",
+            "description": "🄿 Horseback Riding Center, 🄵🅅 Horseback Riding Center: Yes",
             "object_types": [
                 "node",
                 "area"
@@ -7082,17 +7511,6 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/racetrack-cycling-15.svg"
         },
         {
-            "key": "sport",
-            "value": "athletics",
-            "description": "🄿 Track & Field Runway (unsearchable), 🄿 Track & Field Pitch (unsearchable), 🄵🅅 Sports: Track & Field",
-            "object_types": [
-                "node",
-                "way",
-                "area"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-running.svg"
-        },
-        {
             "key": "athletics",
             "value": "triple_jump",
             "description": "🄿 Triple Jump Runway, 🄿 Triple Jump Pit, 🄵🅅 Event: Triple Jump",
@@ -7178,16 +7596,6 @@
                 "node"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-swimmer.svg"
-        },
-        {
-            "key": "sport",
-            "value": "shooting",
-            "description": "🄿 Shooting Range Facility, 🄿 Shooting Range, 🄵🅅 Sports: Shooting",
-            "object_types": [
-                "area",
-                "node"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-crosshairs.svg"
         },
         {
             "key": "sport",
@@ -7330,16 +7738,6 @@
         },
         {
             "key": "sport",
-            "value": "paintball",
-            "description": "🄿 Paintball Field",
-            "object_types": [
-                "area",
-                "node"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-crosshairs.svg"
-        },
-        {
-            "key": "sport",
             "value": "padel",
             "description": "🄿 Padel Court, 🄵🅅 Sports: Padel",
             "object_types": [
@@ -7431,7 +7829,7 @@
         {
             "key": "sport",
             "value": "equestrian",
-            "description": "🄿 Horseback Riding / Rodeo Arena, 🄵🅅 Sports: Equestrian Sports, 🄵🅅 Dressage Riding: Yes",
+            "description": "🄿 Horseback Riding / Rodeo Arena, 🄵🅅 Sports: Equestrian Sports",
             "object_types": [
                 "area",
                 "node"
@@ -7527,16 +7925,6 @@
                 "node"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/american-football-15.svg"
-        },
-        {
-            "key": "sport",
-            "value": "archery",
-            "description": "🄿 Archery Range",
-            "object_types": [
-                "area",
-                "node"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/archery.svg"
         },
         {
             "key": "sport",
@@ -8223,6 +8611,16 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-wifi.svg"
         },
         {
+            "key": "internet_access",
+            "value": "yes",
+            "description": "🄿 Internet-Access, 🄵🅅 Internet Connection: Yes",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-wifi.svg"
+        },
+        {
             "key": "indoor",
             "value": "wall",
             "description": "🄿 Indoor Wall",
@@ -8386,6 +8784,14 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/castle-15.svg"
         },
         {
+            "key": "demolished:amenity",
+            "description": "🄿 Demolished",
+            "object_types": [
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-house-damage.svg"
+        },
+        {
             "key": "historic",
             "value": "city_gate",
             "description": "🄿 City Gate, 🄵🅅 Type: City Gate",
@@ -8431,6 +8837,25 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/ruins.svg"
+        },
+        {
+            "key": "historic:amenity",
+            "description": "🄿 Previously",
+            "object_types": [
+                "node",
+                "way",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/ruins.svg"
+        },
+        {
+            "key": "memorial",
+            "value": "stolperstein",
+            "description": "🄿 Memorial Plaque Stolperstein, 🄵🅅 Type: Stolperstein",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/plaque.svg"
         },
         {
             "key": "memorial",
@@ -8907,6 +9332,15 @@
         },
         {
             "key": "highway",
+            "value": "traffic_sign",
+            "description": "🄿 Traffic Sign (unsearchable)",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-directions.svg"
+        },
+        {
+            "key": "highway",
             "value": "bus_stop",
             "description": "🄿 Bus Stop (unsearchable)",
             "object_types": [
@@ -8974,16 +9408,6 @@
                 "way"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/iD-sprite/presets/other-line.svg"
-        },
-        {
-            "key": "sport",
-            "value": "motocross",
-            "description": "🄿 Motocross Racetrack, 🄵🅅 Sports: Motocross",
-            "object_types": [
-                "way",
-                "area"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-motorcycle.svg"
         },
         {
             "key": "sport",
@@ -9393,6 +9817,15 @@
             "key": "golf",
             "value": "rough",
             "description": "🄿 Rough",
+            "object_types": [
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/golf-15.svg"
+        },
+        {
+            "key": "golf",
+            "value": "pin",
+            "description": "🄿 Pin",
             "object_types": [
                 "area"
             ],
@@ -10482,6 +10915,15 @@
         },
         {
             "key": "building",
+            "value": "riding_hall",
+            "description": "🄿 Indoor Horseback Riding Arena, 🄵🅅 Building: Horseback Riding Arena",
+            "object_types": [
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/horse-riding-15.svg"
+        },
+        {
+            "key": "building",
             "value": "retail",
             "description": "🄿 Retail Building, 🄵🅅 Building: Retail Building",
             "object_types": [
@@ -10812,6 +11254,15 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/barn.svg"
+        },
+        {
+            "key": "building",
+            "value": "bakehouse",
+            "description": "🄿 Bakehouse",
+            "object_types": [
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/bread.svg"
         },
         {
             "key": "building",
@@ -11431,6 +11882,7 @@
             "description": "🄿 Log Flume, 🄵🅅 Type: Log Flume",
             "object_types": [
                 "node",
+                "way",
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/ferry-15.svg"
@@ -12338,6 +12790,16 @@
         },
         {
             "key": "amenity",
+            "value": "funeral_hall",
+            "description": "🄿 Funeral Service Hall",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/cemetery-15.svg"
+        },
+        {
+            "key": "amenity",
             "value": "fuel",
             "description": "🄿 Gas Station",
             "object_types": [
@@ -12771,6 +13233,16 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/bank-15.svg"
+        },
+        {
+            "key": "amenity",
+            "value": "baking_oven",
+            "description": "🄿 Baking Oven",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/bread.svg"
         },
         {
             "key": "amenity",
@@ -13756,7 +14228,7 @@
                 "node",
                 "area"
             ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/fast_food-15.svg"
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/fast-food-15.svg"
         },
         {
             "key": "cuisine",
@@ -13856,7 +14328,7 @@
                 "node",
                 "area"
             ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/fast_food-15.svg"
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/fast-food-15.svg"
         },
         {
             "key": "cuisine",
@@ -15479,32 +15951,7 @@
         },
         {
             "key": "sport",
-            "description": "🄵 Sports, 🄵 Dressage Riding"
-        },
-        {
-            "key": "sport",
-            "value": "10pin",
-            "description": "🄵🅅 Sports: Ten-Pin Bowling"
-        },
-        {
-            "key": "sport",
-            "value": "9pin",
-            "description": "🄵🅅 Sports: Nine-Pin Bowling"
-        },
-        {
-            "key": "sport",
-            "value": "billiards",
-            "description": "🄵🅅 Sports: Cue Sports, 🄵🅅 Sports: `billiards`"
-        },
-        {
-            "key": "sport",
-            "value": "bmx",
-            "description": "🄵🅅 Sports: BMX"
-        },
-        {
-            "key": "sport",
-            "value": "canoe",
-            "description": "🄵🅅 Sports: Canoeing"
+            "description": "🄵 Sports"
         },
         {
             "key": "sport",
@@ -15513,38 +15960,13 @@
         },
         {
             "key": "sport",
-            "value": "disc_golf",
-            "description": "🄵🅅 Sports: Disc Golf"
-        },
-        {
-            "key": "sport",
             "value": "dog_racing",
             "description": "🄵🅅 Sports: Dog Racing"
         },
         {
             "key": "sport",
-            "value": "fitness",
-            "description": "🄵🅅 Sports: Fitness Training"
-        },
-        {
-            "key": "sport",
-            "value": "free_flying",
-            "description": "🄵🅅 Sports: Paragliding / Hang Gliding"
-        },
-        {
-            "key": "sport",
             "value": "gaelic_games",
             "description": "🄵🅅 Sports: Gaelic Games"
-        },
-        {
-            "key": "sport",
-            "value": "golf",
-            "description": "🄵🅅 Sports: Golf"
-        },
-        {
-            "key": "sport",
-            "value": "gymnastics",
-            "description": "🄵🅅 Sports: Gymnastics"
         },
         {
             "key": "sport",
@@ -15563,33 +15985,8 @@
         },
         {
             "key": "sport",
-            "value": "motor",
-            "description": "🄵🅅 Sports: Motorsports"
-        },
-        {
-            "key": "sport",
-            "value": "multi",
-            "description": "🄵🅅 Sports: Unspecified Other Sports"
-        },
-        {
-            "key": "sport",
-            "value": "orienteering",
-            "description": "🄵🅅 Sports: Orienteering"
-        },
-        {
-            "key": "sport",
             "value": "pelota",
             "description": "🄵🅅 Sports: Pelota"
-        },
-        {
-            "key": "sport",
-            "value": "scuba_diving",
-            "description": "🄵🅅 Sports: Scuba Diving"
-        },
-        {
-            "key": "sport",
-            "value": "skiing",
-            "description": "🄵🅅 Sports: Skiing"
         },
         {
             "key": "sport",
@@ -15602,7 +15999,7 @@
         },
         {
             "key": "source",
-            "description": "🄵 Sources"
+            "description": "🄵 Sources, 🄳🄳 (discarded tag)"
         },
         {
             "key": "source",
@@ -15856,6 +16253,10 @@
         {
             "key": "shower",
             "description": "🄵 Showers"
+        },
+        {
+            "key": "shooting",
+            "description": "🄵 Shooting Type"
         },
         {
             "key": "shoes",
@@ -16178,10 +16579,6 @@
             "key": "reservation",
             "value": "recommended",
             "description": "🄵🅅 Reservations: Recommended"
-        },
-        {
-            "key": "religion",
-            "description": "🄵 Religion"
         },
         {
             "key": "religion",
@@ -17077,11 +17474,6 @@
         },
         {
             "key": "memorial",
-            "value": "stolperstein",
-            "description": "🄵🅅 Type: Stolperstein"
-        },
-        {
-            "key": "memorial",
             "value": "stone",
             "description": "🄵🅅 Type: Stone"
         },
@@ -17517,11 +17909,6 @@
         },
         {
             "key": "internet_access",
-            "value": "yes",
-            "description": "🄵🅅 Internet Connection: Yes"
-        },
-        {
-            "key": "internet_access",
             "value": "no",
             "description": "🄵🅅 Internet Connection: No"
         },
@@ -17588,11 +17975,6 @@
         {
             "key": "hot_water",
             "description": "🄵 Hot Water"
-        },
-        {
-            "key": "amenity",
-            "value": "stables",
-            "description": "🄵🅅 Riding Stable: Yes"
         },
         {
             "key": "horse_scale",
@@ -17740,7 +18122,7 @@
         },
         {
             "key": "hazard",
-            "description": "🄵 Hazard"
+            "description": "🄵 Hazard, 🄵 Type of hazard"
         },
         {
             "key": "hazard",
@@ -19092,7 +19474,7 @@
         },
         {
             "key": "brewery",
-            "description": "🄵 Draft Beers"
+            "description": "🄵 Sold Beer brands"
         },
         {
             "key": "brand",
@@ -19391,6 +19773,10 @@
         {
             "key": "architect",
             "description": "🄵 Architect"
+        },
+        {
+            "key": "archery",
+            "description": "🄵 Type of archery"
         },
         {
             "key": "archaeological_site",
@@ -20076,6 +20462,10 @@
             "key": "toilets:disposal",
             "value": "bucket",
             "description": "🄵🅅 Disposal: Bucket"
+        },
+        {
+            "key": "telescope:type",
+            "description": "🄵 Type"
         },
         {
             "key": "telecom:medium",
@@ -21026,6 +21416,50 @@
             "description": "🄵🅅 IMBA Trail Difficulty: ◆◆ Extremely Difficult (double black diamond)"
         },
         {
+            "key": "model_aerodrome:turbine",
+            "description": "🄵 Turbine"
+        },
+        {
+            "key": "model_aerodrome:heli",
+            "description": "🄵 Heli"
+        },
+        {
+            "key": "model_aerodrome:electric",
+            "description": "🄵 Electric"
+        },
+        {
+            "key": "model_aerodrome:combustion",
+            "description": "🄵 Combustion"
+        },
+        {
+            "key": "memorial:addr:city",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr:housename",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr:housenumber",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr:place",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr:postcode",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr:street",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
+            "key": "memorial:addr",
+            "description": "🄵 Nearest Building Address"
+        },
+        {
             "key": "maxspeed:hgv",
             "description": "🄵 Truck Speed Limit"
         },
@@ -21116,10 +21550,6 @@
         {
             "key": "height:hub",
             "description": "🄵 Height of Hub (Meters)"
-        },
-        {
-            "key": "hazard",
-            "description": "🄵 Type of hazard"
         },
         {
             "key": "healthcare:speciality",
@@ -21627,6 +22057,38 @@
             "description": "🄵🅅 Fuel Types: AdBlue / AUS 32 (sold in canisters)"
         },
         {
+            "key": "free_flying:site",
+            "description": "🄵 Site Type"
+        },
+        {
+            "key": "free_flying:rigid",
+            "description": "🄵 Rigid"
+        },
+        {
+            "key": "free_flying:paragliding",
+            "description": "🄵 Paragliding"
+        },
+        {
+            "key": "free_flying:official",
+            "description": "🄵 Official"
+        },
+        {
+            "key": "free_flying:no-flight-time",
+            "description": "🄵 Disallowed flight time"
+        },
+        {
+            "key": "free_flying:hanggliding",
+            "description": "🄵 Hanggliding"
+        },
+        {
+            "key": "free_flying:guest-guidelines",
+            "description": "🄵 Guest-Guidlines"
+        },
+        {
+            "key": "free_flying:ground_handling",
+            "description": "🄵 Ground-Handling"
+        },
+        {
             "key": "flag:wikidata",
             "description": "🄵 Flag Wikidata"
         },
@@ -21697,6 +22159,22 @@
         {
             "key": "fire_hydrant:diameter",
             "description": "🄵 Diameter (mm, in, or letters)"
+        },
+        {
+            "key": "door:width",
+            "description": "🄵 Door Width (Meters)"
+        },
+        {
+            "key": "door:height",
+            "description": "🄵 Door Height (Meters)"
+        },
+        {
+            "key": "dock:width",
+            "description": "🄵 Dock Width (Meters)"
+        },
+        {
+            "key": "dock:height",
+            "description": "🄵 Dock Height (Meters)"
         },
         {
             "key": "diplomatic:services:",
@@ -22669,6 +23147,11 @@
         {
             "key": "disabled_spaces",
             "description": "🄳 (deprecated tag) ➜ capacity:disabled=*"
+        },
+        {
+            "key": "door",
+            "value": "loadingdock",
+            "description": "🄳 (deprecated tag) ➜ amenity=loading_dock"
         },
         {
             "key": "drinkable",
@@ -24100,6 +24583,30 @@
             "description": "🄳 (deprecated tag) ➜ man_made=utility_pole + utility=telecom"
         },
         {
+            "key": "memorial:type",
+            "value": "stolperstein",
+            "description": "🄳 (deprecated tag) ➜ memorial=stolperstein"
+        },
+        {
+            "key": "memorial:text",
+            "description": "🄳 (deprecated tag) ➜ inscription=*"
+        },
+        {
+            "key": "amenity",
+            "value": "water",
+            "description": "🄳 (deprecated tag) ➜ amenity=drinking_water"
+        },
+        {
+            "key": "public_transport",
+            "value": "pole",
+            "description": "🄳 (deprecated tag) ➜ public_transport=platform + shelter=no"
+        },
+        {
+            "key": "public_transport",
+            "value": "stop",
+            "description": "🄳 (deprecated tag) ➜ public_transport=stop_position"
+        },
+        {
             "key": "created_by",
             "description": "🄳🄳 (discarded tag)"
         },
@@ -24285,6 +24792,18 @@
         },
         {
             "key": "yh:WIDTH_RANK",
+            "description": "🄳🄳 (discarded tag)"
+        },
+        {
+            "key": "imagery_used",
+            "description": "🄳🄳 (discarded tag)"
+        },
+        {
+            "key": "imagery_offset",
+            "description": "🄳🄳 (discarded tag)"
+        },
+        {
+            "key": "bot",
             "description": "🄳🄳 (discarded tag)"
         }
     ]

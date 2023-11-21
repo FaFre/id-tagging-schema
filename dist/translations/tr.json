@@ -525,9 +525,6 @@
                 "brand": {
                     "label": "Marka"
                 },
-                "brewery": {
-                    "label": "Fıçı Bira"
-                },
                 "bridge": {
                     "label": "Tür",
                     "placeholder": "Varsayılan"
@@ -1806,15 +1803,7 @@
                     "label": "Engel",
                     "placeholder": "1, 2, 4..."
                 },
-                "horse_dressage": {
-                    "label": "At binişi eğitim alanı",
-                    "options": {
-                        "equestrian": "Evet",
-                        "undefined": "Hayır"
-                    }
-                },
                 "horse_riding": {
-                    "label": "At Binicilik Spor",
                     "options": {
                         "horse_riding": "Evet",
                         "undefined": "Hayır"
@@ -1831,13 +1820,6 @@
                         "impossible": "Impassable: Way or bridge not passable for horses. Too narrow, insufficient support, obstacles like ladders. Danger of life."
                     },
                     "placeholder": "Zor, Tehlikeli..."
-                },
-                "horse_stables": {
-                    "label": "Sabit Biniş",
-                    "options": {
-                        "stables": "Evet",
-                        "undefined": "Hayır"
-                    }
                 },
                 "hot_water": {
                     "label": "Sıcak Su"

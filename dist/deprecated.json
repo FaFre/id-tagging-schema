@@ -1134,6 +1134,14 @@
     },
     {
         "old": {
+            "door": "loadingdock"
+        },
+        "replace": {
+            "amenity": "loading_dock"
+        }
+    },
+    {
+        "old": {
             "drinkable": "*"
         },
         "replace": {
@@ -4042,6 +4050,47 @@
         "replace": {
             "man_made": "utility_pole",
             "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "memorial:type": "stolperstein"
+        },
+        "replace": {
+            "memorial": "stolperstein"
+        }
+    },
+    {
+        "old": {
+            "memorial:text": "*"
+        },
+        "replace": {
+            "inscription": "$1"
+        }
+    },
+    {
+        "old": {
+            "amenity": "water"
+        },
+        "replace": {
+            "amenity": "drinking_water"
+        }
+    },
+    {
+        "old": {
+            "public_transport": "pole"
+        },
+        "replace": {
+            "public_transport": "platform",
+            "shelter": "no"
+        }
+    },
+    {
+        "old": {
+            "public_transport": "stop"
+        },
+        "replace": {
+            "public_transport": "stop_position"
         }
     }
 ]

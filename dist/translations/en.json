@@ -727,6 +727,9 @@
                 "shop": {
                     "label": "Type"
                 },
+                "shooting": {
+                    "label": "Shooting Type"
+                },
                 "shoes": {
                     "label": "Shoes"
                 },
@@ -1681,13 +1684,6 @@
                 "hot_water": {
                     "label": "Hot Water"
                 },
-                "horse_stables": {
-                    "label": "Riding Stable",
-                    "options": {
-                        "undefined": "No",
-                        "stables": "Yes"
-                    }
-                },
                 "horse_scale": {
                     "label": "Horseback Riding Difficulty",
                     "placeholder": "Difficult, Dangerous...",
@@ -1701,17 +1697,10 @@
                     }
                 },
                 "horse_riding": {
-                    "label": "Horseback Riding",
+                    "label": "Horseback Riding Center",
                     "options": {
                         "undefined": "No",
                         "horse_riding": "Yes"
-                    }
-                },
-                "horse_dressage": {
-                    "label": "Dressage Riding",
-                    "options": {
-                        "undefined": "No",
-                        "equestrian": "Yes"
                     }
                 },
                 "hoops": {
@@ -1819,6 +1808,9 @@
                         "nuclear": "Nuclear / Radioactive",
                         "quicksand": "Quicksand"
                     }
+                },
+                "hazard": {
+                    "label": "Type of hazard"
                 },
                 "hashtags": {
                     "label": "Hashtags",
@@ -2654,6 +2646,7 @@
                         "public": "Public Building",
                         "residential": "Residential Building",
                         "retail": "Retail Building",
+                        "riding_hall": "Horseback Riding Arena",
                         "roof": "Roof",
                         "ruins": "Building Ruins",
                         "school": "School Building",
@@ -2681,8 +2674,8 @@
                     "placeholder": "Default"
                 },
                 "brewery": {
-                    "label": "Draft Beers",
-                    "terms": "on tap"
+                    "label": "Sold Beer brands",
+                    "terms": "beer brand,beer dispensing,bottled beer,draft beer,on tap,tap beer"
                 },
                 "brand": {
                     "label": "Brand"
@@ -2931,6 +2924,9 @@
                     "label": "Architect",
                     "terms": "building designer"
                 },
+                "archery": {
+                    "label": "Type of archery"
+                },
                 "archaeological_site": {
                     "label": "Type",
                     "options": {
@@ -2983,6 +2979,28 @@
                 "address": {
                     "label": "Address",
                     "terms": "location",
+                    "types": {
+                        "addr:block_number": "Block Number",
+                        "addr:city": "City",
+                        "addr:conscriptionnumber": "Conscription Number",
+                        "addr:country": "Country",
+                        "addr:county": "County",
+                        "addr:district": "District",
+                        "addr:floor": "Floor",
+                        "addr:hamlet": "Hamlet",
+                        "addr:housename": "Housename",
+                        "addr:housenumber": "Housenumber",
+                        "addr:neighbourhood": "Neighbourhood",
+                        "addr:place": "Place",
+                        "addr:postcode": "Postcode",
+                        "addr:province": "Province",
+                        "addr:quarter": "Quarter",
+                        "addr:state": "State",
+                        "addr:street": "Street",
+                        "addr:subdistrict": "Subdistrict",
+                        "addr:suburb": "Suburb",
+                        "addr:unit": "Unit"
+                    },
                     "placeholders": {
                         "block_number": "Block Number",
                         "block_number!jp": "Block No.",
@@ -3050,7 +3068,7 @@
                     "label": "Allowed Access",
                     "placeholder": "Not Specified",
                     "types": {
-                        "access": "All",
+                        "access": "All Vehicle types",
                         "foot": "Foot",
                         "motor_vehicle": "Motor Vehicles",
                         "bicycle": "Bicycles",
@@ -3231,6 +3249,13 @@
                         "pitlatrine": "Pit Latrine",
                         "chemical": "Chemical",
                         "bucket": "Bucket"
+                    }
+                },
+                "telescope/type": {
+                    "label": "Type",
+                    "options": {
+                        "optical": "Optical Telescope",
+                        "radio": "Radio Telescope"
                     }
                 },
                 "telecom/medium": {
@@ -3676,6 +3701,22 @@
                         "4": "◆◆ Extremely Difficult (double black diamond)"
                     }
                 },
+                "model_aerodrome/turbine": {
+                    "label": "Turbine"
+                },
+                "model_aerodrome/heli": {
+                    "label": "Heli"
+                },
+                "model_aerodrome/electric": {
+                    "label": "Electric"
+                },
+                "model_aerodrome/combustion": {
+                    "label": "Combustion"
+                },
+                "memorial/addr_subtags": {},
+                "memorial/addr": {
+                    "label": "Nearest Building Address"
+                },
                 "maxspeed/hgv": {
                     "label": "Truck Speed Limit",
                     "placeholder": "40, 50, 60..."
@@ -3913,6 +3954,30 @@
                     }
                 },
                 "fuel/fuel_multi-RU": {},
+                "free_flying/site": {
+                    "label": "Site Type"
+                },
+                "free_flying/rigid": {
+                    "label": "Rigid"
+                },
+                "free_flying/paragliding": {
+                    "label": "Paragliding"
+                },
+                "free_flying/official": {
+                    "label": "Official"
+                },
+                "free_flying/no-flight-time": {
+                    "label": "Disallowed flight time"
+                },
+                "free_flying/hanggliding": {
+                    "label": "Hanggliding"
+                },
+                "free_flying/guest-guidelines": {
+                    "label": "Guest-Guidlines"
+                },
+                "free_flying/ground_handling": {
+                    "label": "Ground-Handling"
+                },
                 "flag/wikidata": {
                     "label": "Flag Wikidata"
                 },
@@ -3945,6 +4010,18 @@
                 },
                 "fire_hydrant/diameter": {
                     "label": "Diameter (mm, in, or letters)"
+                },
+                "door/width": {
+                    "label": "Door Width (Meters)"
+                },
+                "door/height": {
+                    "label": "Door Height (Meters)"
+                },
+                "dock/width": {
+                    "label": "Dock Width (Meters)"
+                },
+                "dock/height": {
+                    "label": "Dock Height (Meters)"
                 },
                 "disused/shop": {
                     "label": "Type"
@@ -4181,6 +4258,18 @@
                     "name": "Shop",
                     "terms": "retailer,store"
                 },
+                "shelter": {
+                    "name": "Shelter"
+                },
+                "ruins": {
+                    "name": "Ruins"
+                },
+                "rental": {
+                    "name": "Rental"
+                },
+                "religion": {
+                    "name": "Religious"
+                },
                 "relation": {
                     "name": "Relation"
                 },
@@ -4214,12 +4303,18 @@
                     "name": "Healthcare Facility",
                     "terms": "clinic,doctor,disease,health,institution,sick,surgery,wellness"
                 },
+                "harbour": {
+                    "name": "Harbour"
+                },
                 "ford": {
                     "name": "Ford"
                 },
                 "entrance": {
                     "name": "Entrance / Exit",
                     "terms": "entrance,exit,door"
+                },
+                "drinking_water": {
+                    "name": "Drinking water"
                 },
                 "craft": {
                     "name": "Craft",
@@ -4229,6 +4324,9 @@
                     "name": "Club",
                     "terms": "social"
                 },
+                "canoe": {
+                    "name": "Canoe"
+                },
                 "building_part": {
                     "name": "Building Part",
                     "terms": "roof,simple 3d buildings"
@@ -4236,6 +4334,13 @@
                 "building": {
                     "name": "Building",
                     "terms": "structure"
+                },
+                "bin": {
+                    "name": "Waste Basket",
+                    "terms": "bin,garbage,rubbish,litter,trash"
+                },
+                "bench": {
+                    "name": "Bench"
                 },
                 "barrier": {
                     "name": "Barrier"
@@ -4742,6 +4847,99 @@
                 "telecom/data_center": {
                     "name": "Data Center",
                     "terms": "computer systems storage,information technology,server farm,the cloud,telecommunications"
+                },
+                "sport/trampoline": {
+                    "name": "Trampoline"
+                },
+                "sport/skiing": {
+                    "name": "Skiing"
+                },
+                "sport/skating": {
+                    "name": "Skating (ambigious)"
+                },
+                "sport/shooting": {
+                    "name": "Shooting"
+                },
+                "sport/scuba_diving": {
+                    "name": "Scuba Diving"
+                },
+                "sport/sailing": {
+                    "name": "Sailing"
+                },
+                "sport/rugby": {
+                    "name": "Rugby (ambigious)"
+                },
+                "sport/rowing": {
+                    "name": "Rowing"
+                },
+                "sport/paintball": {
+                    "name": "Paintball"
+                },
+                "sport/orienteering": {
+                    "name": "Orienteering"
+                },
+                "sport/multi": {
+                    "name": "Multiple Sports"
+                },
+                "sport/motor": {
+                    "name": "Motorsport"
+                },
+                "sport/motocross": {
+                    "name": "Motocross"
+                },
+                "sport/model_aerodrome": {
+                    "name": "Model Aerodrome"
+                },
+                "sport/hockey": {
+                    "name": "Hockey (ambigious)"
+                },
+                "sport/gymnastics": {
+                    "name": "Gymnastics"
+                },
+                "sport/golf": {
+                    "name": "Golf"
+                },
+                "sport/free_flying": {
+                    "name": "Free Flying"
+                },
+                "sport/fitness": {
+                    "name": "Fitness Station"
+                },
+                "sport/fishing": {
+                    "name": "Fishing"
+                },
+                "sport/facilityTemplate": {
+                    "name": "Template for Sport Facilities"
+                },
+                "sport/disc_golf": {
+                    "name": "Disc Golf"
+                },
+                "sport/climbing_adventure": {
+                    "name": "Adventure Park"
+                },
+                "sport/canoe": {
+                    "name": "Canoe"
+                },
+                "sport/boxing": {
+                    "name": "Boxing"
+                },
+                "sport/bmx": {
+                    "name": "BMX"
+                },
+                "sport/billiards": {
+                    "name": "Billiards"
+                },
+                "sport/athletics": {
+                    "name": "Athletics"
+                },
+                "sport/archery": {
+                    "name": "Archery"
+                },
+                "sport/9pin": {
+                    "name": "Bowling 9pin"
+                },
+                "sport/10pin": {
+                    "name": "Bowling 10pin"
                 },
                 "shop/wine": {
                     "name": "Wine Shop"
@@ -6609,6 +6807,9 @@
                     "name": "Torii",
                     "terms": "japanese gate,shinto shrine"
                 },
+                "man_made/telescope": {
+                    "name": "Telescope"
+                },
                 "man_made/tailings_pond": {
                     "name": "Tailings Pond",
                     "aliases": "Tailing Pond\nSettling Pond\nSettling Pit",
@@ -6633,6 +6834,10 @@
                 "man_made/silo": {
                     "name": "Silo",
                     "terms": "grain,corn,wheat"
+                },
+                "man_made/satellite_dish": {
+                    "name": "Satellite Dish",
+                    "terms": "fixed satellite dish,motorized satellite dish,parabolic dish,satellite communication,tracking satellite dish"
                 },
                 "man_made/reservoir_covered": {
                     "name": "Covered Reservoir",
@@ -6821,6 +7026,14 @@
                     "name": "Bell Tower",
                     "terms": "belfry,bell gable,campanile,church tower,klockstapel"
                 },
+                "man_made/telescope/radio": {
+                    "name": "Radio Telescope",
+                    "terms": "ground station,radio dish,radio antenna"
+                },
+                "man_made/telescope/optical": {
+                    "name": "Optical Telescope",
+                    "terms": "refracting telescope,reflecting telescope"
+                },
                 "man_made/surveillance/camera": {
                     "name": "Surveillance Camera",
                     "terms": "anpr,alpr,camera,car plate recognition,cctv,guard,license plate recognition,monitoring,number plate recognition,security,video,webcam"
@@ -7000,7 +7213,7 @@
                 },
                 "leisure/horse_riding": {
                     "name": "Horseback Riding Center",
-                    "terms": "equestrian facility,equestrian,horse farm,horse park,horse ranch,horse riding center,horse riding facility,horse riding,riding facility,riding stables,stables"
+                    "terms": "equestrian center,equestrian facility,horse farm,horse park,horse ranch,horse riding center,horse riding facility,horse riding,riding facility,riding stables,stables"
                 },
                 "leisure/hackerspace": {
                     "name": "Hackerspace",
@@ -7138,6 +7351,10 @@
                     "aliases": "Horse Racecourse\nHippodrome",
                     "terms": "equestrian race course,gallop,horse race betting,horse race,horse racing,horseracing,race course,racecourse"
                 },
+                "leisure/sports_centre/climbing_adventure": {
+                    "name": "Adventure Park",
+                    "terms": "obstacle course,rope climbing,ropes course,zip line"
+                },
                 "leisure/sports_centre/climbing": {
                     "name": "Climbing Gym",
                     "terms": "abseiling,artificial climbing wall,belaying,bouldering,rock climbing facility,indoor rock wall,rappeling,rock gym,ropes"
@@ -7237,7 +7454,7 @@
                 "leisure/pitch/equestrian": {
                     "name": "Horseback Riding / Rodeo Arena",
                     "aliases": "Horseback Riding Ring",
-                    "terms": "arena,dressage arena,dressage ring,dressage,equestrian,horse riding ring,horse riding,horse,horseback riding arena,horseback riding,horseback,jumping arena,jumping ring,longeing,pen,polo,riding ring,riding,ring,rodeo,round pen"
+                    "terms": "arena,dressage arena,dressage ring,dressage,equestrian arena,horse riding ring,horse riding,horse,horseback riding arena,horseback riding,horseback,jumping arena,jumping ring,longeing,pen,polo,riding ring,riding,ring,rodeo,round pen"
                 },
                 "leisure/pitch/cricket": {
                     "name": "Cricket Field",
@@ -7578,6 +7795,9 @@
                     "name": "Wi-Fi Hotspot",
                     "terms": "wi-fi,wifi,hotspot"
                 },
+                "internet_access/yes": {
+                    "name": "Internet-Access"
+                },
                 "indoor/wall": {
                     "name": "Indoor Wall",
                     "terms": "indoor barrier,room divider,room partition"
@@ -7644,6 +7864,9 @@
                     "name": "Historic Fort",
                     "terms": "military"
                 },
+                "historic/demolished": {
+                    "name": "Demolished"
+                },
                 "historic/city_gate": {
                     "name": "City Gate",
                     "terms": "town gate"
@@ -7659,6 +7882,12 @@
                 },
                 "historic/archaeological_site": {
                     "name": "Archaeological Site"
+                },
+                "historic/amenity": {
+                    "name": "Previously"
+                },
+                "historic/memorial/stolperstein-EU": {
+                    "name": "Memorial Plaque Stolperstein"
                 },
                 "historic/memorial/plaque": {
                     "name": "Commemorative Plaque",
@@ -7889,6 +8118,7 @@
                     "name": "Bridle Path",
                     "terms": "bridleway,equestrian,horse,trail"
                 },
+                "highway/traffic_sign": {},
                 "highway/bus_stop": {
                     "name": "Bus Stop"
                 },
@@ -8117,6 +8347,9 @@
                 },
                 "golf/rough": {
                     "name": "Rough"
+                },
+                "golf/pin": {
+                    "name": "Pin"
                 },
                 "golf/path": {
                     "name": "Golf Walking Path",
@@ -8533,6 +8766,11 @@
                 "building/roof": {
                     "name": "Roof"
                 },
+                "building/riding_hall": {
+                    "name": "Indoor Horseback Riding Arena",
+                    "aliases": "Horse Riding Hall\nHorseback Riding Hall\nIndoor Horse Arena\nIndoor Horse Riding Arena\nIndoor Horse Riding Ring\nIndoor Horseback Riding Ring\nIndoor Riding Arena\nIndoor Riding Ring",
+                    "terms": "equestrian arena,equestrian indoor arena,horse riding,indoor arena,indoor ring,indoor riding,longeing hall"
+                },
                 "building/retail": {
                     "name": "Retail Building",
                     "terms": "shop building,store building"
@@ -8658,6 +8896,9 @@
                 },
                 "building/barn": {
                     "name": "Barn"
+                },
+                "building/bakehouse": {
+                    "name": "Bakehouse"
                 },
                 "building/apartments": {
                     "name": "Apartment Building"
@@ -9264,6 +9505,10 @@
                     "name": "Gambling Hall",
                     "terms": "betting,bingo,blackjack,casino,craps,gamble,gambling,keno,lottery,pachinko,poker,roulette,slot machines,slots"
                 },
+                "amenity/funeral_hall": {
+                    "name": "Funeral Service Hall",
+                    "terms": "funeral ceremony,funeral hall"
+                },
                 "amenity/fuel": {
                     "name": "Gas Station",
                     "terms": "petrol,fuel,gasoline,propane,diesel,lng,cng,biodiesel"
@@ -9438,6 +9683,10 @@
                     "name": "Bank",
                     "aliases": "Credit Union",
                     "terms": "check,deposit,fund,investment,repository,reserve,safe,savings,stock,treasury,trust,vault"
+                },
+                "amenity/baking_oven": {
+                    "name": "Baking Oven",
+                    "terms": "bakehouse,beehive oven,bread,clay oven,horno,masonry oven,tabun oven,pizza oven"
                 },
                 "amenity/atm": {
                     "name": "ATM",
